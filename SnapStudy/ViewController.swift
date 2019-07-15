@@ -118,6 +118,7 @@ class ViewController: UIViewController
       tesseract.recognize()
       textView.text = tesseract.recognizedText //IMPORTANT
         guard let myKeywords = tesseract.recognizedText else { return } // swiftlint:disable:this line_length
+        //REDUCTIO
       Reductio.keywords(from: myKeywords, count: 10) {
             words in
             print(words.sorted())
