@@ -1,0 +1,24 @@
+PODS:
+  - GPUImage (0.1.7)
+  - Reductio (1.4.0)
+  - TesseractOCRiOS (5.0.1)
+
+DEPENDENCIES:
+  - GPUImage
+  - Reductio
+  - TesseractOCRiOS
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - GPUImage
+    - Reductio
+    - TesseractOCRiOS
+
+SPEC CHECKSUMS:
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  Reductio: bb6fe437dc1025f766d1c39161029efad2220cc9
+  TesseractOCRiOS: 2c189465f86abb030d0c5141c90da9705b647854
+
+PODFILE CHECKSUM: af7c9fc10d58f8457069191f31819866c1db9d46
+
+COCOAPODS: 1.7.3
