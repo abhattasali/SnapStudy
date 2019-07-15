@@ -176,9 +176,9 @@ NSString *const kGPUImageColorAveragingFragmentShaderString = SHADER_STRING
         
         NSUInteger totalNumberOfPixels = round(finalStageSize.width * finalStageSize.height);
         
-        if (rawImagePixels == NULL)
+        if (self->rawImagePixels == NULL)
         {
-            rawImagePixels = (GLubyte *)malloc(totalNumberOfPixels * 4);
+            self->rawImagePixels = (GLubyte *)malloc(totalNumberOfPixels * 4);
         }
         
         [GPUImageContext useImageProcessingContext];
@@ -189,10 +189,10 @@ NSString *const kGPUImageColorAveragingFragmentShaderString = SHADER_STRING
         NSUInteger byteIndex = 0;
         for (NSUInteger currentPixel = 0; currentPixel < totalNumberOfPixels; currentPixel++)
         {
-            redTotal += rawImagePixels[byteIndex++];
-            greenTotal += rawImagePixels[byteIndex++];
-            blueTotal += rawImagePixels[byteIndex++];
-            alphaTotal += rawImagePixels[byteIndex++];
+            redTotal += self->rawImagePixels[byteIndex++];
+            greenTotal += self->rawImagePixels[byteIndex++];
+            blueTotal += self->rawImagePixels[byteIndex++];
+            alphaTotal += self->rawImagePixels[byteIndex++];
         }
         
         CGFloat normalizedRedTotal = (CGFloat)redTotal / (CGFloat)totalNumberOfPixels / 255.0;
@@ -200,9 +200,9 @@ NSString *const kGPUImageColorAveragingFragmentShaderString = SHADER_STRING
         CGFloat normalizedBlueTotal = (CGFloat)blueTotal / (CGFloat)totalNumberOfPixels / 255.0;
         CGFloat normalizedAlphaTotal = (CGFloat)alphaTotal / (CGFloat)totalNumberOfPixels / 255.0;
         
-        if (_colorAverageProcessingFinishedBlock != NULL)
+        if (self->_colorAverageProcessingFinishedBlock != NULL)
         {
-            _colorAverageProcessingFinishedBlock(normalizedRedTotal, normalizedGreenTotal, normalizedBlueTotal, normalizedAlphaTotal, frameTime);
+            self->_colorAverageProcessingFinishedBlock(normalizedRedTotal, normalizedGreenTotal, normalizedBlueTotal, normalizedAlphaTotal, frameTime);
         }
     });
 }
