@@ -15,6 +15,7 @@
 		98962EF6DA425EB2EF154102 /* Pods_SnapStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D5B8FB206AA94F36104C803 /* Pods_SnapStudy.framework */; };
 		FABAA81822D937FF00675015 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = FABAA81722D937FF00675015 /* tessdata */; };
 		FABAA85622DD1F2B00675015 /* SnapStudy.png in Resources */ = {isa = PBXBuildFile; fileRef = FABAA85522DD1F2A00675015 /* SnapStudy.png */; };
+		FABAA85A22DE7ABA00675015 /* dictionary.json in Resources */ = {isa = PBXBuildFile; fileRef = FABAA85922DE7ABA00675015 /* dictionary.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		BC82438701B4AE0012F871E8 /* Pods-SnapStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapStudy.release.xcconfig"; path = "Target Support Files/Pods-SnapStudy/Pods-SnapStudy.release.xcconfig"; sourceTree = "<group>"; };
 		FABAA81722D937FF00675015 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		FABAA85522DD1F2A00675015 /* SnapStudy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SnapStudy.png; sourceTree = "<group>"; };
+		FABAA85922DE7ABA00675015 /* dictionary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dictionary.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 		0432746D223AF8FD00E65B50 /* SnapStudy */ = {
 			isa = PBXGroup;
 			children = (
+				FABAA85922DE7ABA00675015 /* dictionary.json */,
 				0432746E223AF8FD00E65B50 /* AppDelegate.swift */,
 				04327470223AF8FD00E65B50 /* ViewController.swift */,
 				FABAA81722D937FF00675015 /* tessdata */,
@@ -159,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04327479223AF8FF00E65B50 /* LaunchScreen.storyboard in Resources */,
+				FABAA85A22DE7ABA00675015 /* dictionary.json in Resources */,
 				FABAA81822D937FF00675015 /* tessdata in Resources */,
 				04327476223AF8FF00E65B50 /* Assets.xcassets in Resources */,
 				04327474223AF8FD00E65B50 /* Main.storyboard in Resources */,
