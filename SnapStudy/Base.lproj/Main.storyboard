@@ -25,20 +25,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wgX-jw-zhm">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Snap/upload a clear picture of your poem then edit below." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Q8F-tr-Ggm">
-                                        <rect key="frame" x="26" y="50" width="362" height="60"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="s6u-A1-JAZ"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="18"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gn4-yr-rRa">
-                                        <rect key="frame" x="51" y="556" width="312" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="UZJ-an-ioK"/>
-                                        </constraints>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gn4-yr-rRa">
+                                        <rect key="frame" x="110" y="556" width="194" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="22"/>
                                         <size key="titleShadowOffset" width="1" height="1"/>
                                         <state key="normal" title="Snap/Upload Image">
@@ -58,37 +47,28 @@
                                             <action selector="takePhoto:" destination="bT2-HK-FHi" eventType="touchUpInside" id="4zu-1j-tlN"/>
                                         </connections>
                                     </button>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hB6-A3-sZh">
-                                        <rect key="frame" x="51" y="130" width="312" height="406"/>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ceI-aP-L1L">
+                                        <rect key="frame" x="184" y="430" width="37" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.50007189419999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </activityIndicatorView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQZ-sH-P95">
+                                        <rect key="frame" x="184" y="767" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="testButton:" destination="bT2-HK-FHi" eventType="touchUpInside" id="qUq-11-So6"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hB6-A3-sZh">
+                                        <rect key="frame" x="22" y="118" width="373" height="430"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="160" id="jN7-NG-0KQ"/>
-                                        </constraints>
                                         <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ceI-aP-L1L">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.50007189419999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </activityIndicatorView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="hB6-A3-sZh" firstAttribute="width" secondItem="Gn4-yr-rRa" secondAttribute="width" id="E1H-cC-Z1i"/>
-                                    <constraint firstItem="hB6-A3-sZh" firstAttribute="centerX" secondItem="wgX-jw-zhm" secondAttribute="centerX" id="HBT-yX-wjx"/>
-                                    <constraint firstItem="Q8F-tr-Ggm" firstAttribute="leading" secondItem="wgX-jw-zhm" secondAttribute="leadingMargin" constant="18" id="IOy-Cv-oIq"/>
-                                    <constraint firstAttribute="trailing" secondItem="ceI-aP-L1L" secondAttribute="trailing" id="KAI-WE-Ur5"/>
-                                    <constraint firstItem="Gn4-yr-rRa" firstAttribute="centerX" secondItem="wgX-jw-zhm" secondAttribute="centerX" id="LRC-iB-09t"/>
-                                    <constraint firstItem="ceI-aP-L1L" firstAttribute="top" secondItem="wgX-jw-zhm" secondAttribute="top" id="MmN-vv-4MR"/>
-                                    <constraint firstItem="hB6-A3-sZh" firstAttribute="leading" secondItem="Q8F-tr-Ggm" secondAttribute="leading" constant="25" id="O5W-ST-R8h"/>
-                                    <constraint firstItem="ceI-aP-L1L" firstAttribute="leading" secondItem="wgX-jw-zhm" secondAttribute="leading" id="RWY-Ky-Yk1"/>
-                                    <constraint firstItem="Q8F-tr-Ggm" firstAttribute="top" secondItem="wgX-jw-zhm" secondAttribute="top" constant="50" id="Uo3-0W-FlB"/>
-                                    <constraint firstItem="hB6-A3-sZh" firstAttribute="top" secondItem="Q8F-tr-Ggm" secondAttribute="bottom" constant="20" id="VoV-rB-dNl"/>
-                                    <constraint firstItem="Gn4-yr-rRa" firstAttribute="top" secondItem="hB6-A3-sZh" secondAttribute="bottom" constant="20" id="Vtn-Hn-iF8"/>
-                                    <constraint firstAttribute="bottom" secondItem="ceI-aP-L1L" secondAttribute="bottom" id="gZt-3R-9dh"/>
-                                    <constraint firstItem="Q8F-tr-Ggm" firstAttribute="centerX" secondItem="wgX-jw-zhm" secondAttribute="centerX" id="tkW-iB-YHl"/>
-                                    <constraint firstAttribute="bottom" secondItem="Gn4-yr-rRa" secondAttribute="bottom" priority="999" constant="300" id="vD6-X1-KRb"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.65490196078431373" green="0.53725490196078429" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -116,7 +96,22 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="178.40000000000001" y="252.32383808095955"/>
+            <point key="canvasLocation" x="178.2608695652174" y="251.78571428571428"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="m2x-be-7k5">
+            <objects>
+                <viewController id="brM-y9-pXy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MuH-XN-LnY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="pGZ-Zh-Eh0"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hat-b8-fmd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1139" y="263"/>
         </scene>
     </scenes>
 </document>

@@ -53,17 +53,17 @@
         // The first pass through the framebuffer may rotate the inbound image, so need to account for that by changing up the kernel ordering for that pass
         if (GPUImageRotationSwapsWidthAndHeight(self->inputRotation))
         {
-            self->verticalPassTexelWidthOffset = _verticalTexelSpacing / filterFrameSize.height;
+            self->verticalPassTexelWidthOffset = self->_verticalTexelSpacing / filterFrameSize.height;
             self->verticalPassTexelHeightOffset = 0.0;
         }
         else
         {
             self->verticalPassTexelWidthOffset = 0.0;
-            self->verticalPassTexelHeightOffset = _verticalTexelSpacing / filterFrameSize.height;
+            self->verticalPassTexelHeightOffset = self->_verticalTexelSpacing / filterFrameSize.height;
         }
         
-        horizontalPassTexelWidthOffset = _horizontalTexelSpacing / filterFrameSize.width;
-        horizontalPassTexelHeightOffset = 0.0;
+        self->horizontalPassTexelWidthOffset = self->_horizontalTexelSpacing / filterFrameSize.width;
+        self->horizontalPassTexelHeightOffset = 0.0;
     });
 }
 

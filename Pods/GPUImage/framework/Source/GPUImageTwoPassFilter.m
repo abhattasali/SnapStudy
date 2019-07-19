@@ -17,33 +17,33 @@
     runSynchronouslyOnVideoProcessingQueue(^{
         [GPUImageContext useImageProcessingContext];
 
-        secondFilterProgram = [[GPUImageContext sharedImageProcessingContext] programForVertexShaderString:secondStageVertexShaderString fragmentShaderString:secondStageFragmentShaderString];
+        self->secondFilterProgram = [[GPUImageContext sharedImageProcessingContext] programForVertexShaderString:secondStageVertexShaderString fragmentShaderString:secondStageFragmentShaderString];
         
-        if (!secondFilterProgram.initialized)
+        if (!self->secondFilterProgram.initialized)
         {
             [self initializeSecondaryAttributes];
             
-            if (![secondFilterProgram link])
+            if (![self->secondFilterProgram link])
             {
-                NSString *progLog = [secondFilterProgram programLog];
+                NSString *progLog = [self->secondFilterProgram programLog];
                 NSLog(@"Program link log: %@", progLog);
-                NSString *fragLog = [secondFilterProgram fragmentShaderLog];
+                NSString *fragLog = [self->secondFilterProgram fragmentShaderLog];
                 NSLog(@"Fragment shader compile log: %@", fragLog);
-                NSString *vertLog = [secondFilterProgram vertexShaderLog];
+                NSString *vertLog = [self->secondFilterProgram vertexShaderLog];
                 NSLog(@"Vertex shader compile log: %@", vertLog);
-                secondFilterProgram = nil;
+                self->secondFilterProgram = nil;
                 NSAssert(NO, @"Filter shader link failed");
             }
         }
         
-        secondFilterPositionAttribute = [secondFilterProgram attributeIndex:@"position"];
-        secondFilterTextureCoordinateAttribute = [secondFilterProgram attributeIndex:@"inputTextureCoordinate"];
-        secondFilterInputTextureUniform = [secondFilterProgram uniformIndex:@"inputImageTexture"]; // This does assume a name of "inputImageTexture" for the fragment shader
-        secondFilterInputTextureUniform2 = [secondFilterProgram uniformIndex:@"inputImageTexture2"]; // This does assume a name of "inputImageTexture2" for second input texture in the fragment shader
+        self->secondFilterPositionAttribute = [self->secondFilterProgram attributeIndex:@"position"];
+        secondFilterTextureCoordinateAttribute = [self->secondFilterProgram attributeIndex:@"inputTextureCoordinate"];
+        secondFilterInputTextureUniform = [self->secondFilterProgram uniformIndex:@"inputImageTexture"]; // This does assume a name of "inputImageTexture" for the fragment shader
+        secondFilterInputTextureUniform2 = [self->secondFilterProgram uniformIndex:@"inputImageTexture2"]; // This does assume a name of "inputImageTexture2" for second input texture in the fragment shader
         
-        [GPUImageContext setActiveShaderProgram:secondFilterProgram];
+        [GPUImageContext setActiveShaderProgram:self->secondFilterProgram];
         
-        glEnableVertexAttribArray(secondFilterPositionAttribute);
+        glEnableVertexAttribArray(self->secondFilterPositionAttribute);
         glEnableVertexAttribArray(secondFilterTextureCoordinateAttribute);
     });
 
@@ -62,8 +62,8 @@
 
 - (void)initializeSecondaryAttributes;
 {
-    [secondFilterProgram addAttribute:@"position"];
-	[secondFilterProgram addAttribute:@"inputTextureCoordinate"];
+    [self->secondFilterProgram addAttribute:@"position"];
+	[self->secondFilterProgram addAttribute:@"inputTextureCoordinate"];
 }
 
 #pragma mark -
@@ -123,7 +123,7 @@
     // Run the second stage of the two-pass filter
     secondOutputFramebuffer = [[GPUImageContext sharedFramebufferCache] fetchFramebufferForSize:[self sizeOfFBO] textureOptions:self.outputTextureOptions onlyTexture:NO];
     [secondOutputFramebuffer activateFramebuffer];
-    [GPUImageContext setActiveShaderProgram:secondFilterProgram];
+    [GPUImageContext setActiveShaderProgram:self->secondFilterProgram];
     if (usingNextFrameForImageCapture)
     {
         [secondOutputFramebuffer lock];
@@ -151,7 +151,7 @@
     
 	glUniform1i(secondFilterInputTextureUniform, 3);
     
-    glVertexAttribPointer(secondFilterPositionAttribute, 2, GL_FLOAT, 0, 0, vertices);
+    glVertexAttribPointer(self->secondFilterPositionAttribute, 2, GL_FLOAT, 0, 0, vertices);
 
     glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);

@@ -116,9 +116,9 @@
             }
         }
         
-        displayPositionAttribute = [self->displayProgram attributeIndex:@"position"];
-        displayTextureCoordinateAttribute = [self->displayProgram attributeIndex:@"inputTextureCoordinate"];
-        displayInputTextureUniform = [self->displayProgram uniformIndex:@"inputImageTexture"]; // This does assume a name of "inputTexture" for the fragment shader
+        self->displayPositionAttribute = [self->displayProgram attributeIndex:@"position"];
+        self->displayTextureCoordinateAttribute = [self->displayProgram attributeIndex:@"inputTextureCoordinate"];
+        self->displayInputTextureUniform = [self->displayProgram uniformIndex:@"inputImageTexture"]; // This does assume a name of "inputTexture" for the fragment shader
 
         [GPUImageContext setActiveShaderProgram:self->displayProgram];
         glEnableVertexAttribArray(self->displayPositionAttribute);

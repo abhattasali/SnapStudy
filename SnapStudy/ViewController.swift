@@ -59,14 +59,79 @@ class ViewController: UIViewController
     view.endEditing(true)
   }
   
-  @IBAction func takePhoto(_ sender: Any) {
+    @IBAction func testButton(_ sender: Any) {
+        let imagePickerActionSheet =
+            UIAlertController(title: "Snap/Upload Image", message: nil, preferredStyle: .actionSheet)
+        // 2
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            let cameraButton = UIAlertAction(
+                title: "Take Photo",
+                style: .default) { (alert) -> Void in
+                    self.activityIndicator.startAnimating()
+                    let imagePicker = UIImagePickerController()
+                    imagePicker.delegate = self
+                    imagePicker.sourceType = .camera
+                    imagePicker.mediaTypes = [kUTTypeImage as String]
+                    self.present(imagePicker, animated: true, completion: {
+                        self.activityIndicator.stopAnimating()
+                    })
+            }
+            imagePickerActionSheet.addAction(cameraButton)
+        }
+        
+        // 3
+        let libraryButton = UIAlertAction(
+            title: "Choose Existing",
+            style: .default) { (alert) -> Void in
+                self.activityIndicator.startAnimating()
+                let imagePicker = UIImagePickerController()
+                imagePicker.delegate = self
+                imagePicker.sourceType = .photoLibrary
+                imagePicker.mediaTypes = [kUTTypeImage as String]
+                self.present(imagePicker, animated: true, completion: {
+                    self.activityIndicator.stopAnimating()
+                })
+        }
+        imagePickerActionSheet.addAction(libraryButton)
+        // 4
+        let cancelButton = UIAlertAction(title: "Cancel", style: .cancel)
+        imagePickerActionSheet.addAction(cancelButton)
+        // 5
+        present(imagePickerActionSheet, animated: true)
+    }
+    
+    // Tesseract Image Recognition
+    func performImageRecognition(_ image: UIImage) {
+        let scaledImage = image.scaledImage(1000) ?? image
+        let preprocessedImage = scaledImage.preprocessedImage() ?? scaledImage
+        
+        /************************** !!! *************************/
+        if let tesseract = G8Tesseract(language: "eng+fra") {
+            tesseract.engineMode = .tesseractCubeCombined
+            tesseract.pageSegmentationMode = .auto
+            tesseract.image = preprocessedImage
+            tesseract.recognize()
+            textView.text = tesseract.recognizedText //IMPORTANT
+            guard let myKeywords = tesseract.recognizedText else { return }
+            //REDUCTIO
+            Reductio.keywords(from: myKeywords, count: 10) {
+                words in
+                print(words.sorted())
+                print(words.count)
+            }
+            //print(textView.text!)
+            print("This is a test")
+        }
+        activityIndicator.stopAnimating()
+    }
+    }
+    
+    /*
+    @IBAction func takePhoto(_ sender: Any) {
     // TODO: Add more code here...
     // 1
     let imagePickerActionSheet =
-      UIAlertController(title: "Snap/Upload Image",
-                        message: nil,
-                        preferredStyle: .actionSheet)
-    
+      UIAlertController(title: "Snap/Upload Image", message: nil, preferredStyle: .actionSheet)
     // 2
     if UIImagePickerController.isSourceTypeAvailable(.camera) {
       let cameraButton = UIAlertAction(
@@ -110,15 +175,15 @@ class ViewController: UIViewController
     let scaledImage = image.scaledImage(1000) ?? image
     let preprocessedImage = scaledImage.preprocessedImage() ?? scaledImage
 
-    // 1
+    /************************** !!! *************************/
     if let tesseract = G8Tesseract(language: "eng+fra") {
       tesseract.engineMode = .tesseractCubeCombined
       tesseract.pageSegmentationMode = .auto
       tesseract.image = preprocessedImage
       tesseract.recognize()
       textView.text = tesseract.recognizedText //IMPORTANT
-        guard let myKeywords = tesseract.recognizedText else { return } // swiftlint:disable:this line_length
-        //REDUCTIO
+        guard let myKeywords = tesseract.recognizedText else { return }
+    //REDUCTIO
       Reductio.keywords(from: myKeywords, count: 10) {
             words in
             print(words.sorted())
@@ -129,7 +194,8 @@ class ViewController: UIViewController
     }
     activityIndicator.stopAnimating()
   }
-}
+}*/
+
 
 // MARK: - UINavigationControllerDelegate
 extension ViewController: UINavigationControllerDelegate {
@@ -166,7 +232,7 @@ extension UIImage
     {
       scaledSize.width = size.width / size.height * scaledSize.height
     }
-    // 5
+
     UIGraphicsBeginImageContext(scaledSize)
     draw(in: CGRect(origin: .zero, size: scaledSize))
     let scaledImage = UIGraphicsGetImageFromCurrentImageContext()

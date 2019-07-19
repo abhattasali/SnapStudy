@@ -174,7 +174,7 @@ NSString *const kGPUImageColorAveragingFragmentShaderString = SHADER_STRING
         NSAssert(self.outputTextureOptions.internalFormat == GL_RGBA, @"The output texture internal format for this filter must be GL_RGBA.");
         NSAssert(self.outputTextureOptions.type == GL_UNSIGNED_BYTE, @"The type of the output texture of this filter must be GL_UNSIGNED_BYTE.");
         
-        NSUInteger totalNumberOfPixels = round(finalStageSize.width * finalStageSize.height);
+        NSUInteger totalNumberOfPixels = round(self->finalStageSize.width * self->finalStageSize.height);
         
         if (self->rawImagePixels == NULL)
         {
@@ -182,8 +182,8 @@ NSString *const kGPUImageColorAveragingFragmentShaderString = SHADER_STRING
         }
         
         [GPUImageContext useImageProcessingContext];
-        [outputFramebuffer activateFramebuffer];
-        glReadPixels(0, 0, (int)finalStageSize.width, (int)finalStageSize.height, GL_RGBA, GL_UNSIGNED_BYTE, rawImagePixels);
+        [self->outputFramebuffer activateFramebuffer];
+        glReadPixels(0, 0, (int)self->finalStageSize.width, (int)self->finalStageSize.height, GL_RGBA, GL_UNSIGNED_BYTE, self->rawImagePixels);
         
         NSUInteger redTotal = 0, greenTotal = 0, blueTotal = 0, alphaTotal = 0;
         NSUInteger byteIndex = 0;
