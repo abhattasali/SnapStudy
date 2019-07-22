@@ -13,6 +13,7 @@
 		04327476223AF8FF00E65B50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04327475223AF8FF00E65B50 /* Assets.xcassets */; };
 		04327479223AF8FF00E65B50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04327477223AF8FF00E65B50 /* LaunchScreen.storyboard */; };
 		98962EF6DA425EB2EF154102 /* Pods_SnapStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D5B8FB206AA94F36104C803 /* Pods_SnapStudy.framework */; };
+		FA6CB25A22E626E500A239AB /* FlashSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CB25922E626E500A239AB /* FlashSet.swift */; };
 		FABAA81822D937FF00675015 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = FABAA81722D937FF00675015 /* tessdata */; };
 		FABAA85622DD1F2B00675015 /* SnapStudy.png in Resources */ = {isa = PBXBuildFile; fileRef = FABAA85522DD1F2A00675015 /* SnapStudy.png */; };
 		FABAA85A22DE7ABA00675015 /* dictionary.json in Resources */ = {isa = PBXBuildFile; fileRef = FABAA85922DE7ABA00675015 /* dictionary.json */; };
@@ -31,6 +32,7 @@
 		33A582C1166464D0705C3702 /* Pods-SnapStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapStudy.debug.xcconfig"; path = "Target Support Files/Pods-SnapStudy/Pods-SnapStudy.debug.xcconfig"; sourceTree = "<group>"; };
 		7F96789CEFBB110D975DA524 /* Pods-SnapStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapStudy.debug.xcconfig"; path = "Target Support Files/Pods-SnapStudy/Pods-SnapStudy.debug.xcconfig"; sourceTree = "<group>"; };
 		BC82438701B4AE0012F871E8 /* Pods-SnapStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapStudy.release.xcconfig"; path = "Target Support Files/Pods-SnapStudy/Pods-SnapStudy.release.xcconfig"; sourceTree = "<group>"; };
+		FA6CB25922E626E500A239AB /* FlashSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashSet.swift; sourceTree = "<group>"; };
 		FABAA81722D937FF00675015 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		FABAA85522DD1F2A00675015 /* SnapStudy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SnapStudy.png; sourceTree = "<group>"; };
 		FABAA85922DE7ABA00675015 /* dictionary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dictionary.json; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				04327475223AF8FF00E65B50 /* Assets.xcassets */,
 				FABAA85522DD1F2A00675015 /* SnapStudy.png */,
 				0432747A223AF8FF00E65B50 /* Info.plist */,
+				FA6CB25922E626E500A239AB /* FlashSet.swift */,
 			);
 			path = SnapStudy;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA6CB25A22E626E500A239AB /* FlashSet.swift in Sources */,
 				04327471223AF8FD00E65B50 /* ViewController.swift in Sources */,
 				0432746F223AF8FD00E65B50 /* AppDelegate.swift in Sources */,
 			);

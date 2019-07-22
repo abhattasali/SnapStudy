@@ -40,26 +40,18 @@ class ViewController: UIViewController
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    //reducMe()
+    var testFlashset = FlashSet()
+    print(testFlashset.getDate())
+    print(testFlashset.getSetName())
   }
   
-  /*func reducMe()
-  {
-    let a = "Oculus rarely brags about its industrial alex andy design, but one of the best things it’s done is make something so stereotypically geeky andy look (relatively) natural. alex " // swiftlint:disable:this line_length
-    Reductio.keywords(from: a, count: 8) {
-      words in
-      print(words.sorted())
-      print(words.count)
-    }
-    
-  }*/
   
   // IBAction methods
   @IBAction func backgroundTapped(_ sender: Any) {
     view.endEditing(true)
   }
   
-    @IBAction func testButton(_ sender: Any) {
+    @IBAction func takePhoto(_ sender: Any) {
         let imagePickerActionSheet =
             UIAlertController(title: "Snap/Upload Image", message: nil, preferredStyle: .actionSheet)
         // 2
@@ -124,7 +116,47 @@ class ViewController: UIViewController
         }
         activityIndicator.stopAnimating()
     }
+  
+  
+  func json(keyword: String)
+  {
+    let url = Bundle.main.url(forResource: "dictionary", withExtension: "json")!
+    let data = try! Data(contentsOf: url)
+    do {
+      // make sure this JSON is in the format we expect
+      if let jsonFile = try JSONSerialization.jsonObject(with: data, options: []) as? [String:Any] {
+        // try to read out a string array
+        if let definition: String = jsonFile[keyword] as? String
+        {
+          print("        " + definition)
+        }
+        else
+        {
+          print("        No definition available at the time.")
+        }
+      }
+    } catch let error as NSError {
+      print("Failed to load: \(error.localizedDescription)")
     }
+  }
+  
+  func test() -> [String]
+  {
+    var m_arr = [String]()
+    let article = "Oculus rarely brags about its industrial design, but one of the best things it’s done is make something so stereotypically geeky look (relatively) natural."
+    // let article = "The quick brown fox jumped over the lazy dog"
+    
+    Reductio.keywords(from: article, count: 6)
+    {
+      words in
+      print(words.sorted())
+      m_arr = words.sorted()
+    }
+    return m_arr
+  }
+  
+  
+}
     
     /*
     @IBAction func takePhoto(_ sender: Any) {
