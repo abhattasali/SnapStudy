@@ -13,7 +13,6 @@
         <!--View Controller-->
         <scene sceneID="bkB-GR-Jms">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mtW-cT-bfZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="pbB-q4-hra" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="p9F-eU-jDF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -32,6 +31,7 @@
                         <viewLayoutGuide key="safeArea" id="hvW-Dh-jX1"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mtW-cT-bfZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-775.36231884057975" y="242.41071428571428"/>
         </scene>
@@ -92,6 +92,17 @@
                                             <segue destination="cp3-xd-3m5" kind="show" id="QvM-sK-vO4"/>
                                         </connections>
                                     </button>
+                                    <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CounterButton.png" translatesAutoresizingMaskIntoConstraints="NO" id="e4W-rs-WT8">
+                                        <rect key="frame" x="88" y="622" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibv-m4-nZx">
+                                        <rect key="frame" x="201" y="671" width="27" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
@@ -111,6 +122,7 @@
                     </view>
                     <connections>
                         <outlet property="activityIndicator" destination="ceI-aP-L1L" id="wLK-03-9j2"/>
+                        <outlet property="counterLabel" destination="ibv-m4-nZx" id="IoK-K8-Egi"/>
                         <outlet property="textView" destination="hB6-A3-sZh" id="UhF-BT-Gb7"/>
                     </connections>
                 </viewController>
@@ -139,4 +151,7 @@
             <point key="canvasLocation" x="1154" y="288"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="CounterButton.png" width="700" height="512"/>
+    </resources>
 </document>

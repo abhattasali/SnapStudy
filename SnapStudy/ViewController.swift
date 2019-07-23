@@ -23,6 +23,13 @@ class ViewController: UIViewController
     wordToggleViewController.wt_flashset = testFlashset
   }
   
+    //CounterButton Stuff
+    @IBOutlet weak var counterLabel: UILabel!
+    var counter = 0
+    
+    
+    
+    
   // IBAction methods
   @IBAction func backgroundTapped(_ sender: Any) {
     view.endEditing(true)
@@ -36,6 +43,8 @@ class ViewController: UIViewController
             let cameraButton = UIAlertAction(
                 title: "Take Photo",
                 style: .default) { (alert) -> Void in
+                    self.counter = self.counter + 1
+                    self.counterLabel.text = "\(self.counter)"
                     self.activityIndicator.startAnimating()
                     let imagePicker = UIImagePickerController()
                     imagePicker.delegate = self
@@ -52,6 +61,8 @@ class ViewController: UIViewController
         let libraryButton = UIAlertAction(
             title: "Choose Existing",
             style: .default) { (alert) -> Void in
+                self.counter = self.counter + 1
+                self.counterLabel.text = "\(self.counter)"
                 self.activityIndicator.startAnimating()
                 let imagePicker = UIImagePickerController()
                 imagePicker.delegate = self
@@ -63,7 +74,13 @@ class ViewController: UIViewController
         }
         imagePickerActionSheet.addAction(libraryButton)
         // 4
-        let cancelButton = UIAlertAction(title: "Cancel", style: .cancel)
+    let cancelButton = UIAlertAction(title: "Cancel", style: .cancel, handler: {action in
+        if self.counter != 0{
+            self.counter = self.counter - 1
+            self.counterLabel.text = "\(self.counter)"
+            
+        }
+    })
         imagePickerActionSheet.addAction(cancelButton)
         // 5
         present(imagePickerActionSheet, animated: true)
