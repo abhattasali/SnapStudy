@@ -1,57 +1,34 @@
-/// Copyright (c) 2019 Razeware LLC
-///
-/// Permission is hereby granted, free of charge, to any person obtaining a copy
-/// of this software and associated documentation files (the "Software"), to deal
-/// in the Software without restriction, including without limitation the rights
-/// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-/// copies of the Software, and to permit persons to whom the Software is
-/// furnished to do so, subject to the following conditions:
-///
-/// The above copyright notice and this permission notice shall be included in
-/// all copies or substantial portions of the Software.
-///
-/// Notwithstanding the foregoing, you may not use, copy, modify, merge, publish,
-/// distribute, sublicense, create a derivative work, and/or sell copies of the
-/// Software in any work that is designed, intended, or marketed for pedagogical or
-/// instructional purposes related to programming, coding, application development,
-/// or information technology.  Permission for such use, copying, modification,
-/// merger, publication, distribution, sublicensing, creation of derivative works,
-/// or sale is expressly withheld.
-///
-/// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-/// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-/// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-/// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-/// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-/// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-/// THE SOFTWARE.
-
 import UIKit
 import MobileCoreServices
 import TesseractOCR
 import GPUImage
 import Reductio
-
+import Foundation
 
 class ViewController: UIViewController
 {
   @IBOutlet weak var textView: UITextView!
   @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+  var testFlashset = FlashSet()
   
-  override func viewDidLoad() {
+  override func viewDidLoad()
+  {
     super.viewDidLoad()
-    var testFlashset = FlashSet()
     print(testFlashset.getDate())
     print(testFlashset.getSetName())
   }
   
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    guard let wordToggleViewController = segue.destination as? WordToggleTest else {return }
+    wordToggleViewController.wt_flashset = testFlashset
+  }
   
   // IBAction methods
   @IBAction func backgroundTapped(_ sender: Any) {
     view.endEditing(true)
   }
   
-    @IBAction func takePhoto(_ sender: Any) {
+  @IBAction func takePhoto(_ sender: Any) {
         let imagePickerActionSheet =
             UIAlertController(title: "Snap/Upload Image", message: nil, preferredStyle: .actionSheet)
         // 2
@@ -90,6 +67,7 @@ class ViewController: UIViewController
         imagePickerActionSheet.addAction(cancelButton)
         // 5
         present(imagePickerActionSheet, animated: true)
+    
     }
     
     // Tesseract Image Recognition
@@ -104,21 +82,55 @@ class ViewController: UIViewController
             tesseract.image = preprocessedImage
             tesseract.recognize()
             textView.text = tesseract.recognizedText //IMPORTANT
+          
+          guard let myKeywords = tesseract.recognizedText else { return }
+          Reductio.keywords(from: myKeywords, count: 7)
+          {
+            words in
+            for keyword in words.sorted() {
+              testFlashset.myWordCards[keyword] = Flashcard(keyword: keyword, definition: jsonExtract(key: keyword), image: UIImage())
+            }
+          }
+          /*
+          var fullString = ""
             guard let myKeywords = tesseract.recognizedText else { return }
             //REDUCTIO
-            Reductio.keywords(from: myKeywords, count: 10) {
+            Reductio.keywords(from: myKeywords, count: 5) {
                 words in
                 print(words.sorted())
-                print(words.count)
+                //print(words.count)
+                for w in words {
+                  fullString += w + ": "
+                  fullString += jsonExtract(keyword: w)
+                  fullString += "\n"
+                  fullString += "\n"
+                }
             }
+ 
+            print(fullString)*/
+          
+            //textView.text = fullString
             //print(textView.text!)
-            print("This is a test")
+            //print("This is a test")
         }
         activityIndicator.stopAnimating()
     }
   
+  func cutDef(def: String) -> String
+  {
+    if(def.count <= 500)
+    {
+      return def
+    }
+    var firstPeriod = 500
+    while(firstPeriod != def.count && def[def.index(def.startIndex, offsetBy: firstPeriod)] != ".")
+    {
+      firstPeriod = firstPeriod + 1
+    }
+    return def[0...firstPeriod]
+  }
   
-  func json(keyword: String)
+  func jsonExtract(key: String) -> String
   {
     let url = Bundle.main.url(forResource: "dictionary", withExtension: "json")!
     let data = try! Data(contentsOf: url)
@@ -126,111 +138,34 @@ class ViewController: UIViewController
       // make sure this JSON is in the format we expect
       if let jsonFile = try JSONSerialization.jsonObject(with: data, options: []) as? [String:Any] {
         // try to read out a string array
-        if let definition: String = jsonFile[keyword] as? String
-        {
-          print("        " + definition)
-        }
-        else
-        {
-          print("        No definition available at the time.")
-        }
+        if let definition: String = jsonFile[key] as? String { return cutDef(def: definition) } //DEFINITION
       }
     } catch let error as NSError {
       print("Failed to load: \(error.localizedDescription)")
     }
-  }
-  
-  func test() -> [String]
-  {
-    var m_arr = [String]()
-    let article = "Oculus rarely brags about its industrial design, but one of the best things it’s done is make something so stereotypically geeky look (relatively) natural."
-    // let article = "The quick brown fox jumped over the lazy dog"
-    
-    Reductio.keywords(from: article, count: 6)
-    {
-      words in
-      print(words.sorted())
-      m_arr = words.sorted()
-    }
-    return m_arr
+    return "No definition available at the time."
   }
   
   
 }
-    
-    /*
-    @IBAction func takePhoto(_ sender: Any) {
-    // TODO: Add more code here...
-    // 1
-    let imagePickerActionSheet =
-      UIAlertController(title: "Snap/Upload Image", message: nil, preferredStyle: .actionSheet)
-    // 2
-    if UIImagePickerController.isSourceTypeAvailable(.camera) {
-      let cameraButton = UIAlertAction(
-        title: "Take Photo",
-        style: .default) { (alert) -> Void in
-          self.activityIndicator.startAnimating()
-          let imagePicker = UIImagePickerController()
-          imagePicker.delegate = self
-          imagePicker.sourceType = .camera
-          imagePicker.mediaTypes = [kUTTypeImage as String]
-          self.present(imagePicker, animated: true, completion: {
-            self.activityIndicator.stopAnimating()
-          })
-      }
-      imagePickerActionSheet.addAction(cameraButton)
-    }
-    
-    // 3
-    let libraryButton = UIAlertAction(
-      title: "Choose Existing",
-      style: .default) { (alert) -> Void in
-        self.activityIndicator.startAnimating()
-        let imagePicker = UIImagePickerController()
-        imagePicker.delegate = self
-        imagePicker.sourceType = .photoLibrary
-        imagePicker.mediaTypes = [kUTTypeImage as String]
-        self.present(imagePicker, animated: true, completion: {
-          self.activityIndicator.stopAnimating()
-        })
-    }
-    imagePickerActionSheet.addAction(libraryButton)
-    // 4
-    let cancelButton = UIAlertAction(title: "Cancel", style: .cancel)
-    imagePickerActionSheet.addAction(cancelButton)
-    // 5
-    present(imagePickerActionSheet, animated: true)
-  }
-
-  // Tesseract Image Recognition
-  func performImageRecognition(_ image: UIImage) {
-    let scaledImage = image.scaledImage(1000) ?? image
-    let preprocessedImage = scaledImage.preprocessedImage() ?? scaledImage
-
-    /************************** !!! *************************/
-    if let tesseract = G8Tesseract(language: "eng+fra") {
-      tesseract.engineMode = .tesseractCubeCombined
-      tesseract.pageSegmentationMode = .auto
-      tesseract.image = preprocessedImage
-      tesseract.recognize()
-      textView.text = tesseract.recognizedText //IMPORTANT
-        guard let myKeywords = tesseract.recognizedText else { return }
-    //REDUCTIO
-      Reductio.keywords(from: myKeywords, count: 10) {
-            words in
-            print(words.sorted())
-            print(words.count)
-        }
-      //print(textView.text!)
-      print("This is a test")
-    }
-    activityIndicator.stopAnimating()
-  }
-}*/
 
 
 // MARK: - UINavigationControllerDelegate
 extension ViewController: UINavigationControllerDelegate {
+}
+
+extension String {
+  subscript (bounds: CountableClosedRange<Int>) -> String {
+    let start = index(startIndex, offsetBy: bounds.lowerBound)
+    let end = index(startIndex, offsetBy: bounds.upperBound)
+    return String(self[start...end])
+  }
+  
+  subscript (bounds: CountableRange<Int>) -> String {
+    let start = index(startIndex, offsetBy: bounds.lowerBound)
+    let end = index(startIndex, offsetBy: bounds.upperBound)
+    return String(self[start..<end])
+  }
 }
 
 // MARK: - UIImagePickerControllerDelegate
@@ -280,6 +215,5 @@ extension UIImage
     return filteredImage
   }
   
-  
-  
 }
+

@@ -3,7 +3,7 @@
 //  SnapStudy
 //
 //  Created by Arun Bhattasali on 7/22/19.
-//  Copyright © 2019 Ray Wenderlich. All rights reserved.
+//  Copyright © 2019 Arun Bhattasali. All rights reserved.
 //
 
 import Foundation
@@ -11,9 +11,9 @@ import UIKit
 
 class FlashSet
 {
-    var setName: String                     //Name of Set, Ex: Biology 101
-    var myWordCards: [String: Flashcard]    //Dictionary Keyword, Definition pair
-    var myDate: String                      //Date in Format: "October 8, 2016"
+    public var setName: String                     //Name of Set, Ex: Biology 101
+    public var myWordCards: [String: Flashcard]    //Dictionary Keyword, Definition pair
+    public var myDate: String                      //Date in Format: "October 8, 2016"
     
     init(setName: String = "Bio", myWordCards: [String: Flashcard] = [String: Flashcard]())
     {
@@ -42,15 +42,15 @@ class FlashSet
 
 class Flashcard
 {
-    var keyword: String
-    var definition: String
-    var image: UIImage
+    public var keyword: String
+    public var definition: String
+    public var image: UIImage
     
-    init(keyword: String, definition: String, image: UIImage? = nil)
+    init(keyword: String, definition: String, image: UIImage)
     {
         self.keyword = keyword
         self.definition = definition
-        self.image = image!
+        self.image = image
     }
     
     func getKeyword() -> String {
