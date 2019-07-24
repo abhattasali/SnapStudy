@@ -14,6 +14,7 @@
 		04327479223AF8FF00E65B50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04327477223AF8FF00E65B50 /* LaunchScreen.storyboard */; };
 		98962EF6DA425EB2EF154102 /* Pods_SnapStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D5B8FB206AA94F36104C803 /* Pods_SnapStudy.framework */; };
 		FA5DED7522E7C3E200BB6755 /* CounterButton.png in Resources */ = {isa = PBXBuildFile; fileRef = FA5DED7422E7C3E200BB6755 /* CounterButton.png */; };
+		FA5DED7722E7E50000BB6755 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = FA5DED7622E7E50000BB6755 /* fonts */; };
 		FA6CB25A22E626E500A239AB /* FlashSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CB25922E626E500A239AB /* FlashSet.swift */; };
 		FA6CB26422E69D1300A239AB /* WordToggleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CB26322E69D1300A239AB /* WordToggleTest.swift */; };
 		FA6CB26622E6A4E600A239AB /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = FA6CB26522E6A4E600A239AB /* AppIcon.appiconset */; };
@@ -36,6 +37,7 @@
 		7F96789CEFBB110D975DA524 /* Pods-SnapStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapStudy.debug.xcconfig"; path = "Target Support Files/Pods-SnapStudy/Pods-SnapStudy.debug.xcconfig"; sourceTree = "<group>"; };
 		BC82438701B4AE0012F871E8 /* Pods-SnapStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapStudy.release.xcconfig"; path = "Target Support Files/Pods-SnapStudy/Pods-SnapStudy.release.xcconfig"; sourceTree = "<group>"; };
 		FA5DED7422E7C3E200BB6755 /* CounterButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CounterButton.png; path = AppIcon.appiconset/CounterButton.png; sourceTree = "<group>"; };
+		FA5DED7622E7E50000BB6755 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		FA6CB25922E626E500A239AB /* FlashSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashSet.swift; sourceTree = "<group>"; };
 		FA6CB26322E69D1300A239AB /* WordToggleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordToggleTest.swift; sourceTree = "<group>"; };
 		FA6CB26522E6A4E600A239AB /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppIcon.appiconset; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			children = (
 				FA6CB26322E69D1300A239AB /* WordToggleTest.swift */,
 				FABAA85922DE7ABA00675015 /* dictionary.json */,
+				FA5DED7622E7E50000BB6755 /* fonts */,
 				0432746E223AF8FD00E65B50 /* AppDelegate.swift */,
 				04327470223AF8FD00E65B50 /* ViewController.swift */,
 				FABAA81722D937FF00675015 /* tessdata */,
@@ -179,6 +182,7 @@
 				FABAA81822D937FF00675015 /* tessdata in Resources */,
 				04327476223AF8FF00E65B50 /* Assets.xcassets in Resources */,
 				FA6CB26622E6A4E600A239AB /* AppIcon.appiconset in Resources */,
+				FA5DED7722E7E50000BB6755 /* fonts in Resources */,
 				04327474223AF8FD00E65B50 /* Main.storyboard in Resources */,
 				FABAA85622DD1F2B00675015 /* SnapStudy.png in Resources */,
 			);

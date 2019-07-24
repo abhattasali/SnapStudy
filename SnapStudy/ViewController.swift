@@ -34,7 +34,7 @@ class ViewController: UIViewController
   @IBAction func backgroundTapped(_ sender: Any) {
     view.endEditing(true)
   }
-  
+ 
   @IBAction func takePhoto(_ sender: Any) {
         let imagePickerActionSheet =
             UIAlertController(title: "Snap/Upload Image", message: nil, preferredStyle: .actionSheet)
@@ -86,7 +86,7 @@ class ViewController: UIViewController
         present(imagePickerActionSheet, animated: true)
     
     }
-    
+  
     // Tesseract Image Recognition
     func performImageRecognition(_ image: UIImage) {
         let scaledImage = image.scaledImage(1000) ?? image
@@ -104,65 +104,38 @@ class ViewController: UIViewController
           Reductio.keywords(from: myKeywords, count: 7)
           {
             words in
+            print(words)
             for keyword in words.sorted() {
               testFlashset.myWordCards[keyword] = Flashcard(keyword: keyword, definition: jsonExtract(key: keyword), image: UIImage())
             }
           }
-          /*
-          var fullString = ""
-            guard let myKeywords = tesseract.recognizedText else { return }
-            //REDUCTIO
-            Reductio.keywords(from: myKeywords, count: 5) {
-                words in
-                print(words.sorted())
-                //print(words.count)
-                for w in words {
-                  fullString += w + ": "
-                  fullString += jsonExtract(keyword: w)
-                  fullString += "\n"
-                  fullString += "\n"
-                }
-            }
- 
-            print(fullString)*/
-          
-            //textView.text = fullString
-            //print(textView.text!)
-            //print("This is a test")
         }
         activityIndicator.stopAnimating()
     }
   
-  func cutDef(def: String) -> String
-  {
-    if(def.count <= 500)
-    {
-      return def
-    }
+  func cutDef(def: String) -> String {
+    if(def.count <= 500) { return def }
     var firstPeriod = 500
-    while(firstPeriod != def.count && def[def.index(def.startIndex, offsetBy: firstPeriod)] != ".")
-    {
+    while(firstPeriod != def.count && def[def.index(def.startIndex, offsetBy: firstPeriod)] != ".") {
       firstPeriod = firstPeriod + 1
     }
     return def[0...firstPeriod]
   }
   
-  func jsonExtract(key: String) -> String
-  {
+  func jsonExtract(key: String) -> String {
     let url = Bundle.main.url(forResource: "dictionary", withExtension: "json")!
     let data = try! Data(contentsOf: url)
     do {
       // make sure this JSON is in the format we expect
       if let jsonFile = try JSONSerialization.jsonObject(with: data, options: []) as? [String:Any] {
-        // try to read out a string array
         if let definition: String = jsonFile[key] as? String { return cutDef(def: definition) } //DEFINITION
       }
-    } catch let error as NSError {
+    }
+    catch let error as NSError {
       print("Failed to load: \(error.localizedDescription)")
     }
     return "No definition available at the time."
   }
-  
   
 }
 
