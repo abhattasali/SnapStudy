@@ -27,6 +27,11 @@ class WordToggleTest: UIViewController {
             print("\(w)")
             print("\((wt_flashset.myWordCards[w]?.definition)!)\n\n")
         }
+        
+        for keyword in wt_flashset.myWordCards.keys.sorted()
+        {
+            add(keyword)
+        }
     }
     
     @IBAction func onAddTapped() {
