@@ -19,7 +19,8 @@ class ViewController: UIViewController
   }
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    guard let wordToggleViewController = segue.destination as? WordToggleTest else {return }
+    let toggleNavigationController = segue.destination as? UINavigationController
+    guard let wordToggleViewController = toggleNavigationController?.viewControllers.first as? WordToggleTest else {return}
     wordToggleViewController.wt_flashset = testFlashset
   }
   
