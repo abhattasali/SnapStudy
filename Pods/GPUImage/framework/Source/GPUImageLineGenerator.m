@@ -117,10 +117,10 @@ NSString *const kGPUImageLineGeneratorFragmentShaderString = SHADER_STRING
     }
     
     runSynchronouslyOnVideoProcessingQueue(^{
-        [GPUImageContext setActiveShaderProgram:filterProgram];
+        [GPUImageContext setActiveShaderProgram:self->filterProgram];
         
-        outputFramebuffer = [[GPUImageContext sharedFramebufferCache] fetchFramebufferForSize:[self sizeOfFBO] textureOptions:self.outputTextureOptions onlyTexture:NO];
-        [outputFramebuffer activateFramebuffer];
+        self->outputFramebuffer = [[GPUImageContext sharedFramebufferCache] fetchFramebufferForSize:[self sizeOfFBO] textureOptions:self.outputTextureOptions onlyTexture:NO];
+        [self->outputFramebuffer activateFramebuffer];
         
         glClearColor(0.0, 0.0, 0.0, 0.0);
         glClear(GL_COLOR_BUFFER_BIT);
@@ -149,7 +149,7 @@ NSString *const kGPUImageLineGeneratorFragmentShaderString = SHADER_STRING
 - (void)setLineWidth:(CGFloat)newValue;
 {
     _lineWidth = newValue;
-    [GPUImageContext setActiveShaderProgram:filterProgram];
+    [GPUImageContext setActiveShaderProgram:self->filterProgram];
     glLineWidth(newValue);
 }
 

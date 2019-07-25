@@ -232,11 +232,11 @@ NSString *const kGPUImageToneCurveFragmentShaderString = SHADER_STRING
     runSynchronouslyOnVideoProcessingQueue(^{
         [GPUImageContext useImageProcessingContext];
 
-        if (toneCurveTexture)
+        if (self->toneCurveTexture)
         {
-            glDeleteTextures(1, &toneCurveTexture);
-            toneCurveTexture = 0;
-            free(toneCurveByteArray);
+            glDeleteTextures(1, &self->toneCurveTexture);
+            self->toneCurveTexture = 0;
+            free(self->toneCurveByteArray);
         }
     });
 }

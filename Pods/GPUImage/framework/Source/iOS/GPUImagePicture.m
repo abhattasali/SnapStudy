@@ -255,14 +255,14 @@
     }
     
     runAsynchronouslyOnVideoProcessingQueue(^{        
-        for (id<GPUImageInput> currentTarget in targets)
+        for (id<GPUImageInput> currentTarget in self->targets)
         {
-            NSInteger indexOfObject = [targets indexOfObject:currentTarget];
+            NSInteger indexOfObject = [self->targets indexOfObject:currentTarget];
             NSInteger textureIndexOfTarget = [[targetTextureIndices objectAtIndex:indexOfObject] integerValue];
             
             [currentTarget setCurrentlyReceivingMonochromeInput:NO];
-            [currentTarget setInputSize:pixelSizeOfImage atIndex:textureIndexOfTarget];
-            [currentTarget setInputFramebuffer:outputFramebuffer atIndex:textureIndexOfTarget];
+            [currentTarget setInputSize:self->pixelSizeOfImage atIndex:textureIndexOfTarget];
+            [currentTarget setInputFramebuffer:self->outputFramebuffer atIndex:textureIndexOfTarget];
             [currentTarget newFrameReadyAtTime:kCMTimeIndefinite atIndex:textureIndexOfTarget];
         }
         

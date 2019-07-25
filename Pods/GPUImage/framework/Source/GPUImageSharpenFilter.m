@@ -109,8 +109,8 @@ NSString *const kGPUImageSharpenFragmentShaderString = SHADER_STRING
     sharpnessUniform = [filterProgram uniformIndex:@"sharpness"];
     self.sharpness = 0.0;
     
-    imageWidthFactorUniform = [filterProgram uniformIndex:@"imageWidthFactor"];
-    imageHeightFactorUniform = [filterProgram uniformIndex:@"imageHeightFactor"];
+    self->imageWidthFactorUniform = [filterProgram uniformIndex:@"imageWidthFactor"];
+    self->imageHeightFactorUniform = [filterProgram uniformIndex:@"imageHeightFactor"];
     
     return self;
 }
@@ -118,17 +118,17 @@ NSString *const kGPUImageSharpenFragmentShaderString = SHADER_STRING
 - (void)setupFilterForSize:(CGSize)filterFrameSize;
 {
     runSynchronouslyOnVideoProcessingQueue(^{
-        [GPUImageContext setActiveShaderProgram:filterProgram];
+        [GPUImageContext setActiveShaderProgram:self->filterProgram];
         
         if (GPUImageRotationSwapsWidthAndHeight(inputRotation))
         {
-            glUniform1f(imageWidthFactorUniform, 1.0 / filterFrameSize.height);
-            glUniform1f(imageHeightFactorUniform, 1.0 / filterFrameSize.width);
+            glUniform1f(self->imageWidthFactorUniform, 1.0 / filterFrameSize.height);
+            glUniform1f(self->imageHeightFactorUniform, 1.0 / filterFrameSize.width);
         }
         else
         {
-            glUniform1f(imageWidthFactorUniform, 1.0 / filterFrameSize.width);
-            glUniform1f(imageHeightFactorUniform, 1.0 / filterFrameSize.height);
+            glUniform1f(self->imageWidthFactorUniform, 1.0 / filterFrameSize.width);
+            glUniform1f(self->imageHeightFactorUniform, 1.0 / filterFrameSize.height);
         }
     });
 }

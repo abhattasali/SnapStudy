@@ -55,7 +55,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.89411764705882346" green="0.73725490196078436" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.89803921568627454" green="0.73333333333333328" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="hvW-Dh-jX1"/>
                     </view>
                 </viewController>
@@ -94,12 +94,12 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.89540272951126099" green="0.73887866735458374" blue="0.28221204876899719" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.89803921568627454" green="0.73333333333333328" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </view>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Preview your converted text here." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hB6-A3-sZh">
                                         <rect key="frame" x="8" y="169" width="359" height="434"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.89540272951126099" green="0.73887866735458374" blue="0.28221204876899719" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.89803921568627454" green="0.73333333333333328" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -111,14 +111,14 @@
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kna-D8-UKw">
                                         <rect key="frame" x="0.0" y="763" width="375" height="55"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.89540272951126099" green="0.73887866735458374" blue="0.28221204876899719" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.89803921568627454" green="0.73333333333333328" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z48-IO-9Zi">
                                         <rect key="frame" x="286" y="711" width="89" height="59"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23.5"/>
                                         <state key="normal" title="Done">
-                                            <color key="titleColor" red="0.89540272951126099" green="0.73887866735458374" blue="0.28221204876899719" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="titleColor" red="0.89803921568627454" green="0.73333333333333328" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
                                         <connections>
                                             <segue destination="cp3-xd-3m5" kind="show" id="QvM-sK-vO4"/>
@@ -137,7 +137,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                         <size key="titleShadowOffset" width="1" height="1"/>
                                         <state key="normal" title="Snap/Upload Photo">
-                                            <color key="titleColor" red="0.89540272951126099" green="0.73887866735458374" blue="0.28221204876899719" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="titleColor" red="0.89803921568627454" green="0.73333333333333328" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <color key="titleShadowColor" white="0.0" alpha="0.50486483900000001" colorSpace="calibratedWhite"/>
                                         </state>
                                         <state key="disabled">

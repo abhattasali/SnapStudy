@@ -73,7 +73,7 @@
 //    dispatch_sync(framebufferCacheQueue, ^{
     runSynchronouslyOnVideoProcessingQueue(^{
         NSString *lookupHash = [self hashForSize:framebufferSize textureOptions:textureOptions onlyTexture:onlyTexture];
-        NSNumber *numberOfMatchingTexturesInCache = [framebufferTypeCounts objectForKey:lookupHash];
+        NSNumber *numberOfMatchingTexturesInCache = [self->framebufferTypeCounts objectForKey:lookupHash];
         NSInteger numberOfMatchingTextures = [numberOfMatchingTexturesInCache integerValue];
         
         if ([numberOfMatchingTexturesInCache integerValue] < 1)
@@ -88,12 +88,12 @@
             while ((framebufferFromCache == nil) && (currentTextureID >= 0))
             {
                 NSString *textureHash = [NSString stringWithFormat:@"%@-%ld", lookupHash, (long)currentTextureID];
-                framebufferFromCache = [framebufferCache objectForKey:textureHash];
+                framebufferFromCache = [self->framebufferCache objectForKey:textureHash];
                 // Test the values in the cache first, to see if they got invalidated behind our back
                 if (framebufferFromCache != nil)
                 {
                     // Withdraw this from the cache while it's in use
-                    [framebufferCache removeObjectForKey:textureHash];
+                    [self->framebufferCache removeObjectForKey:textureHash];
                 }
                 currentTextureID--;
             }
