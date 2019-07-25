@@ -106,7 +106,7 @@ NSString *const kGPUImageCrosshairFragmentShaderString = SHADER_STRING
         glClearColor(0.0, 0.0, 0.0, 0.0);
         glClear(GL_COLOR_BUFFER_BIT);
         
-        glVertexAttribPointer(filterPositionAttribute, 2, GL_FLOAT, 0, 0, crosshairCoordinates);
+        glVertexAttribPointer(self->filterPositionAttribute, 2, GL_FLOAT, 0, 0, crosshairCoordinates);
         
         glDrawArrays(GL_POINTS, 0, (GLsizei)numberOfCrosshairs);
         

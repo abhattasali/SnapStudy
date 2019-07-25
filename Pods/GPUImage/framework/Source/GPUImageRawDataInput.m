@@ -99,11 +99,11 @@
 			NSInteger textureIndexOfTarget = [[targetTextureIndices objectAtIndex:indexOfObject] integerValue];
         
 			[currentTarget setInputSize:pixelSizeOfImage atIndex:textureIndexOfTarget];
-            [currentTarget setInputFramebuffer:outputFramebuffer atIndex:textureIndexOfTarget];
+            [currentTarget setInputFramebuffer:self->outputFramebuffer atIndex:textureIndexOfTarget];
 			[currentTarget newFrameReadyAtTime:kCMTimeInvalid atIndex:textureIndexOfTarget];
 		}
 	
-		dispatch_semaphore_signal(dataUpdateSemaphore);
+        dispatch_semaphore_signal(self->dataUpdateSemaphore);
 	});
 }
 

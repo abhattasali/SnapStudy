@@ -96,38 +96,38 @@
         runSynchronouslyOnVideoProcessingQueue(^{
             [GPUImageContext useImageProcessingContext];
 
-            _preferredConversion = kColorConversion709;
+            self->_preferredConversion = kColorConversion709;
             isFullYUVRange       = YES;
-            yuvConversionProgram = [[GPUImageContext sharedImageProcessingContext] programForVertexShaderString:kGPUImageVertexShaderString fragmentShaderString:kGPUImageYUVFullRangeConversionForLAFragmentShaderString];
+            self->yuvConversionProgram = [[GPUImageContext sharedImageProcessingContext] programForVertexShaderString:kGPUImageVertexShaderString fragmentShaderString:kGPUImageYUVFullRangeConversionForLAFragmentShaderString];
 
-            if (!yuvConversionProgram.initialized)
+            if (!self->yuvConversionProgram.initialized)
             {
-                [yuvConversionProgram addAttribute:@"position"];
-                [yuvConversionProgram addAttribute:@"inputTextureCoordinate"];
+                [self->yuvConversionProgram addAttribute:@"position"];
+                [self->yuvConversionProgram addAttribute:@"inputTextureCoordinate"];
 
-                if (![yuvConversionProgram link])
+                if (![self->yuvConversionProgram link])
                 {
-                    NSString *progLog = [yuvConversionProgram programLog];
+                    NSString *progLog = [self->yuvConversionProgram programLog];
                     NSLog(@"Program link log: %@", progLog);
-                    NSString *fragLog = [yuvConversionProgram fragmentShaderLog];
+                    NSString *fragLog = [self->yuvConversionProgram fragmentShaderLog];
                     NSLog(@"Fragment shader compile log: %@", fragLog);
-                    NSString *vertLog = [yuvConversionProgram vertexShaderLog];
+                    NSString *vertLog = [self->yuvConversionProgram vertexShaderLog];
                     NSLog(@"Vertex shader compile log: %@", vertLog);
-                    yuvConversionProgram = nil;
+                    self->yuvConversionProgram = nil;
                     NSAssert(NO, @"Filter shader link failed");
                 }
             }
 
-            yuvConversionPositionAttribute = [yuvConversionProgram attributeIndex:@"position"];
-            yuvConversionTextureCoordinateAttribute = [yuvConversionProgram attributeIndex:@"inputTextureCoordinate"];
-            yuvConversionLuminanceTextureUniform = [yuvConversionProgram uniformIndex:@"luminanceTexture"];
-            yuvConversionChrominanceTextureUniform = [yuvConversionProgram uniformIndex:@"chrominanceTexture"];
-            yuvConversionMatrixUniform = [yuvConversionProgram uniformIndex:@"colorConversionMatrix"];
+            self->yuvConversionPositionAttribute = [self->yuvConversionProgram attributeIndex:@"position"];
+            self->yuvConversionTextureCoordinateAttribute = [self->yuvConversionProgram attributeIndex:@"inputTextureCoordinate"];
+            self->yuvConversionLuminanceTextureUniform = [self->yuvConversionProgram uniformIndex:@"luminanceTexture"];
+            self->yuvConversionChrominanceTextureUniform = [self->yuvConversionProgram uniformIndex:@"chrominanceTexture"];
+            self->yuvConversionMatrixUniform = [self->yuvConversionProgram uniformIndex:@"colorConversionMatrix"];
 
-            [GPUImageContext setActiveShaderProgram:yuvConversionProgram];
+            [GPUImageContext setActiveShaderProgram:self->yuvConversionProgram];
 
-            glEnableVertexAttribArray(yuvConversionPositionAttribute);
-            glEnableVertexAttribArray(yuvConversionTextureCoordinateAttribute);
+            glEnableVertexAttribArray(self->yuvConversionPositionAttribute);
+            glEnableVertexAttribArray(self->yuvConversionTextureCoordinateAttribute);
         });
     }
 }
@@ -297,9 +297,9 @@
 - (void)processPlayerItem
 {
     runSynchronouslyOnVideoProcessingQueue(^{
-        displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(displayLinkCallback:)];
-        [displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
-        [displayLink setPaused:YES];
+        self->displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(displayLinkCallback:)];
+        [self->displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
+        [self->displayLink setPaused:YES];
 
         dispatch_queue_t videoProcessingQueue = [GPUImageContext sharedContextQueue];
         NSMutableDictionary *pixBuffAttributes = [NSMutableDictionary dictionary];
@@ -309,18 +309,18 @@
         else {
             [pixBuffAttributes setObject:@(kCVPixelFormatType_32BGRA) forKey:(id)kCVPixelBufferPixelFormatTypeKey];
         }
-        playerItemOutput = [[AVPlayerItemVideoOutput alloc] initWithPixelBufferAttributes:pixBuffAttributes];
-        [playerItemOutput setDelegate:self queue:videoProcessingQueue];
+        self->playerItemOutput = [[AVPlayerItemVideoOutput alloc] initWithPixelBufferAttributes:pixBuffAttributes];
+        [self->playerItemOutput setDelegate:self queue:videoProcessingQueue];
 
-        [_playerItem addOutput:playerItemOutput];
-        [playerItemOutput requestNotificationOfMediaDataChangeWithAdvanceInterval:0.1];
+        [self->_playerItem addOutput:self->playerItemOutput];
+        [self->playerItemOutput requestNotificationOfMediaDataChangeWithAdvanceInterval:0.1];
     });
 }
 
 - (void)outputMediaDataWillChange:(AVPlayerItemOutput *)sender
 {
 	// Restart display link.
-	[displayLink setPaused:NO];
+	[self->displayLink setPaused:NO];
 }
 
 - (void)displayLinkCallback:(CADisplayLink *)sender
@@ -333,11 +333,11 @@
 	// Calculate the nextVsync time which is when the screen will be refreshed next.
 	CFTimeInterval nextVSync = ([sender timestamp] + [sender duration]);
 
-	CMTime outputItemTime = [playerItemOutput itemTimeForHostTime:nextVSync];
+	CMTime outputItemTime = [self->playerItemOutput itemTimeForHostTime:nextVSync];
 
-	if ([playerItemOutput hasNewPixelBufferForItemTime:outputItemTime]) {
+	if ([self->playerItemOutput hasNewPixelBufferForItemTime:outputItemTime]) {
         __unsafe_unretained GPUImageMovie *weakSelf = self;
-		CVPixelBufferRef pixelBuffer = [playerItemOutput copyPixelBufferForItemTime:outputItemTime itemTimeForDisplay:NULL];
+		CVPixelBufferRef pixelBuffer = [self->playerItemOutput copyPixelBufferForItemTime:outputItemTime itemTimeForDisplay:NULL];
         if( pixelBuffer )
             runSynchronouslyOnVideoProcessingQueue(^{
                 [weakSelf processMovieFrame:pixelBuffer withSampleTime:outputItemTime];
@@ -393,7 +393,7 @@
     }
     else if (synchronizedMovieWriter != nil)
     {
-        if (reader.status == AVAssetReaderStatusCompleted)
+        if (self->reader.status == AVAssetReaderStatusCompleted)
         {
             [self endProcessing];
         }
@@ -403,7 +403,7 @@
 
 - (BOOL)readNextAudioSampleFromOutput:(AVAssetReaderOutput *)readerAudioTrackOutput;
 {
-    if (reader.status == AVAssetReaderStatusReading && ! audioEncodingIsFinished)
+    if (self->reader.status == AVAssetReaderStatusReading && ! audioEncodingIsFinished)
     {
         CMSampleBufferRef audioSampleBufferRef = [readerAudioTrackOutput copyNextSampleBuffer];
         if (audioSampleBufferRef)
@@ -424,8 +424,8 @@
     }
     else if (synchronizedMovieWriter != nil)
     {
-        if (reader.status == AVAssetReaderStatusCompleted || reader.status == AVAssetReaderStatusFailed ||
-            reader.status == AVAssetReaderStatusCancelled)
+        if (self->reader.status == AVAssetReaderStatusCompleted || self->reader.status == AVAssetReaderStatusFailed ||
+            self->reader.status == AVAssetReaderStatusCancelled)
         {
             [self endProcessing];
         }
