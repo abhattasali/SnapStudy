@@ -209,6 +209,10 @@
                                 <rect key="frame" x="164" y="590" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="computeToggle:" destination="bJM-JW-91V" eventType="touchUpInside" id="QAD-YB-PMa"/>
+                                    <segue destination="FfC-iX-4NS" kind="showDetail" id="WB7-YA-aBv"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -236,10 +240,33 @@
             </objects>
             <point key="canvasLocation" x="1752.8" y="251.97044334975371"/>
         </scene>
+        <!--Card Test-->
+        <scene sceneID="NSK-hJ-8Ka">
+            <objects>
+                <viewController id="FfC-iX-4NS" customClass="UICardTest" customModule="SnapStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cHy-uT-WwR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TEST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qZ-2W-85o">
+                                <rect key="frame" x="166" y="279" width="41" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="1HA-Tf-bCA"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xrZ-a4-iAL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2591" y="255"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="6q9-fk-aDY">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bLB-ic-Df6" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jPn-1e-Ucd" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" largeTitles="YES" id="iye-NS-dJp">
@@ -252,6 +279,7 @@
                         <segue destination="bJM-JW-91V" kind="relationship" relationship="rootViewController" id="bN9-hT-Gf3"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bLB-ic-Df6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="911" y="251"/>
         </scene>

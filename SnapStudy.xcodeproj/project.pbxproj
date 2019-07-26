@@ -18,6 +18,7 @@
 		FA6CB25A22E626E500A239AB /* FlashSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CB25922E626E500A239AB /* FlashSet.swift */; };
 		FA6CB26422E69D1300A239AB /* WordToggleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CB26322E69D1300A239AB /* WordToggleTest.swift */; };
 		FA6CB26622E6A4E600A239AB /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = FA6CB26522E6A4E600A239AB /* AppIcon.appiconset */; };
+		FA973F7722EB70A500B79D03 /* UICardTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA973F7622EB70A500B79D03 /* UICardTest.swift */; };
 		FABAA81822D937FF00675015 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = FABAA81722D937FF00675015 /* tessdata */; };
 		FABAA85622DD1F2B00675015 /* SnapStudy.png in Resources */ = {isa = PBXBuildFile; fileRef = FABAA85522DD1F2A00675015 /* SnapStudy.png */; };
 		FABAA85A22DE7ABA00675015 /* dictionary.json in Resources */ = {isa = PBXBuildFile; fileRef = FABAA85922DE7ABA00675015 /* dictionary.json */; };
@@ -41,6 +42,7 @@
 		FA6CB25922E626E500A239AB /* FlashSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashSet.swift; sourceTree = "<group>"; };
 		FA6CB26322E69D1300A239AB /* WordToggleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordToggleTest.swift; sourceTree = "<group>"; };
 		FA6CB26522E6A4E600A239AB /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppIcon.appiconset; sourceTree = "<group>"; };
+		FA973F7622EB70A500B79D03 /* UICardTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICardTest.swift; sourceTree = "<group>"; };
 		FABAA81722D937FF00675015 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		FABAA85522DD1F2A00675015 /* SnapStudy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SnapStudy.png; sourceTree = "<group>"; };
 		FABAA85922DE7ABA00675015 /* dictionary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dictionary.json; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				FABAA85522DD1F2A00675015 /* SnapStudy.png */,
 				0432747A223AF8FF00E65B50 /* Info.plist */,
 				FA6CB25922E626E500A239AB /* FlashSet.swift */,
+				FA973F7622EB70A500B79D03 /* UICardTest.swift */,
 			);
 			path = SnapStudy;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA973F7722EB70A500B79D03 /* UICardTest.swift in Sources */,
 				FA6CB25A22E626E500A239AB /* FlashSet.swift in Sources */,
 				FA6CB26422E69D1300A239AB /* WordToggleTest.swift in Sources */,
 				04327471223AF8FD00E65B50 /* ViewController.swift in Sources */,
