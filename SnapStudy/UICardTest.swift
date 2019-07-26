@@ -16,10 +16,13 @@ class UICardTest: UIViewController {
         super.viewDidLoad()
         
         print("test on uiCardVC: \(card_flashset.getSetName())")
-        /*for w in card_flashset.myWordCards.keys {
+        print()
+        print()
+        print()
+        for w in card_flashset.myWordCards.keys {
             print("\(w)")
             print("\((card_flashset.myWordCards[w]?.definition)!)\n\n")
-        }*/
+        }
 
       
     }

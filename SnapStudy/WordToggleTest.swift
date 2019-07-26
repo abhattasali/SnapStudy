@@ -51,6 +51,7 @@ class WordToggleTest: UIViewController {
                     let cellKeyword = terms[cellNum]
                     if(switchCell.isOn == false) {
                         wt_flashset.myWordCards[cellKeyword] = nil      //removes
+                        print("Removing \(cellKeyword)")
                     }
                 }
             }
