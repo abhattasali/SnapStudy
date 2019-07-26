@@ -13,6 +13,11 @@
 		04327476223AF8FF00E65B50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04327475223AF8FF00E65B50 /* Assets.xcassets */; };
 		04327479223AF8FF00E65B50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04327477223AF8FF00E65B50 /* LaunchScreen.storyboard */; };
 		98962EF6DA425EB2EF154102 /* Pods_SnapStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D5B8FB206AA94F36104C803 /* Pods_SnapStudy.framework */; };
+		D41AD96D22EA4ED400AE377B /* homeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41AD96C22EA4ED400AE377B /* homeScreen.swift */; };
+		D475F48222EB7E03008241F7 /* acc-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D475F48122EB7E03008241F7 /* acc-icon.png */; };
+		D475F48422EB7E0A008241F7 /* add-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D475F48322EB7E0A008241F7 /* add-icon.png */; };
+		D475F48622EB7E17008241F7 /* home-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D475F48522EB7E17008241F7 /* home-icon.png */; };
+		D475F48822EBB5A1008241F7 /* peppa-pig-event-header.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D475F48722EBB5A1008241F7 /* peppa-pig-event-header.jpg */; };
 		FA5DED7522E7C3E200BB6755 /* CounterButton.png in Resources */ = {isa = PBXBuildFile; fileRef = FA5DED7422E7C3E200BB6755 /* CounterButton.png */; };
 		FA5DED7722E7E50000BB6755 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = FA5DED7622E7E50000BB6755 /* fonts */; };
 		FA6CB25A22E626E500A239AB /* FlashSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CB25922E626E500A239AB /* FlashSet.swift */; };
@@ -36,6 +41,11 @@
 		33A582C1166464D0705C3702 /* Pods-SnapStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapStudy.debug.xcconfig"; path = "Target Support Files/Pods-SnapStudy/Pods-SnapStudy.debug.xcconfig"; sourceTree = "<group>"; };
 		7F96789CEFBB110D975DA524 /* Pods-SnapStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapStudy.debug.xcconfig"; path = "Target Support Files/Pods-SnapStudy/Pods-SnapStudy.debug.xcconfig"; sourceTree = "<group>"; };
 		BC82438701B4AE0012F871E8 /* Pods-SnapStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapStudy.release.xcconfig"; path = "Target Support Files/Pods-SnapStudy/Pods-SnapStudy.release.xcconfig"; sourceTree = "<group>"; };
+		D41AD96C22EA4ED400AE377B /* homeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeScreen.swift; sourceTree = "<group>"; };
+		D475F48122EB7E03008241F7 /* acc-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "acc-icon.png"; path = "AppIcon.appiconset/acc-icon.png"; sourceTree = "<group>"; };
+		D475F48322EB7E0A008241F7 /* add-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "add-icon.png"; path = "AppIcon.appiconset/add-icon.png"; sourceTree = "<group>"; };
+		D475F48522EB7E17008241F7 /* home-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "home-icon.png"; path = "AppIcon.appiconset/home-icon.png"; sourceTree = "<group>"; };
+		D475F48722EBB5A1008241F7 /* peppa-pig-event-header.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "peppa-pig-event-header.jpg"; path = "../../../peppa-pig-event-header.jpg"; sourceTree = "<group>"; };
 		FA5DED7422E7C3E200BB6755 /* CounterButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CounterButton.png; path = AppIcon.appiconset/CounterButton.png; sourceTree = "<group>"; };
 		FA5DED7622E7E50000BB6755 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		FA6CB25922E626E500A239AB /* FlashSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashSet.swift; sourceTree = "<group>"; };
@@ -87,6 +97,11 @@
 				FABAA81722D937FF00675015 /* tessdata */,
 				04327477223AF8FF00E65B50 /* LaunchScreen.storyboard */,
 				04327472223AF8FD00E65B50 /* Main.storyboard */,
+				D475F48522EB7E17008241F7 /* home-icon.png */,
+				D475F48722EBB5A1008241F7 /* peppa-pig-event-header.jpg */,
+				D475F48322EB7E0A008241F7 /* add-icon.png */,
+				D41AD96C22EA4ED400AE377B /* homeScreen.swift */,
+				D475F48122EB7E03008241F7 /* acc-icon.png */,
 				FA5DED7422E7C3E200BB6755 /* CounterButton.png */,
 				04327475223AF8FF00E65B50 /* Assets.xcassets */,
 				FA6CB26522E6A4E600A239AB /* AppIcon.appiconset */,
@@ -178,12 +193,16 @@
 			files = (
 				FA5DED7522E7C3E200BB6755 /* CounterButton.png in Resources */,
 				04327479223AF8FF00E65B50 /* LaunchScreen.storyboard in Resources */,
+				D475F48222EB7E03008241F7 /* acc-icon.png in Resources */,
 				FABAA85A22DE7ABA00675015 /* dictionary.json in Resources */,
+				D475F48822EBB5A1008241F7 /* peppa-pig-event-header.jpg in Resources */,
 				FABAA81822D937FF00675015 /* tessdata in Resources */,
 				04327476223AF8FF00E65B50 /* Assets.xcassets in Resources */,
 				FA6CB26622E6A4E600A239AB /* AppIcon.appiconset in Resources */,
+				D475F48622EB7E17008241F7 /* home-icon.png in Resources */,
 				FA5DED7722E7E50000BB6755 /* fonts in Resources */,
 				04327474223AF8FD00E65B50 /* Main.storyboard in Resources */,
+				D475F48422EB7E0A008241F7 /* add-icon.png in Resources */,
 				FABAA85622DD1F2B00675015 /* SnapStudy.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -238,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA6CB25A22E626E500A239AB /* FlashSet.swift in Sources */,
+				D41AD96D22EA4ED400AE377B /* homeScreen.swift in Sources */,
 				FA6CB26422E69D1300A239AB /* WordToggleTest.swift in Sources */,
 				04327471223AF8FD00E65B50 /* ViewController.swift in Sources */,
 				0432746F223AF8FD00E65B50 /* AppDelegate.swift in Sources */,

@@ -17,6 +17,16 @@ class WordToggleTest: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    
+    
+    //for home screen
+    class HeadlineTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var FlashSetName: UILabel!
+    @IBOutlet weak var FlashSetDate: UILabel!
+    }
+    
+    
     var wt_flashset: FlashSet!
     var terms = [String]()
     

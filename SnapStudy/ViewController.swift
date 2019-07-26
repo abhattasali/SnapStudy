@@ -11,6 +11,7 @@ class ViewController: UIViewController
   @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
   var testFlashset = FlashSet()
   
+
   override func viewDidLoad()
   {
     super.viewDidLoad()
@@ -28,8 +29,7 @@ class ViewController: UIViewController
     @IBOutlet weak var counterLabel: UILabel!
     var counter = 0
     
-    
-    
+  
     
   // IBAction methods
   @IBAction func backgroundTapped(_ sender: Any) {
