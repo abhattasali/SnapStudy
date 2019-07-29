@@ -25,10 +25,8 @@ class FlashDisplay: CardsViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         populate()
-        // Comment out one of the CardPartViewController in the card Array to change cards and/or their order
-        
-        
-        
+       
+    
         //loadCards(cards: cards)
         /*cards.append(CardPartPagedViewCardController())
         cards.append(CardPartPagedViewCardController())

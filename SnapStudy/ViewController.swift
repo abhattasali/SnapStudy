@@ -9,6 +9,7 @@ class ViewController: UIViewController
 {
   @IBOutlet weak var textView: UITextView!
   @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+  @IBOutlet weak var loadingIcon: UIImageView!
   var testFlashset = FlashSet()
   
   override func viewDidLoad()
@@ -46,13 +47,18 @@ class ViewController: UIViewController
                 style: .default) { (alert) -> Void in
                     self.counter = self.counter + 1
                     self.counterLabel.text = "\(self.counter)"
-                    self.activityIndicator.startAnimating()
+                    //self.activityIndicator.startAnimating()
+                    self.loadingIcon.image = UIImage.animatedImageNamed("Loading-Book_", duration: 3.0)
+                    UIView.animate(withDuration: 0.2) { self.loadingIcon.alpha = 1.0
+                    }
                     let imagePicker = UIImagePickerController()
                     imagePicker.delegate = self
                     imagePicker.sourceType = .camera
                     imagePicker.mediaTypes = [kUTTypeImage as String]
                     self.present(imagePicker, animated: true, completion: {
-                        self.activityIndicator.stopAnimating()
+                        //self.activityIndicator.stopAnimating()
+                        UIView.animate(withDuration: 0.2) { self.loadingIcon.alpha = 0
+                        }
                     })
             }
             imagePickerActionSheet.addAction(cameraButton)
@@ -64,13 +70,18 @@ class ViewController: UIViewController
             style: .default) { (alert) -> Void in
                 self.counter = self.counter + 1
                 self.counterLabel.text = "\(self.counter)"
-                self.activityIndicator.startAnimating()
+                //self.activityIndicator.startAnimating()
+                self.loadingIcon.image = UIImage.animatedImageNamed("Loading-Book_", duration: 3.0)
+                UIView.animate(withDuration: 0.2) { self.loadingIcon.alpha = 1.0
+                }
                 let imagePicker = UIImagePickerController()
                 imagePicker.delegate = self
                 imagePicker.sourceType = .photoLibrary
                 imagePicker.mediaTypes = [kUTTypeImage as String]
                 self.present(imagePicker, animated: true, completion: {
-                    self.activityIndicator.stopAnimating()
+                    //self.activityIndicator.stopAnimating()
+                    UIView.animate(withDuration: 0.2) { self.loadingIcon.alpha = 0
+                    }
                 })
         }
         imagePickerActionSheet.addAction(libraryButton)
@@ -111,7 +122,9 @@ class ViewController: UIViewController
             }
           }
         }
-        activityIndicator.stopAnimating()
+        //activityIndicator.stopAnimating()
+        UIView.animate(withDuration: 0.2) { self.loadingIcon.alpha = 0
+        }
     }
   
   func cutDef(def: String) -> String {
@@ -169,7 +182,9 @@ extension ViewController: UIImagePickerControllerDelegate {
         dismiss(animated: true)
         return
     }
-    activityIndicator.startAnimating()
+    //activityIndicator.startAnimating()
+    UIView.animate(withDuration: 0.2) { self.loadingIcon.alpha = 1.0
+    }
     dismiss(animated: true) {
       self.performImageRecognition(selectedPhoto)
     }

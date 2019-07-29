@@ -20,7 +20,7 @@ class CardPartPagedViewCardController: CardPartsViewController {
     var key : String = ""
     var definition : String = ""
     
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,20 +29,34 @@ class CardPartPagedViewCardController: CardPartsViewController {
         cardPartTextView.textColor = UIColor.white
         //cardPartTextView.textColor = UIColor(red: 229.0/255.0, green: 187.0/255.0, blue: 72.0/255.0, alpha: 1.0)
         
-        var stackViews: [CardPartStackView] = []
+        var stackViews: [CardPartStackView] = []    //1st Frame is a Keyword, Second Frame is a Definitino
         
-        for frames in 0...1 {   //number of keywords
+       /* let sv = CardPartStackView()
+        sv.axis = .vertical
+        sv.spacing = 8
+        */
+        
+        
+        
+        for _ in 0...1 {   //number of keywords
             
             let sv = CardPartStackView()
             sv.axis = .vertical
-            sv.spacing = 8
+            sv.spacing = 2
             stackViews.append(sv)
             
+          //  let titlePart = CardPartTitleView(type: .titleOnly)
+           // titlePart.title = key
+            //TEXT
+            let titleP = CardPartLabel()
+            titleP.text = key
+            titleP.textAlignment = .center
+            //FONT
+            var descriptor = UIFontDescriptor(name: "Roboto", size: 24.0)
+            descriptor = descriptor.addingAttributes([UIFontDescriptor.AttributeName.traits : [UIFontDescriptor.TraitKey.weight : UIFont.Weight.light]])
+            titleP.font = UIFont(descriptor: descriptor, size: 24.0)
             
-            
-            let titlePart = CardPartTitleView(type: .titleOnly)
-            titlePart.title = key
-            sv.addArrangedSubview(titlePart)
+            sv.addArrangedSubview(titleP)
             
             let title = CardPartTextView(type: .normal)
             title.text = definition
@@ -52,7 +66,7 @@ class CardPartPagedViewCardController: CardPartsViewController {
             //let testPic = CardPartImageView(image: "")
         }
         
-        let cardPartPagedView = CardPartPagedView(withPages: stackViews, andHeight: 300)
+        let cardPartPagedView = CardPartPagedView(withPages: stackViews, andHeight: 150)
         setupCardParts([cardPartTextView, cardPartPagedView])
     }
 }
