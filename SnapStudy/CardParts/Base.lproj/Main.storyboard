@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="oZ0-iC-pit">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="PPn-f9-G2D">
+            <objects>
+                <viewController id="xtc-9G-QsZ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZXg-m1-yZv"/>
+                        <viewControllerLayoutGuide type="bottom" id="06f-uO-ovN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c0F-WJ-gX3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SEh-05-2MH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2148" y="-921"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aYb-GK-15o">
+            <objects>
+                <viewController id="oZ0-iC-pit" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Shg-U5-yXn"/>
+                        <viewControllerLayoutGuide type="bottom" id="sPC-vd-cPJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lzq-ld-k5u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CuK-KU-jLF">
+                                <rect key="frame" x="0.0" y="125" width="375" height="687"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="mXt-Z6-fhV" kind="embed" id="cii-hm-dEi"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U1d-lj-fhQ">
+                                <rect key="frame" x="144" y="52" width="46" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="xtc-9G-QsZ" kind="show" id="pEh-Ip-vzt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.57054792089999995" green="1" blue="0.30734387860000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Whx-VE-je1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-967.20000000000005" y="-670.19704433497543"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="ABy-xY-56c">
+            <objects>
+                <viewController id="mXt-Z6-fhV" customClass="MainViewController" customModule="CardParts_Example" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Njq-rR-ST0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-31.199999999999999" y="-572.66009852216746"/>
+        </scene>
+    </scenes>
+</document>

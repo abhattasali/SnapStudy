@@ -199,21 +199,6 @@
             </objects>
             <point key="canvasLocation" x="1479" y="-487"/>
         </scene>
-        <!--Card Test-->
-        <scene sceneID="1Og-V0-qjj">
-            <objects>
-                <viewController id="n3W-OU-2Kx" customClass="UICardTest" customModule="SnapStudy" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="1cS-XS-04L">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="672"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="q8j-rc-wNN"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fdR-sW-nUg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2578" y="233"/>
-        </scene>
         <!--Item-->
         <scene sceneID="tIn-r8-8gh">
             <objects>
@@ -344,7 +329,7 @@
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="computeToggle:" destination="Lb8-p9-4Hh" eventType="touchUpInside" id="Bn3-jk-3UR"/>
-                                    <segue destination="n3W-OU-2Kx" kind="show" id="GwE-IN-fOx"/>
+                                    <segue destination="F8i-xS-mIO" kind="showDetail" id="UXC-w1-6Ml"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -373,6 +358,50 @@
             </objects>
             <point key="canvasLocation" x="1478" y="252"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="XjJ-GT-n8o">
+            <objects>
+                <viewController id="F8i-xS-mIO" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XaV-Ly-siR"/>
+                        <viewControllerLayoutGuide type="bottom" id="9ci-03-jT2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yZC-A1-rQR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D0J-T1-3Ur">
+                                <rect key="frame" x="0.0" y="125" width="375" height="687"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="O4v-Hu-vAu" kind="embed" id="6CQ-Zm-bdU"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbw-m8-ccf">
+                                <rect key="frame" x="144" y="52" width="46" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="14S-p8-bI0" kind="showDetail" id="muy-cs-vqW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="sYY-79-v5U"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jzd-Dm-IaX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2502" y="269"/>
+        </scene>
+        <!--Flashcards Display-->
+        <scene sceneID="zwQ-RY-mn8">
+            <objects>
+                <viewController id="O4v-Hu-vAu" userLabel="Flashcards Display" customClass="FlashDisplay" customModule="SnapStudy" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Ta-C9-5D8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3434" y="288"/>
+        </scene>
     </scenes>
     <resources>
         <image name="CounterButton.png" width="700" height="512"/>
@@ -381,4 +410,7 @@
         <image name="home-icon.png" width="512" height="512"/>
         <image name="imageedit_8_7978368360" width="144" height="158"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="muy-cs-vqW"/>
+    </inferredMetricsTieBreakers>
 </document>

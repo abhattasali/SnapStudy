@@ -35,8 +35,9 @@ class WordToggleTest: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let cardController = segue.destination as? UICardTest else {return}
-            cardController.card_flashset = wt_flashset
+        let flashDisplayNavigator = segue.destination as? UINavigationController
+        guard let flashDisplayController = flashDisplayNavigator?.viewControllers.first as? FlashDisplay else {return}
+        flashDisplayController.flashset = wt_flashset
     }
     
     //BUTTON COMPUTATION

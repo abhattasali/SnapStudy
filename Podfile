@@ -5,4 +5,5 @@ target 'SnapStudy' do
   pod 'Reductio'
   pod 'TesseractOCRiOS'
   pod 'GPUImage'
+  pod 'CardParts'
 end
