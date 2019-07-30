@@ -379,21 +379,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EhM-kR-jG0">
+                                <rect key="frame" x="0.0" y="138" width="375" height="640"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="i2g-BM-i8c" kind="embed" id="ayq-AP-CJX"/>
+                                </connections>
+                            </containerView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbw-m8-ccf">
-                                <rect key="frame" x="144" y="52" width="46" height="65"/>
+                                <rect key="frame" x="150" y="52" width="74" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Home"/>
                                 <connections>
                                     <segue destination="14S-p8-bI0" kind="showDetail" id="muy-cs-vqW"/>
                                 </connections>
                             </button>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EhM-kR-jG0">
-                                <rect key="frame" x="0.0" y="159" width="375" height="619"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <connections>
-                                    <segue destination="i2g-BM-i8c" kind="embed" id="ayq-AP-CJX"/>
-                                </connections>
-                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="sYY-79-v5U"/>
@@ -409,7 +409,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h4P-ZC-WkR" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="i2g-BM-i8c" customClass="FlashDisplay" customModule="SnapStudy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3rg-4I-wqM">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="619"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="640"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="exs-H1-RAA"/>
