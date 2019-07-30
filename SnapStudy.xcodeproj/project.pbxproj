@@ -22,7 +22,6 @@
 		FA6CB26622E6A4E600A239AB /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = FA6CB26522E6A4E600A239AB /* AppIcon.appiconset */; };
 		FA973F7722EB70A500B79D03 /* UICardTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA973F7622EB70A500B79D03 /* UICardTest.swift */; };
 		FA973F7922EBC78700B79D03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA973F7822EBC78700B79D03 /* Main.storyboard */; };
-		FA973F7B22EBC7A200B79D03 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = FA973F7A22EBC7A200B79D03 /* Images */; };
 		FABAA81822D937FF00675015 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = FABAA81722D937FF00675015 /* tessdata */; };
 		FABAA85622DD1F2B00675015 /* SnapStudy.png in Resources */ = {isa = PBXBuildFile; fileRef = FABAA85522DD1F2A00675015 /* SnapStudy.png */; };
 		FABAA85A22DE7ABA00675015 /* dictionary.json in Resources */ = {isa = PBXBuildFile; fileRef = FABAA85922DE7ABA00675015 /* dictionary.json */; };
@@ -68,7 +67,6 @@
 		FA6CB26522E6A4E600A239AB /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppIcon.appiconset; sourceTree = "<group>"; };
 		FA973F7622EB70A500B79D03 /* UICardTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICardTest.swift; sourceTree = "<group>"; };
 		FA973F7822EBC78700B79D03 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		FA973F7A22EBC7A200B79D03 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
 		FABAA81722D937FF00675015 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		FABAA85522DD1F2A00675015 /* SnapStudy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SnapStudy.png; sourceTree = "<group>"; };
 		FABAA85922DE7ABA00675015 /* dictionary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dictionary.json; sourceTree = "<group>"; };
@@ -111,7 +109,6 @@
 				FABAA85922DE7ABA00675015 /* dictionary.json */,
 				FA5DED7622E7E50000BB6755 /* fonts */,
 				0432746E223AF8FD00E65B50 /* AppDelegate.swift */,
-				FA973F7A22EBC7A200B79D03 /* Images */,
 				04327470223AF8FD00E65B50 /* ViewController.swift */,
 				04327477223AF8FF00E65B50 /* LaunchScreen.storyboard */,
 				FA0F316922EF756600893CF4 /* FlashDisplay.swift */,
@@ -235,7 +232,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA973F7B22EBC7A200B79D03 /* Images in Resources */,
 				FA5DED7522E7C3E200BB6755 /* CounterButton.png in Resources */,
 				FA973F7922EBC78700B79D03 /* Main.storyboard in Resources */,
 				04327479223AF8FF00E65B50 /* LaunchScreen.storyboard in Resources */,
@@ -444,7 +440,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P22VN99C27;
+				DEVELOPMENT_TEAM = "";
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/SnapStudy/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -466,7 +462,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P22VN99C27;
+				DEVELOPMENT_TEAM = "";
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/SnapStudy/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
