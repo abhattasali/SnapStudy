@@ -34,11 +34,12 @@ class CardPartPagedViewCardController: CardPartsViewController {
         /*******FRAME 1: Keyword********/
         let sv1 = CardPartStackView()
         sv1.axis = .vertical
-        sv1.spacing = 2
+        sv1.spacing = 8
         stackViews.append(sv1)
         //let titlePart = CardPartTitleView(type: .titleOnly)
         let word = CardPartLabel()
         word.text = key
+        word.textColor = .white
         word.textAlignment = .center
         var descriptor = UIFontDescriptor(name: "Roboto", size: 30.0)
         descriptor = descriptor.addingAttributes([UIFontDescriptor.AttributeName.traits : [UIFontDescriptor.TraitKey.weight: UIFont.Weight.light]])
@@ -48,14 +49,14 @@ class CardPartPagedViewCardController: CardPartsViewController {
         /*******FRAME 2: Keyword********/
         let sv2 = CardPartStackView()
         sv2.axis = .vertical
-        sv2.spacing = 2
+        sv2.spacing = 8
         stackViews.append(sv2)
         let cardDef = CardPartTextView(type: .normal)
         cardDef.text = self.definition
         cardDef.textColor = .white
-        var defDescriptor = UIFontDescriptor(name: "Roboto", size: 13.0)
+        var defDescriptor = UIFontDescriptor(name: "Roboto", size: 14.0)
         defDescriptor = defDescriptor.addingAttributes([UIFontDescriptor.AttributeName.traits : [UIFontDescriptor.TraitKey.weight : UIFont.Weight.light]])
-        cardDef.font = UIFont(descriptor: defDescriptor, size: 13.0)
+        cardDef.font = UIFont(descriptor: defDescriptor, size: 14.0)
         cardDef.textAlignment = .center
         sv2.addArrangedSubview(cardDef)
         /*
