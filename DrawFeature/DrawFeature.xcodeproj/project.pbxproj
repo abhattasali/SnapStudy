@@ -16,6 +16,7 @@
 		D4F02A6922DAFB7600CFC462 /* DrawFeatureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F02A6822DAFB7600CFC462 /* DrawFeatureUITests.swift */; };
 		D4F02A7722DBC6B900CFC462 /* Canvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F02A7622DBC6B900CFC462 /* Canvas.swift */; };
 		D4F02A7922DC21D300CFC462 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F02A7822DC21D300CFC462 /* Line.swift */; };
+		FA0F31BF22F0B79700893CF4 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F31BE22F0B79700893CF4 /* NextViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		D4F02A6A22DAFB7600CFC462 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4F02A7622DBC6B900CFC462 /* Canvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Canvas.swift; sourceTree = "<group>"; };
 		D4F02A7822DC21D300CFC462 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		FA0F31BE22F0B79700893CF4 /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				D4F02A5422DAFB7600CFC462 /* Info.plist */,
 				D4F02A7622DBC6B900CFC462 /* Canvas.swift */,
 				D4F02A7822DC21D300CFC462 /* Line.swift */,
+				FA0F31BE22F0B79700893CF4 /* NextViewController.swift */,
 			);
 			path = DrawFeature;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA0F31BF22F0B79700893CF4 /* NextViewController.swift in Sources */,
 				D4F02A4B22DAFB7500CFC462 /* ViewController.swift in Sources */,
 				D4F02A7922DC21D300CFC462 /* Line.swift in Sources */,
 				D4F02A7722DBC6B900CFC462 /* Canvas.swift in Sources */,
@@ -441,6 +445,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P22VN99C27;
 				INFOPLIST_FILE = DrawFeature/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -458,6 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P22VN99C27;
 				INFOPLIST_FILE = DrawFeature/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

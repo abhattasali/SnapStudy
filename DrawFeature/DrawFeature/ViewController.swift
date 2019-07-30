@@ -11,11 +11,12 @@ import UIKit
 class ViewController: UIViewController {
 
     let canvas=Canvas()
+    var testImage: UIImage? = nil
     
     //creates share button
     let shareButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Share", for: .normal)
+        button.setTitle("Save", for: .normal)
         button.titleLabel?.font = .boldSystemFont(ofSize: 14)
         button.addTarget(self, action: #selector(handleShare), for: .touchUpInside)
         return button
@@ -24,10 +25,15 @@ class ViewController: UIViewController {
     //
     //NEEDS WORK: DIRECTING SHARED PHOTO; turning canvas into image
     @objc func handleShare(){
-
- 
         share()
-        
+    }
+    
+    func share()
+    {
+        let renderer = UIGraphicsImageRenderer(size: canvas.bounds.size)
+        testImage = renderer.image { ctx in
+            canvas.drawHierarchy(in: canvas.bounds, afterScreenUpdates: true)
+        }
     }
     
     
@@ -142,7 +148,6 @@ class ViewController: UIViewController {
         
         colorsStackView.distribution = .fillEqually
         
-        
         let stackView=UIStackView(arrangedSubviews: [undoButton,
                                                     colorsStackView,
                                                     clearButton,
@@ -165,17 +170,7 @@ class ViewController: UIViewController {
 
         
     }
-   func share(){
-
-    let renderer = UIGraphicsImageRenderer(size: canvas.bounds.size)
-            let CanvasImage = renderer.image { ctx in
-               canvas.drawHierarchy(in: canvas.bounds, afterScreenUpdates: true)
-                
-    }
-    
-    let activity = UIActivityViewController(activityItems: [CanvasImage], applicationActivities: nil)
-    present(activity, animated: true)
-    }
+   
 }
 
 
