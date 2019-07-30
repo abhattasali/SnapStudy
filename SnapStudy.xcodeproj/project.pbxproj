@@ -14,6 +14,7 @@
 		98962EF6DA425EB2EF154102 /* Pods_SnapStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D5B8FB206AA94F36104C803 /* Pods_SnapStudy.framework */; };
 		FA0F317E22EF76FD00893CF4 /* FlashDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F316922EF756600893CF4 /* FlashDisplay.swift */; };
 		FA0F317F22EF770900893CF4 /* CardPartPagedViewCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F316B22EF756600893CF4 /* CardPartPagedViewCardController.swift */; };
+		FA0F318122EFC55700893CF4 /* UICardWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F318022EFC55700893CF4 /* UICardWrapper.swift */; };
 		FA5DED7522E7C3E200BB6755 /* CounterButton.png in Resources */ = {isa = PBXBuildFile; fileRef = FA5DED7422E7C3E200BB6755 /* CounterButton.png */; };
 		FA5DED7722E7E50000BB6755 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = FA5DED7622E7E50000BB6755 /* fonts */; };
 		FA6CB25A22E626E500A239AB /* FlashSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CB25922E626E500A239AB /* FlashSet.swift */; };
@@ -62,6 +63,7 @@
 		FA0F317B22EF756600893CF4 /* CardPartTextFieldCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPartTextFieldCardController.swift; sourceTree = "<group>"; };
 		FA0F317C22EF756600893CF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA0F317D22EF756600893CF4 /* StateCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateCardController.swift; sourceTree = "<group>"; };
+		FA0F318022EFC55700893CF4 /* UICardWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICardWrapper.swift; sourceTree = "<group>"; };
 		FA5DED7422E7C3E200BB6755 /* CounterButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CounterButton.png; path = AppIcon.appiconset/CounterButton.png; sourceTree = "<group>"; };
 		FA5DED7622E7E50000BB6755 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		FA6CB25922E626E500A239AB /* FlashSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashSet.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				0432747A223AF8FF00E65B50 /* Info.plist */,
 				FA6CB25922E626E500A239AB /* FlashSet.swift */,
 				FA973F7622EB70A500B79D03 /* UICardTest.swift */,
+				FA0F318022EFC55700893CF4 /* UICardWrapper.swift */,
 			);
 			path = SnapStudy;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				04327471223AF8FD00E65B50 /* ViewController.swift in Sources */,
 				0432746F223AF8FD00E65B50 /* AppDelegate.swift in Sources */,
 				FA0F317F22EF770900893CF4 /* CardPartPagedViewCardController.swift in Sources */,
+				FA0F318122EFC55700893CF4 /* UICardWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

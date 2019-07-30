@@ -14,7 +14,7 @@ import RxCocoa
 class CardPartPagedViewCardController: CardPartsViewController {
     
     let cardPartTextView = CardPartTextView(type: .normal)
-    let emojis: [String] = ["😎", "🤪", "🤩"]
+    //let emojis: [String] = ["😎", "🤪", "🤩"]
     
     
     var key : String = ""
@@ -66,7 +66,7 @@ class CardPartPagedViewCardController: CardPartsViewController {
             //let testPic = CardPartImageView(image: "")
         }
         
-        let cardPartPagedView = CardPartPagedView(withPages: stackViews, andHeight: 150)
+        let cardPartPagedView = CardPartPagedView(withPages: stackViews, andHeight: 250)
         setupCardParts([cardPartTextView, cardPartPagedView])
     }
 }

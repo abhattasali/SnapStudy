@@ -21,13 +21,15 @@ class WordToggleTest: UIViewController {
     var terms = [String]()
     var numWords = 0
     
+    var addedTerms = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("test \(wt_flashset.getSetName())")
+        /*print("test \(wt_flashset.getSetName())")
         for w in wt_flashset.myWordCards.keys {
             print("\(w)")
-            print("\((wt_flashset.myWordCards[w]?.definition)!)\n\n")
-        }
+            print("DEFINITION \((wt_flashset.myWordCards[w]?.definition)!)\n\n")
+        }*/
         
         for keyword in wt_flashset.myWordCards.keys.sorted() {
             add(keyword)
@@ -35,14 +37,13 @@ class WordToggleTest: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let flashDisplayNavigator = segue.destination as? UINavigationController
-        guard let flashDisplayController = flashDisplayNavigator?.viewControllers.first as? FlashDisplay else {return}
-        flashDisplayController.flashset = wt_flashset
+        guard let cardWrapperVC = segue.destination as? UICardWrapper else { return }
+        cardWrapperVC.flashset = wt_flashset
     }
     
     //BUTTON COMPUTATION
-    @IBAction func computeToggle(_ sender: UIButton) {
-
+    @IBAction func computeToggle(_ sender: UIButton)
+    {
         
         if let cells = self.tableView.visibleCells as? Array<UITableViewCell>
         {
@@ -54,9 +55,25 @@ class WordToggleTest: UIViewController {
                         wt_flashset.myWordCards[cellKeyword] = nil      //removes
                         print("Removing \(cellKeyword)")
                     }
+                    else if(addedTerms.contains(cellKeyword))    //is a good word, scrubs repeats
+                    {
+                        wt_flashset.myWordCards[cellKeyword] = Flashcard(keyword: cellKeyword, definition: jsonExtract(key: cellKeyword), image: UIImage())
+                    }
                 }
             }
         }
+       /* for keyword in wt_flashset.myWordCards.keys
+        {
+            print("KEYWORD: \(keyword) DEFINITION: \(jsonExtract(key: keyword))")
+            wt_flashset.myWordCards[keyword]?.definition = jsonExtract(key: keyword)
+        }  print()
+        print(wt_flashset.myWordCards.count)
+       for fc in wt_flashset.myWordCards.values
+        
+       {
+        print (fc.definition)
+        }*/
+        
     }
     
     
@@ -70,6 +87,7 @@ class WordToggleTest: UIViewController {
             //print(term)
             if(term != "") {
                 self.add(term)
+                self.addedTerms.append(term)
             }
         }
         alert.addAction(action)
@@ -85,6 +103,33 @@ class WordToggleTest: UIViewController {
         let indexPath = IndexPath(row: index, section: 0)
         tableView.insertRows(at: [indexPath], with: .left)
     }
+    
+  //  testFlashset.myWordCards[keyword] = Flashcard(keyword: keyword, definition: jsonExtract(key: keyword), image: UIImage())
+
+
+func cutDef(def: String) -> String {
+    if(def.count <= 500) { return def }
+    var firstPeriod = 500
+    while(firstPeriod != def.count && def[def.index(def.startIndex, offsetBy: firstPeriod)] != ".") {
+        firstPeriod = firstPeriod + 1
+    }
+    return def[0...firstPeriod]
+}
+
+func jsonExtract(key: String) -> String {
+    let url = Bundle.main.url(forResource: "dictionary", withExtension: "json")!
+    let data = try! Data(contentsOf: url)
+    do {
+        // make sure this JSON is in the format we expect
+        if let jsonFile = try JSONSerialization.jsonObject(with: data, options: []) as? [String:Any] {
+            if let definition: String = jsonFile[key] as? String { return cutDef(def: definition) } //DEFINITION
+        }
+    }
+    catch let error as NSError {
+        print("Failed to load: \(error.localizedDescription)")
+    }
+    return "No definition available at the time."
+}
     
     
 }
@@ -117,7 +162,6 @@ extension WordToggleTest: UITableViewDataSource {
         
         print("table row switch Changed \(sender.tag)")
         print("The switch is \(sender.isOn ? "ON" : "OFF")")
-        print("hello")
         
     }
     

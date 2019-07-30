@@ -17,15 +17,21 @@ class FlashDisplay: CardsViewController {
      public var myWordCards: [String: Flashcard]    //Dictionary Keyword, Definition pair
      public var myDate: String
      */
-    
-    let keys = ["Hi", "There", "World"]
-    let definitions = ["1","2","3"]
     var cards: [CardPartsViewController] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        populate()
-       
+        print("test on FlashDisplay: \(flashset.getSetName())")
+        print()
+        print()
+        print()
+        for w in flashset.myWordCards.keys {
+            print("\(w)")
+            print("\((flashset.myWordCards[w]?.definition)!)\n\n")
+        }
+        
+        populateVC()
+        loadCards(cards: cards)
     
         //loadCards(cards: cards)
         /*cards.append(CardPartPagedViewCardController())
@@ -35,15 +41,17 @@ class FlashDisplay: CardsViewController {
         cards.append(CardPartPagedViewCardController())*/
         
         //a.key = "Hello"
-        loadCards(cards: cards)
+        
     }
-    
-    func populate() -> Void
+ 
+    func populateVC() -> Void
     {
-        for k in 0...2 {
+        print("MYKEYS XDDDDD \(flashset.myWordCards.keys)")
+        for key in flashset.myWordCards.keys
+        {
             let a = CardPartPagedViewCardController()
-            a.key = keys[k]
-            a.definition = definitions[k]
+            a.key = key
+            a.definition = (flashset.myWordCards[key]?.definition)!
             cards.append(a)
         }
     }

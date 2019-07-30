@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tsa-aT-wiM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bT2-HK-FHi">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -338,7 +338,7 @@
                                 <state key="normal" title="Create!"/>
                                 <connections>
                                     <action selector="computeToggle:" destination="Lb8-p9-4Hh" eventType="touchUpInside" id="Bn3-jk-3UR"/>
-                                    <segue destination="F8i-xS-mIO" kind="showDetail" id="UXC-w1-6Ml"/>
+                                    <segue destination="F8i-xS-mIO" kind="showDetail" id="opT-Ef-Tkz"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -367,10 +367,10 @@
             </objects>
             <point key="canvasLocation" x="1477.5999999999999" y="251.97044334975371"/>
         </scene>
-        <!--View Controller-->
+        <!--Card Wrapper-->
         <scene sceneID="XjJ-GT-n8o">
             <objects>
-                <viewController id="F8i-xS-mIO" sceneMemberID="viewController">
+                <viewController id="F8i-xS-mIO" customClass="UICardWrapper" customModule="SnapStudy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XaV-Ly-siR"/>
                         <viewControllerLayoutGuide type="bottom" id="9ci-03-jT2"/>
@@ -387,11 +387,11 @@
                                     <segue destination="14S-p8-bI0" kind="showDetail" id="muy-cs-vqW"/>
                                 </connections>
                             </button>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2BH-kS-BMt">
-                                <rect key="frame" x="0.0" y="170" width="375" height="608"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EhM-kR-jG0">
+                                <rect key="frame" x="0.0" y="159" width="375" height="619"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
-                                    <segue destination="i2g-BM-i8c" kind="embed" id="gIA-Pm-H42"/>
+                                    <segue destination="i2g-BM-i8c" kind="embed" id="ayq-AP-CJX"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -401,22 +401,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jzd-Dm-IaX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2501.5999999999999" y="268.9655172413793"/>
+            <point key="canvasLocation" x="2485.5999999999999" y="312.5615763546798"/>
         </scene>
         <!--Flash Display-->
         <scene sceneID="02j-Bz-EUr">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h4P-ZC-WkR" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="i2g-BM-i8c" customClass="FlashDisplay" customModule="SnapStudy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3rg-4I-wqM">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="608"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="619"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="exs-H1-RAA"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="h4P-ZC-WkR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3326" y="328"/>
+            <point key="canvasLocation" x="3372" y="366"/>
         </scene>
     </scenes>
     <resources>
