@@ -72,10 +72,6 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.50007189419999998" colorSpace="custom" customColorSpace="sRGB"/>
                                     </activityIndicatorView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Loading-Book" translatesAutoresizingMaskIntoConstraints="NO" id="wba-9S-SVS">
-                                        <rect key="frame" x="114" y="184" width="147" height="82"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibv-m4-nZx">
                                         <rect key="frame" x="179" y="465" width="37" height="51"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -94,6 +90,10 @@
                                             <segue destination="UWb-CC-Y4X" kind="show" id="zGd-lU-pae"/>
                                         </connections>
                                     </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Loading-Book" translatesAutoresizingMaskIntoConstraints="NO" id="wba-9S-SVS">
+                                        <rect key="frame" x="53" y="134" width="268" height="183"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
@@ -330,7 +330,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.89675450325012207" green="0.73462015390396118" blue="0.28219026327133179" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="sYY-79-v5U"/>
                     </view>
                 </viewController>
@@ -546,6 +546,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="MoY-ap-rt0"/>
-        <segue reference="quS-ND-pqS"/>
+        <segue reference="muy-cs-vqW"/>
     </inferredMetricsTieBreakers>
 </document>

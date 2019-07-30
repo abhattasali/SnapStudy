@@ -10,6 +10,7 @@ import Foundation
 import CardParts
 import RxSwift
 import RxCocoa
+import AVFoundation
 
 class CardPartPagedViewCardController: CardPartsViewController {
     
@@ -45,11 +46,19 @@ class CardPartPagedViewCardController: CardPartsViewController {
         var descriptor = UIFontDescriptor(name: "Roboto", size: 30.0)
         descriptor = descriptor.addingAttributes([UIFontDescriptor.AttributeName.traits : [UIFontDescriptor.TraitKey.weight: UIFont.Weight.light]])
         word.font = UIFont(descriptor: descriptor, size: 30.0)
+        
+        let audioKey = CardPartButtonView()
+        audioKey.setTitle("Play Sound", for: .normal)
+        audioKey.addTarget(self, action: #selector(playKeySound), for: .touchUpInside)
+        
+        
+        
         sv1.addArrangedSubview(word)
+        sv1.addArrangedSubview(audioKey)
         
         
         /*******FRAME 2: Keyword********/
-        let sv2 = CardPartStackView()
+        let sv2 = CardPartStackView()           //Definition Text
         sv2.axis = .vertical
         sv2.spacing = 8
         stackViews.append(sv2)
@@ -60,7 +69,13 @@ class CardPartPagedViewCardController: CardPartsViewController {
         defDescriptor = defDescriptor.addingAttributes([UIFontDescriptor.AttributeName.traits : [UIFontDescriptor.TraitKey.weight : UIFont.Weight.light]])
         cardDef.font = UIFont(descriptor: defDescriptor, size: 14.0)
         cardDef.textAlignment = .center
+        
+        let audioDef = CardPartButtonView()     //Button
+        audioDef.setTitle("Play Sound", for: .normal)
+        audioDef.addTarget(self, action: #selector(playDefSound), for: .touchUpInside)
+        
         sv2.addArrangedSubview(cardDef)
+        sv2.addArrangedSubview(audioDef)
         
         
         /*******FRAME 3: Keyword********/
@@ -72,11 +87,61 @@ class CardPartPagedViewCardController: CardPartsViewController {
         cardImage.imageName = self.key
         cardImage.alpha = 1.0
         
-
+        let buttonImage = CardPartButtonView()
+        buttonImage.setTitle("Add Optional Image", for: .normal)
+        buttonImage.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        //buttonImage.
+        sv3.addArrangedSubview(cardImage)
+        sv3.addArrangedSubview(buttonImage)
+        /*
+         var buttonTitle: String?
+         var isSelected: Bool?
+         var isHighlighted: Bool?
+         var contentHorizontalAlignment: UIControlContentHorizontalAlignment
+         var alpha: CGFloat
+         var backgroundColor: UIColor?
+         var isHidden: Bool
+         var isUserInteractionEnabled: Bool
+         var tintColor: UIColor?
+         */
         
-        let cardPartPagedView = CardPartPagedView(withPages: stackViews, andHeight: 250)
+        let cardPartPagedView = CardPartPagedView(withPages: stackViews, andHeight: 400)
         setupCardParts([cardPartTextView, cardPartPagedView])
     }
+    
+    @objc func buttonTapped() {
+        
+        let alertController = UIAlertController(title: "Woohoo!", message: "Isn't that awesome!?", preferredStyle: .alert)
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        alertController.addAction(cancelAction)
+        
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
+    @objc func playKeySound() {
+        
+        let lang: String = "en-US"
+        self.readText(myText: self.key, myLang: lang)
+    }
+    
+    @objc func playDefSound() {
+        
+        let lang: String = "en-US"
+        self.readText(myText: self.definition, myLang: lang)
+    }
+    
+    func readText(myText: String, myLang: String)
+    {
+        let utterance = AVSpeechUtterance(string: myText)
+        utterance.voice = AVSpeechSynthesisVoice(language: myLang)
+        utterance.rate = 0.5
+        
+        let synthesizer = AVSpeechSynthesizer()
+        synthesizer.speak(utterance)
+    }
+    
+    
 }
 
 extension CardPartPagedViewCardController: ShadowCardTrait {
