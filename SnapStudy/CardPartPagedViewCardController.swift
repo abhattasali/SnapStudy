@@ -15,12 +15,12 @@ import AVFoundation
 class CardPartPagedViewCardController: CardPartsViewController {
     
     let cardPartTextView = CardPartTextView(type: .normal)
-    //let emojis: [String] = ["😎", "🤪", "🤩"]
-    
-    
+
     var key : String = ""
     var definition : String = ""
     var image : UIImage? = nil
+    var isPlayingSound : Bool = false
+    let synthesizer = AVSpeechSynthesizer()
     
 
     override func viewDidLoad() {
@@ -47,14 +47,14 @@ class CardPartPagedViewCardController: CardPartsViewController {
         descriptor = descriptor.addingAttributes([UIFontDescriptor.AttributeName.traits : [UIFontDescriptor.TraitKey.weight: UIFont.Weight.light]])
         word.font = UIFont(descriptor: descriptor, size: 30.0)
         
-        let audioKey = CardPartButtonView()
-        audioKey.setTitle("Play Sound", for: .normal)
-        audioKey.addTarget(self, action: #selector(playKeySound), for: .touchUpInside)
-        
+        let audioKeyButton = CardPartButtonView()
+        audioKeyButton.setTitle("Play Sound", for: .normal)
+        audioKeyButton.addTarget(self, action: #selector(playKeySound), for: .touchUpInside)
+        audioKeyButton.contentHorizontalAlignment = .center
         
         
         sv1.addArrangedSubview(word)
-        sv1.addArrangedSubview(audioKey)
+        sv1.addArrangedSubview(audioKeyButton)
         
         
         /*******FRAME 2: Keyword********/
@@ -70,12 +70,13 @@ class CardPartPagedViewCardController: CardPartsViewController {
         cardDef.font = UIFont(descriptor: defDescriptor, size: 14.0)
         cardDef.textAlignment = .center
         
-        let audioDef = CardPartButtonView()     //Button
-        audioDef.setTitle("Play Sound", for: .normal)
-        audioDef.addTarget(self, action: #selector(playDefSound), for: .touchUpInside)
+        let audioDefButton = CardPartButtonView()     //Button
+        audioDefButton.setTitle("Play Sound", for: .normal)
+        audioDefButton.addTarget(self, action: #selector(playDefSound), for: .touchUpInside)
+        audioDefButton.contentHorizontalAlignment = .center
         
         sv2.addArrangedSubview(cardDef)
-        sv2.addArrangedSubview(audioDef)
+        sv2.addArrangedSubview(audioDefButton)
         
         
         /*******FRAME 3: Keyword********/
@@ -90,7 +91,8 @@ class CardPartPagedViewCardController: CardPartsViewController {
         let buttonImage = CardPartButtonView()
         buttonImage.setTitle("Add Optional Image", for: .normal)
         buttonImage.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
-        //buttonImage.
+        buttonImage.contentHorizontalAlignment = .center
+        
         sv3.addArrangedSubview(cardImage)
         sv3.addArrangedSubview(buttonImage)
         /*
@@ -133,12 +135,21 @@ class CardPartPagedViewCardController: CardPartsViewController {
     
     func readText(myText: String, myLang: String)
     {
+        
+        if(!isPlayingSound)
+        {
         let utterance = AVSpeechUtterance(string: myText)
         utterance.voice = AVSpeechSynthesisVoice(language: myLang)
         utterance.rate = 0.5
-        
-        let synthesizer = AVSpeechSynthesizer()
         synthesizer.speak(utterance)
+        isPlayingSound = true
+        }
+        else
+        {
+            synthesizer.stopSpeaking(at: .word)
+            isPlayingSound = false
+        }
+
     }
     
     
