@@ -174,7 +174,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d3o-ds-MDU">
-                                <rect key="frame" x="20" y="144" width="339" height="485"/>
+                                <rect key="frame" x="20" y="144" width="339" height="526"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username/Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wx8-e7-m1e">
@@ -201,9 +201,6 @@
                                         <color key="backgroundColor" red="0.87978327270000001" green="0.69555008409999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="ComicSansMS" family="Comic Sans MS" pointSize="17"/>
                                         <state key="normal" title="Log In"/>
-                                        <connections>
-                                            <segue destination="14S-p8-bI0" kind="show" id="S0Z-vo-Cvb"/>
-                                        </connections>
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Need an account? Sign Up" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Nwr-ha-ZoX">
                                         <rect key="frame" x="60" y="417" width="219" height="36"/>
@@ -212,6 +209,15 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVm-SD-fgL">
+                                        <rect key="frame" x="123" y="487" width="94" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Try as guest"/>
+                                        <connections>
+                                            <segue destination="14S-p8-bI0" kind="show" id="quS-ND-pqS"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -540,6 +546,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="MoY-ap-rt0"/>
-        <segue reference="muy-cs-vqW"/>
+        <segue reference="quS-ND-pqS"/>
     </inferredMetricsTieBreakers>
 </document>
