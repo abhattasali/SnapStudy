@@ -19,6 +19,7 @@ class CardPartPagedViewCardController: CardPartsViewController {
     
     var key : String = ""
     var definition : String = ""
+    var image : UIImage? = nil
     
 
     override func viewDidLoad() {
@@ -38,13 +39,14 @@ class CardPartPagedViewCardController: CardPartsViewController {
         stackViews.append(sv1)
         //let titlePart = CardPartTitleView(type: .titleOnly)
         let word = CardPartLabel()
-        word.text = key
+        word.text = self.key
         word.textColor = .white
         word.textAlignment = .center
         var descriptor = UIFontDescriptor(name: "Roboto", size: 30.0)
         descriptor = descriptor.addingAttributes([UIFontDescriptor.AttributeName.traits : [UIFontDescriptor.TraitKey.weight: UIFont.Weight.light]])
         word.font = UIFont(descriptor: descriptor, size: 30.0)
         sv1.addArrangedSubview(word)
+        
         
         /*******FRAME 2: Keyword********/
         let sv2 = CardPartStackView()
@@ -59,38 +61,18 @@ class CardPartPagedViewCardController: CardPartsViewController {
         cardDef.font = UIFont(descriptor: defDescriptor, size: 14.0)
         cardDef.textAlignment = .center
         sv2.addArrangedSubview(cardDef)
-        /*
-        for _ in 0...1 {   //number of keywords
-            
-            let sv = CardPartStackView()
-            sv.axis = .vertical
-            sv.spacing = 2
-            stackViews.append(sv)
-            
-          //  let titlePart = CardPartTitleView(type: .titleOnly)
-           // titlePart.title = key
-            //TEXT
-            let titleP = CardPartLabel()
-            titleP.text = key
-            titleP.textAlignment = .center
-            //FONT
-            var descriptor = UIFontDescriptor(name: "Roboto", size: 24.0)
-            descriptor = descriptor.addingAttributes([UIFontDescriptor.AttributeName.traits : [UIFontDescriptor.TraitKey.weight : UIFont.Weight.light]])
-            titleP.font = UIFont(descriptor: descriptor, size: 24.0)
-            
-            sv.addArrangedSubview(titleP)
-            
-            let title = CardPartTextView(type: .normal)
-            title.text = definition
-            title.textColor = .white
-            var defDescriptor = UIFontDescriptor(name: "Roboto", size: 12.0)
-            defDescriptor = defDescriptor.addingAttributes([UIFontDescriptor.AttributeName.traits : [UIFontDescriptor.TraitKey.weight : UIFont.Weight.light]])
-            titleP.font = UIFont(descriptor: defDescriptor, size: 12.0)
-            title.textAlignment = .center
-            sv.addArrangedSubview(title)
-            
-            //let testPic = CardPartImageView(image: "")
-        }*/
+        
+        
+        /*******FRAME 3: Keyword********/
+        let sv3 = CardPartStackView()
+        sv3.axis = .vertical
+        sv3.spacing = 8
+        stackViews.append(sv3)
+        let cardImage = CardPartImageView(image: self.image)
+        cardImage.imageName = self.key
+        cardImage.alpha = 1.0
+        
+
         
         let cardPartPagedView = CardPartPagedView(withPages: stackViews, andHeight: 250)
         setupCardParts([cardPartTextView, cardPartPagedView])
