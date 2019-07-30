@@ -23,9 +23,6 @@
 		FA973F7722EB70A500B79D03 /* UICardTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA973F7622EB70A500B79D03 /* UICardTest.swift */; };
 		FA973F7922EBC78700B79D03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA973F7822EBC78700B79D03 /* Main.storyboard */; };
 		FA973F7B22EBC7A200B79D03 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = FA973F7A22EBC7A200B79D03 /* Images */; };
-		FA973F8322EBCA2100B79D03 /* acc-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FA973F8022EBCA2000B79D03 /* acc-icon.png */; };
-		FA973F8422EBCA2100B79D03 /* home-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FA973F8122EBCA2100B79D03 /* home-icon.png */; };
-		FA973F8522EBCA2100B79D03 /* add-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FA973F8222EBCA2100B79D03 /* add-icon.png */; };
 		FABAA81822D937FF00675015 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = FABAA81722D937FF00675015 /* tessdata */; };
 		FABAA85622DD1F2B00675015 /* SnapStudy.png in Resources */ = {isa = PBXBuildFile; fileRef = FABAA85522DD1F2A00675015 /* SnapStudy.png */; };
 		FABAA85A22DE7ABA00675015 /* dictionary.json in Resources */ = {isa = PBXBuildFile; fileRef = FABAA85922DE7ABA00675015 /* dictionary.json */; };
@@ -72,9 +69,6 @@
 		FA973F7622EB70A500B79D03 /* UICardTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICardTest.swift; sourceTree = "<group>"; };
 		FA973F7822EBC78700B79D03 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		FA973F7A22EBC7A200B79D03 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
-		FA973F8022EBCA2000B79D03 /* acc-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "acc-icon.png"; sourceTree = "<group>"; };
-		FA973F8122EBCA2100B79D03 /* home-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-icon.png"; sourceTree = "<group>"; };
-		FA973F8222EBCA2100B79D03 /* add-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add-icon.png"; sourceTree = "<group>"; };
 		FABAA81722D937FF00675015 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		FABAA85522DD1F2A00675015 /* SnapStudy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SnapStudy.png; sourceTree = "<group>"; };
 		FABAA85922DE7ABA00675015 /* dictionary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dictionary.json; sourceTree = "<group>"; };
@@ -125,9 +119,6 @@
 				FA0F316222EF756600893CF4 /* CardParts */,
 				FABAA81722D937FF00675015 /* tessdata */,
 				FA973F7822EBC78700B79D03 /* Main.storyboard */,
-				FA973F8022EBCA2000B79D03 /* acc-icon.png */,
-				FA973F8222EBCA2100B79D03 /* add-icon.png */,
-				FA973F8122EBCA2100B79D03 /* home-icon.png */,
 				FA5DED7422E7C3E200BB6755 /* CounterButton.png */,
 				04327475223AF8FF00E65B50 /* Assets.xcassets */,
 				FA6CB26522E6A4E600A239AB /* AppIcon.appiconset */,
@@ -246,15 +237,12 @@
 			files = (
 				FA973F7B22EBC7A200B79D03 /* Images in Resources */,
 				FA5DED7522E7C3E200BB6755 /* CounterButton.png in Resources */,
-				FA973F8522EBCA2100B79D03 /* add-icon.png in Resources */,
 				FA973F7922EBC78700B79D03 /* Main.storyboard in Resources */,
 				04327479223AF8FF00E65B50 /* LaunchScreen.storyboard in Resources */,
 				FABAA85A22DE7ABA00675015 /* dictionary.json in Resources */,
 				FABAA81822D937FF00675015 /* tessdata in Resources */,
 				04327476223AF8FF00E65B50 /* Assets.xcassets in Resources */,
 				FA6CB26622E6A4E600A239AB /* AppIcon.appiconset in Resources */,
-				FA973F8322EBCA2100B79D03 /* acc-icon.png in Resources */,
-				FA973F8422EBCA2100B79D03 /* home-icon.png in Resources */,
 				FA5DED7722E7E50000BB6755 /* fonts in Resources */,
 				FABAA85622DD1F2B00675015 /* SnapStudy.png in Resources */,
 			);
