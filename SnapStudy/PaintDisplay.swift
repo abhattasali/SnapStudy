@@ -37,7 +37,7 @@ class PaintDisplay: UIViewController {
         let appDel = UIApplication.shared.delegate as! AppDelegate
         
         appDel.curCardController?.receiveDataFromModal(theImg: testImage!)
-        print("saved!")
+        print("saved! please help")
         
         if((self.presentingViewController) != nil){
             self.dismiss(animated: true, completion: nil)

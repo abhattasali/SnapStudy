@@ -1,3 +1,5 @@
+//  Copyright (c) 2019 abhattasali. All rights reserved.
+
 import UIKit
 import MobileCoreServices
 import TesseractOCR
