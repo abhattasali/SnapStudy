@@ -267,7 +267,7 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zVv-Qo-QcI">
-                                <rect key="frame" x="145" y="590" width="73" height="32"/>
+                                <rect key="frame" x="151" y="597" width="73" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="17"/>
                                 <state key="normal" title="Create!"/>
@@ -545,6 +545,7 @@
         <image name="imageedit_8_7978368360" width="144" height="158"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="opT-Ef-Tkz"/>
         <segue reference="MoY-ap-rt0"/>
         <segue reference="muy-cs-vqW"/>
     </inferredMetricsTieBreakers>
