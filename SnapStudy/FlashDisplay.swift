@@ -46,7 +46,7 @@ class FlashDisplay: CardsViewController {
  
     func populateVC() -> Void
     {
-        print("MYKEYS XDDDDD \(flashset.myWordCards.keys)")
+        //print("MYKEYS XDDDDD \(flashset.myWordCards.keys)")
         for key in flashset.myWordCards.keys.sorted()
         {
             let a = CardPartPagedViewCardController()

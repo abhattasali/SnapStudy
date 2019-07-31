@@ -10,12 +10,24 @@ import UIKit
 
 class NextViewController: UIViewController {
 
+
+    @IBOutlet weak var myDisplayImage: UIImageView!
+    var myImage : UIImage? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+       
+        print("hello")
+        
     }
     
+    
+    @IBAction func didUnwindFromVC(_ sender: UIStoryboardSegue)
+    {
+        guard let vc = sender.source as? ViewController else { return }
+        self.myImage = vc.testImage
+        myDisplayImage.image = myImage
+    }
 
     /*
     // MARK: - Navigation

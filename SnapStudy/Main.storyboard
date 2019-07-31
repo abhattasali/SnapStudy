@@ -27,11 +27,11 @@
                         <viewControllerLayoutGuide type="bottom" id="BPV-7C-QJI"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QP8-tQ-YUJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="672"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wgX-jw-zhm">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="672"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Preview your converted text here." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hB6-A3-sZh">
                                         <rect key="frame" x="8" y="8" width="359" height="434"/>
@@ -47,7 +47,7 @@
                                         <color key="backgroundColor" red="0.89803921568627454" green="0.73333333333333328" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gn4-yr-rRa">
-                                        <rect key="frame" x="117" y="441" width="140" height="103"/>
+                                        <rect key="frame" x="117" y="433" width="140" height="103"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <size key="titleShadowOffset" width="1" height="1"/>
                                         <state key="normal" title="Snap/Upload Photo" image="CounterButton.png">
@@ -67,15 +67,20 @@
                                             <action selector="takePhoto:" destination="bT2-HK-FHi" eventType="touchUpInside" id="4zu-1j-tlN"/>
                                         </connections>
                                     </button>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ceI-aP-L1L">
+                                        <rect key="frame" x="169" y="207" width="37" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.50007189419999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </activityIndicatorView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibv-m4-nZx">
-                                        <rect key="frame" x="180" y="463" width="40" height="62"/>
+                                        <rect key="frame" x="179" y="465" width="37" height="51"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z48-IO-9Zi">
-                                        <rect key="frame" x="143" y="544" width="89" height="59"/>
+                                        <rect key="frame" x="143" y="531" width="89" height="59"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23.5"/>
                                         <state key="normal" title="Done">
@@ -86,7 +91,7 @@
                                         </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Loading-Book" translatesAutoresizingMaskIntoConstraints="NO" id="wba-9S-SVS">
-                                        <rect key="frame" x="114" y="184" width="147" height="82"/>
+                                        <rect key="frame" x="53" y="134" width="268" height="183"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
@@ -106,10 +111,10 @@
                             <outletCollection property="gestureRecognizers" destination="78n-R5-oyx" appends="YES" id="hQm-oj-v1N"/>
                         </connections>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Add" image="Add" id="YPp-gv-aXC"/>
+                    <tabBarItem key="tabBarItem" title="Add" image="Add" id="Td9-Ux-3nD"/>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="Y6h-Bs-qbV"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="ceI-aP-L1L" id="wLK-03-9j2"/>
                         <outlet property="counterLabel" destination="ibv-m4-nZx" id="IoK-K8-Egi"/>
                         <outlet property="loadingIcon" destination="wba-9S-SVS" id="Vic-lt-Y3R"/>
                         <outlet property="textView" destination="hB6-A3-sZh" id="UhF-BT-Gb7"/>
@@ -325,7 +330,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.89675450325012207" green="0.73462015390396118" blue="0.28219026327133179" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="sYY-79-v5U"/>
                     </view>
                 </viewController>
@@ -445,7 +450,7 @@
         <scene sceneID="nW0-fD-zKl">
             <objects>
                 <tabBarController title="Add" id="Ty4-5T-tub" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="huA-Cf-q03"/>
+                    <navigationItem key="navigationItem" title="Your Flash Sets" id="huA-Cf-q03"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CFA-gU-35Q">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -453,7 +458,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="fpJ-wo-LBS" kind="relationship" relationship="viewControllers" id="yRO-Im-NQv"/>
-                        <segue destination="bT2-HK-FHi" kind="relationship" relationship="viewControllers" id="ckm-eh-ItL"/>
+                        <segue destination="bT2-HK-FHi" kind="relationship" relationship="viewControllers" id="pft-j7-NKW"/>
                         <segue destination="zsP-Ng-7ea" kind="relationship" relationship="viewControllers" id="OcU-i7-LYf"/>
                     </connections>
                 </tabBarController>
@@ -541,6 +546,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="MoY-ap-rt0"/>
-        <segue reference="quS-ND-pqS"/>
+        <segue reference="muy-cs-vqW"/>
     </inferredMetricsTieBreakers>
 </document>

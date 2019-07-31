@@ -18,22 +18,29 @@ class ViewController: UIViewController {
         let button = UIButton(type: .system)
         button.setTitle("Save", for: .normal)
         button.titleLabel?.font = .boldSystemFont(ofSize: 14)
-        button.addTarget(self, action: #selector(handleShare), for: .touchUpInside)
+        button.addTarget(self, action: #selector(handleSaveAndExit), for: .touchUpInside)
         return button
     }()
     
     //
     //NEEDS WORK: DIRECTING SHARED PHOTO; turning canvas into image
-    @objc func handleShare(){
-        share()
+    @objc func handleSaveAndExit(){
+        save()
     }
     
-    func share()
+    func save()
     {
         let renderer = UIGraphicsImageRenderer(size: canvas.bounds.size)
         testImage = renderer.image { ctx in
             canvas.drawHierarchy(in: canvas.bounds, afterScreenUpdates: true)
         }
+        
+        
+        performSegue(withIdentifier: "didUnwindFromVC", sender: nil)
+        /*
+        let nextVC = NextViewController()
+        present(nextVC, animated: true, completion: nil)*/
+        
     }
     
     
