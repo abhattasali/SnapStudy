@@ -84,11 +84,11 @@ class CardPartPagedViewCardController: CardPartsViewController {
         sv3.axis = .vertical
         sv3.spacing = 8
         stackViews.append(sv3)
-        let cardImage = CardPartImageView(image: self.image)
+        let cardImage = CardPartImageView(image: self.image)    //Paint Image if Any
         cardImage.imageName = self.key
         cardImage.alpha = 1.0
         
-        let buttonImage = CardPartButtonView()
+        let buttonImage = CardPartButtonView()                  //Optional Image Button
         buttonImage.setTitle("Add Optional Image", for: .normal)
         buttonImage.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
         buttonImage.contentHorizontalAlignment = .center
