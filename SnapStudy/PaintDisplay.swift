@@ -1,8 +1,8 @@
 import UIKit
 
-class ViewController: UIViewController {
-
-    let canvas=Canvas()
+class PaintDisplay: UIViewController {
+    
+    let canvas = Canvas()
     var testImage: UIImage? = nil
     
     //creates share button
@@ -20,20 +20,29 @@ class ViewController: UIViewController {
         save()
     }
     
+    @IBAction func returnViewController(sender: AnyObject) {
+        if((self.presentingViewController) != nil){
+            self.dismiss(animated: true, completion: nil)
+        }
+    }
+    
     func save()
     {
         let renderer = UIGraphicsImageRenderer(size: canvas.bounds.size)
         testImage = renderer.image { ctx in
             canvas.drawHierarchy(in: canvas.bounds, afterScreenUpdates: true)
-            
         }
         testImage = cropToBounds(image: testImage!, width: 450, height: 900) //think about deleting
-    
-        performSegue(withIdentifier: "didUnwindFromVC", sender: nil)
-        /*
-        let nextVC = NextViewController()
-        present(nextVC, animated: true, completion: nil)*/
         
+        let appDel = UIApplication.shared.delegate as! AppDelegate
+        
+        appDel.curCardController?.receiveDataFromModal(theImg: testImage!)
+        print("saved!")
+        
+        if((self.presentingViewController) != nil){
+            self.dismiss(animated: true, completion: nil)
+        }
+        //self.performSegue(withIdentifier: "unwindToCard", sender: nil)
     }
     
     func cropToBounds(image: UIImage, width: Double, height: Double) -> UIImage {
@@ -175,18 +184,18 @@ class ViewController: UIViewController {
         
         //the stack of buttons
         let colorsStackView = UIStackView (arrangedSubviews:[blackButton,
-                                                        yellowButton,
-                                                        redButton,
-                                                        blueButton,
-                                                        greenButton])
+                                                             yellowButton,
+                                                             redButton,
+                                                             blueButton,
+                                                             greenButton])
         
         colorsStackView.distribution = .fillEqually
         
         let stackView=UIStackView(arrangedSubviews: [undoButton,
-                                                    colorsStackView,
-                                                    clearButton,
-                                                    slider,
-                                                    shareButton])
+                                                     colorsStackView,
+                                                     clearButton,
+                                                     slider,
+                                                     shareButton])
         stackView.spacing = 1
         stackView.distribution = .fillEqually
         
@@ -201,11 +210,12 @@ class ViewController: UIViewController {
         stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         stackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
         stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor,constant: -8).isActive = true
-
+        
         
     }
-   
+    
 }
+
 
 
 
