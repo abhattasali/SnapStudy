@@ -1,10 +1,6 @@
 //
 //  CardPartPagedViewCardController.swift
 //  CardParts_Example
-//
-//  Created by Roossin, Chase on 5/23/18.
-//  Copyright © 2018 Intuit. All rights reserved.
-//
 
 import Foundation
 import CardParts
@@ -15,22 +11,32 @@ import AVFoundation
 class CardPartPagedViewCardController: CardPartsViewController {
     
     let cardPartTextView = CardPartTextView(type: .normal)
+    
+    var testUIImage : UIImage? = nil
 
     var key : String = ""
     var definition : String = ""
     var image : UIImage? = nil
+    
     var isPlayingSound : Bool = false
     var isPlayingSound2 : Bool = false
     let synthesizer = AVSpeechSynthesizer()
     
-
+    @IBAction func unwindToCardPart(_ sender: UIStoryboardSegue)
+    {
+        print("UNWIND PLEASE WORK HOLY")
+        guard let vc = sender.source as? PaintDisplay else { return }
+        self.image = vc.testImage
+    }
+    
+    var cardImage : CardPartImageView? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         cardPartTextView.text = "SnapStudy™"
         cardPartTextView.textAlignment = .right
         cardPartTextView.textColor = UIColor.white
-        //cardPartTextView.textColor = UIColor(red: 229.0/255.0, green: 187.0/255.0, blue: 72.0/255.0, alpha: 1.0)
+        
         
         var stackViews: [CardPartStackView] = []    //1st Frame is a Keyword, Second Frame is a Definitino
         
@@ -40,7 +46,7 @@ class CardPartPagedViewCardController: CardPartsViewController {
         sv1.spacing = 8
         stackViews.append(sv1)
 
-        //let titlePart = CardPartTitleView(type: .titleOnly)
+        
         let word = CardPartLabel()
         word.text = self.key
         word.textColor = .white
@@ -88,41 +94,43 @@ class CardPartPagedViewCardController: CardPartsViewController {
         sv3.axis = .vertical
         sv3.spacing = 8
         stackViews.append(sv3)
-        let cardImage = CardPartImageView(image: self.image)    //Paint Image if Any
-        cardImage.imageName = self.key
-        cardImage.alpha = 1.0
+        cardImage = CardPartImageView(image: self.image)    //Paint Image if Any
+        cardImage?.imageName = self.key
+        cardImage?.alpha = 1.0
+        /*
+         cardPartImage.contentMode = .scaleAspectFit
+         cardPartImage.addConstraint(NSLayoutConstraint(item: cardPartImage, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .height, multiplier: 1, constant: 300))
+         */
+        
         
         let buttonImage = CardPartButtonView()                  //Optional Image Button
         buttonImage.setTitle("Add Optional Image", for: .normal)
         buttonImage.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        
         buttonImage.contentHorizontalAlignment = .center
         
-        sv3.addArrangedSubview(cardImage)
+        
+        sv3.addArrangedSubview(cardImage!)
         sv3.addArrangedSubview(buttonImage)
-        /*
-         var buttonTitle: String?
-         var isSelected: Bool?
-         var isHighlighted: Bool?
-         var contentHorizontalAlignment: UIControlContentHorizontalAlignment
-         var alpha: CGFloat
-         var backgroundColor: UIColor?
-         var isHidden: Bool
-         var isUserInteractionEnabled: Bool
-         var tintColor: UIColor?
-         */
         
         let cardPartPagedView = CardPartPagedView(withPages: stackViews, andHeight: 400)
         setupCardParts([cardPartTextView, cardPartPagedView])
     }
     
-    @objc func buttonTapped() {
-        
-        let alertController = UIAlertController(title: "Woohoo!", message: "Isn't that awesome!?", preferredStyle: .alert)
-        
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-        alertController.addAction(cancelAction)
-        
-        self.present(alertController, animated: true, completion: nil)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let vc = segue.destination as? PaintDisplay else { return }
+        vc.testImage = self.image
+    }
+    
+    func receiveDataFromModal( theImg: UIImage) {
+        cardImage?.image = theImg
+    }
+    
+    @objc func buttonTapped()
+    {
+        let appDel = UIApplication.shared.delegate as? AppDelegate
+        appDel?.curCardController = self
+        self.present(PaintDisplay(), animated: true, completion: nil)
     }
     
     @objc func playKeySound() {
@@ -139,47 +147,35 @@ class CardPartPagedViewCardController: CardPartsViewController {
     
     func readText(myText: String, myLang: String)
     {
-        if(isPlayingSound){
+        if(isPlayingSound) {
             synthesizer.stopSpeaking(at: .word)
             isPlayingSound = false
-
         }
-        //if(!isPlayingSound)
-        else
-        {
+        else {
         let utterance = AVSpeechUtterance(string: myText)
         utterance.voice = AVSpeechSynthesisVoice(language: myLang)
         utterance.rate = 0.5
         synthesizer.speak(utterance)
         isPlayingSound = true
         }
-//        else
-//        {
-//            synthesizer.stopSpeaking(at: .word)
-//            isPlayingSound = false
-//        }
-
     }
+    
     func readText2(myText: String, myLang: String)
     {
-        
-        if(!isPlayingSound2)
-        {
+        if(!isPlayingSound2) {
             let utterance2 = AVSpeechUtterance(string: myText)
             utterance2.voice = AVSpeechSynthesisVoice(language: myLang)
             utterance2.rate = 0.5
             synthesizer.speak(utterance2)
             isPlayingSound2 = true
         }
-        else
-        {
+        else {
             synthesizer.stopSpeaking(at: .word)
             isPlayingSound2 = false
         }
         
     }
-    
-    
+
 }
 
 extension CardPartPagedViewCardController: ShadowCardTrait {
@@ -203,6 +199,15 @@ extension CardPartPagedViewCardController: GradientCardTrait {
     
     func gradientAngle() -> Float {
         return 0.0
+    }
+}
+
+class CustomSegue : UIStoryboardSegue
+{
+    override func perform() {
+        let src = self.source as UIViewController
+        let dst = self.destination as UIViewController
+        src.navigationController?.pushViewController(dst, animated: false)
     }
 }
 

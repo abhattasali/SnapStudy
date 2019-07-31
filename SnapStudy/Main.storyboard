@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="T5A-ni-CXs">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="14S-p8-bI0">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -353,6 +353,25 @@
             </objects>
             <point key="canvasLocation" x="3380" y="252"/>
         </scene>
+        <!--Paint Display-->
+        <scene sceneID="GtU-BH-A02">
+            <objects>
+                <viewController id="CUa-Pf-PXg" customClass="PaintDisplay" customModule="SnapStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PN7-hh-0fC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="AhY-5f-NKh"/>
+                    </view>
+                    <connections>
+                        <segue destination="bGE-ht-3jy" kind="unwind" identifier="unwindToCard" unwindAction="unwindToCardPart:" id="txu-BY-PL9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e2r-am-oZ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="bGE-ht-3jy" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="4287" y="308"/>
+        </scene>
         <!--Account-->
         <scene sceneID="3AP-1w-tC2">
             <objects>
@@ -545,7 +564,6 @@
         <image name="imageedit_8_7978368360" width="144" height="158"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="opT-Ef-Tkz"/>
         <segue reference="MoY-ap-rt0"/>
         <segue reference="muy-cs-vqW"/>
     </inferredMetricsTieBreakers>

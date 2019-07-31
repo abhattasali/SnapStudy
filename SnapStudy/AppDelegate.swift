@@ -4,6 +4,7 @@ import Foundation
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
   
+  var curCardController : CardPartPagedViewCardController? = nil
   var window: UIWindow?
   
   
