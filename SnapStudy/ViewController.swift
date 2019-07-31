@@ -12,11 +12,14 @@ class ViewController: UIViewController
   @IBOutlet weak var loadingIcon: UIImageView!
   var testFlashset = FlashSet()
   
+  
+    
   override func viewDidLoad()
   {
     super.viewDidLoad()
     print(testFlashset.getDate())
     print(testFlashset.getSetName())
+   
   }
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -30,8 +33,7 @@ class ViewController: UIViewController
     var counter = 0
     
     
-    
-    
+
   // IBAction methods
   @IBAction func backgroundTapped(_ sender: Any) {
     view.endEditing(true)
