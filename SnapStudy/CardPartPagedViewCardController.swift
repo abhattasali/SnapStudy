@@ -20,6 +20,7 @@ class CardPartPagedViewCardController: CardPartsViewController {
     var definition : String = ""
     var image : UIImage? = nil
     var isPlayingSound : Bool = false
+    var isPlayingSound2 : Bool = false
     let synthesizer = AVSpeechSynthesizer()
     
 
@@ -38,6 +39,7 @@ class CardPartPagedViewCardController: CardPartsViewController {
         sv1.axis = .vertical
         sv1.spacing = 8
         stackViews.append(sv1)
+
         //let titlePart = CardPartTitleView(type: .titleOnly)
         let word = CardPartLabel()
         word.text = self.key
@@ -48,7 +50,8 @@ class CardPartPagedViewCardController: CardPartsViewController {
         word.font = UIFont(descriptor: descriptor, size: 30.0)
         
         let audioKeyButton = CardPartButtonView()
-        audioKeyButton.setTitle("Play Sound", for: .normal)
+        //audioKeyButton.setTitle("Play Sound", for: .normal)
+        audioKeyButton.setImage(UIImage(named: "Audio")?.withRenderingMode(.alwaysOriginal), for: .normal)
         audioKeyButton.addTarget(self, action: #selector(playKeySound), for: .touchUpInside)
         audioKeyButton.contentHorizontalAlignment = .center
         
@@ -71,7 +74,8 @@ class CardPartPagedViewCardController: CardPartsViewController {
         cardDef.textAlignment = .center
         
         let audioDefButton = CardPartButtonView()     //Button
-        audioDefButton.setTitle("Play Sound", for: .normal)
+        //audioDefButton.setTitle("Play Sound", for: .normal)
+        audioDefButton.setImage(UIImage(named: "Audio")?.withRenderingMode(.alwaysOriginal), for: .normal)
         audioDefButton.addTarget(self, action: #selector(playDefSound), for: .touchUpInside)
         audioDefButton.contentHorizontalAlignment = .center
         
@@ -130,13 +134,18 @@ class CardPartPagedViewCardController: CardPartsViewController {
     @objc func playDefSound() {
         
         let lang: String = "en-US"
-        self.readText(myText: self.definition, myLang: lang)
+        self.readText2(myText: self.definition, myLang: lang)
     }
     
     func readText(myText: String, myLang: String)
     {
-        
-        if(!isPlayingSound)
+        if(isPlayingSound){
+            synthesizer.stopSpeaking(at: .word)
+            isPlayingSound = false
+
+        }
+        //if(!isPlayingSound)
+        else
         {
         let utterance = AVSpeechUtterance(string: myText)
         utterance.voice = AVSpeechSynthesisVoice(language: myLang)
@@ -144,12 +153,30 @@ class CardPartPagedViewCardController: CardPartsViewController {
         synthesizer.speak(utterance)
         isPlayingSound = true
         }
+//        else
+//        {
+//            synthesizer.stopSpeaking(at: .word)
+//            isPlayingSound = false
+//        }
+
+    }
+    func readText2(myText: String, myLang: String)
+    {
+        
+        if(!isPlayingSound2)
+        {
+            let utterance2 = AVSpeechUtterance(string: myText)
+            utterance2.voice = AVSpeechSynthesisVoice(language: myLang)
+            utterance2.rate = 0.5
+            synthesizer.speak(utterance2)
+            isPlayingSound2 = true
+        }
         else
         {
             synthesizer.stopSpeaking(at: .word)
-            isPlayingSound = false
+            isPlayingSound2 = false
         }
-
+        
     }
     
     
