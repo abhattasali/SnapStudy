@@ -271,7 +271,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Hsn-Kc-6GT">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="638"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="589"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="Lb8-p9-4Hh" id="JuI-pH-ivl"/>
@@ -534,9 +534,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbd-xR-Wdo">
-                                <rect key="frame" x="34" y="239" width="279" height="334"/>
+                                <rect key="frame" x="57" y="218" width="261" height="376"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Guy"/>
+                                <state key="normal" image="Peppa"/>
                                 <connections>
                                     <segue destination="T5A-ni-CXs" kind="show" id="R5u-C1-Z8M"/>
                                 </connections>
@@ -549,7 +549,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mMX-f6-pCd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4944.8000000000002" y="-1100.2463054187192"/>
+            <point key="canvasLocation" x="4945" y="-1100"/>
         </scene>
         <!--Your Flash Sets-->
         <scene sceneID="5d7-66-2fW">
@@ -580,14 +580,14 @@
         <image name="Acc" width="30" height="30"/>
         <image name="Add" width="30" height="30"/>
         <image name="CounterButton.png" width="700" height="512"/>
-        <image name="Guy" width="544" height="610"/>
         <image name="Home" width="30" height="30"/>
         <image name="Loading-Book" width="16" height="16"/>
+        <image name="Peppa" width="981" height="1243"/>
         <image name="Setting" width="748" height="192"/>
         <image name="imageedit_8_7978368360" width="144" height="158"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="zGd-lU-pae"/>
-        <segue reference="R5u-C1-Z8M"/>
+        <segue reference="opT-Ef-Tkz"/>
+        <segue reference="MoY-ap-rt0"/>
     </inferredMetricsTieBreakers>
 </document>

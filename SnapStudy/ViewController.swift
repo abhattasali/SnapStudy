@@ -21,6 +21,11 @@ class ViewController: UIViewController
     super.viewDidLoad()
     print(testFlashset.getDate())
     print(testFlashset.getSetName())
+    let appDel = UIApplication.shared.delegate as! AppDelegate
+    if(appDel.isDyslexieOn)
+    {
+      textView.font =  UIFont(name: "OpenDyslexicMono-Regular", size: 18)
+    }
    
   }
   
@@ -48,8 +53,8 @@ class ViewController: UIViewController
             let cameraButton = UIAlertAction(
                 title: "Take Photo",
                 style: .default) { (alert) -> Void in
-                    self.counter = self.counter + 1
-                    self.counterLabel.text = "\(self.counter)"
+                   // self.counter = self.counter + 1
+                    //self.counterLabel.text = "\(self.counter)"
                     //self.activityIndicator.startAnimating()
                     self.loadingIcon.image = UIImage.animatedImageNamed("Loading-Book_", duration: 3.0)
                     UIView.animate(withDuration: 0.2) { self.loadingIcon.alpha = 1.0
@@ -71,8 +76,8 @@ class ViewController: UIViewController
         let libraryButton = UIAlertAction(
             title: "Choose Existing",
             style: .default) { (alert) -> Void in
-                self.counter = self.counter + 1
-                self.counterLabel.text = "\(self.counter)"
+                //self.counter = self.counter + 1
+                //self.counterLabel.text = "\(self.counter)"
                 //self.activityIndicator.startAnimating()
                 self.loadingIcon.image = UIImage.animatedImageNamed("Loading-Book_", duration: 3.0)
                 UIView.animate(withDuration: 0.2) { self.loadingIcon.alpha = 1.0
@@ -89,14 +94,14 @@ class ViewController: UIViewController
         }
         imagePickerActionSheet.addAction(libraryButton)
         // 4
-    let cancelButton = UIAlertAction(title: "Cancel", style: .cancel, handler: {action in
+    /*let cancelButton = UIAlertAction(title: "Cancel", style: .cancel, handler: {action in
         if self.counter != 0{
             self.counter = self.counter - 1
             self.counterLabel.text = "\(self.counter)"
             
         }
     })
-        imagePickerActionSheet.addAction(cancelButton)
+        imagePickerActionSheet.addAction(cancelButton)*/
         // 5
         present(imagePickerActionSheet, animated: true)
     
@@ -104,9 +109,13 @@ class ViewController: UIViewController
   
     // Tesseract Image Recognition
     func performImageRecognition(_ image: UIImage) {
+        self.counter = self.counter + 1
+        self.counterLabel.text = "\(self.counter)"
         let scaledImage = image.scaledImage(1000) ?? image
         let preprocessedImage = scaledImage.preprocessedImage() ?? scaledImage
-        
+        let appDel = UIApplication.shared.delegate as! AppDelegate
+      
+      
         /************************** !!! *************************/
         if let tesseract = G8Tesseract(language: "eng+fra") {
             tesseract.engineMode = .tesseractCubeCombined
@@ -114,6 +123,11 @@ class ViewController: UIViewController
             tesseract.image = preprocessedImage
             tesseract.recognize()
             textView.text = tesseract.recognizedText
+            if(appDel.isDyslexieOn)
+            {
+              textView.font =  UIFont(name: "OpenDyslexicMono-Regular", size: 18)
+            }
+          
           
             //Reductio Merging
             guard let myKeywords = tesseract.recognizedText else { return }
@@ -133,8 +147,8 @@ class ViewController: UIViewController
   
   /**** Helper Function for String Parsing ****/
   func cutDef(def: String) -> String {
-    if(def.count <= 500) { return def }
-    var firstPeriod = 500
+    if(def.count <= 475) { return def }
+    var firstPeriod = 475
     while(firstPeriod != def.count && def[def.index(def.startIndex, offsetBy: firstPeriod)] != ".") {
       firstPeriod = firstPeriod + 1
     }

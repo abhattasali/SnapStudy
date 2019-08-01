@@ -89,8 +89,8 @@ class WordToggleTest: UIViewController {
 
 /**String Parser Functions**/
 func cutDef(def: String) -> String {
-    if(def.count <= 500) { return def }
-    var firstPeriod = 500
+    if(def.count <= 475) { return def }
+    var firstPeriod = 475
     while(firstPeriod != def.count && def[def.index(def.startIndex, offsetBy: firstPeriod)] != ".") {
         firstPeriod = firstPeriod + 1
     }

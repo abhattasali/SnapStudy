@@ -57,9 +57,9 @@ class CardPartPagedViewCardController: CardPartsViewController
         word.text = self.key
         word.textColor = .white
         word.textAlignment = .center
-        var descriptor = UIFontDescriptor(name: myFont, size: 38.0)
+        var descriptor = UIFontDescriptor(name: myFont, size: 44.0)
         descriptor = descriptor.addingAttributes([UIFontDescriptor.AttributeName.traits : [UIFontDescriptor.TraitKey.weight: UIFont.Weight.light]])
-        word.font = UIFont(descriptor: descriptor, size: 38.0)
+        word.font = UIFont(descriptor: descriptor, size: 44.0)
         
         let audioKeyButton = CardPartButtonView()
         //audioKeyButton.setTitle("Play Sound", for: .normal)
@@ -158,7 +158,8 @@ class CardPartPagedViewCardController: CardPartsViewController
         }
         else {
         let utterance = AVSpeechUtterance(string: myText)
-        utterance.voice = AVSpeechSynthesisVoice(language: myLang)
+        //utterance.voice = AVSpeechSynthesisVoice(language: myLang)
+        utterance.voice = AVSpeechSynthesisVoice(identifier: "com.apple.ttsbundle.Karen-compact")
         utterance.rate = 0.5
         synthesizer.speak(utterance)
         isPlayingSound = true
@@ -169,7 +170,8 @@ class CardPartPagedViewCardController: CardPartsViewController
     {
         if(!isPlayingSound2) {
             let utterance2 = AVSpeechUtterance(string: myText)
-            utterance2.voice = AVSpeechSynthesisVoice(language: myLang)
+            //utterance2.voice = AVSpeechSynthesisVoice(language: myLang)
+            utterance2.voice = AVSpeechSynthesisVoice(identifier: "com.apple.ttsbundle.Karen-compact")
             utterance2.rate = 0.5
             synthesizer.speak(utterance2)
             isPlayingSound2 = true
