@@ -12,6 +12,7 @@
 		04327476223AF8FF00E65B50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04327475223AF8FF00E65B50 /* Assets.xcassets */; };
 		04327479223AF8FF00E65B50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04327477223AF8FF00E65B50 /* LaunchScreen.storyboard */; };
 		98962EF6DA425EB2EF154102 /* Pods_SnapStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D5B8FB206AA94F36104C803 /* Pods_SnapStudy.framework */; };
+		D41A9C5822F37771004C7C48 /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = FA6CB26522E6A4E600A239AB /* AppIcon.appiconset */; };
 		D47CE0DB22F3449F00E51E88 /* TutorialBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D47CE0DA22F3449F00E51E88 /* TutorialBoard.storyboard */; };
 		D47CE0DD22F3493C00E51E88 /* tutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47CE0DC22F3493C00E51E88 /* tutViewController.swift */; };
 		D47CE0DF22F3494900E51E88 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47CE0DE22F3494900E51E88 /* CardView.swift */; };
@@ -23,7 +24,6 @@
 		FA6AF32B22F374B60046C1D1 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6AF32A22F374B60046C1D1 /* OnboardingViewController.swift */; };
 		FA6CB25A22E626E500A239AB /* FlashSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CB25922E626E500A239AB /* FlashSet.swift */; };
 		FA6CB26422E69D1300A239AB /* WordToggleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CB26322E69D1300A239AB /* WordToggleTest.swift */; };
-		FA6CB26622E6A4E600A239AB /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = FA6CB26522E6A4E600A239AB /* AppIcon.appiconset */; };
 		FA89F29C22F20ADF00027EAC /* PaintDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89F29B22F20ADF00027EAC /* PaintDisplay.swift */; };
 		FA89F29F22F20B3700027EAC /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89F29D22F20B3700027EAC /* Line.swift */; };
 		FA89F2A022F20B3700027EAC /* Canvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89F29E22F20B3700027EAC /* Canvas.swift */; };
@@ -265,7 +265,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					0432746A223AF8FD00E65B50 = {
@@ -306,9 +306,8 @@
 				FABAA81822D937FF00675015 /* tessdata in Resources */,
 				04327476223AF8FF00E65B50 /* Assets.xcassets in Resources */,
 				FA89F2A522F35BD600027EAC /* fonts in Resources */,
-				FA6CB26622E6A4E600A239AB /* AppIcon.appiconset in Resources */,
+				D41A9C5822F37771004C7C48 /* AppIcon.appiconset in Resources */,
 				D47CE0DB22F3449F00E51E88 /* TutorialBoard.storyboard in Resources */,
-				FA6CB26622E6A4E600A239AB /* AppIcon.appiconset in Resources */,
 				D47CE0E122F3494F00E51E88 /* Assets.xcassets in Resources */,
 				FABAA85622DD1F2B00675015 /* SnapStudy.png in Resources */,
 			);
