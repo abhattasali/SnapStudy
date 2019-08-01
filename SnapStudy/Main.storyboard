@@ -132,10 +132,10 @@
             </objects>
             <point key="canvasLocation" x="-455.19999999999999" y="251.97044334975371"/>
         </scene>
-        <!--Item-->
+        <!--Start-->
         <scene sceneID="tIn-r8-8gh">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="14S-p8-bI0" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Start" title="Start" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="14S-p8-bI0" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="ofI-h7-Wy4"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="2fb-fi-GPx"/>
@@ -218,7 +218,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="Try as guest"/>
                                         <connections>
-                                            <segue destination="14S-p8-bI0" kind="show" id="quS-ND-pqS"/>
+                                            <segue destination="SVe-k0-eox" kind="show" id="cno-Mk-u4F"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -234,6 +234,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zfz-c9-yQA" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1647.2" y="-497.29064039408871"/>
+        </scene>
+        <!--TutorialBoard-->
+        <scene sceneID="nhT-F8-Uvq">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TutorialBoard" id="SVe-k0-eox" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nyz-KJ-eUu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1378" y="-105"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ajW-55-Lfc">
@@ -575,7 +583,7 @@
         <image name="imageedit_8_7978368360" width="144" height="158"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="6Is-Or-cK9"/>
         <segue reference="MoY-ap-rt0"/>
-        <segue reference="quS-ND-pqS"/>
     </inferredMetricsTieBreakers>
 </document>
