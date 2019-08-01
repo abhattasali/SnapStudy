@@ -37,21 +37,16 @@ class AccountController: UIViewController
     
     @IBAction func toggleDyslexie(_ sender: Any) {
         let appDel = UIApplication.shared.delegate as! AppDelegate
-        if(dyslexieSwitch.isOn)
-        {
-            //print("ON")
-            appDel.isDyslexieOn = true
+        
+        if(dyslexieSwitch.isOn) {
             text1.titleLabel?.font = UIFont(name: "OpenDyslexicMono-Regular", size: 21)
             text2.titleLabel?.font = UIFont(name: "OpenDyslexicMono-Regular", size: 21)
             text3.titleLabel?.font = UIFont(name: "OpenDyslexicMono-Regular", size: 21)
             text4.titleLabel?.font = UIFont(name: "OpenDyslexicMono-Regular", size: 21)
             text5.titleLabel?.font = UIFont(name: "OpenDyslexicMono-Regular", size: 21)
-
-           
+            appDel.isDyslexieOn = true
         }
-        else
-        {
-            //print("OFF")
+        else {
             text1.titleLabel?.font = UIFont(name: "Roboto", size: 21)
             text2.titleLabel?.font = UIFont(name: "Roboto", size: 21)
             text3.titleLabel?.font = UIFont(name: "Roboto", size: 21)
