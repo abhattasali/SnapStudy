@@ -117,6 +117,7 @@
                     <tabBarItem key="tabBarItem" title="Add" image="Add" id="Td9-Ux-3nD"/>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="Y6h-Bs-qbV"/>
                     <connections>
+                        <outlet property="DoneButton" destination="z48-IO-9Zi" id="ck6-Zp-uz5"/>
                         <outlet property="activityIndicator" destination="ceI-aP-L1L" id="wLK-03-9j2"/>
                         <outlet property="counterLabel" destination="ibv-m4-nZx" id="IoK-K8-Egi"/>
                         <outlet property="loadingIcon" destination="wba-9S-SVS" id="Vic-lt-Y3R"/>
@@ -271,7 +272,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Hsn-Kc-6GT">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="589"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="638"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="Lb8-p9-4Hh" id="JuI-pH-ivl"/>
@@ -587,7 +588,7 @@
         <image name="imageedit_8_7978368360" width="144" height="158"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="opT-Ef-Tkz"/>
+        <segue reference="zGd-lU-pae"/>
         <segue reference="MoY-ap-rt0"/>
     </inferredMetricsTieBreakers>
 </document>

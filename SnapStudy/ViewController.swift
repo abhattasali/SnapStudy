@@ -14,7 +14,8 @@ class ViewController: UIViewController
   @IBOutlet weak var loadingIcon: UIImageView!
   var testFlashset = FlashSet()
   
-  
+    @IBOutlet weak var DoneButton: UIButton!
+    
     
   override func viewDidLoad()
   {
@@ -56,6 +57,7 @@ class ViewController: UIViewController
                    // self.counter = self.counter + 1
                     //self.counterLabel.text = "\(self.counter)"
                     //self.activityIndicator.startAnimating()
+                  
                     self.loadingIcon.image = UIImage.animatedImageNamed("Loading-Book_", duration: 3.0)
                     UIView.animate(withDuration: 0.2) { self.loadingIcon.alpha = 1.0
                     }
