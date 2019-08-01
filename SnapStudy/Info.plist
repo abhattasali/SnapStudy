@@ -28,6 +28,8 @@
 	<string>Grant access to Photo Library</string>
 	<key>UIAppFonts</key>
 	<array>
+		<string>OpenDyslexicAlta-Regular.otf</string>
+		<string>OpenDyslexicMono-Regular.otf</string>
 		<string>Cabin-Regular.ttf</string>
 		<string>Cabin-SemiBold.ttf</string>
 	</array>
@@ -35,10 +37,6 @@
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
-	<key>UIRequiredDeviceCapabilities</key>
-	<array>
-		<string>armv7</string>
-	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

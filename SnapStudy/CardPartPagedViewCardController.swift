@@ -8,7 +8,8 @@ import RxSwift
 import RxCocoa
 import AVFoundation
 
-class CardPartPagedViewCardController: CardPartsViewController {
+class CardPartPagedViewCardController: CardPartsViewController
+{
     
     let cardPartTextView = CardPartTextView(type: .normal)
     
@@ -21,13 +22,6 @@ class CardPartPagedViewCardController: CardPartsViewController {
     var isPlayingSound : Bool = false
     var isPlayingSound2 : Bool = false
     let synthesizer = AVSpeechSynthesizer()
-    
-    @IBAction func unwindToCardPart(_ sender: UIStoryboardSegue)
-    {
-        print("UNWIND PLEASE WORK HOLY")
-        guard let vc = sender.source as? PaintDisplay else { return }
-        self.image = vc.testImage
-    }
     
     var cardImage : CardPartImageView? = nil
     

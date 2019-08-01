@@ -8,6 +8,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   var curCardController : CardPartPagedViewCardController? = nil
   var window: UIWindow?
+  var isDyslexieOn = false
   
   
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {

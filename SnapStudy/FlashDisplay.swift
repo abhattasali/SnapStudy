@@ -9,8 +9,8 @@
 import UIKit
 import CardParts
 
-class FlashDisplay: CardsViewController {
-
+class FlashDisplay: CardsViewController
+{
     var flashset: FlashSet!
     var image : UIImage? = nil
     /*
