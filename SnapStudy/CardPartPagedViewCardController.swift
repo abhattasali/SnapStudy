@@ -37,7 +37,7 @@ class CardPartPagedViewCardController: CardPartsViewController
         
         var stackViews: [CardPartStackView] = []    //1st Frame is a Keyword, Second Frame is a Definitino
         
-        /*******FRAME 1: Keyword********/
+        /******* CARD FRAME 1: Keyword ********/
         let sv1 = CardPartStackView()
         sv1.axis = .vertical
         sv1.spacing = 8
@@ -63,11 +63,13 @@ class CardPartPagedViewCardController: CardPartsViewController
         sv1.addArrangedSubview(audioKeyButton)
         
         
-        /*******FRAME 2: Keyword********/
-        let sv2 = CardPartStackView()           //Definition Text
+        /******* CARD FRAME 2: Keyword********/
+        //Definition Text
+        let sv2 = CardPartStackView()
         sv2.axis = .vertical
         sv2.spacing = 8
         stackViews.append(sv2)
+        
         let cardDef = CardPartTextView(type: .normal)
         cardDef.text = self.definition
         cardDef.textColor = .white
@@ -76,8 +78,8 @@ class CardPartPagedViewCardController: CardPartsViewController
         cardDef.font = UIFont(descriptor: defDescriptor, size: 14.0)
         cardDef.textAlignment = .center
         
-        let audioDefButton = CardPartButtonView()     //Button
-        //audioDefButton.setTitle("Play Sound", for: .normal)
+        //Audio Button for Definition
+        let audioDefButton = CardPartButtonView()
         audioDefButton.setImage(UIImage(named: "Audio")?.withRenderingMode(.alwaysOriginal), for: .normal)
         audioDefButton.addTarget(self, action: #selector(playDefSound), for: .touchUpInside)
         audioDefButton.contentHorizontalAlignment = .center
@@ -86,7 +88,7 @@ class CardPartPagedViewCardController: CardPartsViewController
         sv2.addArrangedSubview(audioDefButton)
         
         
-        /*******FRAME 3: Keyword********/
+        /******* CARD FRAME 3: Keyword********/
         let sv3 = CardPartStackView()
         sv3.axis = .vertical
         sv3.spacing = 8

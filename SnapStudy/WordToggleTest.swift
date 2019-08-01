@@ -25,11 +25,6 @@ class WordToggleTest: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        /*print("test \(wt_flashset.getSetName())")
-        for w in wt_flashset.myWordCards.keys {
-            print("\(w)")
-            print("DEFINITION \((wt_flashset.myWordCards[w]?.definition)!)\n\n")
-        }*/
         
         for keyword in wt_flashset.myWordCards.keys.sorted() {
             add(keyword)
@@ -42,9 +37,7 @@ class WordToggleTest: UIViewController {
     }
     
     //BUTTON COMPUTATION
-    @IBAction func computeToggle(_ sender: UIButton)
-    {
-        
+    @IBAction func computeToggle(_ sender: UIButton) {
         if let cells = self.tableView.visibleCells as? Array<UITableViewCell>
         {
             for cell in cells {
@@ -62,17 +55,6 @@ class WordToggleTest: UIViewController {
                 }
             }
         }
-       /* for keyword in wt_flashset.myWordCards.keys
-        {
-            print("KEYWORD: \(keyword) DEFINITION: \(jsonExtract(key: keyword))")
-            wt_flashset.myWordCards[keyword]?.definition = jsonExtract(key: keyword)
-        }  print()
-        print(wt_flashset.myWordCards.count)
-       for fc in wt_flashset.myWordCards.values
-        
-       {
-        print (fc.definition)
-        }*/
         
     }
     
@@ -104,9 +86,8 @@ class WordToggleTest: UIViewController {
         tableView.insertRows(at: [indexPath], with: .left)
     }
     
-  //  testFlashset.myWordCards[keyword] = Flashcard(keyword: keyword, definition: jsonExtract(key: keyword), image: UIImage())
 
-
+/**String Parser Functions**/
 func cutDef(def: String) -> String {
     if(def.count <= 500) { return def }
     var firstPeriod = 500
@@ -116,6 +97,7 @@ func cutDef(def: String) -> String {
     return def[0...firstPeriod]
 }
 
+/**String Parser Functions**/
 func jsonExtract(key: String) -> String {
     let url = Bundle.main.url(forResource: "dictionary", withExtension: "json")!
     let data = try! Data(contentsOf: url)
@@ -158,11 +140,10 @@ extension WordToggleTest: UITableViewDataSource {
         return cell
     }
     
-    @objc func switchChanged(_ sender : UISwitch!){
-        
+    @objc func switchChanged(_ sender : UISwitch!)
+    {
         print("table row switch Changed \(sender.tag)")
         print("The switch is \(sender.isOn ? "ON" : "OFF")")
-        
     }
     
     

@@ -33,8 +33,7 @@ class ViewController: UIViewController
     //CounterButton Stuff
     @IBOutlet weak var counterLabel: UILabel!
     var counter = 0
-    
-    
+  
 
   // IBAction methods
   @IBAction func backgroundTapped(_ sender: Any) {
@@ -114,14 +113,15 @@ class ViewController: UIViewController
             tesseract.pageSegmentationMode = .auto
             tesseract.image = preprocessedImage
             tesseract.recognize()
-            textView.text = tesseract.recognizedText //IMPORTANT
+            textView.text = tesseract.recognizedText
           
-          guard let myKeywords = tesseract.recognizedText else { return }
-          Reductio.keywords(from: myKeywords, count: 7)
-          {
+            //Reductio Merging
+            guard let myKeywords = tesseract.recognizedText else { return }
+            Reductio.keywords(from: myKeywords, count: 7) {
             words in
             print(words)
-            for keyword in words.sorted() {
+            for keyword in words.sorted()
+            {
               testFlashset.myWordCards[keyword] = Flashcard(keyword: keyword, definition: jsonExtract(key: keyword), image: UIImage())
             }
           }
@@ -131,6 +131,7 @@ class ViewController: UIViewController
         }
     }
   
+  /**** Helper Function for String Parsing ****/
   func cutDef(def: String) -> String {
     if(def.count <= 500) { return def }
     var firstPeriod = 500
@@ -140,6 +141,7 @@ class ViewController: UIViewController
     return def[0...firstPeriod]
   }
   
+  /**** Helper Function for String Parsing ****/
   func jsonExtract(key: String) -> String {
     let url = Bundle.main.url(forResource: "dictionary", withExtension: "json")!
     let data = try! Data(contentsOf: url)
@@ -157,8 +159,6 @@ class ViewController: UIViewController
   
 }
 
-
-// MARK: - UINavigationControllerDelegate
 extension ViewController: UINavigationControllerDelegate {
 }
 

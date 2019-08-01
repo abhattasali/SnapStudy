@@ -557,7 +557,7 @@
 					"\"UIKit\"",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = abhattasali;
+				PRODUCT_BUNDLE_IDENTIFIER = abhattasali.ss;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ENABLE_BATCH_MODE = No;
 				SWIFT_VERSION = 5.0;
@@ -616,7 +616,7 @@
 					"\"UIKit\"",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = abhattasali;
+				PRODUCT_BUNDLE_IDENTIFIER = abhattasali.ss;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ENABLE_BATCH_MODE = No;
 				SWIFT_VERSION = 5.0;

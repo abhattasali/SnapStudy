@@ -22,17 +22,17 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" red="0.8980392157" green="0.73333333329999995" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vcg-7D-J5X">
-                                <rect key="frame" x="16" y="60" width="382" height="786"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vcg-7D-J5X">
+                                <rect key="frame" x="20" y="74" width="374" height="768"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="CPV-kF-iKh" kind="embed" id="nug-00-Dcn"/>
                                 </connections>
                             </containerView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kia-4J-mZO">
-                                <rect key="frame" x="323" y="79" width="33" height="30"/>
+                                <rect key="frame" x="352" y="74" width="33" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Done">
+                                <state key="normal" title="Skip">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -63,7 +63,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VWV-R0-3Xh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="293" y="117"/>
+            <point key="canvasLocation" x="292.75362318840581" y="116.51785714285714"/>
         </scene>
         <!--Start-->
         <scene sceneID="b59-B1-U07">

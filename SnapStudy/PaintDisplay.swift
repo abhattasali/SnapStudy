@@ -1,11 +1,11 @@
 import UIKit
 
-class PaintDisplay: UIViewController {
-    
+class PaintDisplay: UIViewController
+{
     let canvas = Canvas()
-    var testImage: UIImage? = nil
+    var testImage: UIImage? = nil   //stored variable image
     
-    //creates share button
+    /**** Share/Save Button Instantiation ****/
     let shareButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Save", for: .normal)
@@ -14,10 +14,23 @@ class PaintDisplay: UIViewController {
         return button
     }()
     
-    //
-    //NEEDS WORK: DIRECTING SHARED PHOTO; turning canvas into image
     @objc func handleSaveAndExit(){
         save()
+    }
+    /** Helper Function for Save/Share **/
+    func save() {
+        let renderer = UIGraphicsImageRenderer(size: canvas.bounds.size)
+        testImage = renderer.image { ctx in
+            canvas.drawHierarchy(in: canvas.bounds, afterScreenUpdates: true) }
+        testImage = cropToBounds(image: testImage!, width: 450, height: 900) //think about deleting
+        
+        let appDel = UIApplication.shared.delegate as! AppDelegate          //Access App Delegate Global Variable
+        appDel.curCardController?.receiveDataFromModal(theImg: testImage!)  //Call CardPartPagedVC.swift function
+        print("saved! please help")
+        
+        if((self.presentingViewController) != nil){
+            self.dismiss(animated: true, completion: nil)
+        }
     }
     
     @IBAction func returnViewController(sender: AnyObject) {
@@ -26,27 +39,10 @@ class PaintDisplay: UIViewController {
         }
     }
     
-    func save()
-    {
-        let renderer = UIGraphicsImageRenderer(size: canvas.bounds.size)
-        testImage = renderer.image { ctx in
-            canvas.drawHierarchy(in: canvas.bounds, afterScreenUpdates: true)
-        }
-        testImage = cropToBounds(image: testImage!, width: 450, height: 900) //think about deleting
-        
-        let appDel = UIApplication.shared.delegate as! AppDelegate
-        
-        appDel.curCardController?.receiveDataFromModal(theImg: testImage!)
-        print("saved! please help")
-        
-        if((self.presentingViewController) != nil){
-            self.dismiss(animated: true, completion: nil)
-        }
-        //self.performSegue(withIdentifier: "unwindToCard", sender: nil)
-    }
     
-    func cropToBounds(image: UIImage, width: Double, height: Double) -> UIImage {
-        
+    
+    func cropToBounds(image: UIImage, width: Double, height: Double) -> UIImage
+    {
         let cgimage = image.cgImage!
         let contextImage: UIImage = UIImage(cgImage: cgimage)
         let contextSize: CGSize = contextImage.size
@@ -171,12 +167,8 @@ class PaintDisplay: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-        
         //setup background to white
         canvas.backgroundColor = .white
-        
         setupLayout()
     }
     
@@ -201,9 +193,6 @@ class PaintDisplay: UIViewController {
         
         //for location of buttons
         view.addSubview(stackView)
-        
-        //to manually move buttons
-        //stackView.frame = CGRect(x:200,y:200,width:200, height:200)
         
         //places buttons
         stackView.translatesAutoresizingMaskIntoConstraints = false
