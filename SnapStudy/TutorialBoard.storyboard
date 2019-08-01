@@ -37,7 +37,7 @@
                                 </state>
                                 <connections>
                                     <action selector="skipOnboarding:" destination="xeh-6M-5ew" eventType="touchUpInside" id="0LZ-uF-McM"/>
-                                    <segue destination="Xfq-ng-dHF" kind="show" id="0hw-an-9ek"/>
+                                    <segue destination="jJZ-WP-2sv" kind="show" id="f29-4b-zi9"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -65,23 +65,21 @@
             </objects>
             <point key="canvasLocation" x="293" y="117"/>
         </scene>
+        <!--Start-->
+        <scene sceneID="b59-B1-U07">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="Start" id="jJZ-WP-2sv" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5le-g3-nlm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="742" y="-27"/>
+        </scene>
         <!--Onboarding View Controller-->
         <scene sceneID="Y2R-3T-lj9">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" pageSpacing="12" navigationOrientation="horizontal" spineLocation="none" id="CPV-kF-iKh" customClass="OnboardingViewController" customModule="testPageView" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" pageSpacing="12" navigationOrientation="horizontal" spineLocation="none" id="CPV-kF-iKh" customClass="OnboardingViewController" customModule="SnapStudy" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xXZ-AM-tU6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1188" y="117"/>
-        </scene>
-        <!--Start-->
-        <scene sceneID="jbr-7h-ce2">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="Start" id="Xfq-ng-dHF" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="SI4-1C-Xj5"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zRq-HY-4CK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1889" y="159"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Wie-dV-anR">
@@ -91,7 +89,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JBo-w4-Gdo" customClass="CardView" customModule="testPageView" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JBo-w4-Gdo" customClass="CardView" customModule="SnapStudy" customModuleProvider="target">
                                 <rect key="frame" x="8" y="52" width="398" height="802"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Flashsets" translatesAutoresizingMaskIntoConstraints="NO" id="jXZ-v2-cOH">
@@ -175,7 +173,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k1a-Ds-LgQ" customClass="CardView" customModule="testPageView" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k1a-Ds-LgQ" customClass="CardView" customModule="SnapStudy" customModuleProvider="target">
                                 <rect key="frame" x="8" y="52" width="398" height="802"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Upload" translatesAutoresizingMaskIntoConstraints="NO" id="XOm-90-FfL">
@@ -243,7 +241,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rS0-WF-WRV" customClass="CardView" customModule="testPageView" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rS0-WF-WRV" customClass="CardView" customModule="SnapStudy" customModuleProvider="target">
                                 <rect key="frame" x="8" y="52" width="398" height="802"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Filter" translatesAutoresizingMaskIntoConstraints="NO" id="KKe-qp-RXg">
@@ -312,7 +310,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="taq-jp-psF" customClass="CardView" customModule="testPageView" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="taq-jp-psF" customClass="CardView" customModule="SnapStudy" customModuleProvider="target">
                                 <rect key="frame" x="8" y="52" width="398" height="802"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Terms" translatesAutoresizingMaskIntoConstraints="NO" id="jPc-0j-ypq">
