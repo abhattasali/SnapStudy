@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="14S-p8-bI0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="T5A-ni-CXs">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -132,7 +132,7 @@
         <!--Item-->
         <scene sceneID="tIn-r8-8gh">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="14S-p8-bI0" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Start" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="14S-p8-bI0" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="ofI-h7-Wy4"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="2fb-fi-GPx"/>
@@ -215,7 +215,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="Try as guest"/>
                                         <connections>
-                                            <segue destination="14S-p8-bI0" kind="show" id="quS-ND-pqS"/>
+                                            <segue destination="nce-81-n6l" kind="show" id="gDV-cg-tFm"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -372,7 +372,7 @@
             </objects>
             <point key="canvasLocation" x="4287" y="308"/>
         </scene>
-        <!--Account-->
+        <!--Settings-->
         <scene sceneID="3AP-1w-tC2">
             <objects>
                 <viewController id="zsP-Ng-7ea" sceneMemberID="viewController">
@@ -380,10 +380,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="672"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Setting" translatesAutoresizingMaskIntoConstraints="NO" id="SBe-ol-oJh">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="119"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qnh-X8-z7J">
                                 <rect key="frame" x="0.0" y="118" width="375" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -416,7 +412,7 @@
                                 <rect key="frame" x="16" y="219" width="343" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Find Friends">
+                                <state key="normal" title="About Us">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -435,7 +431,7 @@
                                 <rect key="frame" x="16" y="387" width="288" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Share">
+                                <state key="normal" title="Dark Mode">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -454,12 +450,16 @@
                                     <segue destination="T5A-ni-CXs" kind="show" id="MoY-ap-rt0"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Setting" translatesAutoresizingMaskIntoConstraints="NO" id="SBe-ol-oJh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="lp2-mP-FD3"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Account" image="Acc" id="aYc-av-VuH"/>
-                    <navigationItem key="navigationItem" id="DxK-br-Vs1"/>
+                    <navigationItem key="navigationItem" title="Settings" id="DxK-br-Vs1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KZ7-wm-b9Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -469,7 +469,7 @@
         <scene sceneID="nW0-fD-zKl">
             <objects>
                 <tabBarController title="Add" id="Ty4-5T-tub" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" title="Your Flash Sets" id="huA-Cf-q03"/>
+                    <navigationItem key="navigationItem" title="Snap Study" id="huA-Cf-q03"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CFA-gU-35Q">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -511,13 +511,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbd-xR-Wdo">
-                                <rect key="frame" x="57" y="218" width="261" height="376"/>
+                                <rect key="frame" x="35" y="246" width="305" height="320"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Peppa"/>
+                                <state key="normal" image="Guy"/>
                                 <connections>
                                     <segue destination="T5A-ni-CXs" kind="show" id="R5u-C1-Z8M"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="By: " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="t3V-0H-fWo">
+                                <rect key="frame" x="67" y="574" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="VeY-ge-gGu"/>
@@ -526,7 +533,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mMX-f6-pCd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4945" y="-1100"/>
+            <point key="canvasLocation" x="4944.8000000000002" y="-1100.2463054187192"/>
         </scene>
         <!--Your Flash Sets-->
         <scene sceneID="5d7-66-2fW">
@@ -550,21 +557,29 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7g2-Gm-qdq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1544.8" y="-497.29064039408871"/>
+            <point key="canvasLocation" x="2161" y="-446"/>
+        </scene>
+        <!--TutorialBoard-->
+        <scene sceneID="74O-9y-Wid">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TutorialBoard" id="nce-81-n6l" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rLp-gT-D23" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1106" y="-132"/>
         </scene>
     </scenes>
     <resources>
         <image name="Acc" width="30" height="30"/>
         <image name="Add" width="30" height="30"/>
         <image name="CounterButton.png" width="700" height="512"/>
+        <image name="Guy" width="544" height="610"/>
         <image name="Home" width="30" height="30"/>
         <image name="Loading-Book" width="16" height="16"/>
-        <image name="Peppa" width="981" height="1243"/>
         <image name="Setting" width="748" height="192"/>
         <image name="imageedit_8_7978368360" width="144" height="158"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="6Is-Or-cK9"/>
         <segue reference="MoY-ap-rt0"/>
-        <segue reference="muy-cs-vqW"/>
     </inferredMetricsTieBreakers>
 </document>
