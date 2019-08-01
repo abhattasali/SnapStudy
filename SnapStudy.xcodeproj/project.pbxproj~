@@ -16,11 +16,11 @@
 		D47CE0DD22F3493C00E51E88 /* tutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47CE0DC22F3493C00E51E88 /* tutViewController.swift */; };
 		D47CE0DF22F3494900E51E88 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47CE0DE22F3494900E51E88 /* CardView.swift */; };
 		D47CE0E122F3494F00E51E88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D47CE0E022F3494F00E51E88 /* Assets.xcassets */; };
+		D47CE0E322F349A400E51E88 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47CE0E222F349A400E51E88 /* OnboardingViewController.swift */; };
 		FA0F317E22EF76FD00893CF4 /* FlashDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F316922EF756600893CF4 /* FlashDisplay.swift */; };
 		FA0F317F22EF770900893CF4 /* CardPartPagedViewCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F316B22EF756600893CF4 /* CardPartPagedViewCardController.swift */; };
 		FA0F318122EFC55700893CF4 /* UICardWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F318022EFC55700893CF4 /* UICardWrapper.swift */; };
 		FA5DED7522E7C3E200BB6755 /* CounterButton.png in Resources */ = {isa = PBXBuildFile; fileRef = FA5DED7422E7C3E200BB6755 /* CounterButton.png */; };
-		FA6AF32B22F374B60046C1D1 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6AF32A22F374B60046C1D1 /* OnboardingViewController.swift */; };
 		FA6CB25A22E626E500A239AB /* FlashSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CB25922E626E500A239AB /* FlashSet.swift */; };
 		FA6CB26422E69D1300A239AB /* WordToggleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CB26322E69D1300A239AB /* WordToggleTest.swift */; };
 		FA6CB26622E6A4E600A239AB /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = FA6CB26522E6A4E600A239AB /* AppIcon.appiconset */; };
@@ -55,6 +55,7 @@
 		D47CE0DC22F3493C00E51E88 /* tutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tutViewController.swift; sourceTree = "<group>"; };
 		D47CE0DE22F3494900E51E88 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardView.swift; path = ../../../Downloads/swipeableOnboardingUIPageView/testPageView/CardView.swift; sourceTree = "<group>"; };
 		D47CE0E022F3494F00E51E88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Downloads/swipeableOnboardingUIPageView/testPageView/Assets.xcassets; sourceTree = "<group>"; };
+		D47CE0E222F349A400E51E88 /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnboardingViewController.swift; path = ../../../Downloads/swipeableOnboardingUIPageView/testPageView/OnboardingViewController.swift; sourceTree = "<group>"; };
 		FA0F316422EF756600893CF4 /* CardPartOrientedViewCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPartOrientedViewCardController.swift; sourceTree = "<group>"; };
 		FA0F316622EF756600893CF4 /* CardPartButtonViewCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPartButtonViewCardController.swift; sourceTree = "<group>"; };
 		FA0F316722EF756600893CF4 /* CardPartBarViewCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPartBarViewCardController.swift; sourceTree = "<group>"; };
@@ -78,7 +79,6 @@
 		FA0F318022EFC55700893CF4 /* UICardWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICardWrapper.swift; sourceTree = "<group>"; };
 		FA5DED7422E7C3E200BB6755 /* CounterButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CounterButton.png; path = AppIcon.appiconset/CounterButton.png; sourceTree = "<group>"; };
 		FA5DED7622E7E50000BB6755 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
-		FA6AF32A22F374B60046C1D1 /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		FA6CB25922E626E500A239AB /* FlashSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashSet.swift; sourceTree = "<group>"; };
 		FA6CB26322E69D1300A239AB /* WordToggleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordToggleTest.swift; sourceTree = "<group>"; };
 		FA6CB26522E6A4E600A239AB /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppIcon.appiconset; sourceTree = "<group>"; };
@@ -153,11 +153,11 @@
 				D47CE0DE22F3494900E51E88 /* CardView.swift */,
 				04327477223AF8FF00E65B50 /* LaunchScreen.storyboard */,
 				FA0F316922EF756600893CF4 /* FlashDisplay.swift */,
-				FA6AF32A22F374B60046C1D1 /* OnboardingViewController.swift */,
 				FA0F316B22EF756600893CF4 /* CardPartPagedViewCardController.swift */,
 				FA0F316222EF756600893CF4 /* CardParts */,
 				FABAA81722D937FF00675015 /* tessdata */,
 				FA973F7822EBC78700B79D03 /* Main.storyboard */,
+				D47CE0E222F349A400E51E88 /* OnboardingViewController.swift */,
 				D47CE0DA22F3449F00E51E88 /* TutorialBoard.storyboard */,
 				FA5DED7422E7C3E200BB6755 /* CounterButton.png */,
 				04327475223AF8FF00E65B50 /* Assets.xcassets */,
@@ -305,11 +305,15 @@
 				FA89F2B622F35C5F00027EAC /* Roboto-Regular.ttf in Resources */,
 				FABAA81822D937FF00675015 /* tessdata in Resources */,
 				04327476223AF8FF00E65B50 /* Assets.xcassets in Resources */,
+<<<<<<< HEAD
 				FA89F2A522F35BD600027EAC /* fonts in Resources */,
 				FA6CB26622E6A4E600A239AB /* AppIcon.appiconset in Resources */,
+=======
 				D47CE0DB22F3449F00E51E88 /* TutorialBoard.storyboard in Resources */,
 				FA6CB26622E6A4E600A239AB /* AppIcon.appiconset in Resources */,
+				FA5DED7722E7E50000BB6755 /* fonts in Resources */,
 				D47CE0E122F3494F00E51E88 /* Assets.xcassets in Resources */,
+>>>>>>> 1da06bb6915e0eedb8b31d6224219f3ec471b26f
 				FABAA85622DD1F2B00675015 /* SnapStudy.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,12 +374,12 @@
 				FA89F2A422F25BDC00027EAC /* AccountController.swift in Sources */,
 				FA6CB25A22E626E500A239AB /* FlashSet.swift in Sources */,
 				FA6CB26422E69D1300A239AB /* WordToggleTest.swift in Sources */,
-				FA6AF32B22F374B60046C1D1 /* OnboardingViewController.swift in Sources */,
 				04327471223AF8FD00E65B50 /* ViewController.swift in Sources */,
 				D47CE0DF22F3494900E51E88 /* CardView.swift in Sources */,
 				FA89F29C22F20ADF00027EAC /* PaintDisplay.swift in Sources */,
 				0432746F223AF8FD00E65B50 /* AppDelegate.swift in Sources */,
 				FA0F317F22EF770900893CF4 /* CardPartPagedViewCardController.swift in Sources */,
+				D47CE0E322F349A400E51E88 /* OnboardingViewController.swift in Sources */,
 				FA0F318122EFC55700893CF4 /* UICardWrapper.swift in Sources */,
 				FA89F29F22F20B3700027EAC /* Line.swift in Sources */,
 			);
