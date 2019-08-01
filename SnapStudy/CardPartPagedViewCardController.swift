@@ -1,6 +1,6 @@
 //
-//  CardPartPagedViewCardController.swift
-//  CardParts_Example
+//  Created by abhattasali on 7/27/2019.
+//  Copyright (c) 2019 abhattasali. All rights reserved.
 
 import Foundation
 import CardParts
@@ -34,6 +34,9 @@ class CardPartPagedViewCardController: CardPartsViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         cardPartTextView.text = "SnapStudy™"
+        var tm = UIFontDescriptor(name: "Roboto", size: 19.0)
+        tm = tm.addingAttributes([UIFontDescriptor.AttributeName.traits : [UIFontDescriptor.TraitKey.weight : UIFont.Weight.light]])
+        cardPartTextView.font = UIFont(descriptor: tm, size: 19.0)
         cardPartTextView.textAlignment = .right
         cardPartTextView.textColor = UIColor.white
         
@@ -51,9 +54,9 @@ class CardPartPagedViewCardController: CardPartsViewController {
         word.text = self.key
         word.textColor = .white
         word.textAlignment = .center
-        var descriptor = UIFontDescriptor(name: "Roboto", size: 30.0)
+        var descriptor = UIFontDescriptor(name: "Roboto", size: 38.0)
         descriptor = descriptor.addingAttributes([UIFontDescriptor.AttributeName.traits : [UIFontDescriptor.TraitKey.weight: UIFont.Weight.light]])
-        word.font = UIFont(descriptor: descriptor, size: 30.0)
+        word.font = UIFont(descriptor: descriptor, size: 38.0)
         
         let audioKeyButton = CardPartButtonView()
         //audioKeyButton.setTitle("Play Sound", for: .normal)
@@ -97,16 +100,14 @@ class CardPartPagedViewCardController: CardPartsViewController {
         cardImage = CardPartImageView(image: self.image)    //Paint Image if Any
         cardImage?.imageName = self.key
         cardImage?.alpha = 1.0
-        /*
-         cardPartImage.contentMode = .scaleAspectFit
-         cardPartImage.addConstraint(NSLayoutConstraint(item: cardPartImage, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .height, multiplier: 1, constant: 300))
-         */
+        // cardImage?.contentMode = .scaleAspectFit
+    
+        
         
         
         let buttonImage = CardPartButtonView()                  //Optional Image Button
         buttonImage.setTitle("Add Optional Image", for: .normal)
         buttonImage.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
-        
         buttonImage.contentHorizontalAlignment = .center
         
         

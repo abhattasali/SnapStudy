@@ -1,9 +1,9 @@
 //
-//  MainViewController.swift
+//  FlashDisplay.swift
 //  CardParts
 //
-//  Created by tkier on 11/27/2017.
-//  Copyright (c) 2017 tkier. All rights reserved.
+//  Created by abhattasali on 7/27/2019.
+//  Copyright (c) 2019 abhattasali. All rights reserved.
 //
 
 import UIKit
@@ -22,14 +22,11 @@ class FlashDisplay: CardsViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         populateVC()
         loadCards(cards: cards)
-        
     }
     
-    @IBAction func unwindToFlashDisplay(_ sender: UIStoryboardSegue)
-    {
+    @IBAction func unwindToFlashDisplay(_ sender: UIStoryboardSegue) {
         guard let vc = sender.source as? PaintDisplay else { return }
         self.image = vc.testImage
     }

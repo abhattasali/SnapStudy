@@ -3,7 +3,7 @@
 //  SnapStudy
 //
 //  Created by Arun Bhattasali on 7/22/19.
-//  Copyright © 2019 Ray Wenderlich. All rights reserved.
+//  Copyright © 2019 Arun Bhattasali. All rights reserved.
 //
 
 import UIKit
