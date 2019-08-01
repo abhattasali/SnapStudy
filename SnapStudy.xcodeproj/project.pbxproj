@@ -12,6 +12,9 @@
 		04327476223AF8FF00E65B50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04327475223AF8FF00E65B50 /* Assets.xcassets */; };
 		04327479223AF8FF00E65B50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04327477223AF8FF00E65B50 /* LaunchScreen.storyboard */; };
 		98962EF6DA425EB2EF154102 /* Pods_SnapStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D5B8FB206AA94F36104C803 /* Pods_SnapStudy.framework */; };
+		D41A9C5822F37771004C7C48 /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = FA6CB26522E6A4E600A239AB /* AppIcon.appiconset */; };
+		D41A9C5D22F38837004C7C48 /* Dyslexie in Resources */ = {isa = PBXBuildFile; fileRef = D41A9C5C22F38837004C7C48 /* Dyslexie */; };
+		D41A9C7C22F38C01004C7C48 /* OpenDyslexic-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D41A9C7B22F38BED004C7C48 /* OpenDyslexic-Bold.otf */; };
 		D47CE0DB22F3449F00E51E88 /* TutorialBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D47CE0DA22F3449F00E51E88 /* TutorialBoard.storyboard */; };
 		D47CE0DD22F3493C00E51E88 /* tutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47CE0DC22F3493C00E51E88 /* tutViewController.swift */; };
 		FA0F317E22EF76FD00893CF4 /* FlashDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F316922EF756600893CF4 /* FlashDisplay.swift */; };
@@ -22,7 +25,6 @@
 		FA6AF32D22F377120046C1D1 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6AF32C22F377120046C1D1 /* CardView.swift */; };
 		FA6CB25A22E626E500A239AB /* FlashSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CB25922E626E500A239AB /* FlashSet.swift */; };
 		FA6CB26422E69D1300A239AB /* WordToggleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CB26322E69D1300A239AB /* WordToggleTest.swift */; };
-		FA6CB26622E6A4E600A239AB /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = FA6CB26522E6A4E600A239AB /* AppIcon.appiconset */; };
 		FA89F29C22F20ADF00027EAC /* PaintDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89F29B22F20ADF00027EAC /* PaintDisplay.swift */; };
 		FA89F29F22F20B3700027EAC /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89F29D22F20B3700027EAC /* Line.swift */; };
 		FA89F2A022F20B3700027EAC /* Canvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89F29E22F20B3700027EAC /* Canvas.swift */; };
@@ -50,6 +52,16 @@
 		33A582C1166464D0705C3702 /* Pods-SnapStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapStudy.debug.xcconfig"; path = "Target Support Files/Pods-SnapStudy/Pods-SnapStudy.debug.xcconfig"; sourceTree = "<group>"; };
 		7F96789CEFBB110D975DA524 /* Pods-SnapStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapStudy.debug.xcconfig"; path = "Target Support Files/Pods-SnapStudy/Pods-SnapStudy.debug.xcconfig"; sourceTree = "<group>"; };
 		BC82438701B4AE0012F871E8 /* Pods-SnapStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapStudy.release.xcconfig"; path = "Target Support Files/Pods-SnapStudy/Pods-SnapStudy.release.xcconfig"; sourceTree = "<group>"; };
+		D41A9C5C22F38837004C7C48 /* Dyslexie */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Dyslexie; path = ../../Dyslexie; sourceTree = "<group>"; };
+		D41A9C7322F38BED004C7C48 /* OpenDyslexicMono-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenDyslexicMono-Regular.otf"; path = "fonts/OpenDyslexicMono-Regular.otf"; sourceTree = "<group>"; };
+		D41A9C7422F38BED004C7C48 /* OpenDyslexicAlta-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenDyslexicAlta-Regular.otf"; path = "fonts/OpenDyslexicAlta-Regular.otf"; sourceTree = "<group>"; };
+		D41A9C7522F38BED004C7C48 /* OpenDyslexic-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenDyslexic-Regular.otf"; path = "fonts/OpenDyslexic-Regular.otf"; sourceTree = "<group>"; };
+		D41A9C7622F38BED004C7C48 /* OpenDyslexic-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenDyslexic-Italic.otf"; path = "fonts/OpenDyslexic-Italic.otf"; sourceTree = "<group>"; };
+		D41A9C7722F38BED004C7C48 /* OpenDyslexicAlta-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenDyslexicAlta-Bold.otf"; path = "fonts/OpenDyslexicAlta-Bold.otf"; sourceTree = "<group>"; };
+		D41A9C7822F38BED004C7C48 /* OpenDyslexicAlta-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenDyslexicAlta-BoldItalic.otf"; path = "fonts/OpenDyslexicAlta-BoldItalic.otf"; sourceTree = "<group>"; };
+		D41A9C7922F38BED004C7C48 /* OpenDyslexicAlta-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenDyslexicAlta-Italic.otf"; path = "fonts/OpenDyslexicAlta-Italic.otf"; sourceTree = "<group>"; };
+		D41A9C7A22F38BED004C7C48 /* OpenDyslexic-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenDyslexic-BoldItalic.otf"; path = "fonts/OpenDyslexic-BoldItalic.otf"; sourceTree = "<group>"; };
+		D41A9C7B22F38BED004C7C48 /* OpenDyslexic-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenDyslexic-Bold.otf"; path = "fonts/OpenDyslexic-Bold.otf"; sourceTree = "<group>"; };
 		D47CE0DA22F3449F00E51E88 /* TutorialBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TutorialBoard.storyboard; sourceTree = "<group>"; };
 		D47CE0DC22F3493C00E51E88 /* tutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tutViewController.swift; sourceTree = "<group>"; };
 		FA0F316422EF756600893CF4 /* CardPartOrientedViewCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPartOrientedViewCardController.swift; sourceTree = "<group>"; };
@@ -143,12 +155,22 @@
 				FABAA85922DE7ABA00675015 /* dictionary.json */,
 				FA5DED7622E7E50000BB6755 /* fonts */,
 				04327470223AF8FD00E65B50 /* ViewController.swift */,
+				D41A9C5C22F38837004C7C48 /* Dyslexie */,
 				FA89F29E22F20B3700027EAC /* Canvas.swift */,
 				FA89F2A622F35C4600027EAC /* Roboto */,
 				FA89F29D22F20B3700027EAC /* Line.swift */,
 				D47CE0DC22F3493C00E51E88 /* tutViewController.swift */,
 				FA6AF32C22F377120046C1D1 /* CardView.swift */,
 				04327477223AF8FF00E65B50 /* LaunchScreen.storyboard */,
+				D41A9C7B22F38BED004C7C48 /* OpenDyslexic-Bold.otf */,
+				D41A9C7A22F38BED004C7C48 /* OpenDyslexic-BoldItalic.otf */,
+				D41A9C7622F38BED004C7C48 /* OpenDyslexic-Italic.otf */,
+				D41A9C7522F38BED004C7C48 /* OpenDyslexic-Regular.otf */,
+				D41A9C7722F38BED004C7C48 /* OpenDyslexicAlta-Bold.otf */,
+				D41A9C7822F38BED004C7C48 /* OpenDyslexicAlta-BoldItalic.otf */,
+				D41A9C7922F38BED004C7C48 /* OpenDyslexicAlta-Italic.otf */,
+				D41A9C7422F38BED004C7C48 /* OpenDyslexicAlta-Regular.otf */,
+				D41A9C7322F38BED004C7C48 /* OpenDyslexicMono-Regular.otf */,
 				FA0F316922EF756600893CF4 /* FlashDisplay.swift */,
 				FA6AF32A22F374B60046C1D1 /* OnboardingViewController.swift */,
 				FA0F316B22EF756600893CF4 /* CardPartPagedViewCardController.swift */,
@@ -262,7 +284,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					0432746A223AF8FD00E65B50 = {
@@ -296,6 +318,7 @@
 				FA89F2B422F35C5600027EAC /* Roboto-Medium.ttf in Resources */,
 				FA5DED7522E7C3E200BB6755 /* CounterButton.png in Resources */,
 				FA973F7922EBC78700B79D03 /* Main.storyboard in Resources */,
+				D41A9C5D22F38837004C7C48 /* Dyslexie in Resources */,
 				FA89F2B522F35C5C00027EAC /* Roboto-Light.ttf in Resources */,
 				04327479223AF8FF00E65B50 /* LaunchScreen.storyboard in Resources */,
 				FABAA85A22DE7ABA00675015 /* dictionary.json in Resources */,
@@ -303,10 +326,10 @@
 				FABAA81822D937FF00675015 /* tessdata in Resources */,
 				04327476223AF8FF00E65B50 /* Assets.xcassets in Resources */,
 				FA89F2A522F35BD600027EAC /* fonts in Resources */,
-				FA6CB26622E6A4E600A239AB /* AppIcon.appiconset in Resources */,
+				D41A9C5822F37771004C7C48 /* AppIcon.appiconset in Resources */,
 				D47CE0DB22F3449F00E51E88 /* TutorialBoard.storyboard in Resources */,
-				FA6CB26622E6A4E600A239AB /* AppIcon.appiconset in Resources */,
 				FABAA85622DD1F2B00675015 /* SnapStudy.png in Resources */,
+				D41A9C7C22F38C01004C7C48 /* OpenDyslexic-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
