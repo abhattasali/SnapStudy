@@ -39,29 +39,29 @@ class AccountController: UIViewController
         let appDel = UIApplication.shared.delegate as! AppDelegate
         if(dyslexieSwitch.isOn)
         {
-            print("ON")
+            //print("ON")
             appDel.isDyslexieOn = true
-            
-            text5.titleLabel?.font = UIFont(name: "Roboto-Medium", size: 30)
-            
-            //text5.titleLabel?.font = UIFont(name: "Roboto-Medium")?  //(name: "Roboto", size: 50)
-            
-         
-            
-            
-            for family in UIFont.familyNames.sorted() {
-                let names = UIFont.fontNames(forFamilyName: family)
-                print("Family: \(family) Font names: \(names)")
-            }
-            
-            //text5.titleLabel?.backgroundColor = .blue
+            text1.titleLabel?.font = UIFont(name: "OpenDyslexicMono-Regular", size: 21)
+            text2.titleLabel?.font = UIFont(name: "OpenDyslexicMono-Regular", size: 21)
+            text3.titleLabel?.font = UIFont(name: "OpenDyslexicMono-Regular", size: 21)
+            text4.titleLabel?.font = UIFont(name: "OpenDyslexicMono-Regular", size: 21)
+            text5.titleLabel?.font = UIFont(name: "OpenDyslexicMono-Regular", size: 21)
+
            
         }
         else
         {
-            print("OFF")
+            //print("OFF")
+            text1.titleLabel?.font = UIFont(name: "Roboto", size: 21)
+            text2.titleLabel?.font = UIFont(name: "Roboto", size: 21)
+            text3.titleLabel?.font = UIFont(name: "Roboto", size: 21)
+            text4.titleLabel?.font = UIFont(name: "Roboto", size: 21)
+            text5.titleLabel?.font = UIFont(name: "Roboto", size: 21)
             appDel.isDyslexieOn = false
         }
+      
+        
+        
     }
     
     

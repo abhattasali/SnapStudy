@@ -35,6 +35,8 @@
 		FA89F2B622F35C5F00027EAC /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA89F2A922F35C4600027EAC /* Roboto-Regular.ttf */; };
 		FA973F7722EB70A500B79D03 /* UICardTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA973F7622EB70A500B79D03 /* UICardTest.swift */; };
 		FA973F7922EBC78700B79D03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA973F7822EBC78700B79D03 /* Main.storyboard */; };
+		FAB2AD1222F38EFD002687C0 /* OpenDyslexicMono-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D41A9C7322F38BED004C7C48 /* OpenDyslexicMono-Regular.otf */; };
+		FAB2AD1322F39627002687C0 /* OpenDyslexicAlta-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D41A9C7422F38BED004C7C48 /* OpenDyslexicAlta-Regular.otf */; };
 		FABAA81822D937FF00675015 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = FABAA81722D937FF00675015 /* tessdata */; };
 		FABAA85622DD1F2B00675015 /* SnapStudy.png in Resources */ = {isa = PBXBuildFile; fileRef = FABAA85522DD1F2A00675015 /* SnapStudy.png */; };
 		FABAA85A22DE7ABA00675015 /* dictionary.json in Resources */ = {isa = PBXBuildFile; fileRef = FABAA85922DE7ABA00675015 /* dictionary.json */; };
@@ -315,8 +317,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAB2AD1322F39627002687C0 /* OpenDyslexicAlta-Regular.otf in Resources */,
 				FA89F2B422F35C5600027EAC /* Roboto-Medium.ttf in Resources */,
 				FA5DED7522E7C3E200BB6755 /* CounterButton.png in Resources */,
+				FAB2AD1222F38EFD002687C0 /* OpenDyslexicMono-Regular.otf in Resources */,
 				FA973F7922EBC78700B79D03 /* Main.storyboard in Resources */,
 				D41A9C5D22F38837004C7C48 /* Dyslexie in Resources */,
 				FA89F2B522F35C5C00027EAC /* Roboto-Light.ttf in Resources */,

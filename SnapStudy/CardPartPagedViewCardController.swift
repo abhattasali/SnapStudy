@@ -12,9 +12,7 @@ class CardPartPagedViewCardController: CardPartsViewController
 {
     
     let cardPartTextView = CardPartTextView(type: .normal)
-    
     var testUIImage : UIImage? = nil
-
     var key : String = ""
     var definition : String = ""
     var image : UIImage? = nil
@@ -24,8 +22,19 @@ class CardPartPagedViewCardController: CardPartsViewController
     let synthesizer = AVSpeechSynthesizer()
     
     var cardImage : CardPartImageView? = nil
+    var dyslexieBool : Bool = false
+    var myFont : String = "Roboto"
+   
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
+        
+        let appDel = UIApplication.shared.delegate as! AppDelegate
+        dyslexieBool = appDel.isDyslexieOn
+        if(dyslexieBool) {
+            myFont = "OpenDyslexicAlta-Regular"
+        }
+        
         super.viewDidLoad()
         cardPartTextView.text = "SnapStudy™"
         var tm = UIFontDescriptor(name: "Roboto", size: 19.0)
@@ -48,7 +57,7 @@ class CardPartPagedViewCardController: CardPartsViewController
         word.text = self.key
         word.textColor = .white
         word.textAlignment = .center
-        var descriptor = UIFontDescriptor(name: "Roboto", size: 38.0)
+        var descriptor = UIFontDescriptor(name: myFont, size: 38.0)
         descriptor = descriptor.addingAttributes([UIFontDescriptor.AttributeName.traits : [UIFontDescriptor.TraitKey.weight: UIFont.Weight.light]])
         word.font = UIFont(descriptor: descriptor, size: 38.0)
         
@@ -73,7 +82,7 @@ class CardPartPagedViewCardController: CardPartsViewController
         let cardDef = CardPartTextView(type: .normal)
         cardDef.text = self.definition
         cardDef.textColor = .white
-        var defDescriptor = UIFontDescriptor(name: "Roboto", size: 14.0)
+        var defDescriptor = UIFontDescriptor(name: myFont, size: 14.0)
         defDescriptor = defDescriptor.addingAttributes([UIFontDescriptor.AttributeName.traits : [UIFontDescriptor.TraitKey.weight : UIFont.Weight.light]])
         cardDef.font = UIFont(descriptor: defDescriptor, size: 14.0)
         cardDef.textAlignment = .center
@@ -96,9 +105,8 @@ class CardPartPagedViewCardController: CardPartsViewController
         cardImage = CardPartImageView(image: self.image)    //Paint Image if Any
         cardImage?.imageName = self.key
         cardImage?.alpha = 1.0
-        // cardImage?.contentMode = .scaleAspectFit
+       
     
-        
         
         
         let buttonImage = CardPartButtonView()                  //Optional Image Button
@@ -145,7 +153,7 @@ class CardPartPagedViewCardController: CardPartsViewController
     func readText(myText: String, myLang: String)
     {
         if(isPlayingSound) {
-            synthesizer.stopSpeaking(at: .word)
+            synthesizer.stopSpeaking(at: .immediate)
             isPlayingSound = false
         }
         else {
@@ -167,7 +175,7 @@ class CardPartPagedViewCardController: CardPartsViewController
             isPlayingSound2 = true
         }
         else {
-            synthesizer.stopSpeaking(at: .word)
+            synthesizer.stopSpeaking(at: .immediate)
             isPlayingSound2 = false
         }
         
