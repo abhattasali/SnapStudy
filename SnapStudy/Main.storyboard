@@ -168,10 +168,10 @@
             </objects>
             <point key="canvasLocation" x="-2799" y="-497"/>
         </scene>
-        <!--View Controller-->
+        <!--Log InVC-->
         <scene sceneID="0Fw-vi-GQk">
             <objects>
-                <viewController id="tsa-aT-wiM" customClass="ViewController" customModule="SnapStudy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="tsa-aT-wiM" customClass="LogInVC" customModule="SnapStudy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SW1-Ym-bf2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -230,6 +230,10 @@
                         <viewLayoutGuide key="safeArea" id="F1K-b6-Td2"/>
                     </view>
                     <navigationItem key="navigationItem" id="n0e-Mx-bcT"/>
+                    <connections>
+                        <outlet property="password" destination="yRB-q5-nQM" id="rYS-qo-Iy0"/>
+                        <outlet property="username" destination="Wx8-e7-m1e" id="AvA-Ap-nys"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zfz-c9-yQA" sceneMemberID="firstResponder"/>
             </objects>
