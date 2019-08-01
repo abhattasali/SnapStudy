@@ -49,10 +49,10 @@ class AccountController: UIViewController
          
             
             
-//            for family in UIFont.familyNames.sorted() {
-//                let names = UIFont.fontNames(forFamilyName: family)
-//                print("Family: \(family) Font names: \(names)")
-//            }
+            for family in UIFont.familyNames.sorted() {
+                let names = UIFont.fontNames(forFamilyName: family)
+                print("Family: \(family) Font names: \(names)")
+            }
             
             //text5.titleLabel?.backgroundColor = .blue
            
