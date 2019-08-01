@@ -57,9 +57,9 @@ class CardPartPagedViewCardController: CardPartsViewController
         word.text = self.key
         word.textColor = .white
         word.textAlignment = .center
-        var descriptor = UIFontDescriptor(name: myFont, size: 44.0)
+        var descriptor = UIFontDescriptor(name: myFont, size: 33.0)
         descriptor = descriptor.addingAttributes([UIFontDescriptor.AttributeName.traits : [UIFontDescriptor.TraitKey.weight: UIFont.Weight.light]])
-        word.font = UIFont(descriptor: descriptor, size: 44.0)
+        word.font = UIFont(descriptor: descriptor, size: 33.0)
         
         let audioKeyButton = CardPartButtonView()
         //audioKeyButton.setTitle("Play Sound", for: .normal)
