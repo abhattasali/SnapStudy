@@ -129,6 +129,11 @@ extension WordToggleTest: UITableViewDataSource {
         let cell = UITableViewCell()
         let term = terms[indexPath.row]
         cell.textLabel?.text = term
+        let appDel = UIApplication.shared.delegate as! AppDelegate
+        if(appDel.isDyslexieOn)
+        {
+            cell.textLabel?.font =  UIFont(name: "OpenDyslexicMono-Regular", size: 18)
+        }
         
         let switchView = UISwitch(frame: .zero)
         switchView.setOn(true, animated: true)

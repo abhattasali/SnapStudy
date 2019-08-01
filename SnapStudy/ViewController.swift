@@ -53,9 +53,7 @@ class ViewController: UIViewController
             let cameraButton = UIAlertAction(
                 title: "Take Photo",
                 style: .default) { (alert) -> Void in
-                   // self.counter = self.counter + 1
-                    //self.counterLabel.text = "\(self.counter)"
-                    //self.activityIndicator.startAnimating()
+                  
                     self.loadingIcon.image = UIImage.animatedImageNamed("Loading-Book_", duration: 3.0)
                     UIView.animate(withDuration: 0.2) { self.loadingIcon.alpha = 1.0
                     }
@@ -76,9 +74,7 @@ class ViewController: UIViewController
         let libraryButton = UIAlertAction(
             title: "Choose Existing",
             style: .default) { (alert) -> Void in
-                //self.counter = self.counter + 1
-                //self.counterLabel.text = "\(self.counter)"
-                //self.activityIndicator.startAnimating()
+                
                 self.loadingIcon.image = UIImage.animatedImageNamed("Loading-Book_", duration: 3.0)
                 UIView.animate(withDuration: 0.2) { self.loadingIcon.alpha = 1.0
                 }
