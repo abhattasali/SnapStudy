@@ -25,6 +25,12 @@ class ViewController: UIViewController
     if(appDel.isDyslexieOn)
     {
       textView.font =  UIFont(name: "OpenDyslexicMono-Regular", size: 18)
+      textView.text = "Preview your converted text here\n\nPress the camera to add or upload images"
+    }
+    else
+    {
+        textView.font =  UIFont(name: "Roboto", size: 18)
+        textView.text = "Preview your converted text here\n\nPress the camera to add or upload images"
     }
    
   }
@@ -74,7 +80,7 @@ class ViewController: UIViewController
         let libraryButton = UIAlertAction(
             title: "Choose Existing",
             style: .default) { (alert) -> Void in
-                
+              
                 self.loadingIcon.image = UIImage.animatedImageNamed("Loading-Book_", duration: 3.0)
                 UIView.animate(withDuration: 0.2) { self.loadingIcon.alpha = 1.0
                 }
