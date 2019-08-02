@@ -35,6 +35,8 @@ class ViewController: UIViewController
         textView.text = "Preview your converted text here\n\nPress the camera to add or upload images"
     }
     
+    textView.layer.cornerRadius = 10
+    
   }
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

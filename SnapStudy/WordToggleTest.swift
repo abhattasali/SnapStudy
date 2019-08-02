@@ -16,6 +16,7 @@ import Foundation
 class WordToggleTest: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var createButton: UIButton!
     
     var wt_flashset: FlashSet!
     var terms = [String]()
@@ -25,7 +26,7 @@ class WordToggleTest: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.createButton.layer.cornerRadius = 10
         for keyword in wt_flashset.myWordCards.keys.sorted() {
             add(keyword)
         }
