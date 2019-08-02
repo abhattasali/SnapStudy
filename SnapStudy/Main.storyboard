@@ -321,12 +321,25 @@
                                 <segue destination="14S-p8-bI0" kind="show" id="rmZ-Qc-iKa"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="wyE-Yz-sYx">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <connections>
-                                <action selector="onAddTapped" destination="Lb8-p9-4Hh" id="xix-4D-wxX"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="wyE-Yz-sYx">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="onAddTapped" destination="Lb8-p9-4Hh" id="xix-4D-wxX"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem style="plain" id="Xwn-w4-DHe">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ggg-7i-d2N" userLabel="Add Title">
+                                    <rect key="frame" x="240" y="5.6666666666666679" width="83" height="33"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <state key="normal" title="Add Title"/>
+                                </button>
+                                <connections>
+                                    <action selector="titleBtn:" destination="Lb8-p9-4Hh" id="ZQv-Gd-bSp"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="createButton" destination="zVv-Qo-QcI" id="zBa-1n-Xjd"/>
@@ -844,7 +857,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="R5u-C1-Z8M"/>
-        <segue reference="SfY-x1-kO4"/>
+        <segue reference="rmZ-Qc-iKa"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>
