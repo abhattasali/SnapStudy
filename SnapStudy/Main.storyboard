@@ -382,7 +382,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Quiz" image="gameWhite"/>
                                 <connections>
-                                    <segue destination="FB4-Ga-uFk" kind="show" id="moa-n4-70Y"/>
+                                    <segue destination="gHJ-m2-Gsp" kind="showDetail" id="e3Y-9z-8Uu"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cog-v6-yR8">
@@ -856,9 +856,6 @@
                                 <color key="backgroundColor" red="0.87714213129999996" green="0.69531911609999997" blue="0.23510694500000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="Game 1"/>
-                                <connections>
-                                    <segue destination="gHJ-m2-Gsp" kind="showDetail" id="vpP-ne-w1h"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvs-lG-B28">
                                 <rect key="frame" x="50" y="412" width="280" height="163"/>
@@ -899,7 +896,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="R5u-C1-Z8M"/>
-        <segue reference="fKZ-bD-f2E"/>
+        <segue reference="muy-cs-vqW"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>
