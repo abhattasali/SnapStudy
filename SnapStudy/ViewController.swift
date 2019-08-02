@@ -25,12 +25,12 @@ class ViewController: UIViewController
     if(appDel.isDyslexieOn)
     {
       textView.font =  UIFont(name: "OpenDyslexicMono-Regular", size: 18)
-      textView.text = "Preview your converted text here\n\nPress the camera to add or upload images"
+      textView.text = "\n\n\n\nPreview your converted text here\n\nPress the camera to add or upload images"
     }
     else
     {
         textView.font =  UIFont(name: "Roboto", size: 18)
-        textView.text = "Preview your converted text here\n\nPress the camera to add or upload images"
+        textView.text = "\n\n\n\nPreview your converted text here\n\nPress the camera to add or upload images"
     }
    
   }

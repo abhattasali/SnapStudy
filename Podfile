@@ -6,4 +6,5 @@ target 'SnapStudy' do
   pod 'TesseractOCRiOS'
   pod 'GPUImage'
   pod 'CardParts'
+  pod 'lottie-ios'
 end

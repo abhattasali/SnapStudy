@@ -32,8 +32,8 @@ class WordToggleTest: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let cardWrapperVC = segue.destination as? UICardWrapper else { return }
-        cardWrapperVC.flashset = wt_flashset
+        guard let cardWrapperVC = segue.destination as? LottieViewController else { return }
+        cardWrapperVC.wt_flashset = wt_flashset
     }
     
     //BUTTON COMPUTATION

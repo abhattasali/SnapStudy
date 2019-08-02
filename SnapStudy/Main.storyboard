@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="14S-p8-bI0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="T5A-ni-CXs">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -55,7 +55,7 @@
                                         <size key="titleShadowOffset" width="1" height="1"/>
                                         <state key="normal" title="Snap/Upload Photo" image="CounterButton.png">
                                             <color key="titleColor" red="0.89803921568627454" green="0.73333333333333328" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <color key="titleShadowColor" white="0.0" alpha="0.50486483900000001" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="0.54136344178082196" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         </state>
                                         <state key="disabled">
                                             <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
@@ -85,7 +85,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z48-IO-9Zi">
                                         <rect key="frame" x="143" y="531" width="89" height="59"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23.5"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="26"/>
                                         <state key="normal" title="Done">
                                             <color key="titleColor" red="0.89803921568627454" green="0.73333333333333328" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
@@ -225,7 +225,7 @@
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.87978327270000001" green="0.69555008409999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.8784313725490196" green="0.69411764705882351" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="F1K-b6-Td2"/>
                     </view>
                     <navigationItem key="navigationItem" id="n0e-Mx-bcT"/>
@@ -287,7 +287,7 @@
                                 <state key="normal" title="Create!"/>
                                 <connections>
                                     <action selector="computeToggle:" destination="Lb8-p9-4Hh" eventType="touchUpInside" id="Bn3-jk-3UR"/>
-                                    <segue destination="F8i-xS-mIO" kind="showDetail" id="opT-Ef-Tkz"/>
+                                    <segue destination="ikc-2V-IaZ" kind="showDetail" id="hhj-0t-PGt"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -329,14 +329,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EhM-kR-jG0">
-                                <rect key="frame" x="0.0" y="96" width="375" height="682"/>
+                                <rect key="frame" x="1" y="44" width="375" height="682"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="i2g-BM-i8c" kind="embed" id="ayq-AP-CJX"/>
                                 </connections>
                             </containerView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbw-m8-ccf">
-                                <rect key="frame" x="173" y="55" width="30" height="30"/>
+                                <rect key="frame" x="173" y="734" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Home"/>
                                 <connections>
@@ -578,6 +578,32 @@
             </objects>
             <point key="canvasLocation" x="1544.8" y="-497.29064039408871"/>
         </scene>
+        <!--Lottie View Controller-->
+        <scene sceneID="FGY-zG-tGb">
+            <objects>
+                <viewController id="ikc-2V-IaZ" customClass="LottieViewController" customModule="testLottie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yHb-Dw-Usi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2m5-Od-fig">
+                                <rect key="frame" x="45" y="230" width="285" height="264"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.8993108868598938" green="0.73492562770843506" blue="0.28221327066421509" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.8993108868598938" green="0.73492562770843506" blue="0.28221327066421509" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="XQ5-JU-vR6"/>
+                    </view>
+                    <connections>
+                        <outlet property="smallFrame" destination="2m5-Od-fig" id="lb8-qM-md7"/>
+                        <segue destination="F8i-xS-mIO" kind="showDetail" identifier="testSegue" id="urx-Hb-2p2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ckV-Gt-xYK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1918" y="991"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Acc" width="30" height="30"/>
@@ -590,6 +616,7 @@
         <image name="imageedit_8_7978368360" width="144" height="158"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="urx-Hb-2p2"/>
         <segue reference="MoY-ap-rt0"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -38,6 +38,8 @@
 		FAB2AD1222F38EFD002687C0 /* OpenDyslexicMono-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D41A9C7322F38BED004C7C48 /* OpenDyslexicMono-Regular.otf */; };
 		FAB2AD1322F39627002687C0 /* OpenDyslexicAlta-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D41A9C7422F38BED004C7C48 /* OpenDyslexicAlta-Regular.otf */; };
 		FAB2AD1522F3AA7B002687C0 /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2AD1422F3AA7B002687C0 /* LogInVC.swift */; };
+		FAB2AD5722F4A212002687C0 /* LottieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2AD5622F4A211002687C0 /* LottieViewController.swift */; };
+		FAB2AD5922F4A31A002687C0 /* animation.json in Resources */ = {isa = PBXBuildFile; fileRef = FAB2AD5822F4A31A002687C0 /* animation.json */; };
 		FABAA81822D937FF00675015 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = FABAA81722D937FF00675015 /* tessdata */; };
 		FABAA85A22DE7ABA00675015 /* dictionary.json in Resources */ = {isa = PBXBuildFile; fileRef = FABAA85922DE7ABA00675015 /* dictionary.json */; };
 /* End PBXBuildFile section */
@@ -114,6 +116,8 @@
 		FA973F7622EB70A500B79D03 /* UICardTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICardTest.swift; sourceTree = "<group>"; };
 		FA973F7822EBC78700B79D03 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		FAB2AD1422F3AA7B002687C0 /* LogInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInVC.swift; sourceTree = "<group>"; };
+		FAB2AD5622F4A211002687C0 /* LottieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LottieViewController.swift; sourceTree = "<group>"; };
+		FAB2AD5822F4A31A002687C0 /* animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animation.json; sourceTree = "<group>"; };
 		FABAA81722D937FF00675015 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		FABAA85922DE7ABA00675015 /* dictionary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dictionary.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -176,6 +180,8 @@
 				FA0F316922EF756600893CF4 /* FlashDisplay.swift */,
 				FA6AF32A22F374B60046C1D1 /* OnboardingViewController.swift */,
 				FA0F316B22EF756600893CF4 /* CardPartPagedViewCardController.swift */,
+				FAB2AD5822F4A31A002687C0 /* animation.json */,
+				FAB2AD5622F4A211002687C0 /* LottieViewController.swift */,
 				FA0F316222EF756600893CF4 /* CardParts */,
 				FABAA81722D937FF00675015 /* tessdata */,
 				FA973F7822EBC78700B79D03 /* Main.storyboard */,
@@ -324,6 +330,7 @@
 				FA973F7922EBC78700B79D03 /* Main.storyboard in Resources */,
 				D41A9C5D22F38837004C7C48 /* Dyslexie in Resources */,
 				FA89F2B522F35C5C00027EAC /* Roboto-Light.ttf in Resources */,
+				FAB2AD5922F4A31A002687C0 /* animation.json in Resources */,
 				04327479223AF8FF00E65B50 /* LaunchScreen.storyboard in Resources */,
 				FABAA85A22DE7ABA00675015 /* dictionary.json in Resources */,
 				FA89F2B622F35C5F00027EAC /* Roboto-Regular.ttf in Resources */,
@@ -385,6 +392,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAB2AD5722F4A212002687C0 /* LottieViewController.swift in Sources */,
 				FA973F7722EB70A500B79D03 /* UICardTest.swift in Sources */,
 				FA89F2A022F20B3700027EAC /* Canvas.swift in Sources */,
 				D47CE0DD22F3493C00E51E88 /* tutViewController.swift in Sources */,
