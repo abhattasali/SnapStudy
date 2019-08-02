@@ -30,7 +30,7 @@
                                 </connections>
                             </containerView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kia-4J-mZO">
-                                <rect key="frame" x="345" y="74" width="40" height="30"/>
+                                <rect key="frame" x="310" y="83" width="40" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Done">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -93,7 +93,7 @@
                                 <rect key="frame" x="8" y="52" width="398" height="802"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Flashsets" translatesAutoresizingMaskIntoConstraints="NO" id="jXZ-v2-cOH">
-                                        <rect key="frame" x="0.0" y="0.0" width="398" height="802"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="398.00000000000011" height="802"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="10"/>
@@ -177,7 +177,7 @@
                                 <rect key="frame" x="8" y="52" width="398" height="802"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Upload" translatesAutoresizingMaskIntoConstraints="NO" id="XOm-90-FfL">
-                                        <rect key="frame" x="0.0" y="0.0" width="398" height="802"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="398.00000000000011" height="802"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="10"/>
@@ -245,7 +245,7 @@
                                 <rect key="frame" x="8" y="52" width="398" height="802"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Filter" translatesAutoresizingMaskIntoConstraints="NO" id="KKe-qp-RXg">
-                                        <rect key="frame" x="0.0" y="0.0" width="398" height="802"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="398.00000000000011" height="802"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="10"/>
@@ -314,7 +314,7 @@
                                 <rect key="frame" x="8" y="52" width="398" height="802"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Terms" translatesAutoresizingMaskIntoConstraints="NO" id="jPc-0j-ypq">
-                                        <rect key="frame" x="0.0" y="0.0" width="398" height="802"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="398.00000000000011" height="802"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="10"/>
