@@ -6,7 +6,7 @@ PODS:
     - RxSwift (~> 4.5)
   - Differentiator (3.1.0)
   - GPUImage (0.1.7)
-  - lottie-ios (3.1.1)
+  - lottie-ios (3.1.2)
   - Reductio (1.4.0)
   - RxCocoa (4.5.0):
     - RxSwift (>= 4.4.2, ~> 4.4)
@@ -44,7 +44,7 @@ SPEC CHECKSUMS:
   CardParts: 85304e4aa9257f8b7274b9c2527c56c06a15b7f5
   Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
   GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
-  lottie-ios: 43a472d22b2dd2bed292cc4010c0b4d2e66d3ba8
+  lottie-ios: 49cd85b1f24f61a7708ad7ec76a523ab2d0e3100
   Reductio: bb6fe437dc1025f766d1c39161029efad2220cc9
   RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
   RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
@@ -54,4 +54,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 8e7aec637d3e70a831d1b101401ad6ce8462960c
 
-COCOAPODS: 1.7.3
+COCOAPODS: 1.7.5

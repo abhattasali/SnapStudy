@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="T5A-ni-CXs">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="14S-p8-bI0">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -55,7 +55,7 @@
                                         <size key="titleShadowOffset" width="1" height="1"/>
                                         <state key="normal" title="Snap/Upload Photo" image="CounterButton.png">
                                             <color key="titleColor" red="0.89803921568627454" green="0.73333333333333328" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <color key="titleShadowColor" white="0.0" alpha="0.54136344178082196" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="0.50486483900000001" colorSpace="calibratedWhite"/>
                                         </state>
                                         <state key="disabled">
                                             <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
@@ -85,7 +85,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z48-IO-9Zi">
                                         <rect key="frame" x="143" y="531" width="89" height="59"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="26"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23.5"/>
                                         <state key="normal" title="Done">
                                             <color key="titleColor" red="0.89803921568627454" green="0.73333333333333328" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
@@ -232,7 +232,7 @@
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.8784313725490196" green="0.69411764705882351" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.87978327270000001" green="0.69555008409999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="F1K-b6-Td2"/>
                     </view>
                     <navigationItem key="navigationItem" id="n0e-Mx-bcT"/>
@@ -290,13 +290,14 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zVv-Qo-QcI">
                                 <rect key="frame" x="151" y="597" width="73" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.87714213129999996" green="0.69531911609999997" blue="0.23510694500000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto Medium" pointSize="17"/>
                                 <state key="normal" title="Create!">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="computeToggle:" destination="Lb8-p9-4Hh" eventType="touchUpInside" id="Bn3-jk-3UR"/>
-                                    <segue destination="ikc-2V-IaZ" kind="showDetail" id="hhj-0t-PGt"/>
+                                    <segue destination="bF8-gf-1EU" kind="showDetail" id="cvG-6K-QjX"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -343,32 +344,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EhM-kR-jG0">
-<<<<<<< HEAD
-                                <rect key="frame" x="1" y="44" width="375" height="682"/>
-=======
                                 <rect key="frame" x="0.0" y="44" width="375" height="682"/>
->>>>>>> 5c5e1da97555e2e66f10eb4cba20429b791255f5
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="i2g-BM-i8c" kind="embed" id="ayq-AP-CJX"/>
                                 </connections>
                             </containerView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbw-m8-ccf">
-<<<<<<< HEAD
-                                <rect key="frame" x="173" y="734" width="30" height="30"/>
-=======
                                 <rect key="frame" x="167" y="730" width="40" height="40"/>
->>>>>>> 5c5e1da97555e2e66f10eb4cba20429b791255f5
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="whiteHome"/>
                                 <connections>
                                     <segue destination="14S-p8-bI0" kind="showDetail" id="muy-cs-vqW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJn-yl-gx9">
-                                <rect key="frame" x="327" y="735" width="32" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJn-yl-gx9">
+                                <rect key="frame" x="319" y="729" width="40" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Quiz"/>
+                                <state key="normal" title="Quiz" image="gameWhite"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.87714213129999996" green="0.69531911609999997" blue="0.23510694500000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -393,6 +386,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h4P-ZC-WkR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3380" y="252"/>
+        </scene>
+        <!--Lottie View Controller-->
+        <scene sceneID="cYP-kY-Sex">
+            <objects>
+                <viewController id="bF8-gf-1EU" customClass="LottieViewController" customModule="SnapStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="id1-9m-64E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e3U-tM-hnt">
+                                <rect key="frame" x="40" y="227" width="294" height="275"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.87714213129999996" green="0.69531911609999997" blue="0.23510694500000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.87714213132858276" green="0.69531911611557007" blue="0.2351069450378418" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="wzx-lf-jRw"/>
+                    </view>
+                    <connections>
+                        <outlet property="smallView" destination="e3U-tM-hnt" id="vt9-0u-E1u"/>
+                        <segue destination="F8i-xS-mIO" kind="showDetail" identifier="testSegue" id="Tip-0F-bFp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tqd-jA-Fop" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2000.8" y="1039.6551724137933"/>
         </scene>
         <!--Paint Display-->
         <scene sceneID="GtU-BH-A02">
@@ -441,10 +460,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7mc-IV-TGf">
-                                <rect key="frame" x="312" y="407" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </switch>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fBS-VP-nkF">
                                 <rect key="frame" x="16" y="153" width="343" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -452,6 +467,9 @@
                                 <state key="normal" title="Share">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="shareBtn:" destination="zsP-Ng-7ea" eventType="touchUpInside" id="6iQ-Pj-vs4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dan-oF-9V4">
                                 <rect key="frame" x="16" y="317" width="288" height="70"/>
@@ -465,7 +483,7 @@
                                 <rect key="frame" x="16" y="387" width="288" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="21"/>
-                                <state key="normal" title="Share">
+                                <state key="normal" title="Dark Mode">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -498,6 +516,10 @@
                                     <segue destination="knB-6g-2aY" kind="showDetail" id="0E2-3B-Xyk"/>
                                 </connections>
                             </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7mc-IV-TGf">
+                                <rect key="frame" x="312" y="407" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="lp2-mP-FD3"/>
@@ -609,32 +631,6 @@
             </objects>
             <point key="canvasLocation" x="1544.8" y="-497.29064039408871"/>
         </scene>
-        <!--Lottie View Controller-->
-        <scene sceneID="FGY-zG-tGb">
-            <objects>
-                <viewController id="ikc-2V-IaZ" customClass="LottieViewController" customModule="testLottie" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="yHb-Dw-Usi">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2m5-Od-fig">
-                                <rect key="frame" x="45" y="230" width="285" height="264"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.8993108868598938" green="0.73492562770843506" blue="0.28221327066421509" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" red="0.8993108868598938" green="0.73492562770843506" blue="0.28221327066421509" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <viewLayoutGuide key="safeArea" id="XQ5-JU-vR6"/>
-                    </view>
-                    <connections>
-                        <outlet property="smallFrame" destination="2m5-Od-fig" id="lb8-qM-md7"/>
-                        <segue destination="F8i-xS-mIO" kind="showDetail" identifier="testSegue" id="urx-Hb-2p2"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ckV-Gt-xYK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1918" y="991"/>
-        </scene>
     </scenes>
     <resources>
         <image name="Acc" width="30" height="30"/>
@@ -644,17 +640,13 @@
         <image name="Home" width="30" height="30"/>
         <image name="Loading-Book" width="16" height="16"/>
         <image name="Setting" width="748" height="192"/>
+        <image name="gameWhite" width="269" height="248"/>
         <image name="imageedit_8_7978368360" width="144" height="158"/>
         <image name="whiteHome" width="120" height="120"/>
     </resources>
     <inferredMetricsTieBreakers>
-<<<<<<< HEAD
-        <segue reference="urx-Hb-2p2"/>
         <segue reference="MoY-ap-rt0"/>
-=======
-        <segue reference="R5u-C1-Z8M"/>
-        <segue reference="hAQ-9g-TBT"/>
->>>>>>> 5c5e1da97555e2e66f10eb4cba20429b791255f5
+        <segue reference="rmZ-Qc-iKa"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

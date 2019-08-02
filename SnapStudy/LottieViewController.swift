@@ -12,14 +12,8 @@ import Lottie
 class LottieViewController: UIViewController {
 
     var animationView = AnimationView(name: "animation")
-    @IBOutlet weak var smallFrame: UIView!
-    var wt_flashset: FlashSet!
+    @IBOutlet weak var smallView: UIView!
     
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let cardWrapperVC = segue.destination as? UICardWrapper else { return }
-        cardWrapperVC.flashset = wt_flashset
-    }
     
     override func viewDidLoad() {
         
@@ -29,18 +23,20 @@ class LottieViewController: UIViewController {
         
     }
     
+    var wt_flashset: FlashSet!
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let cardWrapperVC = segue.destination as? UICardWrapper else { return }
+        cardWrapperVC.flashset = wt_flashset
+    }
     
     func startAnimation() {
         
-        animationView.frame = smallFrame.bounds
-        
+        animationView.frame = smallView.bounds
         animationView.contentMode = .scaleAspectFit
-        //animationView.currentTime(4.0)
-        self.smallFrame.addSubview(animationView)
-        
+        self.smallView.addSubview(animationView)
         animationView.play { (finished) in
-            
+    
             self.performSegue(withIdentifier: "testSegue", sender: nil)
         }
         

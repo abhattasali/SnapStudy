@@ -93,7 +93,7 @@
                                 <rect key="frame" x="8" y="52" width="398" height="802"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Flashsets" translatesAutoresizingMaskIntoConstraints="NO" id="jXZ-v2-cOH">
-                                        <rect key="frame" x="0.0" y="0.0" width="398.00000000000011" height="802"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="802"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="10"/>
@@ -177,7 +177,7 @@
                                 <rect key="frame" x="8" y="52" width="398" height="802"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Upload" translatesAutoresizingMaskIntoConstraints="NO" id="XOm-90-FfL">
-                                        <rect key="frame" x="0.0" y="0.0" width="398.00000000000011" height="802"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="802"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="10"/>
@@ -245,7 +245,7 @@
                                 <rect key="frame" x="8" y="52" width="398" height="802"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Filter" translatesAutoresizingMaskIntoConstraints="NO" id="KKe-qp-RXg">
-                                        <rect key="frame" x="0.0" y="0.0" width="398.00000000000011" height="802"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="802"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="10"/>
@@ -314,7 +314,7 @@
                                 <rect key="frame" x="8" y="52" width="398" height="802"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Terms" translatesAutoresizingMaskIntoConstraints="NO" id="jPc-0j-ypq">
-                                        <rect key="frame" x="0.0" y="0.0" width="398.00000000000011" height="802"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="802"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="10"/>

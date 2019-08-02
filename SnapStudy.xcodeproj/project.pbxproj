@@ -37,8 +37,8 @@
 		FAB2AD1222F38EFD002687C0 /* OpenDyslexicMono-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D41A9C7322F38BED004C7C48 /* OpenDyslexicMono-Regular.otf */; };
 		FAB2AD1322F39627002687C0 /* OpenDyslexicAlta-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D41A9C7422F38BED004C7C48 /* OpenDyslexicAlta-Regular.otf */; };
 		FAB2AD1522F3AA7B002687C0 /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2AD1422F3AA7B002687C0 /* LogInVC.swift */; };
-		FAB2AD5722F4A212002687C0 /* LottieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2AD5622F4A211002687C0 /* LottieViewController.swift */; };
-		FAB2AD5922F4A31A002687C0 /* animation.json in Resources */ = {isa = PBXBuildFile; fileRef = FAB2AD5822F4A31A002687C0 /* animation.json */; };
+		FAB2AD5B22F4ADAA002687C0 /* LottieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2AD5A22F4ADA9002687C0 /* LottieViewController.swift */; };
+		FAB2AD5D22F4AE4E002687C0 /* animation.json in Resources */ = {isa = PBXBuildFile; fileRef = FAB2AD5C22F4AE4E002687C0 /* animation.json */; };
 		FABAA81822D937FF00675015 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = FABAA81722D937FF00675015 /* tessdata */; };
 		FABAA85A22DE7ABA00675015 /* dictionary.json in Resources */ = {isa = PBXBuildFile; fileRef = FABAA85922DE7ABA00675015 /* dictionary.json */; };
 /* End PBXBuildFile section */
@@ -115,8 +115,8 @@
 		FA973F7622EB70A500B79D03 /* UICardTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICardTest.swift; sourceTree = "<group>"; };
 		FA973F7822EBC78700B79D03 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		FAB2AD1422F3AA7B002687C0 /* LogInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInVC.swift; sourceTree = "<group>"; };
-		FAB2AD5622F4A211002687C0 /* LottieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LottieViewController.swift; sourceTree = "<group>"; };
-		FAB2AD5822F4A31A002687C0 /* animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animation.json; sourceTree = "<group>"; };
+		FAB2AD5A22F4ADA9002687C0 /* LottieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LottieViewController.swift; sourceTree = "<group>"; };
+		FAB2AD5C22F4AE4E002687C0 /* animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animation.json; sourceTree = "<group>"; };
 		FABAA81722D937FF00675015 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		FABAA85922DE7ABA00675015 /* dictionary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dictionary.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -165,6 +165,7 @@
 				FA89F29D22F20B3700027EAC /* Line.swift */,
 				D47CE0DC22F3493C00E51E88 /* tutViewController.swift */,
 				FA6AF32C22F377120046C1D1 /* CardView.swift */,
+				FAB2AD5A22F4ADA9002687C0 /* LottieViewController.swift */,
 				04327477223AF8FF00E65B50 /* LaunchScreen.storyboard */,
 				D41A9C7B22F38BED004C7C48 /* OpenDyslexic-Bold.otf */,
 				D41A9C7A22F38BED004C7C48 /* OpenDyslexic-BoldItalic.otf */,
@@ -178,8 +179,6 @@
 				FA0F316922EF756600893CF4 /* FlashDisplay.swift */,
 				FA6AF32A22F374B60046C1D1 /* OnboardingViewController.swift */,
 				FA0F316B22EF756600893CF4 /* CardPartPagedViewCardController.swift */,
-				FAB2AD5822F4A31A002687C0 /* animation.json */,
-				FAB2AD5622F4A211002687C0 /* LottieViewController.swift */,
 				FA0F316222EF756600893CF4 /* CardParts */,
 				FABAA81722D937FF00675015 /* tessdata */,
 				FA973F7822EBC78700B79D03 /* Main.storyboard */,
@@ -190,6 +189,7 @@
 				0432747A223AF8FF00E65B50 /* Info.plist */,
 				FA6CB25922E626E500A239AB /* FlashSet.swift */,
 				FA973F7622EB70A500B79D03 /* UICardTest.swift */,
+				FAB2AD5C22F4AE4E002687C0 /* animation.json */,
 				FA0F318022EFC55700893CF4 /* UICardWrapper.swift */,
 				FA89F29B22F20ADF00027EAC /* PaintDisplay.swift */,
 				FAB2AD1422F3AA7B002687C0 /* LogInVC.swift */,
@@ -329,12 +329,12 @@
 				FAB2AD1222F38EFD002687C0 /* OpenDyslexicMono-Regular.otf in Resources */,
 				FA973F7922EBC78700B79D03 /* Main.storyboard in Resources */,
 				FA89F2B522F35C5C00027EAC /* Roboto-Light.ttf in Resources */,
-				FAB2AD5922F4A31A002687C0 /* animation.json in Resources */,
 				04327479223AF8FF00E65B50 /* LaunchScreen.storyboard in Resources */,
 				FABAA85A22DE7ABA00675015 /* dictionary.json in Resources */,
 				FA89F2B622F35C5F00027EAC /* Roboto-Regular.ttf in Resources */,
 				FABAA81822D937FF00675015 /* tessdata in Resources */,
 				04327476223AF8FF00E65B50 /* Assets.xcassets in Resources */,
+				FAB2AD5D22F4AE4E002687C0 /* animation.json in Resources */,
 				FA89F2A522F35BD600027EAC /* fonts in Resources */,
 				D41A9C5822F37771004C7C48 /* AppIcon.appiconset in Resources */,
 				D47CE0DB22F3449F00E51E88 /* TutorialBoard.storyboard in Resources */,
@@ -391,7 +391,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAB2AD5722F4A212002687C0 /* LottieViewController.swift in Sources */,
+				FAB2AD5B22F4ADAA002687C0 /* LottieViewController.swift in Sources */,
 				FA973F7722EB70A500B79D03 /* UICardTest.swift in Sources */,
 				FA89F2A022F20B3700027EAC /* Canvas.swift in Sources */,
 				D47CE0DD22F3493C00E51E88 /* tutViewController.swift in Sources */,

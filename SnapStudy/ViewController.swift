@@ -27,12 +27,12 @@ class ViewController: UIViewController
     if(appDel.isDyslexieOn)
     {
       textView.font =  UIFont(name: "OpenDyslexicMono-Regular", size: 18)
-      textView.text = "\n\n\n\nPreview your converted text here\n\nPress the camera to add or upload images"
+      textView.text = "Preview your converted text here\n\nPress the camera to add or upload images"
     }
     else
     {
         textView.font =  UIFont(name: "Roboto", size: 18)
-        textView.text = "\n\n\n\nPreview your converted text here\n\nPress the camera to add or upload images"
+        textView.text = "Preview your converted text here\n\nPress the camera to add or upload images"
     }
     
   }
@@ -55,14 +55,12 @@ class ViewController: UIViewController
       
     
       let okChosen = UIAlertAction(title: "Yes", style: .default, handler: { (action) -> Void in
-        print("Ok button tapped")
         self.doneMove()
 
       })
     
       // Create Cancel button with action handlder
       let cancel = UIAlertAction(title: "Cancel", style: .cancel) { (action) -> Void in
-          print("Cancel button tapped")
               }
     
               dialogMessage.addAction(okChosen)

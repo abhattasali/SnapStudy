@@ -59,11 +59,10 @@ class AccountController: UIViewController
         
     }
     
+    @IBAction func shareBtn(_ sender: Any){
+        let activityVC = UIActivityViewController(activityItems: ["https://github.com/abhattasali/SnapStudy"], applicationActivities: nil)
+        
+        present(activityVC, animated: true, completion:nil)
+    }
     
-    
-   
-
-    
-
-
 }
