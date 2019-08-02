@@ -72,6 +72,10 @@ class WordToggleTest: UIViewController {
                 self.addedTerms.append(term)
             }
         }
+        alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: {
+            action in
+            // Called when user taps outside
+        }))
         alert.addAction(action)
         present(alert, animated: true)
     }

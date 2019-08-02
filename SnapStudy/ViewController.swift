@@ -14,8 +14,9 @@ class ViewController: UIViewController
   @IBOutlet weak var loadingIcon: UIImageView!
   var testFlashset = FlashSet()
   
-    @IBOutlet weak var DoneButton: UIButton!
-    
+  
+  
+  
     
   override func viewDidLoad()
   {
@@ -33,7 +34,7 @@ class ViewController: UIViewController
         textView.font =  UIFont(name: "Roboto", size: 18)
         textView.text = "Preview your converted text here\n\nPress the camera to add or upload images"
     }
-   
+    
   }
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -244,6 +245,7 @@ extension UIImage
     let filteredImage = stillImageFilter.image(byFilteringImage: self)
     return filteredImage
   }
+  
   
 }
 
