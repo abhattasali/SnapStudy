@@ -15,6 +15,8 @@ class ViewController: UIViewController
   var testFlashset = FlashSet()
   
   
+  
+  
     
   override func viewDidLoad()
   {
@@ -32,7 +34,7 @@ class ViewController: UIViewController
         textView.font =  UIFont(name: "Roboto", size: 18)
         textView.text = "\n\n\n\nPreview your converted text here\n\nPress the camera to add or upload images"
     }
-   
+    
   }
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -45,8 +47,40 @@ class ViewController: UIViewController
     @IBOutlet weak var counterLabel: UILabel!
     var counter = 0
   
+    //DoneAreYouSure Button
+    
+  @IBAction func doneBtn(_ sender: Any) {
+    if (counter == 0){
+      let dialogMessage = UIAlertController(title: "Confirm", message: "Are you sure you wish to continue without taking a photo?", preferredStyle: .alert)
+      
+    
+      let okChosen = UIAlertAction(title: "Yes", style: .default, handler: { (action) -> Void in
+        print("Ok button tapped")
+        self.doneMove()
 
-  // IBAction methods
+      })
+    
+      // Create Cancel button with action handlder
+      let cancel = UIAlertAction(title: "Cancel", style: .cancel) { (action) -> Void in
+          print("Cancel button tapped")
+              }
+    
+              dialogMessage.addAction(okChosen)
+              dialogMessage.addAction(cancel)
+              self.present(dialogMessage, animated: true, completion: nil)
+    }
+    
+    
+  
+}
+
+  func doneMove(){
+    performSegue(withIdentifier: "doneNext", sender: doneBtn)
+  }
+    
+    
+
+// IBAction methods
   @IBAction func backgroundTapped(_ sender: Any) {
     view.endEditing(true)
   }
@@ -59,6 +93,9 @@ class ViewController: UIViewController
             let cameraButton = UIAlertAction(
                 title: "Take Photo",
                 style: .default) { (alert) -> Void in
+                   // self.counter = self.counter + 1
+                    //self.counterLabel.text = "\(self.counter)"
+                    //self.activityIndicator.startAnimating()
                   
                     self.loadingIcon.image = UIImage.animatedImageNamed("Loading-Book_", duration: 3.0)
                     UIView.animate(withDuration: 0.2) { self.loadingIcon.alpha = 1.0
@@ -240,6 +277,7 @@ extension UIImage
     let filteredImage = stillImageFilter.image(byFilteringImage: self)
     return filteredImage
   }
+  
   
 }
 
