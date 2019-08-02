@@ -13,7 +13,7 @@ class Question {
     
     init(){
     
-        
+    
         question = ""
         answer = ""
     }
