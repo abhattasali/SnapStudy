@@ -13,7 +13,7 @@ class UICardWrapper: UIViewController {
     
     var flashset: FlashSet!
     override func viewDidLoad() {
-        print("test on UICardWrapper: \(flashset.getSetName())")
+        //print("test on UICardWrapper: \(flashset.getSetName())")
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
