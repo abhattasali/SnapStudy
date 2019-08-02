@@ -36,8 +36,8 @@
 		FA973F7922EBC78700B79D03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA973F7822EBC78700B79D03 /* Main.storyboard */; };
 		FAB2AD1222F38EFD002687C0 /* OpenDyslexicMono-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D41A9C7322F38BED004C7C48 /* OpenDyslexicMono-Regular.otf */; };
 		FAB2AD1322F39627002687C0 /* OpenDyslexicAlta-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D41A9C7422F38BED004C7C48 /* OpenDyslexicAlta-Regular.otf */; };
+		FAB2AD1522F3AA7B002687C0 /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2AD1422F3AA7B002687C0 /* LogInVC.swift */; };
 		FABAA81822D937FF00675015 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = FABAA81722D937FF00675015 /* tessdata */; };
-		FABAA85622DD1F2B00675015 /* SnapStudy.png in Resources */ = {isa = PBXBuildFile; fileRef = FABAA85522DD1F2A00675015 /* SnapStudy.png */; };
 		FABAA85A22DE7ABA00675015 /* dictionary.json in Resources */ = {isa = PBXBuildFile; fileRef = FABAA85922DE7ABA00675015 /* dictionary.json */; };
 /* End PBXBuildFile section */
 
@@ -111,8 +111,8 @@
 		FA89F2B322F35C4600027EAC /* Roboto-RegularItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-RegularItalic.ttf"; sourceTree = "<group>"; };
 		FA973F7622EB70A500B79D03 /* UICardTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICardTest.swift; sourceTree = "<group>"; };
 		FA973F7822EBC78700B79D03 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		FAB2AD1422F3AA7B002687C0 /* LogInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInVC.swift; sourceTree = "<group>"; };
 		FABAA81722D937FF00675015 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
-		FABAA85522DD1F2A00675015 /* SnapStudy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SnapStudy.png; sourceTree = "<group>"; };
 		FABAA85922DE7ABA00675015 /* dictionary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dictionary.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -180,12 +180,12 @@
 				FA5DED7422E7C3E200BB6755 /* CounterButton.png */,
 				04327475223AF8FF00E65B50 /* Assets.xcassets */,
 				FA6CB26522E6A4E600A239AB /* AppIcon.appiconset */,
-				FABAA85522DD1F2A00675015 /* SnapStudy.png */,
 				0432747A223AF8FF00E65B50 /* Info.plist */,
 				FA6CB25922E626E500A239AB /* FlashSet.swift */,
 				FA973F7622EB70A500B79D03 /* UICardTest.swift */,
 				FA0F318022EFC55700893CF4 /* UICardWrapper.swift */,
 				FA89F29B22F20ADF00027EAC /* PaintDisplay.swift */,
+				FAB2AD1422F3AA7B002687C0 /* LogInVC.swift */,
 			);
 			path = SnapStudy;
 			sourceTree = "<group>";
@@ -328,7 +328,6 @@
 				FA89F2A522F35BD600027EAC /* fonts in Resources */,
 				D41A9C5822F37771004C7C48 /* AppIcon.appiconset in Resources */,
 				D47CE0DB22F3449F00E51E88 /* TutorialBoard.storyboard in Resources */,
-				FABAA85622DD1F2B00675015 /* SnapStudy.png in Resources */,
 				D41A9C7C22F38C01004C7C48 /* OpenDyslexic-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,6 +391,7 @@
 				FA6CB26422E69D1300A239AB /* WordToggleTest.swift in Sources */,
 				FA6AF32B22F374B60046C1D1 /* OnboardingViewController.swift in Sources */,
 				04327471223AF8FD00E65B50 /* ViewController.swift in Sources */,
+				FAB2AD1522F3AA7B002687C0 /* LogInVC.swift in Sources */,
 				FA89F29C22F20ADF00027EAC /* PaintDisplay.swift in Sources */,
 				0432746F223AF8FD00E65B50 /* AppDelegate.swift in Sources */,
 				FA0F317F22EF770900893CF4 /* CardPartPagedViewCardController.swift in Sources */,
