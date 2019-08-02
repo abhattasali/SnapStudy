@@ -62,12 +62,13 @@ class WordToggleTest: UIViewController {
     }
     
     //Add Title button
-    @IBAction func titleBtn(_ sender: UIBarButtonItem) {
+    //TODO edit to add to flash name instead of add to term
+    @IBAction func titleBtn() {
         let Titlealert = UIAlertController(title: "Add a title for your flash set!", message: nil, preferredStyle: .alert)
-        Titlealert.addTextField { (termTF) in
-            termTF.placeholder = "Enter Term"
+        Titlealert.addTextField { (termTitleF) in
+            termTitleF.placeholder = "Enter Title"
         }
-        let action = UIAlertAction(title: "Add Title", style: .default) { (_) in
+        let Titleaction = UIAlertAction(title: "Add Title", style: .default) { (_) in
             guard let term = Titlealert.textFields?.first?.text else { return }
             //print(term)
             if(term != "") {
@@ -79,7 +80,7 @@ class WordToggleTest: UIViewController {
             action in
             // Called when user taps outside
         }))
-        Titlealert.addAction(action)
+        Titlealert.addAction(Titleaction)
         present(Titlealert, animated: true)
 
     }
