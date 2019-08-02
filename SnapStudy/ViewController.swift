@@ -47,8 +47,40 @@ class ViewController: UIViewController
     @IBOutlet weak var counterLabel: UILabel!
     var counter = 0
   
+    //DoneAreYouSure Button
+    
+  @IBAction func doneBtn(_ sender: Any) {
+    if (counter == 0){
+      let dialogMessage = UIAlertController(title: "Confirm", message: "Are you sure you wish to continue without taking a photo?", preferredStyle: .alert)
+      
+    
+      let okChosen = UIAlertAction(title: "Yes", style: .default, handler: { (action) -> Void in
+        print("Ok button tapped")
+        self.doneMove()
 
-  // IBAction methods
+      })
+    
+      // Create Cancel button with action handlder
+      let cancel = UIAlertAction(title: "Cancel", style: .cancel) { (action) -> Void in
+          print("Cancel button tapped")
+              }
+    
+              dialogMessage.addAction(okChosen)
+              dialogMessage.addAction(cancel)
+              self.present(dialogMessage, animated: true, completion: nil)
+    }
+    
+    
+  
+}
+
+  func doneMove(){
+    performSegue(withIdentifier: "doneNext", sender: doneBtn)
+  }
+    
+    
+
+// IBAction methods
   @IBAction func backgroundTapped(_ sender: Any) {
     view.endEditing(true)
   }

@@ -59,6 +59,7 @@ class WordToggleTest: UIViewController {
     }
     
     
+    
     @IBAction func onAddTapped() {
         let alert = UIAlertController(title: "Add a term", message: nil, preferredStyle: .alert)
         alert.addTextField { (termTF) in
@@ -80,7 +81,9 @@ class WordToggleTest: UIViewController {
         present(alert, animated: true)
     }
     
-    
+    func doneMove(){
+        performSegue(withIdentifier: "termsNavigation", sender: nil)
+    } 
     func add(_ term: String) {
         let index = numWords
         terms.insert(term, at: index)
