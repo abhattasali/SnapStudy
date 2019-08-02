@@ -211,6 +211,9 @@
                                         <color key="backgroundColor" red="0.87978327270000001" green="0.69555008409999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
                                         <state key="normal" title="Log In"/>
+                                        <connections>
+                                            <segue destination="14S-p8-bI0" kind="showDetail" id="Hsm-2u-KZi"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVm-SD-fgL">
                                         <rect key="frame" x="125" y="486" width="94" height="32"/>
@@ -237,8 +240,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="n0e-Mx-bcT"/>
                     <connections>
+                        <outlet property="logInButton" destination="qks-du-ssP" id="cyT-9r-gNh"/>
                         <outlet property="password" destination="yRB-q5-nQM" id="rYS-qo-Iy0"/>
                         <outlet property="username" destination="Wx8-e7-m1e" id="AvA-Ap-nys"/>
+                        <outlet property="whiteView" destination="d3o-ds-MDU" id="ZsI-co-JYK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zfz-c9-yQA" sceneMemberID="firstResponder"/>
@@ -281,7 +286,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Hsn-Kc-6GT">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="638"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="589"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="Lb8-p9-4Hh" id="JuI-pH-ivl"/>
@@ -324,6 +329,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="createButton" destination="zVv-Qo-QcI" id="zBa-1n-Xjd"/>
                         <outlet property="tableView" destination="Hsn-Kc-6GT" id="Zlx-w7-14N"/>
                     </connections>
                 </viewController>
@@ -380,7 +386,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jzd-Dm-IaX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2480.8000000000002" y="251.97044334975371"/>
+            <point key="canvasLocation" x="3236" y="252"/>
         </scene>
         <!--Flash Display-->
         <scene sceneID="02j-Bz-EUr">
@@ -395,7 +401,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h4P-ZC-WkR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3380" y="252"/>
+            <point key="canvasLocation" x="4135" y="252"/>
         </scene>
         <!--Lottie View Controller-->
         <scene sceneID="cYP-kY-Sex">
@@ -421,7 +427,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tqd-jA-Fop" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2000.8" y="1039.6551724137933"/>
+            <point key="canvasLocation" x="2359" y="252"/>
         </scene>
         <!--Paint Display-->
         <scene sceneID="GtU-BH-A02">
@@ -440,7 +446,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e2r-am-oZ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="bGE-ht-3jy" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4287" y="308"/>
+            <point key="canvasLocation" x="5041" y="307"/>
         </scene>
         <!--Account-->
         <scene sceneID="3AP-1w-tC2">
@@ -610,7 +616,11 @@
                         <viewLayoutGuide key="safeArea" id="VeY-ge-gGu"/>
                     </view>
                     <navigationItem key="navigationItem" id="8bw-Ah-JNs">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="Home" id="j4a-Wy-8mW"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="Home" id="j4a-Wy-8mW">
+                            <connections>
+                                <segue destination="14S-p8-bI0" kind="showDetail" id="KZy-kb-es5"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mMX-f6-pCd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -626,9 +636,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5LY-jY-sUT">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="589"/>
+                                <rect key="frame" x="0.0" y="140" width="375" height="589"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="9CV-l8-DsE">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9CV-l8-DsE" id="TEo-7L-DrE">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -655,9 +675,8 @@
         <image name="whiteHome" width="120" height="120"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="v7s-9g-sf6"/>
-        <segue reference="MoY-ap-rt0"/>
-        <segue reference="rmZ-Qc-iKa"/>
+        <segue reference="R5u-C1-Z8M"/>
+        <segue reference="Hsm-2u-KZi"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

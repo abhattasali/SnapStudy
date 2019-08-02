@@ -113,6 +113,10 @@ class CardPartPagedViewCardController: CardPartsViewController
         buttonImage.setTitle("Add Optional Image", for: .normal)
         buttonImage.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
         buttonImage.contentHorizontalAlignment = .center
+        buttonImage.backgroundColor = .black
+        buttonImage.setTitleColor(.white, for: .normal)
+        
+        buttonImage.layer.cornerRadius = 10
         
         
         sv3.addArrangedSubview(cardImage!)
@@ -160,7 +164,7 @@ class CardPartPagedViewCardController: CardPartsViewController
         let utterance = AVSpeechUtterance(string: myText)
         //utterance.voice = AVSpeechSynthesisVoice(language: myLang)
         utterance.voice = AVSpeechSynthesisVoice(identifier: "com.apple.ttsbundle.Karen-compact")
-        utterance.rate = 0.5
+        utterance.rate = 0.55
         synthesizer.speak(utterance)
         isPlayingSound = true
         }
@@ -172,7 +176,7 @@ class CardPartPagedViewCardController: CardPartsViewController
             let utterance2 = AVSpeechUtterance(string: myText)
             //utterance2.voice = AVSpeechSynthesisVoice(language: myLang)
             utterance2.voice = AVSpeechSynthesisVoice(identifier: "com.apple.ttsbundle.Karen-compact")
-            utterance2.rate = 0.5
+            utterance2.rate = 0.55
             synthesizer.speak(utterance2)
             isPlayingSound2 = true
         }
