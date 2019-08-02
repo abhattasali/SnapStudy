@@ -22,27 +22,24 @@
 		0465B420448768A8895DFADE806C73DC /* GPUImageHistogramFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E9E29434B1F186550F53C44511BE97D /* GPUImageHistogramFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		04CED2C97606A50F77DD05C71BF77706 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = D308112AE833DFFCBAEE82157AE4E42F /* SwiftSupport.swift */; };
 		0506D9E9FFFACAB11C43C3D3F8D657BE /* list.h in Headers */ = {isa = PBXBuildFile; fileRef = 3981AE6ED4DFC8858469BEFB02306EAA /* list.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		055D45F42B025E1F098300A6AC39DB58 /* RxCollectionViewDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B41FDEF3DE2F2AF7F83B038ACBBA68 /* RxCollectionViewDelegateProxy.swift */; };
 		059F807997FAC9B3E39B09ED0E61448B /* CardPartImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C80DF20760654C43D7E3709F1673F7 /* CardPartImageView.swift */; };
+		05DB7BE75209EF0D4D76B05AA58AF6B3 /* RxPickerViewDataSourceProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F334CBCD472D36B92CE952C21AE80F /* RxPickerViewDataSourceProxy.swift */; };
 		05F463D96A63B3D729DE0B7A3ED74788 /* GPUImageNormalBlendFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = AC52A477A12C2B11D6F2840D9F7D8B4E /* GPUImageNormalBlendFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		0612E12946B819E3555DC4FC990AE271 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F341874DFE759EFCA454BAB1509CC70 /* Queue.swift */; };
 		0632B3EBBE7B24313E15992C0FEB81BD /* IdentifiableValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CFD993CBD93BCAF85E3270BBE07EFC /* IdentifiableValue.swift */; };
 		0644CD56D8B57F37CC22A8916270AE8F /* GPUImageFramebuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F04AC7835206FCC0507C42CFF295590 /* GPUImageFramebuffer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		0688212DD6E1A75F0DFF7FDF02CE6A87 /* RxCollectionViewReactiveArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5278420668F36C3EDF0F48EE5AEE9ED8 /* RxCollectionViewReactiveArrayDataSource.swift */; };
 		068864983B37AA951F74C3E2BC71C5A9 /* GPUImageDivideBlendFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F849385EB85FE6761364BE1BB9473EB /* GPUImageDivideBlendFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		06DD081CFCEB629E0B363D64DBC73FFC /* GPUImageThreeInputFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB54E238516924B2DB57F9A191A9DAA /* GPUImageThreeInputFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		06FEC839F38032B06B4B631F716E84E9 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4244BD21E24D751FD315D835D5E145E8 /* Observable.swift */; };
-		0736021B1D5C669EEF30B882F1871D21 /* ControlEvent+Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F74CC00E7FB4C0C6177CB1F9210C9F /* ControlEvent+Signal.swift */; };
 		0767E3C327000C3898BE3559743F7446 /* ShapeLayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73238C52F6E7B8BD6A669CC115093CD /* ShapeLayerModel.swift */; };
 		07B2E32A3378834494E52009ABB43379 /* GPUImageExposureFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 22AADA7BEAAAF92A80EDCD6F80BC6466 /* GPUImageExposureFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		07D4036D5F20DA6694C4377536B4DE80 /* ControlProperty+Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BF3FFDC2086C3ED75D799120D5284A /* ControlProperty+Driver.swift */; };
+		07F9789AD8605D72550F093BB1352E14 /* UIStepper+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E4E8AB3B7C648EE45164C69CD8B0D8 /* UIStepper+Rx.swift */; };
 		080764120A359DDFC7EB1DA73527811A /* InvocableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77857A9D7C4D6C83538D555040D2160 /* InvocableType.swift */; };
 		087475D51E6F972756847C8B6C6D4B05 /* RenderNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00256E1110C3D0A17319D631B92ADAAE /* RenderNode.swift */; };
 		088450AE41FA7E61BE9D5ABC4B2AE5A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A216608162B9E7C618CEED85D1911F2 /* Foundation.framework */; };
-		0977FA5C8D1B58C4C60A45CC32467CB3 /* KVORepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C42119C33F902BA5D5BC7E342F094AB /* KVORepresentable.swift */; };
 		0A0D84E28EC9AF0B2637854527EFB6C9 /* SerialDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60F3B8BC7C839C9DC44783766CC9DC7 /* SerialDisposable.swift */; };
-		0A7CA4D4EFBB6D185900DD57F2989EA1 /* NSTextField+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512CF6170DC1D80524A2BADA9B36D846 /* NSTextField+Rx.swift */; };
 		0A87458DA00A6149097A7A24B6A5B457 /* GPUImageMovieWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BFB9B44762113438637C303D47E4F18 /* GPUImageMovieWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0AD898C05154AFA89A6D7AEA77973058 /* UISearchBar+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3ACF00926CBE50E22076812BCD97B9 /* UISearchBar+Rx.swift */; };
 		0B0C394895E6078CB5CE36B3B165AC65 /* Glyph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3AA4984755CE3B363FD62E287E6456 /* Glyph.swift */; };
 		0B2AD96DACEFBF1573A447B7D3724B04 /* GPUImageGaussianBlurFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 472030566EDBB1C9199499670C345F5A /* GPUImageGaussianBlurFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0BB8EBB0A774424BF3CD387D55978A39 /* GroupOutputNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1AC4282C1AA5FC2082DE683F3491DE /* GroupOutputNode.swift */; };
@@ -52,34 +49,37 @@
 		0C1F579AD3B0F88127F667FAC22AE0F9 /* ndminx.h in Headers */ = {isa = PBXBuildFile; fileRef = 64248A06C3998339D006D4FD03D23FE5 /* ndminx.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		0C91027A544A5A56B0B8BC0F6FC00D39 /* AnimationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BC83DD08B96372F496BBFEA04FC619 /* AnimationContext.swift */; };
 		0CB5A9D386EA7A73ED48BDE369472ED0 /* apitypes.h in Headers */ = {isa = PBXBuildFile; fileRef = DAB3FC0ECD78F2DC0C29229647213DDB /* apitypes.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		0CDC4423498E9E94A784BFBE172A0FB2 /* Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96657BB2160AF91D66FA0C2436B25586 /* Deprecated.swift */; };
 		0D103B1D360595BD509A020231879540 /* arrayaccess.h in Headers */ = {isa = PBXBuildFile; fileRef = 82A22A961BFF9EFDA6B830632DEE19EB /* arrayaccess.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		0D4AF526543B085C6FF537F8F51C88A6 /* GPUImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D2E10CF136F357508D2FC590207AE5 /* GPUImageView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		0D5C040415F490A39759CF078D8BE154 /* GPUImageSaturationFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B6BCAF67C43B2F0C04F0BFE0390ACC5 /* GPUImageSaturationFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0DC461B8B7EBBB99560543A953CEFD3F /* AnimatedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210366243BDC00B3ACB1D67F9E36AA9A /* AnimatedButton.swift */; };
+		0DDD3BB73E9A83CC21243FFC17F3738D /* UIPageControl+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930DEC483A5D58A3A423E04A2F764AF /* UIPageControl+Rx.swift */; };
 		0E095DA0F317DD5C7593FF83BB3D4256 /* GPUImageTiltShiftFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 64E614093CACD844B492DB381B3C2287 /* GPUImageTiltShiftFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0E76361D27E4EF3147C2D4574B42C9A4 /* PrimitiveSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D067B46E6A74D007C4E2F433E1588F /* PrimitiveSequence.swift */; };
-		10290F5C690235BFDD866D99846019E3 /* RxCollectionViewDataSourcePrefetchingProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0841AFD31B8C1A052BA8C2099F37720 /* RxCollectionViewDataSourcePrefetchingProxy.swift */; };
+		0EA242B134993A6DA3D1160810DD2CB9 /* RxTabBarDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B2B963FA1A06762A6ADF938B746828 /* RxTabBarDelegateProxy.swift */; };
+		0FB4C9653403ADC39136BC58BBA3FCA7 /* UINavigationController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAEC9AE933DB3135BD4098300CAB9B7 /* UINavigationController+Rx.swift */; };
 		106999E292F155ECFED34266F39CD437 /* GPUImageRGBDilationFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 941F8B3B5090D9CAEC29DD7C2D651EF3 /* GPUImageRGBDilationFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		108EAD69B841D2AA9C6D12873DB310B9 /* GPUImageDissolveBlendFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = AB29419C43A8861FB9F3153B70C02431 /* GPUImageDissolveBlendFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1172B20FB143C4FE667F6123FFD33D45 /* UIButton+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A11EF406899795A40EFFD86ECE000D6 /* UIButton+Rx.swift */; };
+		1181C006705D209A498B5FF532B58384 /* SharedSequence+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5826B252369EC2FEDEB2FC353990D442 /* SharedSequence+Operators.swift */; };
 		12516C720152AAB809CC04F3B317ACC6 /* NodeProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC861565A592685787B13773608D015 /* NodeProperty.swift */; };
 		127FA0A64DD3A836A205FA14114EC33C /* GPUImageRGBFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B329E98573BCD379CDA48ECB7F9705A /* GPUImageRGBFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		1281D4222F09F8094E69B924E222EED0 /* GPUImageBrightnessFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EF37DA38475AB22C35AAA37C7C3B62 /* GPUImageBrightnessFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		12C1EBCF44B0888FE0ACE47207BD0930 /* GPUImageDissolveBlendFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBFB8C38C8A544B9A2F24A5D0B854D0 /* GPUImageDissolveBlendFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		12CBAB927E7B8916816C67EB23C68DB7 /* KVORepresentable+CoreGraphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CE2848D4A8B27A6007366588C40C81 /* KVORepresentable+CoreGraphics.swift */; };
+		12E1E43D204DE970743677233FE1525F /* UITextField+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31EC339C061F1AE97E059823D6B02ED /* UITextField+Rx.swift */; };
 		12F483F2D9E2E7C32487599DF3B0F071 /* FillI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DACD36D8EF60DA3472382E13EA6E28 /* FillI.swift */; };
 		1336D9040579BC3632D050D49E3161BE /* Reductio-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6351F22AF03DA0F0FAC3E07F2CFAFDE3 /* Reductio-dummy.m */; };
-		134D0B84659A4B69105752D90B9FE50B /* RxCollectionViewDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B41FDEF3DE2F2AF7F83B038ACBBA68 /* RxCollectionViewDelegateProxy.swift */; };
 		1372612A4985C75DDB17ABC9228960FB /* ConnectableObservableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C601C8C2563D136F07F105583B258BFF /* ConnectableObservableType.swift */; };
 		137D19ED3952796AA97A1C0FE13F95E0 /* ShapeContainerLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D56ADEBE4E58971B7F0AA41A4F586F2 /* ShapeContainerLayer.swift */; };
 		13911730F35ABE0BE25B51AD20BF39E5 /* GPUImageTwoPassFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = AB26CA80B99EC42ADB6A0CBFDCAB7051 /* GPUImageTwoPassFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		13E38A8356A12AE412A3F9BF90CFB2C1 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE11299B27823F510B0E4077CA18AE25 /* StringExtensions.swift */; };
-		14AF42A597D68E92F175D0A922AAE03B /* RxScrollViewDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01917B84A9B3E0C8FD79ED2C73C41E5F /* RxScrollViewDelegateProxy.swift */; };
-		14ECC7F28C928F1C26832C2C77871D46 /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B6BF781AC4F9F936393E2EE5C92B6A /* UIViewController+Rx.swift */; };
 		154C859C1FCB3FD190605AF22989F481 /* host.h in Headers */ = {isa = PBXBuildFile; fileRef = 6033E5CEDDA630807A1DE7198D04A516 /* host.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		15878EB4FC50D55D4DD38BF5F232696D /* bmf.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CBBF9D6C9F456622847A891F8D52BD7 /* bmf.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		1596F02F6FE394F98F39AD35647BBE6D /* GPUImageUnsharpMaskFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = A7930E877D27AD23DB238FEB9EFB6601 /* GPUImageUnsharpMaskFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		164E7C22D709C9F2C1D6A08998147434 /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B6BF781AC4F9F936393E2EE5C92B6A /* UIViewController+Rx.swift */; };
 		16593B5122E8587F588001603A11D6BA /* DashPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD5187286B3B5E7042C9C1A2A95E5A4 /* DashPattern.swift */; };
+		16643D827BED5A26E6E3BA150D083357 /* ControlEvent+Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F106AB0639B088B5FCE1EC386AB5D46C /* ControlEvent+Driver.swift */; };
+		16E4CE5A79B7D0589B3A7F0E11B16976 /* UIProgressView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EC7EA0E7C1ECDEE5676EEAF4B4EB1A /* UIProgressView+Rx.swift */; };
 		16FA6F24D77994A728646945F1F8FFD1 /* GPUImageColorPackingFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = F427A831BD55721A9EC96937971158F5 /* GPUImageColorPackingFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		17B3459226EF3AC29737B68833718FFB /* InvertedMatteLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3ECE90E22EB17B371775E6130F37DD /* InvertedMatteLayer.swift */; };
 		17B3B5E591D59467680AECD5B338925E /* SubscriptionDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990E43527B76459269DAC2DBF2F3E282 /* SubscriptionDisposable.swift */; };
@@ -89,7 +89,6 @@
 		1847F9644C0FAED9CC3AE200D371E60A /* GPUImageThresholdSketchFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9C7E98BB615358340BFFBE60107E81 /* GPUImageThresholdSketchFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		1874DE4243D62F03A663015783C312B6 /* endianness.h in Headers */ = {isa = PBXBuildFile; fileRef = 51A4EA0E380F7020E7AA1FE5B3EE8588 /* endianness.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		18A11F38DBE9BEAF8265AAA016658692 /* GPUImageFilterPipeline.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BE20DD035B55419589F29E5FB4DB10 /* GPUImageFilterPipeline.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		18C72EBE14F1EA9D6B13B776D10521BD /* RxPickerViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3544B34BDBF68BC4C87498974A9DB79D /* RxPickerViewAdapter.swift */; };
 		18E5E50045C40511292FF24F98771344 /* RxCocoa-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E5D1B251B478500B075FFC02A77A4973 /* RxCocoa-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		18ED229D761677316B27EB24A8B771A5 /* CardPartBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8BDFD308A94217CA2227047B4E647E /* CardPartBarView.swift */; };
 		1A00F87A6493695C533AB32A738ACB3B /* GPUImageSwirlFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D7E5EEDB8DFDD5EB0CDF334D0C59B09 /* GPUImageSwirlFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -98,19 +97,19 @@
 		1A8A037FF5A88EB20D636DFDD05A6F93 /* GPUImagePrewittEdgeDetectionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D4FACBFCEF8045EF3DF2AF15ABD49C /* GPUImagePrewittEdgeDetectionFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		1ABE460C8DD9E60C096400C141021162 /* Ellipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156C09061600C8C2C095BFA377D42423 /* Ellipse.swift */; };
 		1B62715DF14DC4D31AFEF659E587942A /* UIResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADCA1D8A2D726E6A7869A3CD3BD1409 /* UIResponder.swift */; };
-		1B86168522C5B2199FF1F1DBB9E8E333 /* ItemEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F611A43CCCD4A6EFC8BE4A0D1C4E9D8 /* ItemEvents.swift */; };
 		1BB83FEBD117BA4EB0CBDEF8DB587F8F /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 793E8C4BA010F0403BFF2E3851A31D73 /* RxCocoa.framework */; };
 		1BBD944DF948C6274CE80877142ECB2C /* GPUImageLightenBlendFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B0DCCC6537970E898E98C5C5785850 /* GPUImageLightenBlendFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1BFD931DE29AE54CE1F8F0011344C96E /* TransformGestureRecognizers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BD2DA376461E2CC0DAC58A85A256BC /* TransformGestureRecognizers.swift */; };
 		1C483D95099FA78289CFE78904A35859 /* GPUImageMotionBlurFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 440920F3720E99A3062AC2A8FD92A43F /* GPUImageMotionBlurFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		1CD77CA396FFD22C66E4F5789335031B /* NodePropertyMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B771D9AFF169D230D135ED0BA66E157C /* NodePropertyMap.swift */; };
 		1CD9D12B0350126CAEAE8A938892D666 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54818ED4AD6ED45115CCE7B7436C3578 /* UIColor.swift */; };
-		1D3CE44E65FD981C2BCD7FDB4C43DF2E /* NSButton+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3C7096D24614CB9F2C19452BA5298F /* NSButton+Rx.swift */; };
-		1D707F17F6DB9E919401578CA118463E /* RxCollectionViewDataSourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDA9DC113F1D863105F0502DBE0143A /* RxCollectionViewDataSourceType.swift */; };
 		1DBA88A983D14B637091AE432F984069 /* Repeater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35215370D7C6125BEEC5F5FF233981FE /* Repeater.swift */; };
+		1E10E670D4B247E4CDE5273BA3D02C0D /* NSSlider+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4BA12A91467810F6588ABC45827F78 /* NSSlider+Rx.swift */; };
+		1E2A5E345091B942DAE5340230FF9FD8 /* RxTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03016D6F3FBB866C9951C682A28A6C0 /* RxTarget.swift */; };
 		1E48FDEC929EC43C16CFEF4F1FE55A40 /* GPUImageSoftLightBlendFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 1327CBD839CC96CA96D035394DE54E7B /* GPUImageSoftLightBlendFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E97030DF2CA81D60C9CFB8A25DFFC7B /* GPUImageVignetteFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = A8620DB0BEE043C079F3C00A713E4E00 /* GPUImageVignetteFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1EA2CFBF54ED2CBFEC38E35CAE392AB7 /* GPUImageGrayscaleFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A8F9A3B0AF1048C399D96021637D96 /* GPUImageGrayscaleFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1EB8394E2C2557F50F31473DFE5B54BA /* RxPickerViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3544B34BDBF68BC4C87498974A9DB79D /* RxPickerViewAdapter.swift */; };
 		1EF1D3DC9E9A367332F565A043870E07 /* GPUImageHalftoneFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 872804C1405056F579D896EEEE893782 /* GPUImageHalftoneFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1EFC1EB99ED49BC2FBA17B6C9A617A86 /* GPUImageAddBlendFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = BF6EE0885BD34AFF1AA5CA196CF9E374 /* GPUImageAddBlendFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1F64D93E3D32731CCCB7F3FC88777E7E /* SwitchIfEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41A53C72DBCA25D0F660ACA70772335 /* SwitchIfEmpty.swift */; };
@@ -128,7 +127,6 @@
 		20DB2F6B8F7CD0619DCC36506DC8B639 /* SerialDispatchQueueScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC1E335C358AABFFCB4CD19BBA6228D /* SerialDispatchQueueScheduler.swift */; };
 		20E43993378E0B375E4D33EF068176A6 /* GPUImageTextureOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFE3090061894A7BFAA658C98E019F6 /* GPUImageTextureOutput.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		212C5FAA7072A32A69EFE336C5C6D2DB /* GPUImageMultiplyBlendFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B6085123C1AA33730803CD57832469 /* GPUImageMultiplyBlendFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		21B0F07ED4A71716C5D29023297F187C /* SharedSequence+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5826B252369EC2FEDEB2FC353990D442 /* SharedSequence+Operators.swift */; };
 		21B1CBBC3E7E222B7AF16073A8F38792 /* GPUImageMultiplyBlendFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E710BD47049913C2B992C7FB93F75C /* GPUImageMultiplyBlendFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		21DB41555CB4E718F3C69CB7DE5996F9 /* UITapGestureRecognizer+RxGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF707F94FF80753A24838600A4DC646 /* UITapGestureRecognizer+RxGesture.swift */; };
 		21DDDB03A9A64AC35DAA19A58869A55C /* GPUImageHueFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 6034E15108BE48EBC6DBD5F1D1202343 /* GPUImageHueFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -139,48 +137,45 @@
 		2285B6882A9A9C342D48675BC29FD199 /* GPUImageColorBurnBlendFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = A72A4BACA5442AFEC4FBEF01A970DBB1 /* GPUImageColorBurnBlendFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		22DA7CA81F1374EAF5256EBDD754C21A /* NullCompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E0EA2A4EA019930B84016D7B8E3FEA /* NullCompositionLayer.swift */; };
 		236D8AB793584AB397F3404B33EB9310 /* RxTableViewSectionedAnimatedDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53764F8B65BAA56924C0C884EA3346A3 /* RxTableViewSectionedAnimatedDataSource.swift */; };
+		250CF6E8E415214C02449FF45916B530 /* KVORepresentable+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4C96A901007B86AA5C2F3D49CB2FF1 /* KVORepresentable+Swift.swift */; };
 		2521F902BFF50F8AD831A156D1DD0A19 /* GPUImageLanczosResamplingFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A4B3FE92F10B7F41A34FFFBBAA809D /* GPUImageLanczosResamplingFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		2532BE92AE1F74ECEAB833661272AB51 /* Cancelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F73B3C12E1A6BBDAE7E2C2F5B80AAFB /* Cancelable.swift */; };
 		25C3A4C438DE04892C8FB7D45A03C388 /* GPUImageLuminanceRangeFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 490614E086636DFE26FB979E2F3EAC9A /* GPUImageLuminanceRangeFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		25D21C0C4340BCF67C97B271C9464FE8 /* UIStepper+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E4E8AB3B7C648EE45164C69CD8B0D8 /* UIStepper+Rx.swift */; };
 		260199BB9ABF7964073A5FA52A40B3E0 /* tiffio.h in Headers */ = {isa = PBXBuildFile; fileRef = 87CEA462BBDCEFEAD3F7B2D8063D51E8 /* tiffio.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		2621745D274FDD70FD2E21C5B2D9AAAD /* GPUImageTiltShiftFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = EB4C1A8D2D7BD4388748CDB180641B76 /* GPUImageTiltShiftFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		2626F24FDC70AB38354D6520C1F32541 /* bbuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = ECB02CF2C947F435AB3A451C82E480AE /* bbuffer.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		26ADF7935F98B883E8032C920D1CA150 /* TextDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A953BE1DB548C23AB662080C81B7CB /* TextDocument.swift */; };
 		27B531FE2B025D6489A944D6012F0EB7 /* _RXDelegateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 08107C95B4858BFA29BBE1AB6114622D /* _RXDelegateProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		27E77316316D74701A22B02F53E8781E /* RxTextStorageDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100109718DE253EC6AE91CA0ADB848A2 /* RxTextStorageDelegateProxy.swift */; };
 		2860E38754A9DE2A34971712C5057C31 /* unicharset.h in Headers */ = {isa = PBXBuildFile; fileRef = F1096ED024CE67E6080415AE7B6C07B2 /* unicharset.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		2863631C73934891C23676D5ABFA01D7 /* UIDatePicker+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD1FB97C6E091BB3819A94973A004CC /* UIDatePicker+Rx.swift */; };
 		28B588A437710ECE8A9D570ED2C55281 /* AnimationContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2DEFF800B62F54182ADB04C8AE5692 /* AnimationContainer.swift */; };
-		290196371E35902A9497FC5BEAC19D3E /* NSSlider+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4BA12A91467810F6588ABC45827F78 /* NSSlider+Rx.swift */; };
 		290810D6DCB4C57B9D9FBE8340ECCC05 /* regutils.h in Headers */ = {isa = PBXBuildFile; fileRef = 2758B38D0629854E2FF6EC47E33C03F9 /* regutils.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		29141D3B4CD20D8127069E4BE2E44734 /* GPUImageCannyEdgeDetectionFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 24557C305871DDA239658EE0E86AFB1D /* GPUImageCannyEdgeDetectionFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		292646763BC69C9A065D4E30D12AD6B0 /* RxNavigationControllerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5A6F5B2B2C8CA4044234DD934B5E96 /* RxNavigationControllerDelegateProxy.swift */; };
 		2968AA32496E87F872A177A3AD24ACF8 /* Repeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA3E732967B17ECA637F975EC2573F4 /* Repeat.swift */; };
-		2A29469A4567A2D8E68528FB74A51792 /* RxTabBarControllerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEB009C76F9EC530A3EB883ABEE537D /* RxTabBarControllerDelegateProxy.swift */; };
 		2A854C43722FF81305593B16EF980F1D /* pageiterator.h in Headers */ = {isa = PBXBuildFile; fileRef = 20883C43A23E4929D1965089B645A2D8 /* pageiterator.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		2A854F2512DF834D24AC31E295496843 /* SubscribeOn.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C0E8D1554E85BE07405EF845E6B36B /* SubscribeOn.swift */; };
 		2AC446399FDCE720562ED8BFA998F408 /* RxCocoaRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E20EFFBC471E5E83566F349C56414B7 /* RxCocoaRuntime.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2AFC9C080A01868555B99740AAC8F368 /* errcode.h in Headers */ = {isa = PBXBuildFile; fileRef = 71C9930D2441ED6AF9B600CD2A43D6A4 /* errcode.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		2B0434EEE206621F1C8508328A57927D /* Driver+Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E8E8B491C0B4C487DE08C49220DE0D /* Driver+Subscription.swift */; };
 		2B1ACB264314FE6FDFC43BCDD362FEBC /* GPUImageVideoCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = 9783AD7C358542B67ADE7C6234AB381C /* GPUImageVideoCamera.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2B2CAB26C01E2ECD044D3F38B15FC897 /* serialis.h in Headers */ = {isa = PBXBuildFile; fileRef = 29FCC1343D0E69D5919D79A9039AA07B /* serialis.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		2B30D131504B0C6F516373F6F2F5B0FD /* GPUImageWhiteBalanceFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FB490BC13142898D972584A2FCEF0E /* GPUImageWhiteBalanceFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2B36AC9B30E85852891965184535F224 /* RxSearchControllerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A692991845C611207ED27BE443056 /* RxSearchControllerDelegateProxy.swift */; };
 		2B8398D20FC81D52E90ED9C49B1648A6 /* Dematerialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256D444CC2A6EEF775602F24F27D49B4 /* Dematerialize.swift */; };
 		2BAD635B29E9071EFB2E1F4F4C028A8B /* GPUImageAlphaBlendFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 381D2D621146D69BA138DDCD7696A8B4 /* GPUImageAlphaBlendFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		2BB237D7371386E5FE898A4EEA79DE35 /* DispatchQueueConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9235D4B12278DC51F6E43EC2B345CD2 /* DispatchQueueConfiguration.swift */; };
 		2BDC2D78E8964B5B4844A0D334F3065B /* GPUImageCrosshairGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 45B8D83BDFDD749DF054F2206B4E9482 /* GPUImageCrosshairGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C223D50915DD94E697C1713F4F45A8C /* ShapeTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB57D600A63C10A6922C576C836BE10 /* ShapeTransform.swift */; };
-		2C2F7AB4F375CE276A61A7209821F752 /* RxCocoa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384F7A1A22566084898C94F7AD97CE4E /* RxCocoa.swift */; };
 		2C35E43163088F86AA6EA6644AA3011B /* sudoku.h in Headers */ = {isa = PBXBuildFile; fileRef = 78EF2E06CD04C693603FC1DA3A0C2F1F /* sudoku.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		2C37B435CA8EB63ADD8A44A0CEDD786D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 482FA651739BC201E391951098501B1F /* OpenGLES.framework */; };
 		2C544EA01039E6509CB9951908DD5641 /* GPUImageToonFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 91900F95DF53810E6319DE0AE8B67906 /* GPUImageToonFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C85488A087F845B53C9CEE3E4BCF893 /* StrokeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D340967BDE2850433748372BFEF866BF /* StrokeNode.swift */; };
-		2CEAB895CC3423D612183EE57EBB63B4 /* RxPickerViewDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32070A34AF0849D7C85109060CF8EB6B /* RxPickerViewDelegateProxy.swift */; };
 		2EAAB5BE41D4EC8272C553B21FD78189 /* GPUImageContrastFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 09947BB30EB4B3DF459FEA689CEF81F0 /* GPUImageContrastFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2EAB36CA17AAE13ADC0F33A95562E3F7 /* UISearchController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2538BDF7BCB1BA7D54E0DB2C2E1A01EF /* UISearchController+Rx.swift */; };
 		2EC0BD0521F5E8EEF4F5C255A89102FB /* Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFE35C0DEE1A17561853842A19715DA /* Debug.swift */; };
 		2EEEEF0B06B62C887A255C1100ED63ED /* GPUImageNobleCornerDetectionFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CBBDBA7FDD8A638EBEF4F041F0A0ED9 /* GPUImageNobleCornerDetectionFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2F397BA13B691586BB2D26D46E28D2ED /* GPUImageSolidColorGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F005567AA146090A4ED1D021F7B622 /* GPUImageSolidColorGenerator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		2F3D2E0E799402B45799EAC71EEA35CD /* GPUImageDarkenBlendFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 1487E484622C49F559B0F088D20A8CC0 /* GPUImageDarkenBlendFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2F4B63CA9912560073747B7123CAF564 /* DeprecationWarner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD437BD1F8A522ACB5E4F704CF5160E /* DeprecationWarner.swift */; };
 		2F9C0E241E27147291544A115A6E2FDF /* RxGesture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48348DF76CB44A34F94802BEA86CCB7 /* RxGesture.framework */; };
 		308D7E359DFED53A933D02CAAD235167 /* RxGesture-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BB78F80A0736EAC551B71239DF372D9C /* RxGesture-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		30B4B4FDBEF3190D2F3A13C35DBF1D6D /* _RXKVOObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = E6DF0919A18C11D848B22BF3209CB640 /* _RXKVOObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -188,6 +183,7 @@
 		30FF6E3373459E0662BB769C79372F5A /* GPUImageScreenBlendFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 92444F051438229CF1D9A31E2047EFC3 /* GPUImageScreenBlendFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		3141A881DB3E4E90D4ADED554228C716 /* GPUImageFilterPipeline.h in Headers */ = {isa = PBXBuildFile; fileRef = C8EA23B3BF4826E5D34AD89781E70FCE /* GPUImageFilterPipeline.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3143EA1FF0E60A6C99C36073A5F52652 /* readbarcode.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CA3FB6C7B6B7B966A694E505AFB3764 /* readbarcode.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		317145E3F191C6C475604EE6CEEA4319 /* RxTextStorageDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100109718DE253EC6AE91CA0ADB848A2 /* RxTextStorageDelegateProxy.swift */; };
 		31A3F196E89CDE8D05210CB7D90D9961 /* Mask.swift in Sources */ = {isa = PBXBuildFile; fileRef = E437BBDF910AA6BD5D2436F20303286F /* Mask.swift */; };
 		31B8E9861B4E8C54569EAA76A013F3FF /* jbclass.h in Headers */ = {isa = PBXBuildFile; fileRef = 453B538A7EE9364B6C6E8DCBB1B16F0F /* jbclass.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		31C31D4874DEEACB2333EBF0DB3B99A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A216608162B9E7C618CEED85D1911F2 /* Foundation.framework */; };
@@ -198,26 +194,23 @@
 		31EAE9127D4BDF316BD93E24B6DF5402 /* osdetect.h in Headers */ = {isa = PBXBuildFile; fileRef = 88454BB6E35B2438B69C4479019E4A5D /* osdetect.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		32040F4E7FE5DB77EAD833900920E016 /* ShapeCompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F7BA799B4D985A14D52EFCF8DE0F93 /* ShapeCompositionLayer.swift */; };
 		3204414ECB0665D9D9001E7458042D1F /* SynchronizedDisposeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40AB18BD03B970E746D5B81CB86E4F5 /* SynchronizedDisposeType.swift */; };
-		3211E8AF20F633EC972DC389168CEB9E /* ObservableConvertibleType+Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFDFA0F473C2E432E7FC92AA2E95D62 /* ObservableConvertibleType+Driver.swift */; };
 		32952456C9A41C5112E71034B696D2E3 /* Stopwords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539B6E67A3D765E1B1D4B90C3003D98C /* Stopwords.swift */; };
 		32AC391EB66E01AF8344FF5E1EA84A8E /* PolygonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD39D46B2BD48116198FCB90C0E7336E /* PolygonNode.swift */; };
 		32E06690431F49DE1D8C39CFFF63A487 /* GPUImageTwoInputCrossTextureSamplingFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = EA58E88C3C3121B89A56E19879A23C3B /* GPUImageTwoInputCrossTextureSamplingFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		336BC8ED7F07673A90D41431ABF87E97 /* Single.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFB0630871D48797C4EA7726FA18179 /* Single.swift */; };
-		336F8862E02D783458E7BB7C35A891FB /* _RXObjCRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 139C83BCAE79BDB26C297053991E1D1D /* _RXObjCRuntime.m */; };
 		337F39EC3240E5AE5333A426DD99C1E6 /* GPUImageNonMaximumSuppressionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 36ABF6B5587721BFBF803C9C2DF7830F /* GPUImageNonMaximumSuppressionFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		33B4801D5895BE1DF200AF4EE6468B99 /* AsSingle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8B778270304B1D9099D9ECE08CE175 /* AsSingle.swift */; };
 		33C33441C29C1287FC641F0ECEBB2D65 /* GPUImageHistogramGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = D069DEC4AC406818E6C54ABF416628E4 /* GPUImageHistogramGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		343026ABC5C4F275B3DC9748C0133418 /* UIGestureRecognizer+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB14196251C5824FC73343959649F10 /* UIGestureRecognizer+Rx.swift */; };
 		346A76EA3D42128ED815664EF8CBD80D /* MainScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A67386EC21EEB5752712D34E78F5ABE /* MainScheduler.swift */; };
 		34CCD8D2FEDABCF6A694873DE7ED5E5D /* lookup_soft_elegance_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9798813E9D40F3233DEF224FB6811F91 /* lookup_soft_elegance_2.png */; };
 		34DD99746A1D1E7898DCFF042C41720B /* AnonymousObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADED45C764A9DE89C92DD7D5487CD744 /* AnonymousObserver.swift */; };
 		34EDFE80349C195345413346A87E27DB /* AnonymousDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558195B6D8ECC4AA697A9D459C3E20DA /* AnonymousDisposable.swift */; };
 		3578F557A19887A5D7673EF6B9363D37 /* jmorecfg.h in Headers */ = {isa = PBXBuildFile; fileRef = EDF36F4A68B1B9219594F0B20CE1488C /* jmorecfg.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		35A3064DAEE0F101386833508BF2AF7B /* GradientFillRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302B47D4190F4AA6C76A6800964FEE73 /* GradientFillRenderer.swift */; };
-		35C2477FE9614732D3D19133C8886B42 /* InfiniteSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA6471BE95C01D5DC2A905B446472CA /* InfiniteSequence.swift */; };
 		3670717908617ADF80B3A4C68EDD18B9 /* SectionModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0853323D61EFEF0F4C6030080F596EC6 /* SectionModelType.swift */; };
 		36A6F316155FFFD7689D04AC8D7A6305 /* GPUImageDifferenceBlendFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D28347218111CE4B8C8CE57095B3C39 /* GPUImageDifferenceBlendFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		36D2279E0B75C84D36EB2A147C96A8ED /* lookup_miss_etikate.png in Resources */ = {isa = PBXBuildFile; fileRef = EB707B3F2C6C07A443AD3363B66F4CD2 /* lookup_miss_etikate.png */; };
-		37559A70EFC6432C449C858B66A6E61F /* UITabBar+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E80EF4DF3924CA2513DD84A5E949C56 /* UITabBar+Rx.swift */; };
 		3758B0994FF8AD6C151AB4F20EB44C2F /* jconfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 07D26F7D63FC674163B41DBE4631FBA0 /* jconfig.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		376EEB13FAAD47ED30D83C286A5282C7 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66226E9A3F4B715F31A3B9EC6DDD7CC5 /* Map.swift */; };
 		37B0CC9DEA5A32339487AD3A30223F6D /* Scan.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01E889E56A7CEF40917BC5F17509CD2 /* Scan.swift */; };
@@ -233,40 +226,40 @@
 		3A91E613356684AA6A2CC06A63BA6DA6 /* UISwipeGestureRecognizer+RxGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F2D25DCAC037E6707AB099F2FC3E9A /* UISwipeGestureRecognizer+RxGesture.swift */; };
 		3AF5BBF65243DA9978E9CAE9B36971BE /* GPUImageRGBErosionFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 433B1137C4AB49942A978EB6B23965A3 /* GPUImageRGBErosionFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3B03262C2B8196B01D7020649AAF010E /* Marker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2467D2F7C6733A04622F8CEC303C1CB2 /* Marker.swift */; };
+		3B4924A648328CE6BDEF6E9CE8DDA766 /* UINavigationItem+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2A3A27C8184D3FB58A149CEBC78A90 /* UINavigationItem+Rx.swift */; };
 		3C084053DCDDEE04642AEBA4364D9927 /* GPUImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 54DBB2E93617CA0B207018AFF532F6E5 /* GPUImage-dummy.m */; };
 		3C6B11F1079427165CEA85E0DE617314 /* GroupNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BB22F8E165349CC1ACE5B9F3FBEBA9 /* GroupNode.swift */; };
+		3CC09FEC8D4728464D74DD1C55BF0269 /* _RXKVOObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = DD17258BE1BC60472B7106A5ACDAF26E /* _RXKVOObserver.m */; };
 		3CC12E65A5BEFD9671A7F5784B742B14 /* GPUImageContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E8A29A8D539C4B2C351E33EECAF306F /* GPUImageContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3D68663EA45D45BBA2597FE54954F54E /* GPUImageChromaKeyFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4A9759251C485BAB37027AE78897C2 /* GPUImageChromaKeyFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3D7781AD4390FE9AD05479B6A570CF9E /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2932C71870D546DB97EBBAFB72D4B7 /* Logging.swift */; };
 		3DDEFD4B3C616F9083F63D17432CEDAF /* GPUImageNormalBlendFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAEFB09ABDA7C8EF8DFC805ED453FA /* GPUImageNormalBlendFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3DE2F41407630742702F108AA0F32B7B /* ControlEvent+Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F106AB0639B088B5FCE1EC386AB5D46C /* ControlEvent+Driver.swift */; };
 		3E27E651A1EF6AA0C8EC90AB5D5CAA69 /* CardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED667282B9F73F66ECE3BC1C46C6DF1B /* CardController.swift */; };
 		3E320BD1ABB78B764DCB79CFBB5E87C3 /* GestureFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F4FE5B1C6B9C8B15BE10350FA94043 /* GestureFactory.swift */; };
 		3E695815CC0146DC2F507ECA6EE2CE5B /* GPUImageLuminosity.m in Sources */ = {isa = PBXBuildFile; fileRef = 2799425A639292DE47330AF4319EBF03 /* GPUImageLuminosity.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		3E968D564F874076CE8EFB513721B8BF /* CardPartCollectionViewCardPartsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249866861F316FCD7B3B7CFBA89E73C7 /* CardPartCollectionViewCardPartsCell.swift */; };
 		3EE2234E3DB08A68B3AB2F11E5A55E8D /* strngs.h in Headers */ = {isa = PBXBuildFile; fileRef = 109EB4D0E86F8A37DAEBA29534FA5071 /* strngs.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		3EE2FD2409E09A967F2D211C61D46879 /* UIProgressView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EC7EA0E7C1ECDEE5676EEAF4B4EB1A /* UIProgressView+Rx.swift */; };
 		3EF42A5B043103B7524A142941A844B3 /* GPUImageSharpenFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D644A84907CFE2E92AEA6624A411B39 /* GPUImageSharpenFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3F0E8F6C2FA16C6AC91A817151C861A9 /* Platform.Darwin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9580BE30C8D14276A0B39E85886D7951 /* Platform.Darwin.swift */; };
 		3F990367D80E89E4959D248A12AC5856 /* GPUImageMotionDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 227FDE00B6E53F11BFB5711EC748FDB6 /* GPUImageMotionDetector.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		3FD82EA4FB475B9ACC24E6ECDA620CFB /* HistoricalScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FFC465DAE3BB1D5F20C0B3A8262520 /* HistoricalScheduler.swift */; };
 		4043DB3C1EECB81D9F85BCA867BFCA57 /* GPUImageContrastFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = F67A4977B588960818C85FB16418C9E0 /* GPUImageContrastFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		40AFBFBEEF451F096F9B1442676BFAD4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BFC34D692ED918918F2BEC870D0AEC3 /* CoreGraphics.framework */; };
 		40B633A23E0038EDBBCC1386F073F3E8 /* ElementAt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD69CD26014D3FAF20D23222842D9E0 /* ElementAt.swift */; };
 		40EF617AE765E5AD790F0CB946B46AA8 /* First.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE4930BCA0E720092420628AE9A9734 /* First.swift */; };
-		41324658F384CD426850BCE79FDCD824 /* ObservableConvertibleType+Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB893CF03BF83EF18A4FB95CE782EC2 /* ObservableConvertibleType+Signal.swift */; };
+		40FCA10C754CBC5CAFE1F62E95ED4F7A /* UIImageView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9739D0D44EE2A4DEACE92C3C5640D9C0 /* UIImageView+Rx.swift */; };
 		415854D14C898919AE58245EFBF1E4F4 /* GPUImageMotionDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = DB090A2BF090C0F041382706FF1A7984 /* GPUImageMotionDetector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4187AD4ABE46BF3EEF5057E1EA1A6C7E /* LayerDebugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71939C2447047516C56172133EF003E /* LayerDebugging.swift */; };
 		421A6215847B05F84989BC043ABA343B /* GPUImageXYDerivativeFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD66329BB2A9D78602E461C82093D01 /* GPUImageXYDerivativeFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		42424CD4CD80C01B1F78320BB82B812F /* GPUImageHardLightBlendFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DD92147B14316FAA20B2F2ECE8B246 /* GPUImageHardLightBlendFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		4271447AFBE7A0EB3FB54AE2D9D84756 /* RxDataSources-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 989128E1C3ABBE3301565F05714F4868 /* RxDataSources-dummy.m */; };
-		4287C0F708B7C6DEAA11E2E66CC6F542 /* DispatchQueue+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A60D80C0237AE9749034D21E42D9FA /* DispatchQueue+Extensions.swift */; };
 		428BCD8108E22402A27AB9E14B81803B /* AssetLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD13168753079E430FE1200916E3126 /* AssetLibrary.swift */; };
 		42B0B42A2F446A9C68D399C1E09501DD /* GPUImageLookupFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B4790C8CDDD7A66EC10487032F64D5B /* GPUImageLookupFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		42FB1B39D75B48C57FF4DC23553B0ACD /* UIAlertAction+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA327DC0071C63AEAE88E4499E03D2F /* UIAlertAction+Rx.swift */; };
 		4359E8243C5ED1765332C67F6EFE1F4A /* watershed.h in Headers */ = {isa = PBXBuildFile; fileRef = 880700E565ADB3FD502F20A7A35810FA /* watershed.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		43C85866D676285BD1EE77B46B787896 /* CurrentThreadScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AA90395258BAFD1554B7490D06D4CC /* CurrentThreadScheduler.swift */; };
 		43D706FDF02A608598250EFD899C9881 /* GPUImagePrewittEdgeDetectionFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 270B8A97BE0F29113A2602CE1709BF65 /* GPUImagePrewittEdgeDetectionFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		43EA5AEF6F9F2AA05686CEEF4675678F /* unichar.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A27641CE4ED252B05C555569A60429F /* unichar.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		442F268D818B6094B7F1056802C79226 /* UITableView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DE508A1FAC2FA0F0715D2430BF1BF4 /* UITableView+Rx.swift */; };
+		4454A6C85283CF50C63C9D18ACDBD034 /* ControlProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D554EBEB9D0784E046714201916D5E3 /* ControlProperty.swift */; };
 		44654EB2A08E0F6C9763338142BC4FEF /* ReplaySubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F09BA31E6201973A025EEC0FDDD4F4 /* ReplaySubject.swift */; };
 		4490B114B8192E1D0529B2034256113E /* GPUImageNobleCornerDetectionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A23C48F11C7D1547ADD7F47B5A05C4A /* GPUImageNobleCornerDetectionFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		45034319504DFABDB4B054CEE158A0A2 /* InterpolatableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E66F3356CA994BD273B09DD8F4DC5A5 /* InterpolatableExtensions.swift */; };
@@ -274,28 +267,32 @@
 		45ADBF1ACAB9E68A7238DF030ACA693E /* PointValueProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C238711B5936054306E338EA921E84D /* PointValueProvider.swift */; };
 		45F7BE4988AFC2F7F9AD7880D409B993 /* Deferred.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F99D61CDFAA8D523B7DC59DFA37E82 /* Deferred.swift */; };
 		4602C39C47548F427A42F0A64CF815A6 /* EllipseNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B2565DFDF66F6F7309B67472459639 /* EllipseNode.swift */; };
+		46591822FBEF1B0C9098C9DE0F141F6B /* ControlEvent+Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F74CC00E7FB4C0C6177CB1F9210C9F /* ControlEvent+Signal.swift */; };
 		466F892BBC907A95F841A591C9529EE1 /* GPUImageSaturationBlendFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 25303382FBA493AC6205520A77E51153 /* GPUImageSaturationBlendFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4692DB633A45013DFD053142BAADD7FA /* GPUImageNonMaximumSuppressionFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = CA55A2ACE2C4761336F6A15AF99B1000 /* GPUImageNonMaximumSuppressionFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		47D7B680B772759C8675CCBAC70F07FD /* CardPartCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2EEC1919B26C9FCA90D3FF3E48DCF6 /* CardPartCollectionView.swift */; };
-		47D98BC3D33CD62A431C9F381838C9C0 /* TextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B61E2A26396C6A1B931A309DB1BB13 /* TextInput.swift */; };
 		47EB9A482BA04B9AE83750205F7C824A /* publictypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 52D76349D030C9F168A6384863D506ED /* publictypes.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		481326D06FD1CEA973CF4F2FC27CCFE9 /* RxPickerViewDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32070A34AF0849D7C85109060CF8EB6B /* RxPickerViewDelegateProxy.swift */; };
 		48935295FFB2FF7C4601B10481A793A3 /* RectNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC21ECCC73770A0C1AD062FCEE85773 /* RectNode.swift */; };
 		489C2976F9E5C4E5F7554787712F5A7C /* Zip+Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D161A318F7633B7277EFE6F202D9EEE /* Zip+Collection.swift */; };
 		48C5D03DFA4DF51906797C8C44627800 /* AtomicInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7CC5B19061605BE4F84B711F42B0EB /* AtomicInt.swift */; };
 		48D42107D089BAF7625165E701885715 /* GPUImageLevelsFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A4E8988280CAA8115D07E9579EC16F /* GPUImageLevelsFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		48FAA64A05CDD69812CC23976967592C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A216608162B9E7C618CEED85D1911F2 /* Foundation.framework */; };
+		490B6921960EB99F273D305A0AE87888 /* RxTableViewReactiveArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A726BD57D1AA2C565D8C384604B96C12 /* RxTableViewReactiveArrayDataSource.swift */; };
 		49A3F1ADCA7F42FA3649D66F92AD183E /* GPUImagePolarPixellateFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 14EF5BCF6D007AD6F2CB7E020D8F6FA9 /* GPUImagePolarPixellateFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		49B6AEE73E657A3A6F84FB1914D0F7BC /* CompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05A42E52885BB51FABA734BDCEB302F /* CompositionLayer.swift */; };
 		4A5459CA9E500C897C0D00412C347E7E /* AnimatedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F750D4215FD9F9B8B38B4E7568EC9C68 /* AnimatedControl.swift */; };
 		4A68D01A8743A28803C1D719F52FED92 /* GPUImageHarrisCornerDetectionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = A693A09BFEE6D04137A179AE6CFF3B30 /* GPUImageHarrisCornerDetectionFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		4A80F5BA89F0983D2D539460192ACFAC /* G8Tesseract.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CECA41E43854E11356E48CAD5D41579 /* G8Tesseract.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A94234A7631A4D40F3A569793E92FEC /* RxCocoaObjCRuntimeError+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7366776FC1BFEF0C31A47E27B54927EC /* RxCocoaObjCRuntimeError+Extensions.swift */; };
 		4A9C656F5D55DED09CFFDE9F9121BFCA /* GPUImageOverlayBlendFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68C159EB652ABB1CFA82C98A6BF350 /* GPUImageOverlayBlendFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		4AA015C3305B8F9BF8DA7309EBCF716C /* GPUImageTwoInputFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 624C845008E533E87D380BDB9A395C35 /* GPUImageTwoInputFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		4ACDE385415E431CD52C0075F557B2DA /* SchedulerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A47BF54501C9E7CF591886FB1E5371 /* SchedulerType.swift */; };
 		4B1A28ACD1BE13927747F8DF97C8FAFE /* renderer.h in Headers */ = {isa = PBXBuildFile; fileRef = BE19B315F9E00D1A592089CFD5C7A57C /* renderer.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4B3173CEC827BA52E1A96F91D01641AD /* NSTextField+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512CF6170DC1D80524A2BADA9B36D846 /* NSTextField+Rx.swift */; };
 		4B55C6991561F092CE6D52342FC856B3 /* Stroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B6B408B6037F2DB09B47CFD1262A21 /* Stroke.swift */; };
+		4B6D37B6B3145918CC76B3C51710AA28 /* RxTabBarControllerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEB009C76F9EC530A3EB883ABEE537D /* RxTabBarControllerDelegateProxy.swift */; };
 		4B97673E65518F2C135AE65C645CF92E /* GPUImageHistogramEqualizationFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B950147FCD7F464CD5159911B0A2099 /* GPUImageHistogramEqualizationFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		4BECCDA97FEC6C7EA563D3D2AAA14D11 /* UITextField+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31EC339C061F1AE97E059823D6B02ED /* UITextField+Rx.swift */; };
 		4C318DB10926D2B821BF19459D9891A3 /* Debounce.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9A5398050AB0576656F9C7F5D094B5 /* Debounce.swift */; };
 		4C31AA45A967F387E53540063A527AD2 /* fileerr.h in Headers */ = {isa = PBXBuildFile; fileRef = 57DE3FFFFAE9878B56BA0B86691479B6 /* fileerr.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		4C69DA5A17546F2EECB410D590881FF1 /* GPUImageDilationFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 71E336A0BF2586891FBDE25E15ADB40A /* GPUImageDilationFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -308,20 +305,18 @@
 		4D06746AC4896BCF05B8FEC48BCC4852 /* StrokeRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E613786F3A84D85ADF61C9E81A024D /* StrokeRenderer.swift */; };
 		4D420697F0A6BE9372804F0A9B089CB2 /* GPUImageColorInvertFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 54F66787DB4AD6432FA3E69833CF83F7 /* GPUImageColorInvertFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4D4948EA3AD33FFDCC52870D612FE664 /* GPUImageHalftoneFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 83307E1BC41760C62E9B4BAAA103E0DF /* GPUImageHalftoneFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		4D5DEB77044183D8DB85E8EF6D2B6D1E /* _RXKVOObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = DD17258BE1BC60472B7106A5ACDAF26E /* _RXKVOObserver.m */; };
 		4D5FFCE8E9AFD4967D3B2561B74F5FEE /* GPUImageMovieComposition.h in Headers */ = {isa = PBXBuildFile; fileRef = 10C34C8645B2C98390D78E90F20A213D /* GPUImageMovieComposition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4D795C6B097B75CE0B1505E6FBA9EB21 /* UIScreenEdgePanGestureRecognizer+RxGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745BEFFE6EB9D065FD8A975CD7A68347 /* UIScreenEdgePanGestureRecognizer+RxGesture.swift */; };
+		4DE117FFE2F4F7B1D56CC57CB75F7398 /* SectionedViewDataSourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D59248D97E0973CEC0D5F92D96799D /* SectionedViewDataSourceType.swift */; };
 		4E2F4723385AAE4FF070317ED25EE79C /* GPUImageVoronoiConsumerFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BFE0CED2E1AA8DE870FCD1C21C57839 /* GPUImageVoronoiConsumerFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4E3E4601514202C014BE621362770A05 /* GPUImageSolidColorGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E908DB7C96F4609548FA518CBAF1576 /* GPUImageSolidColorGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4E4E041F98EA1088FA45070B9D6E2E4E /* AnimatorNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96303B9E4922F0070BACF2357D847043 /* AnimatorNode.swift */; };
 		4E80CABEB48678A55FDD4574B51E73BA /* GPUImageErosionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = FE379C91CFB41E229739007A2F3EADD9 /* GPUImageErosionFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		4E9222B23FC634605F5DB0A7BC8F5AB5 /* ControlTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741D414AA07751F57DF16CD1D4F7BB7E /* ControlTarget.swift */; };
 		4EAEACA4BD7FCD90288CB0C32A791EF1 /* baseapi.h in Headers */ = {isa = PBXBuildFile; fileRef = B9302B8A1B4BD749606E929522F99DAB /* baseapi.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		4F87E17341482CDB551DA1D77FEA8BA7 /* RxCollectionViewSectionedAnimatedDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904376AC7A89C1DF3AF7B588D6234925 /* RxCollectionViewSectionedAnimatedDataSource.swift */; };
 		508F50AA3FCAB9F50E39DA00198B7E39 /* GPUImageAmatorkaFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 122DFE57C24630A87EE82FE88C7403DB /* GPUImageAmatorkaFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		5096E03B2F8998DF66D4DE8290CC6B66 /* LockOwnerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532E78605E447A2993C3DA1A4487D6DB /* LockOwnerType.swift */; };
 		50FAF552CAB17B743D6B4E1702987BAB /* GPUImageFilterGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = B854E9C4AA8A28940D6A9A52E982D4B9 /* GPUImageFilterGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		511B3874E9CE44527734CF29529CC8AD /* PublishRelay+Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC4BA6ADCADD8AFAAB296507CC6057 /* PublishRelay+Signal.swift */; };
 		515FCE3209A9190C964C0C56A149F99B /* UIPinchGestureRecognizer+RxGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA01E3709C03C3AB4EDB1A9F68E81E6 /* UIPinchGestureRecognizer+RxGesture.swift */; };
 		518E223013EABB6A6E25EC858EBE7CB2 /* GPUImageErosionFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = CA6423B4073F8C01871A9B8DE77A4F6D /* GPUImageErosionFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		51E64B5F55BF696AADD8E0AD74E7F4FD /* GPUImageFramebuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EAE7BF82BC7B15AF9C18D72ECFFBA52 /* GPUImageFramebuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -331,6 +326,7 @@
 		526EEA6DDF27039D979C4134B54C28E6 /* GPUImageCGAColorspaceFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C834996900462DC4E714F36755CC62 /* GPUImageCGAColorspaceFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		5289C66F4B3C1DF21B238D7C6275314E /* GPUImagePicture.h in Headers */ = {isa = PBXBuildFile; fileRef = 78F0A1632C4B8076E7E7C4E5C31020CD /* GPUImagePicture.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		529F67AFD779C20FD84148A30DE23DCF /* InfiniteSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A0E9A0C9D4EA7C9F0E57B1C2F81237 /* InfiniteSequence.swift */; };
+		52B4275EBEB114D40C69ED6A7253DC9C /* UIPickerView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA46BEDCDE27C2008ABCFE72E0C2F5C /* UIPickerView+Rx.swift */; };
 		52F8E0B1233445BFEE89DA8CDCBFBD86 /* TesseractOCRiOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C09AF8FDA32A61249330CD01EE98C0 /* TesseractOCRiOS-dummy.m */; };
 		537A10A4CBA48F8AB9A88FBA7BF5734A /* CardPartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB3C583365BF0444FA81A52444B9D3D /* CardPartsViewController.swift */; };
 		53BAED26D67F11B6F47B443F85E303CE /* ImmediateSchedulerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E480334EB8D9A115FC0D41BA50302636 /* ImmediateSchedulerType.swift */; };
@@ -343,18 +339,18 @@
 		55CD86F2DDE2BA0974C1946910EFB5DD /* ScheduledDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3598EDF588D086100274DBF98F9111 /* ScheduledDisposable.swift */; };
 		566CC5E10FDBB562F1F9373ED34BB096 /* GPUImageFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 68DA2B32F728D968C99734157E3CEB9E /* GPUImageFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		56DD5BD3FC07EA9E18E619B6E0A93B52 /* GPUImageUnsharpMaskFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = C78BC0E1EDC76041C7CB83F3C0F94307 /* GPUImageUnsharpMaskFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		571678BB7DF95A2E6AF3B9A2A67082C0 /* KVORepresentable+CoreGraphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CE2848D4A8B27A6007366588C40C81 /* KVORepresentable+CoreGraphics.swift */; };
-		5745896CEB388E806D256AA2435F761A /* UIView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFA78F380763E7F05B3F49F0FF66519 /* UIView+Rx.swift */; };
 		5757ECB4DF0FE68920D6311302DE39AE /* GPUImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F024AF9ADE2A875BC0F2058AADB8E580 /* GPUImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5806FAA5898722FD76D49AAF287354EC /* RxTextViewDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9BD1C39052162D6861DB4A603E1B9C /* RxTextViewDelegateProxy.swift */; };
 		583676E8B029BAE530803D7E5DFDCF04 /* MathKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BE1D2EF62F4503A59216B273840C8C /* MathKit.swift */; };
 		5894E3042BFB228C931E7B839740BDC0 /* stack.h in Headers */ = {isa = PBXBuildFile; fileRef = 72AD7353E6BC8DA29EF0AC30B0D215A0 /* stack.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		58D61BC54D326EF552A01F1B1F3B6B65 /* ControlEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B941D8F563338B56434759B29BDBAB /* ControlEvent.swift */; };
 		594993EB8D990403BEC869EA636FB934 /* GPUImageFramebufferCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AEE2BC51E93A7495C321FD6F4E68CD1 /* GPUImageFramebufferCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		5A141190AE83CC597B5E5CFE969489FA /* GPUImageLookupFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DAE2C632B57300F07C07CD5690C4576 /* GPUImageLookupFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5AC5C188B381B567D9FA7D7FB2BF2B15 /* ControlEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B941D8F563338B56434759B29BDBAB /* ControlEvent.swift */; };
+		5A8B7B568D5F653041FE4A2000B220F4 /* ItemEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F611A43CCCD4A6EFC8BE4A0D1C4E9D8 /* ItemEvents.swift */; };
 		5AE0C859C8CD6AC4B721D0DD9906D3A8 /* GPUImageCGAColorspaceFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = D4E24BA789A4AFBD0908359041E7ECE1 /* GPUImageCGAColorspaceFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B044021C2F6578C2814B8543E23D067 /* CardPartsFullScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D08ECE28B8C14A3A3DDDC2D61199D6 /* CardPartsFullScreenViewController.swift */; };
 		5B14F2A06C5D6BAE160CBD914092CF56 /* RetryWhen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1C1D005F2A56D9DE05C488C7E55D94 /* RetryWhen.swift */; };
+		5B234DCA3E5F55461ABE9A92755903FC /* NotificationCenter+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6D740A3A068019939F7D7D6D16B64F /* NotificationCenter+Rx.swift */; };
+		5B34777B2B2CD386AC3F562E991A05CF /* UIControl+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5CA5EB6871E809317DF21AEB65F28A /* UIControl+Rx.swift */; };
 		5B573714F04774D9F6FE4A10B543DD70 /* RxGestureRecognizerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639A641EEA5BE7B30A89F90940231372 /* RxGestureRecognizerDelegate.swift */; };
 		5B76E916241434B8218B8484710BC957 /* G8TesseractParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = 755D341F9195916CBDBF5A933B409C8F /* G8TesseractParameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B77B0722ACF1D1543050BA74455FCFD /* GPUImageStillCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = 017B99CCA458BE83F2B35D6CB8366923 /* GPUImageStillCamera.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -364,11 +360,11 @@
 		5C5233D8427B2DE5CAEEBDAFA9D43D1B /* GPUImageAddBlendFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 017A8FE4B8C3F07FA0293D6B1D623849 /* GPUImageAddBlendFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		5CAFE08F7D8C542F6012001A6DE873D9 /* leptwin.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B02F20F5C7E6508FC6FEF16AC75057 /* leptwin.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		5CDA50CF1493A707EEEC492F9FDA8074 /* GPUImageParallelCoordinateLineTransformFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E09C06CD01E18727C909CB80947584C /* GPUImageParallelCoordinateLineTransformFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5D774554D12FDBF563CE2B04CCBC3357 /* RxCocoa-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C4EECDFE1ED73375687957E261789B /* RxCocoa-dummy.m */; };
 		5DB240F9301283939AC3915F832179A3 /* Interpolatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DC4E536E81ACECFF3BFC895BE0A374 /* Interpolatable.swift */; };
 		5E10516B149E623B6C217DBD48DA7703 /* CardPartTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0FE09FCD498E589DE08165F9A31B75 /* CardPartTextField.swift */; };
 		5E31F764755E30C7EA61A528ECE72A4C /* GPUImageRGBDilationFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ACC3DE12C2555B7600498F34CFCE065 /* GPUImageRGBDilationFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5E502296F5FCB4D990554A2792D583CA /* Reductio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A19CB9F316A8914381688B1157E6B /* Reductio.swift */; };
-		5EE0453A5B29056C7AE04E4C175F2DAE /* Driver+Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E8E8B491C0B4C487DE08C49220DE0D /* Driver+Subscription.swift */; };
 		5EF6BAA44E0249E314A66C213074C885 /* GPUImageDilationFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF8FE193AE51C1495870FA2957A4FFB /* GPUImageDilationFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		5F0B34DCC8E1F66C5352368735015320 /* GPUImageSubtractBlendFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = B2BA73F2634240B3F9698AEE55AAAF89 /* GPUImageSubtractBlendFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5F40EEDFCB9678EBD6D871EBE72CFD81 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 793E8C4BA010F0403BFF2E3851A31D73 /* RxCocoa.framework */; };
@@ -378,30 +374,27 @@
 		60AD86F970EAB6C8599515A5A96659A3 /* ObserveOn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9359229B35DAA2513E569077694A82 /* ObserveOn.swift */; };
 		60CCD0977FBAE1D95372E37AB665340B /* G8TesseractParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1BE8B5D83A56FE37B388713A611497 /* G8TesseractParameters.m */; };
 		60E0D5969B4C12E771297180571FAF3F /* RxSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3065AF13C87A90F76067C5232A22A56B /* RxSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		610FB44BDB2D654E9B48F7529C1392DD /* ControlTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741D414AA07751F57DF16CD1D4F7BB7E /* ControlTarget.swift */; };
 		61140450BC78A1C169A3727211ABA91E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97672876789A86E898EE698D1AA0B2B5 /* QuartzCore.framework */; };
 		6127A8435ACBDB3971AA6C447FA44574 /* Bag.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF29C52B81B41F49A0EA1C75D2817F32 /* Bag.swift */; };
-		6132B85AF2F3178D17A52DB7692F6B55 /* RecursiveLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6483CB4AE0C56562DCB0397B25DB61F3 /* RecursiveLock.swift */; };
 		6168092EEA75A0F8D08619733E5B816C /* Keyword.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1DCB165D473EC9AC4EABE118BC065F /* Keyword.swift */; };
-		61F9A5143BDDB6FDA0FE62D1F7441AA1 /* SharedSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0B89892951A71F2A742C4159AD6432 /* SharedSequence.swift */; };
+		61BEEB84C1D31CCFAF6F3C9699DA5447 /* BehaviorRelay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1144624A0DDEBC7953AE293BA5C4CA3 /* BehaviorRelay.swift */; };
 		622ED0AFE0C1A59AB2D1E2B32DFFE785 /* RxTableViewSectionedReloadDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC548D176377EB16FA00FACE6BC8C91 /* RxTableViewSectionedReloadDataSource.swift */; };
 		6253BE567D28179B25CFDF676E24CDF9 /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F66AF2EDCD9A521A64CC1AB80A1417 /* Star.swift */; };
-		6260721F9F5BAA6BE653B4A64FEC6A9A /* Bag.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58D27C8F821BED214DC8667AE3D0950 /* Bag.swift */; };
 		626BD10E3B1CA37DDC340B8804B6848F /* resultiterator.h in Headers */ = {isa = PBXBuildFile; fileRef = 98F80AAE1B284B000B8825096D8BCB40 /* resultiterator.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		628DA2045D2806CE285BE4AAE839A51B /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C429C4565743B43427BC4AB0CB64E1F1 /* Driver.swift */; };
 		6309A7F45DFD983A2C470CA095B19DF4 /* AnimatorNodeDebugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAF93B5F7940266519AFC0916F501FB /* AnimatorNodeDebugging.swift */; };
-		634AFBAB3F5C81FD9E9D83EA2FA51C79 /* UITabBarController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3D8026D2617A8D06248BE439E06168 /* UITabBarController+Rx.swift */; };
+		631287B3B9756A43BBC722541920C12A /* UISegmentedControl+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2632404DA4BD6D60320FC0B24A746B11 /* UISegmentedControl+Rx.swift */; };
 		6392526945DD50B404C866252572E75F /* GPUImagePosterizeFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B4D1EACA18F402F730415DCF6E08A89 /* GPUImagePosterizeFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6443AF28DA342CEAD0270A10BAFD60F6 /* NSLayoutConstraint+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8698B6D966101E4AFCD27A13AC8723 /* NSLayoutConstraint+Rx.swift */; };
+		63E3E7619B3374567160A5823973D9AD /* KeyPathBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB15B4F9E336906C0616AFB66527CE /* KeyPathBinder.swift */; };
 		647DC4C4AAE417759E69E86C94291BE3 /* GPUImageGrayscaleFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3715F483008E8D7A434F95A506E2C597 /* GPUImageGrayscaleFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		64C1E0DFCB748F3FE2E5778B631CFBF5 /* GPUImageBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 695FF2A052E7AF5E0205ECF44591C088 /* GPUImageBuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		65031B5F8D0BD785FEF63404FA2D75B5 /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C429C4565743B43427BC4AB0CB64E1F1 /* Driver.swift */; };
-		65608864EBF570840751AA1402CF0451 /* UIRefreshControl+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84512E04655045C6563559E991201985 /* UIRefreshControl+Rx.swift */; };
-		656C3A9B622BEFF4650BD9B08571A000 /* UITabBarItem+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B22449CEC2D77610DFC2D6D2F68C1B7 /* UITabBarItem+Rx.swift */; };
+		6514FD3493FA1973F776CB6CE191E30C /* RxTableViewDataSourcePrefetchingProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA9D1CCE596FFEE3127F417AF54579 /* RxTableViewDataSourcePrefetchingProxy.swift */; };
 		658C68A6FE26F62AB206B5CA81D8E29F /* GPUImageXYDerivativeFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = CF535F6B69D435D77EE486BB206D84F3 /* GPUImageXYDerivativeFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		658DA64C07165651DAEB52ADE0B7DD15 /* GPUImageTwoPassTextureSamplingFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = B41C2534E10B58F66D03C0DB69B0328B /* GPUImageTwoPassTextureSamplingFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		65CA88F9B6C3E0B73AE1DEF7458F90C1 /* SectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0E15044E9802D150D1FC7730A0900A /* SectionModel.swift */; };
 		65FA97FA66E8C03C0754B3040026B1A1 /* GPUImageBrightnessFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = B113DCB2E21A6E259AA8C6E0AAC3F75E /* GPUImageBrightnessFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		66424E2BA32B548C999F3A481ACC2E41 /* TouchDownGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161A0959223AF83ED8DA8DF3AFDEF6CE /* TouchDownGestureRecognizer.swift */; };
-		664A7FACB785138749E45C4C24D1BBBF /* UITableView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DE508A1FAC2FA0F0715D2430BF1BF4 /* UITableView+Rx.swift */; };
 		666536CDB6FD71198CC4D7F71C649151 /* GPUImageExclusionBlendFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B62CCC98AC6819B88BB39C040D226EB /* GPUImageExclusionBlendFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		66703B151576B784C85C4A9BFC42EC9F /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9D446CBB55278ADECF261AC6A95A11 /* Color.swift */; };
 		6672436CA76B6BFF2593BED691BB2CA4 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC4826C3AF957DE96AC905ACEE6BB652 /* RxSwift.framework */; };
@@ -409,13 +402,16 @@
 		66C418C3634DD8418CB0AD7BF08C353F /* GPUImageStretchDistortionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = A976EA1B9865DF85AB4678279E1F61E8 /* GPUImageStretchDistortionFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		66D48AE542A11749E0D5486FBA961F9D /* HistoricalSchedulerTimeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52C8522C58FD1C80C9286EE08BB4CEF /* HistoricalSchedulerTimeConverter.swift */; };
 		66D7DDB6BB99F3E5BDB52F48989293D1 /* _RX.h in Headers */ = {isa = PBXBuildFile; fileRef = CF12106B350B298627C129F8EA00AE9B /* _RX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		675A264676F25D7E392A04C39F758FFE /* UITabBarController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3D8026D2617A8D06248BE439E06168 /* UITabBarController+Rx.swift */; };
 		67614DC4A4156453B70DA8716D3559E6 /* Vectors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B605D5AECBC34487B57D372CF0C144 /* Vectors.swift */; };
 		676D1D2C0C808C4428921E2D5F6A5194 /* Differentiator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB36FCB16C25029733DF9DF3B304BC /* Differentiator.framework */; };
 		67E7A2DEC871767F37C353078F88072E /* SolidLayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B495D969CFBB48C4BFCC62105AC7FD7F /* SolidLayerModel.swift */; };
 		67F95E4C8A51592460360F657028B4A5 /* ImageAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35E731374C38B8A2080DE890A966E3F /* ImageAsset.swift */; };
 		6838C3FA32638AF58232713D2A034F88 /* Differentiator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C28AD570E659E7A13B6F61B01311A830 /* Differentiator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		68BBDAAFA3098DA0B3A31B3044084D42 /* UISearchController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2538BDF7BCB1BA7D54E0DB2C2E1A01EF /* UISearchController+Rx.swift */; };
+		6852153F3FC7722FC80D9471A12B5A7D /* NSImageView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6B63067922694FE7EE3205CB0CF19A /* NSImageView+Rx.swift */; };
+		689C3F7324220AB5788BC579F1998747 /* NSLayoutConstraint+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8698B6D966101E4AFCD27A13AC8723 /* NSLayoutConstraint+Rx.swift */; };
 		68D736793691D736FAA0F6B8AA872200 /* platform.h in Headers */ = {isa = PBXBuildFile; fileRef = 394A4AFED1FD128617EFCB57D2C5C466 /* platform.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		68DF0E043A4E48CD26DD5B379A7B5E1C /* UIWebView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = F256DDFFDB9D3A1D45422D486528D42A /* UIWebView+Rx.swift */; };
 		691A9D2A2990D9DC141DA858A42FE9B8 /* SingleAssignmentDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0DEBF9AC023F80663C9187214870EA /* SingleAssignmentDisposable.swift */; };
 		69420DEAA79C6E22EE4A53785EE51C9B /* GPUImageSphereRefractionFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 050BAAA7A4F6D285B938DA09B914EE85 /* GPUImageSphereRefractionFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		694F1F4846719998FD309A2AAA582E89 /* AnyValueProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155DFC631A6686E5936C0760292E284F /* AnyValueProvider.swift */; };
@@ -423,12 +419,10 @@
 		69EBF4C667D93A47047A49A70CBFAB1A /* AddRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE337BB900404E884973CC2DE893FBCD /* AddRef.swift */; };
 		6A690CDB08E5B560791D0ECE941CFF89 /* CardPartSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B6F51A7F2D3429BEACC6EF9F905833 /* CardPartSliderView.swift */; };
 		6A92DBABD359F736B7CA4C2A5D317561 /* tiff.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A186C10E1C415524154FB80560DBD50 /* tiff.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		6A96A370EF49D8BC976D8679C4E31257 /* SharedSequence+Operators+arity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE85C4C3E020B0FDBA1882EDF88274C2 /* SharedSequence+Operators+arity.swift */; };
 		6AE7A764D7512A801B27161BAE4AB1B5 /* Keyframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E80CA3640F10DF5DB6164C19565709 /* Keyframe.swift */; };
 		6B454D740AAACCC072FAB11BA604CA63 /* GPUImageOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = FDEED1A5A73B7707A13E471016EA6CF7 /* GPUImageOutput.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6B459666AA53212F16918997DC6C5B4A /* GPUImageMotionBlurFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = C5BC2C87CD683622E69D8F0D9F215479 /* GPUImageMotionBlurFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6B8136157AAD2A6244C79073FE237CC0 /* ItemPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0632EC85D522C78A4F8AB15125084EF5 /* ItemPath.swift */; };
-		6BB0B30ACC1EB890D30B269138DEC66A /* NSTextView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEF18613EB71A1FC3D1A3A6F309E4C2 /* NSTextView+Rx.swift */; };
 		6BB3A4B4AE68D5561DB601628DC93542 /* GPUImagePerlinNoiseFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 79126CB61F95489E281C812347B5FEAC /* GPUImagePerlinNoiseFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6BF00B0C81711E4E9F23005DD65F64DE /* AsMaybe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC6CF30ADB65F603DBECEAA872C2B6C /* AsMaybe.swift */; };
 		6BFA25EFB3C99684E3D07650863FCC33 /* png.h in Headers */ = {isa = PBXBuildFile; fileRef = 213FDE5D03407D4103A84D4B6A12E104 /* png.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -440,8 +434,8 @@
 		6DE29AE798CAF80433ADA1C04574B835 /* GPUImageHoughTransformLineDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = F62B5DE0FD13EABFEFC26B7DB3B75F20 /* GPUImageHoughTransformLineDetector.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		6DF987973D06860C2FC5660EE05A33E4 /* GPUImageLowPassFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = C8E045CC64CBDF68E1B3D5D87F14B099 /* GPUImageLowPassFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E66B176152806D78B886CCCC817545E /* GPUImageiOSBlurFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BC1BC7AF526F438842C8108EA0B553 /* GPUImageiOSBlurFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6ECA95A35ED3F1B725CB0E06C8E9C707 /* RxTableViewDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0782695724AA52BD0F3EAF014DD82933 /* RxTableViewDelegateProxy.swift */; };
 		6F454761DCD16A77F47415E33E3FCE33 /* GPUImageHueBlendFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = A261935E5EFF9CA6EBD046747072AE6F /* GPUImageHueBlendFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		6F8C620818A8462E6A9EDEB0EF5EA340 /* UIScrollView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F54DDFD9286A44EDC5BC3E7B32C092 /* UIScrollView+Rx.swift */; };
 		6FD9D5E542A774196DAED3A6A075C4B8 /* GPUImageFalseColorFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F3C6ACE56CE14BA6B7E10453A3BBA5 /* GPUImageFalseColorFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		7010C4DE8E07FB78A00C7D1684DAB892 /* GradientStrokeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B62DF145188F989C0550FD7D1265965 /* GradientStrokeNode.swift */; };
 		706E7DCE9B7E48ECC33E82FB31E75D2B /* GPUImageFilterGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 51CB1580A1F8083D678E7EB076B13A29 /* GPUImageFilterGroup.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -452,17 +446,17 @@
 		71BA8B210919051301360E1E6ECEE63D /* GPUImageLineGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 83F18579403F37DF73C1B1B08D97CDCB /* GPUImageLineGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71D40068A04DB57DCD944F0EBE103894 /* Multicast.swift in Sources */ = {isa = PBXBuildFile; fileRef = D124F175DB9F9EB577CA50E31B40518E /* Multicast.swift */; };
 		7212AF4CEC124065836C58E6C8E54B03 /* G8Tesseract.mm in Sources */ = {isa = PBXBuildFile; fileRef = 38FBE76378D3922CD25584B7A69E4D68 /* G8Tesseract.mm */; };
-		724ECBAC018870FC3220A2AEE582E5DA /* NSObject+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DF5C7A7EB55D9BDA835457DF7EE1E3 /* NSObject+Rx.swift */; };
 		72682DEDB92620D3D0750DF447DCB170 /* GPUImageRGBOpeningFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2FE137570F09030F2901EC477F6DB2 /* GPUImageRGBOpeningFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		726D31693BA987E3FB7DEF8199FBBA8B /* GPUImageLowPassFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = D0AF717AD98868865634138F45852419 /* GPUImageLowPassFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		72768B871A1741DB25835C169DEE9230 /* BooleanDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF63F22E3A562E55C05D0F4AB0784C39 /* BooleanDisposable.swift */; };
 		72BB7ACC03467DE45A3C842C8E827585 /* lookup.png in Resources */ = {isa = PBXBuildFile; fileRef = 275D36837BECE393891AEAAD2884E32C /* lookup.png */; };
-		72EBF6D1ED93277451EB7064B5AAD414 /* PublishRelay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DFE6875964FC49E54CE593E85B76A3 /* PublishRelay.swift */; };
 		733673023D89D318D5F6EB331185248E /* Diff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FC319571931A11CC4F59DBF8FB07F5 /* Diff.swift */; };
 		73799F0A663553111268D1758C36B077 /* GPUImageGammaFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 058A54150B2DD3FA6B31652D4E9B7E4A /* GPUImageGammaFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		7381F01D445C8FB3B21BFF13BCBD028D /* ObserverType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA96C02F9777C87451AE04BAB9B664C /* ObserverType.swift */; };
 		739FC94F0E57ED60D91CA7C757A46C8D /* CardParts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C148D7DD0DA1ACD5C1BE459D0EB5D3 /* CardParts.swift */; };
 		743DD69B89EB6250CD5FBE0842EFEEEC /* GPUImageSharpenFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = A983975BE373FB3DEF08D7CBAC2A3D0C /* GPUImageSharpenFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7488D4DB0EF6758088A0F70D8DFD0C87 /* UIActivityIndicatorView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC102E6401720A3A7CBC7340D9C0E98 /* UIActivityIndicatorView+Rx.swift */; };
+		74DB5371BCA196B6AC9B109E0D21D470 /* RxCocoa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384F7A1A22566084898C94F7AD97CE4E /* RxCocoa.swift */; };
 		74F484982A7A1B3D624D354FC7C7CC30 /* ObserverBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7074754B02EAEFAFACF5E1CED8D6C818 /* ObserverBase.swift */; };
 		75B9A7F053443263F8600D830298F149 /* bilateral.h in Headers */ = {isa = PBXBuildFile; fileRef = DDE1A28133BEB5FECCCC75EE4D4D5D8B /* bilateral.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		75BF764528597E97FCFFE987CE5ADE50 /* GPUImage3x3TextureSamplingFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = ED8166980CFDE5D83BBB64DE66464E27 /* GPUImage3x3TextureSamplingFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -471,12 +465,15 @@
 		76313984A11A14B373453F9106719C9E /* GPUImageFramebufferCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 93ED9C20A716803DB807B23288B3542F /* GPUImageFramebufferCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		770543662C445AF51CE3CBBF123F4F25 /* InvocableScheduledItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C000109D0A87E04EA1D3F0C05FC00A6F /* InvocableScheduledItem.swift */; };
 		774E3A286FE0A46BA2BFE336B5465FD9 /* GPUImageRawDataOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = 252EC9C2DC1A945F5EE15D6B20A61CD9 /* GPUImageRawDataOutput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77546317EDC85E06747BF232B2021BE1 /* InfiniteSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA6471BE95C01D5DC2A905B446472CA /* InfiniteSequence.swift */; };
 		77ACD0730452BFDA0D520076B1E30526 /* PublishSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9F6C28C65D0A510844B67AD618DD2C /* PublishSubject.swift */; };
 		77C945AB9A1F48A2F9AE03F3ADC5E972 /* AnimationPublic.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBEE423C7240A0A34B7408F497C3223 /* AnimationPublic.swift */; };
 		77D1FE6AE8BCE43821E404E402B58314 /* UIPanGestureRecognizer+RxGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82958B6A84DC046A3EED9AC4647E8D73 /* UIPanGestureRecognizer+RxGesture.swift */; };
 		77ED9A875AD7D61171355163F0F181F0 /* CombineLatest+Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B0DD6A703AAF3412826DBD4FCFBCEB /* CombineLatest+Collection.swift */; };
 		7825399627B3C181C73FC6727A035C17 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC4826C3AF957DE96AC905ACEE6BB652 /* RxSwift.framework */; };
 		7856AF8AF7A023DF1D525683F0952DBA /* recog.h in Headers */ = {isa = PBXBuildFile; fileRef = 70F1954093A4A0F95403C17F3C3C1244 /* recog.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		78970AFF2541D847C2CEB573F2C74DBB /* RxCollectionViewDataSourceProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AC9AF5028BBD19F04E58038270C33 /* RxCollectionViewDataSourceProxy.swift */; };
+		78A7CFAC84BEA94DA60B80BF383D8B5B /* UITextView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A0937A22CE24222E4236B236250F9D /* UITextView+Rx.swift */; };
 		790B4F2EFFD1813484F678CF63FDCE03 /* GradientFill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7602AB3D5AB6C19A9C1F158781BEC27C /* GradientFill.swift */; };
 		791BC465A055AC55E343567E8B034059 /* GPUImageBoxBlurFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B97C083A804DA87ADE397A41A268450 /* GPUImageBoxBlurFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7975CFBC166725D81F441A1980AB56C7 /* CardPartOrientedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349F5BE8589AF870AB619678F9F297A2 /* CardPartOrientedView.swift */; };
@@ -487,13 +484,13 @@
 		79F5B941775469C4BFC16F1A1CCD8A38 /* GPUImageGaussianBlurFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = BD32D4CA523F1AA1344A351195823172 /* GPUImageGaussianBlurFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		7A25234DFB9CD5522B638CA1B3AB4E21 /* AnimatableSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458ACF796116C704D4328EF042753247 /* AnimatableSectionModel.swift */; };
 		7A3E5942E6518831407B75058655DCBC /* AnimationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2FE802F59C59859E8E09233C98C1B3 /* AnimationConfiguration.swift */; };
-		7A91AF49C5EAF522BFC4F7BA2D194DB7 /* UIApplication+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784ABAD524239397899B88258A898832 /* UIApplication+Rx.swift */; };
 		7ABDC1BD1180F6F7EEC4D31B3E841ADB /* ObservableType+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094E567038A108B710136E55142D70A /* ObservableType+Extensions.swift */; };
 		7AE5A916410166489C83642FAA6F0F0F /* GPUImageLocalBinaryPatternFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 40584AB3EB64C456C8332501037AA6E7 /* GPUImageLocalBinaryPatternFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		7AF2C1096BDB81DE1F71E7DF584BD37D /* RxPickerViewDataSourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A6EA7D0968EE4D1F21C5A972971DD2 /* RxPickerViewDataSourceType.swift */; };
 		7B4D909423F8B119F185B2568AAA4185 /* CardUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3827FBBC51A4D8E1020B2C6E25CA2D33 /* CardUtils.swift */; };
+		7B90B3A8EE0F1FD97D15E0130FF2BCE8 /* Platform.Linux.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D43AD81F99E0614B21A7E5E4DF3130 /* Platform.Linux.swift */; };
 		7B90C947487A09868BE1122298D815CA /* String+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68B848F9D85871DB1E604F8E76CD43B /* String+Rx.swift */; };
 		7BE508B9B623234E0EC0E704CCAE8B51 /* GPUImageSketchFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FE441109BFBA785EDF63908019F042 /* GPUImageSketchFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7CDFAD3CE91F779454761378D14015F3 /* NSTextView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEF18613EB71A1FC3D1A3A6F309E4C2 /* NSTextView+Rx.swift */; };
 		7CE756A2CADEE3D25A7360FFD3B17DC9 /* GPUImage.h in Headers */ = {isa = PBXBuildFile; fileRef = D83CD8A18BD9335C5E4CEC86E062364C /* GPUImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7D07CA4A059DDB0463917FFD28D0ADDA /* jpeglib.h in Headers */ = {isa = PBXBuildFile; fileRef = 20FBD4C3CAA9AE044C053BE177E440AB /* jpeglib.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		7D16E9A1091E89C615A3B0D37F6B9333 /* ScheduledItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4990C485DFC7EB8C5A49D65EB2D907 /* ScheduledItem.swift */; };
@@ -501,37 +498,37 @@
 		7D22080D16757D83FBA65439560451F5 /* ShapeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BBA1ACC8AC9B10E40F449FCBC39D14 /* ShapeNode.swift */; };
 		7D2B2362439AA388F1D310E4519EDEA8 /* GPUImagePicture+TextureSubimage.m in Sources */ = {isa = PBXBuildFile; fileRef = 094C3A5D68176089D46597FAEFA06039 /* GPUImagePicture+TextureSubimage.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		7D5869946A66C8DBDF15F185E9AC9FE3 /* GPUImageHueBlendFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AF89FD1E65E36B5CA305B91A8EE6384 /* GPUImageHueBlendFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D5AD2CAC01B11AE7AFE46C36EB13823 /* Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C39BCE128013497ED02DE4FA1D942F /* Binder.swift */; };
 		7DA51E7B6F96245801EA79163DCAE2A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A216608162B9E7C618CEED85D1911F2 /* Foundation.framework */; };
+		7DA6CDEDF6147BB6244286FA46313F6F /* RxSearchBarDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB397C33E7BD15BFBE4AE465732B816 /* RxSearchBarDelegateProxy.swift */; };
 		7DAAC4B26AF1DC8936947C18F511DA2E /* Maybe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1346086FFFBCD6FC066569BE72E2F49A /* Maybe.swift */; };
 		7DF39C5E4B9C7F64329EAD9D034AFC86 /* pngconf.h in Headers */ = {isa = PBXBuildFile; fileRef = AC320E8FDEA8A3176C6E2C188DD4AD01 /* pngconf.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		7E39EC28697BF217C35A696407196F04 /* GPUImageFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = AD65A1FD31E9703E35C84793451A24B7 /* GPUImageFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E5C274F2721E113E36DB34E6F8C3D5D /* heap.h in Headers */ = {isa = PBXBuildFile; fileRef = D496E0D161AC6F1FFDE84C3F4AC9FFEA /* heap.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		7EADCC00366971F32DB950C092A13ADC /* ShapeRenderLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EC9285B32DC0432F16B4A94A2BFAC5 /* ShapeRenderLayer.swift */; };
-		7F1AFB66CE732DCAD3BEF884C7A713D4 /* NSObject+Rx+KVORepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210E01EB342F8C7083142D06931BD52B /* NSObject+Rx+KVORepresentable.swift */; };
 		7F4E702A5EC32DEF0B842685066D5E33 /* Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD17770496C6BAB1B7841389F142264 /* Merge.swift */; };
 		7FAD756645DE343CC9967E0D57723421 /* GPUImageColorInvertFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B72B560FDFAC2D22A2E070AFD875BD /* GPUImageColorInvertFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		803C1D5D577F2DAFBD9E3B4B37450F05 /* DataSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A5CF04B308C60384D296CAF94EC651 /* DataSources.swift */; };
-		8060FD647FA59B3C400E06DD860B1F8F /* UICollectionView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD85B4B4F2F5AE585820C6326431610 /* UICollectionView+Rx.swift */; };
-		807FCBD68BF74193976B938FB5510610 /* UIActivityIndicatorView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC102E6401720A3A7CBC7340D9C0E98 /* UIActivityIndicatorView+Rx.swift */; };
 		80DB3CE12560C34149007A6F6FEC6012 /* morph.h in Headers */ = {isa = PBXBuildFile; fileRef = 58447661C54CB4C0327A1FF43DAE9BF7 /* morph.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		80FFFC9E3451FB2ABDDC8E0C3E8312C6 /* Observable+Bind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CC28A447715E9E5024FCFA75B07D6 /* Observable+Bind.swift */; };
 		8136D45FC92321DF23D8F145637F8F28 /* G8HierarchicalRecognizedBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = A17DC212195A2612D9BD36D22219DC9D /* G8HierarchicalRecognizedBlock.m */; };
 		81FE9D9733B390B39BAD660EB8BF79C6 /* basedir.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D849CD98169C13D04B59FB4D2735570 /* basedir.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		81FF714D39B8ED83CD5D6773B694204A /* GPUImageThresholdedNonMaximumSuppressionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A181495CA745929D1F1D57C8D0767E /* GPUImageThresholdedNonMaximumSuppressionFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		82178E782EA7C41064E2AB5A5C214CB1 /* UIBarButtonItem+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F05D6BD6458E7F9CD2BC96CF9D0868D /* UIBarButtonItem+Rx.swift */; };
 		8253071B7FC509D1079BE88FE09C50E8 /* GPUImageBoxBlurFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = CF43127AD88E3AC8FD242DC093642B22 /* GPUImageBoxBlurFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		827EF27707E71D85E266ABDA34A38C59 /* ptra.h in Headers */ = {isa = PBXBuildFile; fileRef = A729288FF3C5A862885C823BDDF48326 /* ptra.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		8280B02AF39F2BDE78776CC584903B28 /* Using.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF288D0A18F304BE28586F204D414F19 /* Using.swift */; };
-		8280B69F6A19861DB5D98DE7898F4179 /* UISegmentedControl+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2632404DA4BD6D60320FC0B24A746B11 /* UISegmentedControl+Rx.swift */; };
 		82AC1E0BCB564FD48C2CA6C95D5D3668 /* GPUImageRawDataInput.h in Headers */ = {isa = PBXBuildFile; fileRef = EEE3BDBD0D405A6B28A07FE13CA09A6F /* GPUImageRawDataInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		82E782A1FB7492E597DA1310CEE30FBD /* Platform.Linux.swift in Sources */ = {isa = PBXBuildFile; fileRef = F788160F4315204DE3C8A95ECE65DD64 /* Platform.Linux.swift */; };
 		83199CCB8C708C0244648FABAA704EE1 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3996D87B5944714ED9FAD52F7F05DE81 /* Search.swift */; };
 		839C2C99B5C1E7B8D8F45DFC8597B833 /* SynchronizedOnType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B9C118C16819E9107EED63D2E2DBCE /* SynchronizedOnType.swift */; };
 		83D0587D449365CE1C64F15AAAE7EEDC /* LayerImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEA93FBB24799CA99E211485CF755D9 /* LayerImageProvider.swift */; };
 		83DCA4011BA42CD3A74B7F43204342E1 /* Switch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EE3B85CF5BF1F2CE325EA76AA7B6D3 /* Switch.swift */; };
+		83ED7225C84C0F09F02A21C0EC96E122 /* ObservableConvertibleType+SharedSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B044C83DB178EFF2AD030E99613C52 /* ObservableConvertibleType+SharedSequence.swift */; };
 		8412198FDEB01A52E4FE1691C2BB3EA2 /* RxSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7353B11F25A9946FB4912B45900AC829 /* RxSwift-dummy.m */; };
 		8489A60941D6ACD291C11A8022A8A8C8 /* Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31880A464BD60CB64549F83BD8B35C2 /* Merge.swift */; };
 		848BE8EE2E6F857C2DCA10CF951E6CB2 /* Rectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6BB94CC1AA486EE20B7C6FE28D8B88 /* Rectangle.swift */; };
 		8499B885F0E4108C6EF0D7AAE3C59610 /* GPUImageSepiaFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F3FD7CE5A7D3039557759023042F683 /* GPUImageSepiaFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84A50E8E8156FB018A288D2CC62B4787 /* NSObject+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DF5C7A7EB55D9BDA835457DF7EE1E3 /* NSObject+Rx.swift */; };
 		84B1D7CA05D3A996B6A20CA8FDC51532 /* GPUImageHazeFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1BE07338757329715F8B406BF706C5 /* GPUImageHazeFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		852A9C0CA88C129655AA638224C2582C /* GPUImageSobelEdgeDetectionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = EA83AF32CE8F996CFB5AC5F54B55C653 /* GPUImageSobelEdgeDetectionFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		85347685E20D81212EE2DD36E01B4A97 /* GPUImageLaplacianFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 599E16A1F339F684BF428712BAAC987A /* GPUImageLaplacianFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -542,17 +539,21 @@
 		876B1F7041BFBF5E8DB7166C1589343F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A216608162B9E7C618CEED85D1911F2 /* Foundation.framework */; };
 		876D64938A0393F56D4481DF6BE94EBF /* tiffvers.h in Headers */ = {isa = PBXBuildFile; fileRef = BDA9B72F4C3DC400ACE1E282DB0EF334 /* tiffvers.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		878BAE319D5EC2729D7D1159F386A3BD /* OperationQueueScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05621F677D5EA6FF8A983060620E2199 /* OperationQueueScheduler.swift */; };
-		880FBA20ADFB05FA91F148BFCAEA7F25 /* UIImageView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9739D0D44EE2A4DEACE92C3C5640D9C0 /* UIImageView+Rx.swift */; };
+		87C7D8201E4D9F8A89BAA5617EC547AD /* RxTextViewDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9BD1C39052162D6861DB4A603E1B9C /* RxTextViewDelegateProxy.swift */; };
 		8847ABEC146172C2863FD443E2CE0E5A /* GPUImageHighPassFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = C38FB369C63DF622348C421E8FDCA309 /* GPUImageHighPassFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8849ECC63F675A3056121B23CD5D45C9 /* StarNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1168F4B9CCA9984C720386C01DD061BD /* StarNode.swift */; };
-		8893579F09A26C17A74CB8A86F5D2186 /* Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6E321901D222312266CDBA044B1625 /* Signal.swift */; };
 		889972DCC7C2FA4E7058705F34AEAD78 /* GPUImageBilateralFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F2FF6678B063FBE75328E87D2D746B /* GPUImageBilateralFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		88C005D72BF51F8BF97596922992F996 /* UIScrollView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F54DDFD9286A44EDC5BC3E7B32C092 /* UIScrollView+Rx.swift */; };
+		88FA0C66F96E73D123367ECC2E496F9E /* UISearchBar+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3ACF00926CBE50E22076812BCD97B9 /* UISearchBar+Rx.swift */; };
 		8911E8B454E47E76D3BA5159C90EE156 /* GPUImagePixellatePositionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = A6AC725D7FBAF3DEA55B2286C1E5EE87 /* GPUImagePixellatePositionFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8929689A78DA8633763242DC0ECE2A67 /* Platform.Darwin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9580BE30C8D14276A0B39E85886D7951 /* Platform.Darwin.swift */; };
+		89685F602889CBEB61D056F4CC615261 /* DispatchQueue+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A60D80C0237AE9749034D21E42D9FA /* DispatchQueue+Extensions.swift */; };
 		8988213F466CDB97E4E5C50619F40716 /* GPUImageCrosshatchFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 19301853B928573281ED71B45C2BC589 /* GPUImageCrosshatchFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		8A5AA460E4128DAF5AF1BEC6B8B28BFE /* GPUImagePolkaDotFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BA756B7FB7257C198FEF8DC1776E6A /* GPUImagePolkaDotFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		8AC8E9655AC1331484F6FF045D535D4F /* GPUImageHistogramGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 90524FA595573E9B700A401615A8A8BA /* GPUImageHistogramGenerator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		8B76D49AC0B4F8E79793D3E9E0CBED4C /* CardPartTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E5036AF337012F5E5390457B683C10 /* CardPartTableView.swift */; };
 		8B9E80BB60B2014461E0505E8F426C1A /* Generate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60798504E4A4E0124CFCD147C2557510 /* Generate.swift */; };
+		8BAAA910466A461526CD97F126E2410F /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC667C82630D03A3410289AC85238A9 /* Queue.swift */; };
 		8CE1F02B4CE4FFDE4BB04E1762AA1887 /* Disposables.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF55958B783272BF04397BC85FB1425D /* Disposables.swift */; };
 		8CE4DB7A1EDF14C58CA6FD8CE1F56384 /* Just.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0135CF27715F08EAF688EE2702F5953B /* Just.swift */; };
 		8CFCE989D9A93485A39848D73E664F30 /* pnglibconf.h in Headers */ = {isa = PBXBuildFile; fileRef = F8A95B6EEE13936CB2B278465EE71112 /* pnglibconf.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -560,6 +561,8 @@
 		8D2D8D4673BBF7E0E6891B4A4EFD2415 /* UIImage+G8Filters.h in Headers */ = {isa = PBXBuildFile; fileRef = A12366E58E1B1C1E049F4F74A0FD65B6 /* UIImage+G8Filters.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D43B6370C89F38C2777ED682AAC63F1 /* GPUImageStretchDistortionFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 27FE980910207B7504240C24E8483F52 /* GPUImageStretchDistortionFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8E3E9C22676E40E37A702B4EF2818874 /* GPUImageBilateralFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = DEC82558E8188DDC0885519F40A0247B /* GPUImageBilateralFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E64B17AE234D70712781C9584CE1AC3 /* UISwitch+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE6F90C7DBAF16819E7726467CB040 /* UISwitch+Rx.swift */; };
+		8EC32DAD0197224338934F1284F05BAE /* PublishRelay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DFE6875964FC49E54CE593E85B76A3 /* PublishRelay.swift */; };
 		8F04339E36DFC1A042E36ACC6BA9EE41 /* GPUImageWeakPixelInclusionFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 62EF2DC68822E57739644F7B74E55B71 /* GPUImageWeakPixelInclusionFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F04F50DD8A62ACF500FE17D630146E5 /* lottie-ios-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DE803E187C9A52C476096F063B72A108 /* lottie-ios-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F239E29E4CD65A3440721D30C25A00E /* Sink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C084806DDCE7A7FBC60AABD3DDD1759 /* Sink.swift */; };
@@ -569,22 +572,22 @@
 		8F655DC6299440F70CB60A342D31A217 /* GPUImageUIElement.m in Sources */ = {isa = PBXBuildFile; fileRef = A33E6FA540383DF1042FAB1DDB117010 /* GPUImageUIElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		8FCD03BFF3772185C1A20FAA9A5895FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A216608162B9E7C618CEED85D1911F2 /* Foundation.framework */; };
 		8FDCFA6B58B1DC09FD73A8EDB7729A71 /* queue.h in Headers */ = {isa = PBXBuildFile; fileRef = EC8DA7C67FDF2E08EB7EC84F92439B2F /* queue.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		9052F44D2EA36FF258CC109A4BA38F2E /* BehaviorRelay+Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6195A2B513635B857DAAEC90036498F /* BehaviorRelay+Driver.swift */; };
 		9064BEB55F17E6C0AB92973FBBAC9C5B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97672876789A86E898EE698D1AA0B2B5 /* QuartzCore.framework */; };
 		907FC89C6AB7B617B98731C3B5BB959E /* GPUImageClosingFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = CB810F37F0BE50582FBD77B26B223FD0 /* GPUImageClosingFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9082474FF459140E534D59B21CD41829 /* CombineLatest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A5FBC4BC2167244377CDAFCB1B27C1 /* CombineLatest.swift */; };
+		91358E29108230083B3B72859CD69D7A /* TextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B61E2A26396C6A1B931A309DB1BB13 /* TextInput.swift */; };
 		9143E7687CC45462EB04D5BABA12E52A /* Completable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FE1B2AF36A57880BC565C6EA9E140E /* Completable.swift */; };
 		9191D4F16CA369AFE04F4F150788F09E /* RxCollectionViewSectionedReloadDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250D4C9CBCB7303BAF05216FCD87091A /* RxCollectionViewSectionedReloadDataSource.swift */; };
 		919FDDD11C38683A6C6B403C86CBD4C6 /* GPUImage3x3ConvolutionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B5909615B4E02414F0965EBA0C937D7 /* GPUImage3x3ConvolutionFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		91A00ADB727D95AF28ADBA566FD4DBDB /* AnimationSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7120921F88CBD8728EE2D6A0FF2B5601 /* AnimationSubview.swift */; };
-		91F3A444AD5D152A0267A48131004885 /* UIPickerView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA46BEDCDE27C2008ABCFE72E0C2F5C /* UIPickerView+Rx.swift */; };
 		929886959C46EAAAFE9007C7407A6A8B /* lottie-ios-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AE86FD80633B13B07F6B991512FBF189 /* lottie-ios-dummy.m */; };
 		9301FD9AE20247BDDC70C877AA71063A /* GPUImageLuminanceRangeFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C5EBC45A26079AE7C34B5FE0204F8F /* GPUImageLuminanceRangeFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		939DBAAF2FD5350301633684028A81A3 /* AnyValueContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954DD24BEE9FAD6422EB158D73336D3E /* AnyValueContainer.swift */; };
 		93A7A7398023B0D544673C02BD3E6EC5 /* GPUImageKuwaharaRadius3Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = B164A9A4B5F59DC48FC212E554D026DB /* GPUImageKuwaharaRadius3Filter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		93C7F2A0B7C2EB1AA4134CF89C8D4193 /* NSView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAF77A17FDBCCA136A098977C4ED3B2 /* NSView+Rx.swift */; };
 		93F79F360BC2B1690A355B5968718889 /* CardPartSeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF59CC3ACEF81AB6BF33D2C792A2C8 /* CardPartSeparatorView.swift */; };
 		94107AA664F5A3EF3AF9784412FE05DA /* TakeLast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0580B2B3FAC4BAF6ECEC15D97CA2075A /* TakeLast.swift */; };
-		94B6BB9C442E56137EC1F81514FDDC20 /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B6C0A46D40B44E7C893A3089BCDC01 /* PriorityQueue.swift */; };
+		94E98D635C039C38DAB42955F17DD526 /* Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6E321901D222312266CDBA044B1625 /* Signal.swift */; };
 		952FE03733FFE1C2FA138DB3B988E42A /* Trim.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A0A37CE23EBE2777D26C06AC02394C /* Trim.swift */; };
 		95405324BBD5C82AA16741D69CD52011 /* genericvector.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E921AB8805CCC0B69E0915073A93817 /* genericvector.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		95534E90DECDC5E4EAAB9F2EB27ED86B /* GPUImagePosterizeFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 223CDBDFB32D6D6A68DC19DA955FC38B /* GPUImagePosterizeFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -597,15 +600,16 @@
 		968C4BEA9862A0D8ED0FE6ECD60D8713 /* ValueContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0504391B20D1D8459CAE1EA7CD4C1833 /* ValueContainer.swift */; };
 		969A3336BA0018E3465A6733ACD531C1 /* VirtualTimeConverterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488CBD5A160DE8B426DF46BC5D5488BB /* VirtualTimeConverterType.swift */; };
 		96BC9F3D737B9DAE401A8943BC040DA3 /* GPUImageAverageColor.h in Headers */ = {isa = PBXBuildFile; fileRef = C91F747179329E44AA35292667D66B00 /* GPUImageAverageColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		96C053E1B347E5614824AA3A0F06DA35 /* NSImageView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6B63067922694FE7EE3205CB0CF19A /* NSImageView+Rx.swift */; };
+		974CBCC974B0AFC7BEAAA2B2DA383B76 /* RxCollectionViewDataSourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDA9DC113F1D863105F0502DBE0143A /* RxCollectionViewDataSourceType.swift */; };
 		978EB6DCCB05E683A837D8F24CDB836A /* GPUImageOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 17530B84685718A7D2B588AA9BD77442 /* GPUImageOutput.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		97A6B7D5C9340EE241B599CDEFE23C2B /* pix.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDF53EBAB18190519D1952848757873 /* pix.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		9815ACF4B8F8F593E0190BCF5CBB9788 /* RxDataSources-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 29CB5A95964B8C27C3B758F2F26801DE /* RxDataSources-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		98A462AF6F5525F22D8051597BBCDB21 /* GPUImageHighPassFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F93C6C02E7CC344CA6BA0CAE1F8F2F /* GPUImageHighPassFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		98D23FBBFAC8F04A8F3BCBBE3373E2DA /* GPUImageFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = D901365B522D928B6D95A0EC833973C7 /* GPUImageFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		99244BBF2B7EE562309FAC350DD6AEC8 /* GPUImageHarrisCornerDetectionFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = CAAD7CA7A5A310AAD29FE18C4BFA6A15 /* GPUImageHarrisCornerDetectionFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		99ADE5D4EF7A380AE25C8F21EEF363AC /* NotificationCenter+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6D740A3A068019939F7D7D6D16B64F /* NotificationCenter+Rx.swift */; };
+		99DE0FF7A2F14F416E0C9B9302CA8817 /* NSButton+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3C7096D24614CB9F2C19452BA5298F /* NSButton+Rx.swift */; };
 		99DE3E78C30451C1F6C044D0097520E2 /* VirtualTimeScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAAC5106512D1A223627F47F1B17E25 /* VirtualTimeScheduler.swift */; };
+		9A7577069F80D30F0B8A19AC7EB1E9F1 /* RxScrollViewDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01917B84A9B3E0C8FD79ED2C73C41E5F /* RxScrollViewDelegateProxy.swift */; };
 		9A8753E888A3AAE0BD8B442E7B5E8304 /* GPUImageSaturationBlendFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A51004EF3006F95E09D7A27EB8D9AB /* GPUImageSaturationBlendFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		9AE41E8D7BFB0E260D63384E7A4B996A /* CardPartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C98FB80F11B9CD58E4448B76F4E71F4 /* CardPartButtonView.swift */; };
 		9B0239020533FB7388050B68665B4724 /* GPUImageMedianFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = D85B3D4B924F9A597D7981EF3A53B693 /* GPUImageMedianFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -614,12 +618,11 @@
 		9BA4F076EE4AF4834EA5C99BA48D7E45 /* GPUImageThresholdSketchFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = A98B8F5EC078A492329461D37D616C0E /* GPUImageThresholdSketchFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9BAFA457CD5938501EA5104D59C5B920 /* SingleValueProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB44D4EA188FAA87B9500F0A4D5A908 /* SingleValueProvider.swift */; };
 		9BF13C7E635746427353853048625D6C /* GPUImageToonFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D46D8F0A37F141F117EF30C58FD9030 /* GPUImageToonFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		9C4B8013AC3033C515C756F12410C2CB /* RxTableViewReactiveArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A726BD57D1AA2C565D8C384604B96C12 /* RxTableViewReactiveArrayDataSource.swift */; };
 		9C7B8C2A2B2CD040ADDB5FD179537B4D /* RefCountDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDB034E02D12967CBB33DB7B7277F33 /* RefCountDisposable.swift */; };
 		9CD1D2B2D2B3715FB73DF71F9966535F /* RxCocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = BAE4E22931655CC2053222B3BF84CF68 /* RxCocoa.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9CFC4265F7A0AE6826EAF6F5A78B3A69 /* GPUImagePinchDistortionFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 06988D37274ADC47705908D89FD4EFE4 /* GPUImagePinchDistortionFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D51D3DA50A3E080DCE9E0B3F9712F81 /* GPUImageHoughTransformLineDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = 434AB429D2B87285D91DE7FF5FA75CEC /* GPUImageHoughTransformLineDetector.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9D94470A5347430E5C7F4FA3DC9B2B66 /* ObservableConvertibleType+SharedSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B044C83DB178EFF2AD030E99613C52 /* ObservableConvertibleType+SharedSequence.swift */; };
+		9D832B78DC178F6A8AA75087EDC038C2 /* RxCollectionViewReactiveArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5278420668F36C3EDF0F48EE5AEE9ED8 /* RxCollectionViewReactiveArrayDataSource.swift */; };
 		9E2FA00CD910225C715BCE9F97F70992 /* GPUImageRGBOpeningFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CD73A328C9E57926DB89EE9595C41AB /* GPUImageRGBOpeningFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9E61506764F991D0790FB51DCBD62F77 /* GPUImageSmoothToonFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2632F2089B588D0A336D821FCEF576B9 /* GPUImageSmoothToonFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		9E79A9A6074F9A69EE8727A8B7901402 /* AnyObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3AE9F5974FD896F93DA8CB5D515D27 /* AnyObserver.swift */; };
@@ -627,22 +630,24 @@
 		9EBFA42BA3D51DBEA50EDA2458EFD3B4 /* GPUImageTransformFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 309343C6A4BE667727595D7A01F61F96 /* GPUImageTransformFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9EE0B30042AC7B2868AE24183B35B6AA /* lookup_soft_elegance_1.png in Resources */ = {isa = PBXBuildFile; fileRef = CEBCEF05D837E5FE291A8524FC0907EF /* lookup_soft_elegance_1.png */; };
 		9EF08FCAD222A899F2E8404A05285510 /* GPUImageHistogramEqualizationFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = EC51A4980E1CC83F5A90B32C8930199D /* GPUImageHistogramEqualizationFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F0E80E5341F19F3DE12A9DBAAEE2F9E /* UIWebView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = F256DDFFDB9D3A1D45422D486528D42A /* UIWebView+Rx.swift */; };
 		9F2FF0FDE739494EB06E0BA73757AE0D /* GPUImageColorDodgeBlendFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D00513507E9779BCD4DC4379CF3E8B3 /* GPUImageColorDodgeBlendFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F498ADFC4014B9184AE2CC69830597A /* TextCompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C60A84C82533CAB07A7BF97C27334A /* TextCompositionLayer.swift */; };
 		9F8615354F6A6592B0C92B52D347B619 /* StartWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80944AC87F39D6A490FF2CE5290D43CA /* StartWith.swift */; };
 		A09FC4A51D19CDE4D6166A685A8A7EA5 /* Reduce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E23D1F35A6C1693652CFB127DFDA43 /* Reduce.swift */; };
 		A0A7DCAEF319AA5B25F8BC8A0B20DBD9 /* GPUImageRGBClosingFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 128E66ED0588E37CF99D9A9497E190E5 /* GPUImageRGBClosingFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A0E20EDC30637FFFDDFA4BC9881A5673 /* RxTableViewDataSourceProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80AD7C6A327D72937E8DC70B73F36E5 /* RxTableViewDataSourceProxy.swift */; };
 		A0FABCD7F69B7F42F2B5B52131D88E65 /* KeyframeGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF99B757E8CFA49D06B99C3396015D6 /* KeyframeGroup.swift */; };
 		A15A6BFE74F49C68F9DF7D7F0778AB71 /* GPUImageTransformFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = E849FBEB11365E26F7550BA09BCDAC92 /* GPUImageTransformFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A164D9BC73F079CEE97529DDE9C7262C /* UIApplication+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784ABAD524239397899B88258A898832 /* UIApplication+Rx.swift */; };
 		A17091C4234C96104F9050779776D831 /* AnimationTextProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A256CF265B074EAEE89C4CB5214DEC7 /* AnimationTextProvider.swift */; };
-		A1A24EE1EBF14519E1731F73F3106322 /* NSTextStorage+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138174C443BF7F9B605823C05DCA5CD4 /* NSTextStorage+Rx.swift */; };
 		A1B904C385EE492C6980E76B24FFD0C4 /* AnimatableSectionModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710FBDFD5DE1A292BB87A785B347FBD2 /* AnimatableSectionModelType.swift */; };
 		A1D66CE4C0BD29D9A42685ADF84052F3 /* GPUImageShiTomasiFeatureDetectionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E748195C1245CC8B14A4FC74047AC4 /* GPUImageShiTomasiFeatureDetectionFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		A225FAD806B3BEA289AC35B1FAA4D7C9 /* gplot.h in Headers */ = {isa = PBXBuildFile; fileRef = F6747969E8AF7DC0764EAE2E6D80CCAB /* gplot.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A22F1962E1D3695DBCD7E634E2B37989 /* DelegateProxyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2E7D87A512DBE22CD065FBE5756911 /* DelegateProxyType.swift */; };
 		A24ED4447DA05A836E2892465E50D0A0 /* GPUImageCrosshairGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D69287769A8E79D80CEC87BEF2C5CF0 /* GPUImageCrosshairGenerator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		A2FC229662F3F2DB144A81766E290FCB /* Do.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB0E830EB0E87765F4D27942F752B20 /* Do.swift */; };
 		A30E35198372C14243575E89219B8742 /* AnimatedSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939FCB8415FA0E545880FE0EF33997B7 /* AnimatedSwitch.swift */; };
+		A3316E444E1B5CD319631BF6ECB86B20 /* RxCollectionViewDataSourcePrefetchingProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0841AFD31B8C1A052BA8C2099F37720 /* RxCollectionViewDataSourcePrefetchingProxy.swift */; };
 		A3E52E751D95DE62743062C99B99734F /* GPUImagePoissonBlendFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = C4EA99A4293A6E67A2AEF71B83D27F08 /* GPUImagePoissonBlendFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A402E1B4F2DA40D171D8B2EB6BEFE7B5 /* GPUImageLineGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 00809E61DBB5D6EA37FA9D18FF06245B /* GPUImageLineGenerator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		A40CB0663B4C4FD18D79EF9BF13B7DA5 /* Producer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB098953F0EB7FAD23FE502B6DE96F0 /* Producer.swift */; };
@@ -650,21 +655,16 @@
 		A44D7CBC9740F47CAAE05410DC3C0DB1 /* GPUImageSoftEleganceFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C38DD58B6A20E283348F79C9013DB08 /* GPUImageSoftEleganceFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A541BE5EC70640110616CD66882422B5 /* GPUImageColorBurnBlendFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 751AB931B93EFE1C583D72EF34240696 /* GPUImageColorBurnBlendFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A552A3549742F28EB4F02A7880991072 /* PathOutputNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CE83CDC7E835CE6808960BA7362F22 /* PathOutputNode.swift */; };
-		A57D6FBE38FF37984FC9F5F2217B08C0 /* UISlider+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160359DB1F4344202FE41DA468740F94 /* UISlider+Rx.swift */; };
 		A58BF574BB10AD45DF5760DE7A4FFF91 /* CompositeDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A03CEDCF5094A868013135059F461EE /* CompositeDisposable.swift */; };
 		A592FEAF0180E27A1979C4F95FDBC6DC /* GPUImageExclusionBlendFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = F63AE8B3698DE6FF733233BA6B6D68BA /* GPUImageExclusionBlendFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		A5A9F1D8B47610E41DC36AC5404BD7BB /* RxCocoaObjCRuntimeError+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7366776FC1BFEF0C31A47E27B54927EC /* RxCocoaObjCRuntimeError+Extensions.swift */; };
 		A5FDD9C7E41946BE84844B7B705F5EE9 /* GPUImageFalseColorFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C5944359061C6583DBF54AB594008E /* GPUImageFalseColorFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A6D1D013B5E45F860796F02C8B75A075 /* Buffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB17E0362ED87897A12BE435067BD542 /* Buffer.swift */; };
 		A750D40A1B129110E2D87876C6CF86CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A216608162B9E7C618CEED85D1911F2 /* Foundation.framework */; };
 		A82D334D87B136386E65BE3E09282C78 /* ShapeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D2126C024ED06C3CAA1A1BE599DF45 /* ShapeItem.swift */; };
 		A8A19D0871C8D5D814BEAD5C078C5A9D /* GPUImageColorBlendFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = FBC5AD39BEB8F0226473F87682EAA19A /* GPUImageColorBlendFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A8AD2C219C7EBB369694F7FED7062AA5 /* ToArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC1797CE196802993D02116E91A3EF3 /* ToArray.swift */; };
-		A8E23ABFB1A2E9DB7F2734158B4CA185 /* UINavigationController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAEC9AE933DB3135BD4098300CAB9B7 /* UINavigationController+Rx.swift */; };
 		A9147990FD32C38A814045007EB173BD /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB4F8CE2A5FC37AFF1B999515AF1BCF /* LottieView.swift */; };
-		A95DA42D660B80BEC7C12A8391A1BAD1 /* NSObject+Rx+RawRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B87F826632B2ACE2DF0324510856E76 /* NSObject+Rx+RawRepresentable.swift */; };
 		A9F0444F8D849108804E54D3711283C6 /* AnimatableSectionModelType+ItemPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCB7931757A745B5731D2DF2BE4A2D9 /* AnimatableSectionModelType+ItemPath.swift */; };
-		AA005E7F02CCBEE2D4120384B3E2D7CB /* DelegateProxyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2E7D87A512DBE22CD065FBE5756911 /* DelegateProxyType.swift */; };
 		AA18355C26B1120ED6C2357513567D1F /* GPUImageColorPackingFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C53ABD6160BD0745D7503542BFFC403 /* GPUImageColorPackingFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		AA342DDB39E040855E74DBE38E40129F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A216608162B9E7C618CEED85D1911F2 /* Foundation.framework */; };
 		AA9F8B26FF4A82AF7FD604FC6D1692B3 /* Array+Combinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9255FBC0DEDDB3A2B287E668EA24A4 /* Array+Combinations.swift */; };
@@ -672,7 +672,6 @@
 		AAF50D1003B1ADE49C36589F090EBD1C /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0CCFE11E4565AE03D2CD81FE83786D /* CardCell.swift */; };
 		AB51BF3EA12D65CE3CE5644FC8BD5471 /* SkipWhile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A1E0FC78C02E9842B90C3B5609852B /* SkipWhile.swift */; };
 		ABB4DFE2D12D023E7AD08A4E463881B9 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70CF1D725E4D47CF796AFAE035C17DE /* Event.swift */; };
-		ABC98F1CCECBED8E49CCFF948FD7388D /* UILabel+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B0D28639EE0D398CC96BC04E54B1E7 /* UILabel+Rx.swift */; };
 		ABCC5C27B5CCD0B98547E65C43BBF9D3 /* GPUImageKuwaharaFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = CB920CE0BE8CF77EB566EC4D30AA7F15 /* GPUImageKuwaharaFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AC91EDA8FBB43AD28FA8D8D07494EFF1 /* GPUImagePixellateFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 98565F386098687A541683DD25B06D63 /* GPUImagePixellateFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		ACDD6C66404EEB5FAC6F7BC200954135 /* LayerTransformNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F6AA924AA8ADFA7AE6B1853F3501EC /* LayerTransformNode.swift */; };
@@ -680,43 +679,40 @@
 		AD4AD2B9D9BAC5FE746C3EDF64215890 /* tesscallback.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A17B77F1D80D388C5088E88F08B7D3A /* tesscallback.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		AD7461A04F8EAB34461B4596C0D24206 /* GPUImageJFAVoronoiFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A01FDDEAE5C9EC2D7347A8AB5A17C22 /* GPUImageJFAVoronoiFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		ADB4E85861D6C911432D2AEC14D42002 /* G8TesseractDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC5AF9ECC27BE72BBE748F75CAF0033 /* G8TesseractDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ADC344422385DDA6C0424585361CABE1 /* RxWebViewDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0133FDD38A108FEFA501466CB2015160 /* RxWebViewDelegateProxy.swift */; };
 		AE88B7EB47272972616DA5C09C96063E /* Optional+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FBF888A5040FC54E0A30902E9D7ADF /* Optional+Extensions.swift */; };
+		AE8D0A9302A9CF97CB2B0E8C7E7AAA66 /* UIButton+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A11EF406899795A40EFFD86ECE000D6 /* UIButton+Rx.swift */; };
+		AF1A98482E736C12E902BE5D6A908AAA /* RecursiveLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6483CB4AE0C56562DCB0397B25DB61F3 /* RecursiveLock.swift */; };
+		AF2C179E60CDC11E8B005155985B445D /* NSTextStorage+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138174C443BF7F9B605823C05DCA5CD4 /* NSTextStorage+Rx.swift */; };
 		AF4B20CEB87468D1E1DA898221A50778 /* FilepathImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF589493D314049BBA01C92809BAE15 /* FilepathImageProvider.swift */; };
 		AF820EA6B7277301CE07182CB217995C /* GPUImageLevelsFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = DC5E025144A1B56E12CA5E32514526B8 /* GPUImageLevelsFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AFAFF6420C5437F19C056665407F6395 /* ObservableConvertibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C1298EAC1E1D5628B4EEF0BF89B993 /* ObservableConvertibleType.swift */; };
 		B03A643AC5F78F928619DFF6BA27552B /* GPUImageRGBErosionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1398BEAEFEA909DEB1070A676E38D4B8 /* GPUImageRGBErosionFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		B12DA242E763B0A73F8171F34385E3FC /* GPUImageMaskFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B24DD0AB74933CA769E0E7897A1F03E /* GPUImageMaskFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B13E6D960C17E757CDBFE45B8FAEA49A /* helpers.h in Headers */ = {isa = PBXBuildFile; fileRef = D10A7477E7ADBB0F9E771425143FE7AD /* helpers.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		B1D37E1E3CFFC553DF475DD165FCA435 /* RxTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03016D6F3FBB866C9951C682A28A6C0 /* RxTarget.swift */; };
+		B155DD94A24745D9AB38C98F7B8121DD /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B6C0A46D40B44E7C893A3089BCDC01 /* PriorityQueue.swift */; };
 		B1F1AA4419C5755810E15E114314C91E /* PassThroughOutputNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2998DDD459BE60C367291540F1CBF40 /* PassThroughOutputNode.swift */; };
 		B25214F160B394FDA861EEB9FCB445F5 /* GPUImageTwoPassFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D326EAF797A7A2DA3EB69083B7667AB /* GPUImageTwoPassFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B2C40AA38B146809C27FFF8DEF071AE6 /* DelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550CE267AE43C36B4476D9B7419C1178 /* DelegateProxy.swift */; };
-		B372D832B146BE551CA389F8081E70BC /* ControlProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D554EBEB9D0784E046714201916D5E3 /* ControlProperty.swift */; };
 		B37E81D06CE15D6F30809C41FF261D51 /* PrecompAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E78BA2039C08301A32763A0EFC36F2 /* PrecompAsset.swift */; };
-		B38D412A85F718866FD03B7F15E1AA07 /* RxTableViewDataSourcePrefetchingProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA9D1CCE596FFEE3127F417AF54579 /* RxTableViewDataSourcePrefetchingProxy.swift */; };
 		B3DE5327DAA841D955BBA33278E3A3F9 /* GPUImageColorMatrixFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 45062FE0D16CBCB249B0988309AE248F /* GPUImageColorMatrixFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B416405DA60FC86A36BB4D0FC7880F54 /* RxTableViewDataSourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AB18E907E989E656AFD6029D49E0B1 /* RxTableViewDataSourceType.swift */; };
 		B4AEC8BDF7A0E8F7D83795B9F9148767 /* ScheduledItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFD3D57BDA44CE3A6E3D5FF63F74330 /* ScheduledItemType.swift */; };
 		B54CA9AF9C8AFF99C7ED62269A2512B4 /* Materialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0536706FA2168334BC759BB11CD17A99 /* Materialize.swift */; };
 		B57EDC783A4FDC31764E9F1C0A5453C5 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC4826C3AF957DE96AC905ACEE6BB652 /* RxSwift.framework */; };
 		B5A8516B05AC60282B657A3709A72F0D /* DisposeBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E738EF923169E43A2AF162A513DAD1 /* DisposeBase.swift */; };
 		B5A9629C5D37E85A5D2288355253B6AD /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5643E268FE2221E6393582B003034351 /* Font.swift */; };
-		B603241C8069787D9260D68666DAC44E /* RxCocoa-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C4EECDFE1ED73375687957E261789B /* RxCocoa-dummy.m */; };
 		B62BECD3A67AB6911ECA476DC2F56A28 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096A90165152F1EA389DE75BC945FA57 /* Error.swift */; };
 		B696CE711ABC7D3AE857EF3FE7C93FAD /* AnimationKeypath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675F169F416D21E76046F6D6C4219A41 /* AnimationKeypath.swift */; };
 		B77B0742B80535095D5BEE20DA737420 /* stringcode.h in Headers */ = {isa = PBXBuildFile; fileRef = 4852F1C71385817A340CF8F167725DD8 /* stringcode.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		B885BDD55F7E7877B313C5A78B2925B8 /* RxTabBarDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B2B963FA1A06762A6ADF938B746828 /* RxTabBarDelegateProxy.swift */; };
 		B8896A060F79A072CA1D4DC6C77C4F58 /* WithLatestFrom.swift in Sources */ = {isa = PBXBuildFile; fileRef = E704644A802A3099BED409006050F770 /* WithLatestFrom.swift */; };
 		B8E501502C79DFDECFF48BD8B04AFD4B /* imageio.h in Headers */ = {isa = PBXBuildFile; fileRef = C43E14685C084C0C26042ECD46A366D7 /* imageio.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B90190739688148A1332562A758901DE /* GPUImageSingleComponentGaussianBlurFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B6F1A047B64A84C7E649317224C547 /* GPUImageSingleComponentGaussianBlurFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		B914569E904BD76482E07BF0E400E5CC /* DelaySubscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2C22FB6D2DCF9358FB121DEC6B9CEE /* DelaySubscription.swift */; };
 		B9355006A25B1FC1EFECB9EEC3B04687 /* Summarizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96642FCBBF800BF171CB112731E5C059 /* Summarizer.swift */; };
 		B99307368737C6DB069D41DD065B050A /* GPUImageLocalBinaryPatternFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 54E812853AC00D105FD89525BCCA63FE /* GPUImageLocalBinaryPatternFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B9CC7DE665A439E8EBECA80CE79A53BD /* RxPickerViewDataSourceProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F334CBCD472D36B92CE952C21AE80F /* RxPickerViewDataSourceProxy.swift */; };
+		B9CE82D78A98FE0D8B35769E06AE937E /* Observable+Bind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CC28A447715E9E5024FCFA75B07D6 /* Observable+Bind.swift */; };
 		B9E99454DAC3E2D94D8095182B600125 /* GPUImageColorMatrixFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C1382D2B24A70E7C57EE73D1928619E /* GPUImageColorMatrixFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA2063F3024BAB98210D62CD5300D85F /* MaskContainerLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4121B2C2AA27398FEEE65C04AE9F273A /* MaskContainerLayer.swift */; };
 		BA3B49C50938224B3986DFA5555F3545 /* Concat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479440C1DBE091E3759940F7D7FC07E5 /* Concat.swift */; };
-		BA812573C17E81EF6F7BC088C23071EF /* UIGestureRecognizer+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB14196251C5824FC73343959649F10 /* UIGestureRecognizer+Rx.swift */; };
 		BA865A81A1CFF79EF800DF3278719015 /* GPUImageExposureFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8D642A631A208F8E8BA816C4403ED9 /* GPUImageExposureFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		BA9A5602447E13263280F886CE2C3173 /* ImageCompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5A61938FBC1A3F5F004B09F47701C4 /* ImageCompositionLayer.swift */; };
 		BAC5881CF41CA4973D8884C03CE789F3 /* GPUImageSaturationFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CC0A3269CAFCE2337A70474F1D8FF8 /* GPUImageSaturationFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -741,7 +737,10 @@
 		C1239657BB03F234D64AC98642E8A123 /* Bag+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7621D99B0A23A8E67D07F4FD6D782DC /* Bag+Rx.swift */; };
 		C1378E8509E715E107024A7486719283 /* RecursiveLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAEC35B8D10F9B22AB4DC97DED508BA /* RecursiveLock.swift */; };
 		C151EE3C2D654987BE6CE84CB04C001F /* BundleImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C0FCAA79EF1E2CFA964414EDA917D2 /* BundleImageProvider.swift */; };
+		C266E95E0E605661A7819C1E907F8A62 /* UIRefreshControl+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84512E04655045C6563559E991201985 /* UIRefreshControl+Rx.swift */; };
 		C282BC592D83092B8AD436EAE94E73A6 /* ForceTouchGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E5160B39E03D7033D3480BF59F76A2 /* ForceTouchGestureRecognizer.swift */; };
+		C378C94893B351239B1A0573C763C04F /* UICollectionView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD85B4B4F2F5AE585820C6326431610 /* UICollectionView+Rx.swift */; };
+		C39F63E8A3B716F9C63247265077C9BF /* NSObject+Rx+KVORepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210E01EB342F8C7083142D06931BD52B /* NSObject+Rx+KVORepresentable.swift */; };
 		C3FB9F5D5985B8357CC057D79BD874F3 /* UIRotationGestureRecognizer+RxGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CB2801E740D2919BDA538A0D4EC701 /* UIRotationGestureRecognizer+RxGesture.swift */; };
 		C44362EAE9CCCEC3F052F7DFFAAB5ACF /* GPUImageShiTomasiFeatureDetectionFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = F1365AD6F794426E37CA2755A2D0B004 /* GPUImageShiTomasiFeatureDetectionFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C4632BC230A402B47624AF4368DF4FCF /* GPUImagePerlinNoiseFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = CE43921908919CE872309A1E7DCE8811 /* GPUImagePerlinNoiseFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -750,8 +749,8 @@
 		C4CA2CB7619A387476002B87456103C2 /* GPUImageOpeningFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 33627E35FDAA246F93CA415E00086BA6 /* GPUImageOpeningFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C4D3B21A7B48845C848BB42B5702E3A7 /* TailRecursiveSink.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3ED86B0CD0B6393AFBA83ECC756C06 /* TailRecursiveSink.swift */; };
 		C5448B59AB4487BAE937846664B2B3FD /* GPUImageLuminosityBlendFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5573F1453FA0C0BEFFA2263412764503 /* GPUImageLuminosityBlendFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C61AA03D112C936BA3AE03DE706F51DC /* Signal+Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CD3E12BC0CF1941EAF1B69EF24F3D0 /* Signal+Subscription.swift */; };
 		C684E5815671B8CDC6EC593ECA9A6B77 /* GPUImagePolarPixellateFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C0F8232D127CFA15D9E83C9A5000005 /* GPUImagePolarPixellateFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C68DAD1F6D60E85B36F9425961763A73 /* SectionedViewDataSourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D59248D97E0973CEC0D5F92D96799D /* SectionedViewDataSourceType.swift */; };
 		C6B3275EF704F0CF120EA228DFB0C720 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C6F1072861D3564A49B01AA551C76F /* Group.swift */; };
 		C76E4AAC71A19924AB709028040BF2B2 /* IntegerType+IdentifiableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94382E041B906B1C0D2E3180261A3821 /* IntegerType+IdentifiableType.swift */; };
 		C79BDC095B10515B6AE44960C89C3F23 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FFA88B3F5603D1D1F796268CD2BF96 /* UIFont.swift */; };
@@ -774,20 +773,21 @@
 		CCB599631D6F201E4D906BF195108CA0 /* Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = F542A95BDC97DC66609D9D68C01D7911 /* Transform.swift */; };
 		CCB916596582CE3C094B05879756C779 /* Zip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6190E14AA25BB8D2C7E7BB4515DC5ECA /* Zip.swift */; };
 		CCE9E7475036C1CB513E01D15412882F /* GPUImageGaussianBlurPositionFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = B2A0EAAE949C8EB1AA273F5007D31532 /* GPUImageGaussianBlurPositionFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD4793D21A60E75BD450382C9A1BCB96 /* PublishRelay+Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AC4BA6ADCADD8AFAAB296507CC6057 /* PublishRelay+Signal.swift */; };
+		CD50D2D4B0D9C1B5497A6F78DCF887E7 /* ObservableConvertibleType+Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFDFA0F473C2E432E7FC92AA2E95D62 /* ObservableConvertibleType+Driver.swift */; };
 		CD5171BEB6C506B13B91DD9F33919E66 /* TextLayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CBC3C4B2B3967DBF218EB703309B305 /* TextLayerModel.swift */; };
-		CD81DA8EFE1AAD2144ACDD6A4D4444A2 /* NSView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAF77A17FDBCCA136A098977C4ED3B2 /* NSView+Rx.swift */; };
 		CDA24F993A556A7CCE7FD8A7EAD7A3DD /* ccbord.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AF499B3790EE67C311A148DC9F7922B /* ccbord.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		CDC44830D620EA77D176DE75488AF1CD /* RxPickerViewDataSourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A6EA7D0968EE4D1F21C5A972971DD2 /* RxPickerViewDataSourceType.swift */; };
 		CDCB8FCAFE8698B9E0E294A3E32DBDBA /* GPUImageAverageLuminanceThresholdFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AFFA848B90E4FC06DB4295F5A82A4F1 /* GPUImageAverageLuminanceThresholdFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE878B59175C265F4E535A7EC7A4DEB6 /* GPUImageOpacityFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 82E0EB01993526742CD78FFBFE42656E /* GPUImageOpacityFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE8F4C87B1973B9418CA4549F80FCCAA /* FillNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A6D56727382A136E778D53F41D1EE2 /* FillNode.swift */; };
 		CEEA2D439B61283F6C75EC11F551C463 /* ltrresultiterator.h in Headers */ = {isa = PBXBuildFile; fileRef = 782BE814C145145B070372A747F12F3F /* ltrresultiterator.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		CEF222B686E319B4FF719247D8D759DA /* GPUImage3x3ConvolutionFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = C63C8462E8C3990604D92A07516BA891 /* GPUImage3x3ConvolutionFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CF0DCF85AF933BFD6902678FFC8CE4B2 /* GPUImageMedianFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 969E5502FE63D18E69BD5F85A3590F13 /* GPUImageMedianFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CF1D2716F1924D51FF8FF2B49FD4A990 /* _RX.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCF36DB7765F5188DDFAA53D3E5EB53 /* _RX.m */; };
-		CFE27409232203601EA305B01A6641C0 /* RxTableViewDataSourceProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80AD7C6A327D72937E8DC70B73F36E5 /* RxTableViewDataSourceProxy.swift */; };
 		CFE87605611348B24D19663DFE5FBFC2 /* CompositionLayersInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401902AF0AA9F54930969FCB05E9A890 /* CompositionLayersInitializer.swift */; };
 		D01A38F4E8CD82A971953118DAB66E4B /* GPUImageKuwaharaRadius3Filter.h in Headers */ = {isa = PBXBuildFile; fileRef = C68F45E3CD9FA8E9CCE760353CDABFD4 /* GPUImageKuwaharaRadius3Filter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D023A03B5FA13EBD19B7660A0DCD358C /* Range.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665225678058CC8AFD24CEBF9DD79B78 /* Range.swift */; };
+		D0268A4645FD4BBDDCAD9F5428C952C0 /* UILabel+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B0D28639EE0D398CC96BC04E54B1E7 /* UILabel+Rx.swift */; };
 		D02F63C558CD07A7EE1A47A39427A306 /* ShareReplayScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526782883BB7EC0791327BC5E34E2231 /* ShareReplayScope.swift */; };
 		D0327432309379C6B253824003AA4B00 /* GPUImageCannyEdgeDetectionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3B6F04355FEF82EEF6B3F6EC33BFD4 /* GPUImageCannyEdgeDetectionFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		D037ED62280A928986042BB32E66F51D /* GPUImagePicture.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E985C851B926C397CE99322526FD343 /* GPUImagePicture.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -796,43 +796,39 @@
 		D06F1BF14D38BF09445F83B09D25A50A /* GroupBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E5E95B476EDDDEE8ED31C28E50F5BE /* GroupBy.swift */; };
 		D0867923446327898BA36703096374FB /* Zip+arity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9FCA417E3EF73E34E56D8F834DF1D6 /* Zip+arity.swift */; };
 		D094B0620D81F5EE07CBF9795FBA62C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2DF82B1120B98BE30091D9BA01266E5 /* UIKit.framework */; };
-		D0ABCDD54FA0A3778B9674B185ACF273 /* RxSearchControllerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A692991845C611207ED27BE443056 /* RxSearchControllerDelegateProxy.swift */; };
+		D0D8E4CE62A937E6A24D4DA2F56A2E87 /* UITabBar+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E80EF4DF3924CA2513DD84A5E949C56 /* UITabBar+Rx.swift */; };
+		D0ECADB07A16EADD2D5D16E721B85C93 /* RxWebViewDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0133FDD38A108FEFA501466CB2015160 /* RxWebViewDelegateProxy.swift */; };
 		D0FE0EA5A9964DC474173E546B4EB7CD /* DefaultIfEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585D864B9FFF297C25778D47E7AA7FB4 /* DefaultIfEmpty.swift */; };
 		D1119CBFC90B26F7DD96E32BCEED5BC7 /* GPUImageTextureInput.h in Headers */ = {isa = PBXBuildFile; fileRef = E566F496DB563C553AE34E2301320BA1 /* GPUImageTextureInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D12D1E5BBD837D7E46C3562C3C3B4649 /* AnimationKeypathExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89476B59152E9FD9708C664655CC628F /* AnimationKeypathExtension.swift */; };
 		D14F5EDAC53508A9479228FD1BB8A02A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2DF82B1120B98BE30091D9BA01266E5 /* UIKit.framework */; };
 		D1881253628F498880CD847B74C90957 /* G8RecognizedBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 64DE0BEB4C6FE85A5E9A88317E6B7D6D /* G8RecognizedBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D23AE9C69EC8687D148050FDC6445A6F /* Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96657BB2160AF91D66FA0C2436B25586 /* Deprecated.swift */; };
+		D2F7DE32574DB5D8BFA4EA8F98EF789A /* SchedulerType+SharedSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740D595E573B497DEDF3E42101AEFA2F /* SchedulerType+SharedSequence.swift */; };
 		D34DA7DC587DB68992CD8680E1AB36F6 /* GPUImageColorDodgeBlendFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9973A7521D7672DFDBBB39DFE534A490 /* GPUImageColorDodgeBlendFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		D37E918E2EFE19A5A07EE0C8ADC87536 /* allheaders.h in Headers */ = {isa = PBXBuildFile; fileRef = D306B752D6624E530C67CC94ED2E04C9 /* allheaders.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		D3D49BF53D139A25AFE4BC8F20FC737E /* KVORepresentable+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4C96A901007B86AA5C2F3D49CB2FF1 /* KVORepresentable+Swift.swift */; };
+		D3DF7BC7221BB082032D8CAA246F8641 /* NSObject+Rx+RawRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B87F826632B2ACE2DF0324510856E76 /* NSObject+Rx+RawRepresentable.swift */; };
 		D402D06BA6DC32621F6EE11F7848F3C8 /* GPUImageVignetteFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B1348C737778EFDE1B3F149C04DB667 /* GPUImageVignetteFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		D41BB30935141FED18485E408E35C191 /* GPUImageChromaKeyFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = FA12E41494A509F631685CACD722B402 /* GPUImageChromaKeyFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D43173F65AA98FEAD757A1FC0EA74151 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6833BDD5E580402247A76EC538BA3789 /* Date.swift */; };
 		D44084C48E774A9E8260E5D092624C57 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC4826C3AF957DE96AC905ACEE6BB652 /* RxSwift.framework */; };
 		D5316091182F14074B24C6AB0E6A54E1 /* FloatValueProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B73B608DC89B4B3B110090EA425271 /* FloatValueProvider.swift */; };
-		D53987FB870A290EA0DC56B4FC685928 /* UIPageControl+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930DEC483A5D58A3A423E04A2F764AF /* UIPageControl+Rx.swift */; };
-		D58C63219E281704241FDEB9569F9E63 /* Platform.Linux.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D43AD81F99E0614B21A7E5E4DF3130 /* Platform.Linux.swift */; };
 		D5AFDE309A9A9353460BA1C59A274DF3 /* GPUImageEmbossFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8555C632D5D61D5C5F51E9E531CB95B2 /* GPUImageEmbossFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D5D03C9F8DD276B08B16AB19C359C6F0 /* CardPartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9855EB9CB6B2DD2831853E892FE5EA3B /* CardPartTableViewCell.swift */; };
+		D5F4F91C392ABCFEFD7A8E41EE2E48D7 /* BehaviorRelay+Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6195A2B513635B857DAAEC90036498F /* BehaviorRelay+Driver.swift */; };
 		D6259F8E004749CBC7EF21D827827BD3 /* GPUImageSwirlFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B4340BF48E15E027635B6DF33BE2B8 /* GPUImageSwirlFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		D634A21C153ADEF84BA023AC1DB3FDD8 /* RxNavigationControllerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5A6F5B2B2C8CA4044234DD934B5E96 /* RxNavigationControllerDelegateProxy.swift */; };
 		D6CC08F8AF42940936473DA1FE832BD8 /* GPUImageCropFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = B8AAE22B70D9B2AB1C5B3DB45B07A497 /* GPUImageCropFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7ED5F7DA49693A317FABB8CFFFF51EE /* GPUImageToneCurveFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = A868C73A5752E206D9E8B887852CACC0 /* GPUImageToneCurveFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7EF19B303320E3500FE062BE807D31B /* GPUImageZoomBlurFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = C54BBF573B1277FFCA4303E7D811C953 /* GPUImageZoomBlurFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D7F9A603743B885F529A1654D8FCAD71 /* RxTableViewDataSourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AB18E907E989E656AFD6029D49E0B1 /* RxTableViewDataSourceType.swift */; };
-		D830FF256ADE307C5506A80BE4D5E3D7 /* UITextView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A0937A22CE24222E4236B236250F9D /* UITextView+Rx.swift */; };
-		D83751E61167AF15D87081095471C21C /* UIControl+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5CA5EB6871E809317DF21AEB65F28A /* UIControl+Rx.swift */; };
-		D83845706D3867B26B468C456B4AC3B1 /* URLSession+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442DB840DA34ACB3B7AE70CF0C258964 /* URLSession+Rx.swift */; };
 		D8A3E3912BFD83C3B6F7E14F8323493F /* GPUImageThresholdedNonMaximumSuppressionFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = E8F5E243692BA78CE304A26F538986C9 /* GPUImageThresholdedNonMaximumSuppressionFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D8BB96A9B1AFC2780D2D546C7428B1C5 /* GPUImageAverageColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A0A516FCD93E0DAB30935353EC4801 /* GPUImageAverageColor.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		D900A04659223A164B206A3CAEA34676 /* UIBarButtonItem+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F05D6BD6458E7F9CD2BC96CF9D0868D /* UIBarButtonItem+Rx.swift */; };
 		D9399EF9072B72744F6001FC798C6DB9 /* TextAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27B30A06E24A8074097687CDFE7226F /* TextAnimator.swift */; };
 		D97A21664F4FB2AC39D090C67AD78057 /* CardPartTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D91711F5F1A38409E38457F7AB17CB /* CardPartTextView.swift */; };
 		D99EE7B4855588BAF0642AB369C9E1C0 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB67F93ED14CC061A57F5B6C25744D0A /* ColorExtension.swift */; };
-		DA2DE5273964A9B41187041CC55437C9 /* RxSearchBarDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB397C33E7BD15BFBE4AE465732B816 /* RxSearchBarDelegateProxy.swift */; };
 		DA4583AFFFA778C65EC7690A6126F2E0 /* Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2080F833B6FBFFA33A220FCC7A8949 /* Deprecated.swift */; };
 		DA5538BE5BAC22E2E27637F955AEDE9A /* GPUImageBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = BCED3D935D6BAAFE0A6D4B985C37A645 /* GPUImageBuffer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		DA59373E0E1E04A7E795395C5F4417C0 /* GPUImageCrosshatchFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = B76DC9B2B27A1533FFC3040C066C9F47 /* GPUImageCrosshatchFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAA1B1EAE3D9E60B7010DA4291E910FF /* UISlider+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160359DB1F4344202FE41DA468740F94 /* UISlider+Rx.swift */; };
 		DAAE82604C187DEDC96D3DF107A55B9F /* DisposeBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0695A6F4431784713D980E82AA29C978 /* DisposeBag.swift */; };
 		DB089A66AE2EBE824C54520506F78B40 /* GPUImageSmoothToonFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 73F957BB39A9570E5A17A13FEBC4ADA4 /* GPUImageSmoothToonFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DB776E5433698177971CBA16AFD56864 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13F0E9CEE18FBDAE91D4B407A7D98B1 /* CardsViewController.swift */; };
@@ -842,25 +838,26 @@
 		DD53AE0C5CC9890F3D99A478403EFB6E /* NSObjectProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A9120823F8EF071EC88EAD6761334B /* NSObjectProtocol.swift */; };
 		DD86B33B302E056FE5CEF38F538A9F74 /* Catch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D0D690114FF6876A3D6A020B19A27A /* Catch.swift */; };
 		DD9BA0E96E7134C01C8A61874CA45144 /* AnimationImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD261D8FFB00DFD5A80354336EDA2D9D /* AnimationImageProvider.swift */; };
-		DD9FFD3B4542D92A32D29EB045396490 /* KeyPathBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB15B4F9E336906C0616AFB66527CE /* KeyPathBinder.swift */; };
 		DDEC266B49CA4898254BAED374889E9A /* GPUImageGlassSphereFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2307F1864938F349B66372B4CE6CB06F /* GPUImageGlassSphereFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DE0A87532B5E95CCD520E0C44D65CC83 /* CardPartStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1D6F62E51D5E54B69E693D354C2A99 /* CardPartStackView.swift */; };
 		DE7BD3DBF4A902B5AD719D43342CC6E5 /* VectorsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E7B1FB76A46A1B96D621A621F1DFF6 /* VectorsExtensions.swift */; };
 		DE9F16E1EE458296CBDE8B4AE43826CA /* CardParts-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DAE3EB704B69CD848587FE3EDFA869FA /* CardParts-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DEA2F8BA3EA7C43B30CCBDE1D1C6CE94 /* Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42E03989E1F5E342D5F055FCC282176 /* Deprecated.swift */; };
 		DEACD4C17E422BF8DFBEF9D0E004E603 /* Changeset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7212BC2987AF4C1DCACDCFDE1DC48458 /* Changeset.swift */; };
+		DEE2400E169822719050BB2DA5FDA208 /* SharedSequence+Operators+arity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE85C4C3E020B0FDBA1882EDF88274C2 /* SharedSequence+Operators+arity.swift */; };
 		DF28B001F70BCA58FC5FFCE985C56432 /* GPUImageSoftEleganceFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 913CFF9A057E163662086B1459A474A0 /* GPUImageSoftEleganceFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DFBC7CC1456C8920B0BB927BA365A96F /* _RXObjCRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 139C83BCAE79BDB26C297053991E1D1D /* _RXObjCRuntime.m */; };
 		E038091E8C818F8486303AE601659887 /* SharedTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED417EFD8B35B03DCCDB9743C70699D9 /* SharedTypes.swift */; };
 		E04519FC43953A10F66C3A32507158C7 /* GPUImageiOSBlurFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = E5125FF447AEC4C6D899397B82CDCADF /* GPUImageiOSBlurFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E0DBCBFD8565DBA287896D7793AF822A /* GPUImageOverlayBlendFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 486C52669C16A2B7BBC8527A441D57C3 /* GPUImageOverlayBlendFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E101D5887BB1B535ACCC2466D750903F /* CardPartVerticalSeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAE97BBA95F06A6B290CF364CA807B1 /* CardPartVerticalSeparatorView.swift */; };
 		E17CC0A3A0758FE30B4C0BDFF72B8744 /* SolidCompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834407DA8B6F84512D239F6EDCB2EB10 /* SolidCompositionLayer.swift */; };
-		E183D751F386FC1644B5AB631304A398 /* UINavigationItem+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2A3A27C8184D3FB58A149CEBC78A90 /* UINavigationItem+Rx.swift */; };
 		E1ADFDB7FF243A755C370EBB8A97341A /* GPUImagePinchDistortionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F6D6D6CC047E7C9E6DB96E449C6A662 /* GPUImagePinchDistortionFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		E23D141B2D51A7A0B4239E93E76EEA41 /* GPUImageGammaFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = C297E361465F6CD3EF43FD8B15A8F400 /* GPUImageGammaFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E279AEB26B5679328C1736124D417B29 /* GPUImageColorBlendFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F8970BA63FBFFB5675CBF22F8386ED /* GPUImageColorBlendFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E2D4701A62A88DEED06EEFFEBDCD8317 /* _RXDelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B151CC7C7BA4FEF35AB861DEE71AA17 /* _RXDelegateProxy.m */; };
 		E2E077A1F15D9A1A6B5906850EB62A8B /* GPUImageGaussianSelectiveBlurFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3555416D9167B1081D83857260E66036 /* GPUImageGaussianSelectiveBlurFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E376A67EF3B2C46D9701BA95DEA36B84 /* SchedulerType+SharedSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740D595E573B497DEDF3E42101AEFA2F /* SchedulerType+SharedSequence.swift */; };
+		E30E6E2184797DA1A505D9E6DE3620EE /* NSControl+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DCC234E125C5416113B12F00BC6873 /* NSControl+Rx.swift */; };
 		E3E8B1AFE9ECB97AE80BF6A9E3F81104 /* GPUImageHueFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A9F04BECA75A0CF73BB01CD0976FC /* GPUImageHueFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		E46676502DDB7B622F5E98D429D0A4AF /* unicharmap.h in Headers */ = {isa = PBXBuildFile; fileRef = A94DC64083FB56E3A86788C9A47C5425 /* unicharmap.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		E4685993C1B160A09D58B9AF9E875589 /* CGFloatExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BFF4F99C52DF2AA5A962CFCFB99316 /* CGFloatExtensions.swift */; };
@@ -868,27 +865,25 @@
 		E49DFD39AAD5928C952CE149540A3BE1 /* GPUImageUIElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCBCBD0E24C26184843E037E0D4BD90 /* GPUImageUIElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4C5A1F2044277B29D854C6E081C6C80 /* ConcurrentMainScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA6A35DB01D4DE9444136CDE603D1A2 /* ConcurrentMainScheduler.swift */; };
 		E4CD6AE8306F74A7A9D2F59B3E9CCD77 /* PathElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1855696154F9EA696554F0EE56943DD5 /* PathElement.swift */; };
-		E4E44B4BA2D602253BFC0ECFBA4680D0 /* RxCollectionViewDataSourceProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AC9AF5028BBD19F04E58038270C33 /* RxCollectionViewDataSourceProxy.swift */; };
 		E5233A1666D081429D1611B580097624 /* _RXObjCRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = F9A331ED561AEE3F90D1BDA3C7ECD072 /* _RXObjCRuntime.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E58FF90DC898CC2F00260B981AA76C36 /* GPUImageOpacityFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3FCAC833BABB7BD0F7FE2B51F5A6EC /* GPUImageOpacityFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		E6274F51559DFF5A0199153738BC468C /* GPUImageDirectionalNonMaximumSuppressionFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B9E0A5BC9890E45A04EBF5C65813D3E /* GPUImageDirectionalNonMaximumSuppressionFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E69A8681BCACEECBF01F6F46600D3150 /* capi.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F074D655ABA4376C804927CD227251A /* capi.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		E6C0A5EFBA9FA17D9C1D72A8DE0FF33A /* UISwitch+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BE6F90C7DBAF16819E7726467CB040 /* UISwitch+Rx.swift */; };
 		E6DC0E51C7C83DFDB98248771D4488DB /* CompoundBezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = B039C151F91CCF1A3961F51AC7AD7018 /* CompoundBezierPath.swift */; };
 		E6E6C0C7F5622E89C428C88CB9F3C949 /* bmfdata.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EBF1D5AE6E1B50F97051FB972D6102D /* bmfdata.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		E72CDFDE02A7C1A4B0C5F639A563A2DD /* TakeUntil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E152926DFAE711DA94605138D04F87 /* TakeUntil.swift */; };
 		E73D2DDD8D31C73E036A94D0AE99B6EA /* CardPartTableViewCardPartsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DBF7A404F4918ECA76863618FBAEDE /* CardPartTableViewCardPartsCell.swift */; };
 		E764C34AD55F247923371E7912100345 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8931D2673A2CD0B123A49857CF9A3B1E /* Animation.swift */; };
-		E79BBD1DD82C43F10A36E1372A09F030 /* RxTableViewDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0782695724AA52BD0F3EAF014DD82933 /* RxTableViewDelegateProxy.swift */; };
 		E7B954C035A06632DC0154F191DC3A7C /* GPUImageZoomBlurFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = E33E760C993E9C73CBC29847A18C82F1 /* GPUImageZoomBlurFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		E7E1648AD4E1074988653312C7B723FA /* GPUImageFASTCornerDetectionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8765EF335AE87A013B4A3B8E067EE129 /* GPUImageFASTCornerDetectionFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		E81F1D7B39D202D743390740A590CB66 /* Binder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C39BCE128013497ED02DE4FA1D942F /* Binder.swift */; };
+		E839AC9551FE89B46EF7F0A01054831E /* UIView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFA78F380763E7F05B3F49F0FF66519 /* UIView+Rx.swift */; };
 		E8C72D3E5A32A3377CD8DDF38D879E66 /* Amb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7A134471B9363A74B1C1862C265527 /* Amb.swift */; };
 		E8E4C9E166BBC98F786DF3ECC454BBDF /* G8RecognitionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1967BD18ED18D1425B8222BCB0914B16 /* G8RecognitionOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E98A1235C3FE023047750EA47792C205 /* AsyncLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058A806AD4E0382400EB5FC46182FF86 /* AsyncLock.swift */; };
 		E99AC675DC6D06EBBEB3DDA19223D01F /* DeprecationWarner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8646CAF8BC952777D9D14086BB4B61F5 /* DeprecationWarner.swift */; };
-		E9DF61E6914343F3E061E0D6DBB72C6B /* BehaviorRelay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1144624A0DDEBC7953AE293BA5C4CA3 /* BehaviorRelay.swift */; };
+		EA803C5D4C4266F92655D8A49594489A /* ControlProperty+Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BF3FFDC2086C3ED75D799120D5284A /* ControlProperty+Driver.swift */; };
 		EAD29890755F429E8B7A7E2B8929360B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A216608162B9E7C618CEED85D1911F2 /* Foundation.framework */; };
+		EB019BD790292A8806DCE20632AF0DCD /* ObservableConvertibleType+Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB893CF03BF83EF18A4FB95CE782EC2 /* ObservableConvertibleType+Signal.swift */; };
 		EB02A19DBD5F6F17C4379D3582D8AC68 /* GPUImageAdaptiveThresholdFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1209FBA892F4ECEFB52AC5F87D03022F /* GPUImageAdaptiveThresholdFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		EB40B716401BE38D6D0AD9B6595DD656 /* FillRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6BA06EC2A77D823CC187D5A1B5898D /* FillRenderer.swift */; };
 		EBA7516BB150962618DE638CE23AB73C /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8043C95F6E9CCB7FAD4002078538758 /* String.swift */; };
@@ -914,10 +909,12 @@
 		F1C837772CE8A76FE2E1A89B465E5933 /* String+IdentifiableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DC4D1AEA260AACE8C8A958FC22AD86 /* String+IdentifiableType.swift */; };
 		F2A2F8BDC93E448598EE584A4D82380D /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71ECF12338B6AC854C1649681A25F358 /* Shape.swift */; };
 		F2B387C2480B70786B8FA59179FF72DE /* RecursiveScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEACACD55FA2FCABA0F19EFA779894B /* RecursiveScheduler.swift */; };
+		F2C42EFD6AE3E156573588832E1BCCC9 /* DelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550CE267AE43C36B4476D9B7419C1178 /* DelegateProxy.swift */; };
+		F3B91162FD09061E5467484E87C172CD /* URLSession+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442DB840DA34ACB3B7AE70CF0C258964 /* URLSession+Rx.swift */; };
 		F3D9F85B7F8EE2A2EC343EE0AC3E30BD /* GPUImageClosingFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8711D4A4409BA2E991ABE54B2B962E6E /* GPUImageClosingFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		F407FB9F354CB91FBEA9AD40137EFFD9 /* NSControl+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DCC234E125C5416113B12F00BC6873 /* NSControl+Rx.swift */; };
 		F44F0BB311D20F8B417C56A179AC0F46 /* GPUImageGaussianBlurPositionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 289BC09C59722CD6C9C1EF069253770D /* GPUImageGaussianBlurPositionFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		F4A49CD132EB7A71A9FF1545CFB400F4 /* TrimPathNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D6034A94185A60B7818EB95362C190 /* TrimPathNode.swift */; };
+		F4D2A831ABCBA8B2D4DFF2913C258DB7 /* SharedSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0B89892951A71F2A742C4159AD6432 /* SharedSequence.swift */; };
 		F571483077D1CC53234EE34F74692740 /* UILongPressGestureRecognizer+RxGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = B143A560C288231E163962E0049C5F98 /* UILongPressGestureRecognizer+RxGesture.swift */; };
 		F58DC96A3A7D11B543E67A2BB7037DDF /* GPUImageLuminosity.h in Headers */ = {isa = PBXBuildFile; fileRef = 4141070C5DF5E9670FE720F78406927D /* GPUImageLuminosity.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F5C09406C817D2103FDAE5F18E5450FD /* SingleAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC37CEA6FF35DD93CC3F39D05AA4F1C /* SingleAsync.swift */; };
@@ -925,11 +922,12 @@
 		F64E76E4B80DFFC51CD0BD183139AC35 /* ViewTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA0D765ECF2EFF1D307E4DDCCB7B967 /* ViewTransition.swift */; };
 		F687347CE0F2202213F58DEF38A5EEBA /* TextAnimatorNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39C1E26C26CCBA50BC9B79322CA0E78 /* TextAnimatorNode.swift */; };
 		F68E3A240DBADC3F255FBB594C6C6E9E /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1401082815C273807B15A8C451D5ED /* Utilities.swift */; };
+		F695DE4A173313FE1C4559C3EE95476B /* KVORepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C42119C33F902BA5D5BC7E342F094AB /* KVORepresentable.swift */; };
 		F699E142F0AC96C129C2232D65AACD16 /* G8RecognitionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B84360CA4F8748D36FE1EF88D49D182A /* G8RecognitionOperation.m */; };
+		F69CCC2CE69C442A4AA7B5F8F82D1122 /* UIAlertAction+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA327DC0071C63AEAE88E4499E03D2F /* UIAlertAction+Rx.swift */; };
 		F6A1C057668C530720EAF75F1095B10D /* CardParts-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 91809A2817D5146963D9D6ABDF5F0C4A /* CardParts-dummy.m */; };
-		F6E873AB5A7E447F9F9A476D3A4534EF /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC667C82630D03A3410289AC85238A9 /* Queue.swift */; };
-		F721205ABB7145CAB7A3C0EAC2FF5E26 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2932C71870D546DB97EBBAFB72D4B7 /* Logging.swift */; };
 		F74AAF4E97A3646890F1AF874BF43F5C /* Never.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002A6031B68FC7E6C3724A0E7347C55E /* Never.swift */; };
+		F7A0790AF17AC4DF469AFC7502AB1C2A /* DeprecationWarner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD437BD1F8A522ACB5E4F704CF5160E /* DeprecationWarner.swift */; };
 		F804AEB9C82504D353913ACDA51BA9DB /* CardVisibilityDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479CC7ADA18559C1497F5DB9FB13F791 /* CardVisibilityDelegate.swift */; };
 		F806AAB3F24943B6FD10BCEE613FE132 /* bmp.h in Headers */ = {isa = PBXBuildFile; fileRef = C26CE50E5A9CA63BFBB7A0C28E3047E5 /* bmp.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		F814F5EC0EAAC1513B70638A35FAC661 /* CardPartTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD20217B3368DD5A6B99BC19F35606CE /* CardPartTitleView.swift */; };
@@ -939,7 +937,6 @@
 		F8D77A12C2CB0A9E3207420AE19390FB /* GPUImageDifferenceBlendFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = D0A4F89253A16C9D29A97B90A6283446 /* GPUImageDifferenceBlendFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F94FFA7D643ABC763FE11128DBDF98F0 /* GPUImageHighlightShadowFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = AC13F6E286615055E8713094D1430974 /* GPUImageHighlightShadowFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		F9E602C53FCDDEBD70606183F8FF897B /* Differentiator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E76447AA9513E615A6A71FF7326E7736 /* Differentiator-dummy.m */; };
-		FA23C5F76F53F7A86A105C52003B069B /* _RXDelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B151CC7C7BA4FEF35AB861DEE71AA17 /* _RXDelegateProxy.m */; };
 		FA2F54228FDF87FBC99D8715DC3F54D8 /* GPUImageTwoInputFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B264178D28A0A2BB6557C6193E9E825 /* GPUImageTwoInputFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FAA4341CC38E6CE99374C39E03686B31 /* GPUImageSepiaFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = D5110B956AB071B77C0412D8442DBCC9 /* GPUImageSepiaFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		FAC41A6F99B25800289761DCA3F57E32 /* GPUImageWeakPixelInclusionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9143B955ACF0F5E32BE9E91FF5B4550D /* GPUImageWeakPixelInclusionFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -950,16 +947,18 @@
 		FBC91C3E986ED94C439BDD9D7FAA8E8E /* ItemsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F535D412D304DC9C8588E192E5BDD14 /* ItemsExtension.swift */; };
 		FBD38CFF9DCBC813D5B8DC5AA81B2729 /* GPUImagePixellateFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = D8CD70E24CAD8CDB048BA8D9C01BC808 /* GPUImagePixellateFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC007C36C905BA1E4ADDBCCE6AE455A6 /* GPUImageTwoInputCrossTextureSamplingFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CF501FC68ECFE6EA9AFFC96BEEA003 /* GPUImageTwoInputCrossTextureSamplingFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FC546B1C27804572C9A33377D42BCCD6 /* UIDatePicker+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD1FB97C6E091BB3819A94973A004CC /* UIDatePicker+Rx.swift */; };
 		FC73BEE6FE16DD0C5DC19337854F487A /* G8Constants.h in Headers */ = {isa = PBXBuildFile; fileRef = B6DDAB2080F87330BCD417931B3054C3 /* G8Constants.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FCE020633BCB083E4CD930CAA1F59440 /* GPUImageThresholdEdgeDetectionFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EC5A19F25CF13705AAE31C32EB5414E /* GPUImageThresholdEdgeDetectionFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FCFCD507D5863CC6FE783728057069B7 /* CardPartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF4CEE587268358B7F08EF85B87FBAD /* CardPartView.swift */; };
 		FD3273F3FAD9D4FED4C88B233416DE8F /* environ.h in Headers */ = {isa = PBXBuildFile; fileRef = 3333F6700CCEA23DCA64A1B236A284AB /* environ.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		FD3538DECE997296012F6966B42020DD /* GPUImageRGBFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 83F8E0B533137FE7472DCE7FB030F9B4 /* GPUImageRGBFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FD3F34165E7234F410F765DDBD52B2B9 /* GPUImageEmbossFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B7FC73B58E0B598F790F76D5C93567 /* GPUImageEmbossFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FD6847F33AF0F4C9D1F897904C9DDEE1 /* Bag.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58D27C8F821BED214DC8667AE3D0950 /* Bag.swift */; };
 		FD8F43A01E52F5B97AB7D8E79F8D7AE8 /* LayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE1265DB65154C7099AB863EAF7FD9 /* LayerModel.swift */; };
 		FDCCDD62ACBED683806C270138F3C362 /* GPUImageBulgeDistortionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D403D386EDE9A2FF84C0E0BF09EDDD6 /* GPUImageBulgeDistortionFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		FE3A94551152A981B19D38CEECD5C853 /* Signal+Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CD3E12BC0CF1941EAF1B69EF24F3D0 /* Signal+Subscription.swift */; };
 		FE5542715304166DA8B380A06CB1F562 /* GPUImageSphereRefractionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6699824E444DE59DAAE525488C25A613 /* GPUImageSphereRefractionFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FE9BA10EE48B9BB23483632A4FBCA396 /* _RX.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCF36DB7765F5188DDFAA53D3E5EB53 /* _RX.m */; };
 		FEA3E18BAA6A8AECC6B61EBC490618A3 /* SchedulerServices+Emulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295AACB1CD665922522036ECAC25F06F /* SchedulerServices+Emulation.swift */; };
 		FEA7A4858E82C91A8923450388030CAA /* tiffconf.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B12DBCAA51C520D0C9748EBF71771E /* tiffconf.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		FEAB19805A37E29A1C93E57C9CEAF26F /* Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7E13C26EA729CECA71EEAD6FFAAC5F /* Rx.swift */; };
@@ -967,6 +966,7 @@
 		FECCF183DBDB1269A361863BEEB095DD /* GPUImage3x3TextureSamplingFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 920088A028C15B45CFB094C8BE37BDBF /* GPUImage3x3TextureSamplingFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		FF0D10A1A4B1BC574DADE9488FB36BE5 /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = C730A3B0763819C2DAD30C5371393AAA /* Empty.swift */; };
 		FF878215640A939EC32CDB05646253D4 /* GPUImageHistogramFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC5B4D895C67AFA9E21E46C6ACD8A6D /* GPUImageHistogramFilter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FFF10D979429AD3C05FA3298FE5C592D /* UITabBarItem+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B22449CEC2D77610DFC2D6D2F68C1B7 /* UITabBarItem+Rx.swift */; };
 		FFF5F40FCECA31565A976C9B29706F7C /* DistinctUntilChanged.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B10A63A493A859C64B8A6FC94A43EA /* DistinctUntilChanged.swift */; };
 /* End PBXBuildFile section */
 
@@ -3964,7 +3964,7 @@
 			buildConfigurationList = 0BE808A5341EDE8E22FF253E11682C21 /* Build configuration list for PBXNativeTarget "RxCocoa" */;
 			buildPhases = (
 				72E00BBF2AE4E81046115588B47F11BD /* Headers */,
-				8515DF8AF10DEEC11CD2BD53B29B2FF6 /* Sources */,
+				25B318CC74AA211978CFB98C3B276863 /* Sources */,
 				2AB8F9EE3BC58851A6F33FBE6C93AF7F /* Frameworks */,
 				B5D808577BD6A48EC026E208B25DC844 /* Resources */,
 			);
@@ -4397,6 +4397,134 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		25B318CC74AA211978CFB98C3B276863 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE9BA10EE48B9BB23483632A4FBCA396 /* _RX.m in Sources */,
+				E2D4701A62A88DEED06EEFFEBDCD8317 /* _RXDelegateProxy.m in Sources */,
+				3CC09FEC8D4728464D74DD1C55BF0269 /* _RXKVOObserver.m in Sources */,
+				DFBC7CC1456C8920B0BB927BA365A96F /* _RXObjCRuntime.m in Sources */,
+				FD6847F33AF0F4C9D1F897904C9DDEE1 /* Bag.swift in Sources */,
+				D5F4F91C392ABCFEFD7A8E41EE2E48D7 /* BehaviorRelay+Driver.swift in Sources */,
+				61BEEB84C1D31CCFAF6F3C9699DA5447 /* BehaviorRelay.swift in Sources */,
+				7D5AD2CAC01B11AE7AFE46C36EB13823 /* Binder.swift in Sources */,
+				16643D827BED5A26E6E3BA150D083357 /* ControlEvent+Driver.swift in Sources */,
+				46591822FBEF1B0C9098C9DE0F141F6B /* ControlEvent+Signal.swift in Sources */,
+				58D61BC54D326EF552A01F1B1F3B6B65 /* ControlEvent.swift in Sources */,
+				EA803C5D4C4266F92655D8A49594489A /* ControlProperty+Driver.swift in Sources */,
+				4454A6C85283CF50C63C9D18ACDBD034 /* ControlProperty.swift in Sources */,
+				610FB44BDB2D654E9B48F7529C1392DD /* ControlTarget.swift in Sources */,
+				F2C42EFD6AE3E156573588832E1BCCC9 /* DelegateProxy.swift in Sources */,
+				A22F1962E1D3695DBCD7E634E2B37989 /* DelegateProxyType.swift in Sources */,
+				D23AE9C69EC8687D148050FDC6445A6F /* Deprecated.swift in Sources */,
+				F7A0790AF17AC4DF469AFC7502AB1C2A /* DeprecationWarner.swift in Sources */,
+				89685F602889CBEB61D056F4CC615261 /* DispatchQueue+Extensions.swift in Sources */,
+				2B0434EEE206621F1C8508328A57927D /* Driver+Subscription.swift in Sources */,
+				628DA2045D2806CE285BE4AAE839A51B /* Driver.swift in Sources */,
+				77546317EDC85E06747BF232B2021BE1 /* InfiniteSequence.swift in Sources */,
+				5A8B7B568D5F653041FE4A2000B220F4 /* ItemEvents.swift in Sources */,
+				63E3E7619B3374567160A5823973D9AD /* KeyPathBinder.swift in Sources */,
+				12CBAB927E7B8916816C67EB23C68DB7 /* KVORepresentable+CoreGraphics.swift in Sources */,
+				250CF6E8E415214C02449FF45916B530 /* KVORepresentable+Swift.swift in Sources */,
+				F695DE4A173313FE1C4559C3EE95476B /* KVORepresentable.swift in Sources */,
+				3D7781AD4390FE9AD05479B6A570CF9E /* Logging.swift in Sources */,
+				5B234DCA3E5F55461ABE9A92755903FC /* NotificationCenter+Rx.swift in Sources */,
+				99DE0FF7A2F14F416E0C9B9302CA8817 /* NSButton+Rx.swift in Sources */,
+				E30E6E2184797DA1A505D9E6DE3620EE /* NSControl+Rx.swift in Sources */,
+				6852153F3FC7722FC80D9471A12B5A7D /* NSImageView+Rx.swift in Sources */,
+				689C3F7324220AB5788BC579F1998747 /* NSLayoutConstraint+Rx.swift in Sources */,
+				C39F63E8A3B716F9C63247265077C9BF /* NSObject+Rx+KVORepresentable.swift in Sources */,
+				D3DF7BC7221BB082032D8CAA246F8641 /* NSObject+Rx+RawRepresentable.swift in Sources */,
+				84A50E8E8156FB018A288D2CC62B4787 /* NSObject+Rx.swift in Sources */,
+				1E10E670D4B247E4CDE5273BA3D02C0D /* NSSlider+Rx.swift in Sources */,
+				4B3173CEC827BA52E1A96F91D01641AD /* NSTextField+Rx.swift in Sources */,
+				AF2C179E60CDC11E8B005155985B445D /* NSTextStorage+Rx.swift in Sources */,
+				7CDFAD3CE91F779454761378D14015F3 /* NSTextView+Rx.swift in Sources */,
+				93C7F2A0B7C2EB1AA4134CF89C8D4193 /* NSView+Rx.swift in Sources */,
+				B9CE82D78A98FE0D8B35769E06AE937E /* Observable+Bind.swift in Sources */,
+				CD50D2D4B0D9C1B5497A6F78DCF887E7 /* ObservableConvertibleType+Driver.swift in Sources */,
+				83ED7225C84C0F09F02A21C0EC96E122 /* ObservableConvertibleType+SharedSequence.swift in Sources */,
+				EB019BD790292A8806DCE20632AF0DCD /* ObservableConvertibleType+Signal.swift in Sources */,
+				8929689A78DA8633763242DC0ECE2A67 /* Platform.Darwin.swift in Sources */,
+				7B90B3A8EE0F1FD97D15E0130FF2BCE8 /* Platform.Linux.swift in Sources */,
+				B155DD94A24745D9AB38C98F7B8121DD /* PriorityQueue.swift in Sources */,
+				CD4793D21A60E75BD450382C9A1BCB96 /* PublishRelay+Signal.swift in Sources */,
+				8EC32DAD0197224338934F1284F05BAE /* PublishRelay.swift in Sources */,
+				8BAAA910466A461526CD97F126E2410F /* Queue.swift in Sources */,
+				AF1A98482E736C12E902BE5D6A908AAA /* RecursiveLock.swift in Sources */,
+				5D774554D12FDBF563CE2B04CCBC3357 /* RxCocoa-dummy.m in Sources */,
+				74DB5371BCA196B6AC9B109E0D21D470 /* RxCocoa.swift in Sources */,
+				4A94234A7631A4D40F3A569793E92FEC /* RxCocoaObjCRuntimeError+Extensions.swift in Sources */,
+				A3316E444E1B5CD319631BF6ECB86B20 /* RxCollectionViewDataSourcePrefetchingProxy.swift in Sources */,
+				78970AFF2541D847C2CEB573F2C74DBB /* RxCollectionViewDataSourceProxy.swift in Sources */,
+				974CBCC974B0AFC7BEAAA2B2DA383B76 /* RxCollectionViewDataSourceType.swift in Sources */,
+				055D45F42B025E1F098300A6AC39DB58 /* RxCollectionViewDelegateProxy.swift in Sources */,
+				9D832B78DC178F6A8AA75087EDC038C2 /* RxCollectionViewReactiveArrayDataSource.swift in Sources */,
+				292646763BC69C9A065D4E30D12AD6B0 /* RxNavigationControllerDelegateProxy.swift in Sources */,
+				1EB8394E2C2557F50F31473DFE5B54BA /* RxPickerViewAdapter.swift in Sources */,
+				05DB7BE75209EF0D4D76B05AA58AF6B3 /* RxPickerViewDataSourceProxy.swift in Sources */,
+				CDC44830D620EA77D176DE75488AF1CD /* RxPickerViewDataSourceType.swift in Sources */,
+				481326D06FD1CEA973CF4F2FC27CCFE9 /* RxPickerViewDelegateProxy.swift in Sources */,
+				9A7577069F80D30F0B8A19AC7EB1E9F1 /* RxScrollViewDelegateProxy.swift in Sources */,
+				7DA6CDEDF6147BB6244286FA46313F6F /* RxSearchBarDelegateProxy.swift in Sources */,
+				2B36AC9B30E85852891965184535F224 /* RxSearchControllerDelegateProxy.swift in Sources */,
+				4B6D37B6B3145918CC76B3C51710AA28 /* RxTabBarControllerDelegateProxy.swift in Sources */,
+				0EA242B134993A6DA3D1160810DD2CB9 /* RxTabBarDelegateProxy.swift in Sources */,
+				6514FD3493FA1973F776CB6CE191E30C /* RxTableViewDataSourcePrefetchingProxy.swift in Sources */,
+				A0E20EDC30637FFFDDFA4BC9881A5673 /* RxTableViewDataSourceProxy.swift in Sources */,
+				B416405DA60FC86A36BB4D0FC7880F54 /* RxTableViewDataSourceType.swift in Sources */,
+				6ECA95A35ED3F1B725CB0E06C8E9C707 /* RxTableViewDelegateProxy.swift in Sources */,
+				490B6921960EB99F273D305A0AE87888 /* RxTableViewReactiveArrayDataSource.swift in Sources */,
+				1E2A5E345091B942DAE5340230FF9FD8 /* RxTarget.swift in Sources */,
+				317145E3F191C6C475604EE6CEEA4319 /* RxTextStorageDelegateProxy.swift in Sources */,
+				87C7D8201E4D9F8A89BAA5617EC547AD /* RxTextViewDelegateProxy.swift in Sources */,
+				D0ECADB07A16EADD2D5D16E721B85C93 /* RxWebViewDelegateProxy.swift in Sources */,
+				D2F7DE32574DB5D8BFA4EA8F98EF789A /* SchedulerType+SharedSequence.swift in Sources */,
+				4DE117FFE2F4F7B1D56CC57CB75F7398 /* SectionedViewDataSourceType.swift in Sources */,
+				DEE2400E169822719050BB2DA5FDA208 /* SharedSequence+Operators+arity.swift in Sources */,
+				1181C006705D209A498B5FF532B58384 /* SharedSequence+Operators.swift in Sources */,
+				F4D2A831ABCBA8B2D4DFF2913C258DB7 /* SharedSequence.swift in Sources */,
+				C61AA03D112C936BA3AE03DE706F51DC /* Signal+Subscription.swift in Sources */,
+				94E98D635C039C38DAB42955F17DD526 /* Signal.swift in Sources */,
+				91358E29108230083B3B72859CD69D7A /* TextInput.swift in Sources */,
+				7488D4DB0EF6758088A0F70D8DFD0C87 /* UIActivityIndicatorView+Rx.swift in Sources */,
+				F69CCC2CE69C442A4AA7B5F8F82D1122 /* UIAlertAction+Rx.swift in Sources */,
+				A164D9BC73F079CEE97529DDE9C7262C /* UIApplication+Rx.swift in Sources */,
+				82178E782EA7C41064E2AB5A5C214CB1 /* UIBarButtonItem+Rx.swift in Sources */,
+				AE8D0A9302A9CF97CB2B0E8C7E7AAA66 /* UIButton+Rx.swift in Sources */,
+				C378C94893B351239B1A0573C763C04F /* UICollectionView+Rx.swift in Sources */,
+				5B34777B2B2CD386AC3F562E991A05CF /* UIControl+Rx.swift in Sources */,
+				FC546B1C27804572C9A33377D42BCCD6 /* UIDatePicker+Rx.swift in Sources */,
+				343026ABC5C4F275B3DC9748C0133418 /* UIGestureRecognizer+Rx.swift in Sources */,
+				40FCA10C754CBC5CAFE1F62E95ED4F7A /* UIImageView+Rx.swift in Sources */,
+				D0268A4645FD4BBDDCAD9F5428C952C0 /* UILabel+Rx.swift in Sources */,
+				0FB4C9653403ADC39136BC58BBA3FCA7 /* UINavigationController+Rx.swift in Sources */,
+				3B4924A648328CE6BDEF6E9CE8DDA766 /* UINavigationItem+Rx.swift in Sources */,
+				0DDD3BB73E9A83CC21243FFC17F3738D /* UIPageControl+Rx.swift in Sources */,
+				52B4275EBEB114D40C69ED6A7253DC9C /* UIPickerView+Rx.swift in Sources */,
+				16E4CE5A79B7D0589B3A7F0E11B16976 /* UIProgressView+Rx.swift in Sources */,
+				C266E95E0E605661A7819C1E907F8A62 /* UIRefreshControl+Rx.swift in Sources */,
+				88C005D72BF51F8BF97596922992F996 /* UIScrollView+Rx.swift in Sources */,
+				88FA0C66F96E73D123367ECC2E496F9E /* UISearchBar+Rx.swift in Sources */,
+				2EAB36CA17AAE13ADC0F33A95562E3F7 /* UISearchController+Rx.swift in Sources */,
+				631287B3B9756A43BBC722541920C12A /* UISegmentedControl+Rx.swift in Sources */,
+				DAA1B1EAE3D9E60B7010DA4291E910FF /* UISlider+Rx.swift in Sources */,
+				07F9789AD8605D72550F093BB1352E14 /* UIStepper+Rx.swift in Sources */,
+				8E64B17AE234D70712781C9584CE1AC3 /* UISwitch+Rx.swift in Sources */,
+				D0D8E4CE62A937E6A24D4DA2F56A2E87 /* UITabBar+Rx.swift in Sources */,
+				675A264676F25D7E392A04C39F758FFE /* UITabBarController+Rx.swift in Sources */,
+				FFF10D979429AD3C05FA3298FE5C592D /* UITabBarItem+Rx.swift in Sources */,
+				442F268D818B6094B7F1056802C79226 /* UITableView+Rx.swift in Sources */,
+				12E1E43D204DE970743677233FE1525F /* UITextField+Rx.swift in Sources */,
+				78A7CFAC84BEA94DA60B80BF383D8B5B /* UITextView+Rx.swift in Sources */,
+				E839AC9551FE89B46EF7F0A01054831E /* UIView+Rx.swift in Sources */,
+				164E7C22D709C9F2C1D6A08998147434 /* UIViewController+Rx.swift in Sources */,
+				68DF0E043A4E48CD26DD5B379A7B5E1C /* UIWebView+Rx.swift in Sources */,
+				F3B91162FD09061E5467484E87C172CD /* URLSession+Rx.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4E947C2E0FC655AFBF367149C9463523 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -4594,134 +4722,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				31D1E08B12169A890F7EE5D0BA6082B2 /* Pods-SnapStudy-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8515DF8AF10DEEC11CD2BD53B29B2FF6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CF1D2716F1924D51FF8FF2B49FD4A990 /* _RX.m in Sources */,
-				FA23C5F76F53F7A86A105C52003B069B /* _RXDelegateProxy.m in Sources */,
-				4D5DEB77044183D8DB85E8EF6D2B6D1E /* _RXKVOObserver.m in Sources */,
-				336F8862E02D783458E7BB7C35A891FB /* _RXObjCRuntime.m in Sources */,
-				6260721F9F5BAA6BE653B4A64FEC6A9A /* Bag.swift in Sources */,
-				9052F44D2EA36FF258CC109A4BA38F2E /* BehaviorRelay+Driver.swift in Sources */,
-				E9DF61E6914343F3E061E0D6DBB72C6B /* BehaviorRelay.swift in Sources */,
-				E81F1D7B39D202D743390740A590CB66 /* Binder.swift in Sources */,
-				3DE2F41407630742702F108AA0F32B7B /* ControlEvent+Driver.swift in Sources */,
-				0736021B1D5C669EEF30B882F1871D21 /* ControlEvent+Signal.swift in Sources */,
-				5AC5C188B381B567D9FA7D7FB2BF2B15 /* ControlEvent.swift in Sources */,
-				07D4036D5F20DA6694C4377536B4DE80 /* ControlProperty+Driver.swift in Sources */,
-				B372D832B146BE551CA389F8081E70BC /* ControlProperty.swift in Sources */,
-				4E9222B23FC634605F5DB0A7BC8F5AB5 /* ControlTarget.swift in Sources */,
-				B2C40AA38B146809C27FFF8DEF071AE6 /* DelegateProxy.swift in Sources */,
-				AA005E7F02CCBEE2D4120384B3E2D7CB /* DelegateProxyType.swift in Sources */,
-				0CDC4423498E9E94A784BFBE172A0FB2 /* Deprecated.swift in Sources */,
-				2F4B63CA9912560073747B7123CAF564 /* DeprecationWarner.swift in Sources */,
-				4287C0F708B7C6DEAA11E2E66CC6F542 /* DispatchQueue+Extensions.swift in Sources */,
-				5EE0453A5B29056C7AE04E4C175F2DAE /* Driver+Subscription.swift in Sources */,
-				65031B5F8D0BD785FEF63404FA2D75B5 /* Driver.swift in Sources */,
-				35C2477FE9614732D3D19133C8886B42 /* InfiniteSequence.swift in Sources */,
-				1B86168522C5B2199FF1F1DBB9E8E333 /* ItemEvents.swift in Sources */,
-				DD9FFD3B4542D92A32D29EB045396490 /* KeyPathBinder.swift in Sources */,
-				571678BB7DF95A2E6AF3B9A2A67082C0 /* KVORepresentable+CoreGraphics.swift in Sources */,
-				D3D49BF53D139A25AFE4BC8F20FC737E /* KVORepresentable+Swift.swift in Sources */,
-				0977FA5C8D1B58C4C60A45CC32467CB3 /* KVORepresentable.swift in Sources */,
-				F721205ABB7145CAB7A3C0EAC2FF5E26 /* Logging.swift in Sources */,
-				99ADE5D4EF7A380AE25C8F21EEF363AC /* NotificationCenter+Rx.swift in Sources */,
-				1D3CE44E65FD981C2BCD7FDB4C43DF2E /* NSButton+Rx.swift in Sources */,
-				F407FB9F354CB91FBEA9AD40137EFFD9 /* NSControl+Rx.swift in Sources */,
-				96C053E1B347E5614824AA3A0F06DA35 /* NSImageView+Rx.swift in Sources */,
-				6443AF28DA342CEAD0270A10BAFD60F6 /* NSLayoutConstraint+Rx.swift in Sources */,
-				7F1AFB66CE732DCAD3BEF884C7A713D4 /* NSObject+Rx+KVORepresentable.swift in Sources */,
-				A95DA42D660B80BEC7C12A8391A1BAD1 /* NSObject+Rx+RawRepresentable.swift in Sources */,
-				724ECBAC018870FC3220A2AEE582E5DA /* NSObject+Rx.swift in Sources */,
-				290196371E35902A9497FC5BEAC19D3E /* NSSlider+Rx.swift in Sources */,
-				0A7CA4D4EFBB6D185900DD57F2989EA1 /* NSTextField+Rx.swift in Sources */,
-				A1A24EE1EBF14519E1731F73F3106322 /* NSTextStorage+Rx.swift in Sources */,
-				6BB0B30ACC1EB890D30B269138DEC66A /* NSTextView+Rx.swift in Sources */,
-				CD81DA8EFE1AAD2144ACDD6A4D4444A2 /* NSView+Rx.swift in Sources */,
-				80FFFC9E3451FB2ABDDC8E0C3E8312C6 /* Observable+Bind.swift in Sources */,
-				3211E8AF20F633EC972DC389168CEB9E /* ObservableConvertibleType+Driver.swift in Sources */,
-				9D94470A5347430E5C7F4FA3DC9B2B66 /* ObservableConvertibleType+SharedSequence.swift in Sources */,
-				41324658F384CD426850BCE79FDCD824 /* ObservableConvertibleType+Signal.swift in Sources */,
-				3F0E8F6C2FA16C6AC91A817151C861A9 /* Platform.Darwin.swift in Sources */,
-				D58C63219E281704241FDEB9569F9E63 /* Platform.Linux.swift in Sources */,
-				94B6BB9C442E56137EC1F81514FDDC20 /* PriorityQueue.swift in Sources */,
-				511B3874E9CE44527734CF29529CC8AD /* PublishRelay+Signal.swift in Sources */,
-				72EBF6D1ED93277451EB7064B5AAD414 /* PublishRelay.swift in Sources */,
-				F6E873AB5A7E447F9F9A476D3A4534EF /* Queue.swift in Sources */,
-				6132B85AF2F3178D17A52DB7692F6B55 /* RecursiveLock.swift in Sources */,
-				B603241C8069787D9260D68666DAC44E /* RxCocoa-dummy.m in Sources */,
-				2C2F7AB4F375CE276A61A7209821F752 /* RxCocoa.swift in Sources */,
-				A5A9F1D8B47610E41DC36AC5404BD7BB /* RxCocoaObjCRuntimeError+Extensions.swift in Sources */,
-				10290F5C690235BFDD866D99846019E3 /* RxCollectionViewDataSourcePrefetchingProxy.swift in Sources */,
-				E4E44B4BA2D602253BFC0ECFBA4680D0 /* RxCollectionViewDataSourceProxy.swift in Sources */,
-				1D707F17F6DB9E919401578CA118463E /* RxCollectionViewDataSourceType.swift in Sources */,
-				134D0B84659A4B69105752D90B9FE50B /* RxCollectionViewDelegateProxy.swift in Sources */,
-				0688212DD6E1A75F0DFF7FDF02CE6A87 /* RxCollectionViewReactiveArrayDataSource.swift in Sources */,
-				D634A21C153ADEF84BA023AC1DB3FDD8 /* RxNavigationControllerDelegateProxy.swift in Sources */,
-				18C72EBE14F1EA9D6B13B776D10521BD /* RxPickerViewAdapter.swift in Sources */,
-				B9CC7DE665A439E8EBECA80CE79A53BD /* RxPickerViewDataSourceProxy.swift in Sources */,
-				7AF2C1096BDB81DE1F71E7DF584BD37D /* RxPickerViewDataSourceType.swift in Sources */,
-				2CEAB895CC3423D612183EE57EBB63B4 /* RxPickerViewDelegateProxy.swift in Sources */,
-				14AF42A597D68E92F175D0A922AAE03B /* RxScrollViewDelegateProxy.swift in Sources */,
-				DA2DE5273964A9B41187041CC55437C9 /* RxSearchBarDelegateProxy.swift in Sources */,
-				D0ABCDD54FA0A3778B9674B185ACF273 /* RxSearchControllerDelegateProxy.swift in Sources */,
-				2A29469A4567A2D8E68528FB74A51792 /* RxTabBarControllerDelegateProxy.swift in Sources */,
-				B885BDD55F7E7877B313C5A78B2925B8 /* RxTabBarDelegateProxy.swift in Sources */,
-				B38D412A85F718866FD03B7F15E1AA07 /* RxTableViewDataSourcePrefetchingProxy.swift in Sources */,
-				CFE27409232203601EA305B01A6641C0 /* RxTableViewDataSourceProxy.swift in Sources */,
-				D7F9A603743B885F529A1654D8FCAD71 /* RxTableViewDataSourceType.swift in Sources */,
-				E79BBD1DD82C43F10A36E1372A09F030 /* RxTableViewDelegateProxy.swift in Sources */,
-				9C4B8013AC3033C515C756F12410C2CB /* RxTableViewReactiveArrayDataSource.swift in Sources */,
-				B1D37E1E3CFFC553DF475DD165FCA435 /* RxTarget.swift in Sources */,
-				27E77316316D74701A22B02F53E8781E /* RxTextStorageDelegateProxy.swift in Sources */,
-				5806FAA5898722FD76D49AAF287354EC /* RxTextViewDelegateProxy.swift in Sources */,
-				ADC344422385DDA6C0424585361CABE1 /* RxWebViewDelegateProxy.swift in Sources */,
-				E376A67EF3B2C46D9701BA95DEA36B84 /* SchedulerType+SharedSequence.swift in Sources */,
-				C68DAD1F6D60E85B36F9425961763A73 /* SectionedViewDataSourceType.swift in Sources */,
-				6A96A370EF49D8BC976D8679C4E31257 /* SharedSequence+Operators+arity.swift in Sources */,
-				21B0F07ED4A71716C5D29023297F187C /* SharedSequence+Operators.swift in Sources */,
-				61F9A5143BDDB6FDA0FE62D1F7441AA1 /* SharedSequence.swift in Sources */,
-				FE3A94551152A981B19D38CEECD5C853 /* Signal+Subscription.swift in Sources */,
-				8893579F09A26C17A74CB8A86F5D2186 /* Signal.swift in Sources */,
-				47D98BC3D33CD62A431C9F381838C9C0 /* TextInput.swift in Sources */,
-				807FCBD68BF74193976B938FB5510610 /* UIActivityIndicatorView+Rx.swift in Sources */,
-				42FB1B39D75B48C57FF4DC23553B0ACD /* UIAlertAction+Rx.swift in Sources */,
-				7A91AF49C5EAF522BFC4F7BA2D194DB7 /* UIApplication+Rx.swift in Sources */,
-				D900A04659223A164B206A3CAEA34676 /* UIBarButtonItem+Rx.swift in Sources */,
-				1172B20FB143C4FE667F6123FFD33D45 /* UIButton+Rx.swift in Sources */,
-				8060FD647FA59B3C400E06DD860B1F8F /* UICollectionView+Rx.swift in Sources */,
-				D83751E61167AF15D87081095471C21C /* UIControl+Rx.swift in Sources */,
-				2863631C73934891C23676D5ABFA01D7 /* UIDatePicker+Rx.swift in Sources */,
-				BA812573C17E81EF6F7BC088C23071EF /* UIGestureRecognizer+Rx.swift in Sources */,
-				880FBA20ADFB05FA91F148BFCAEA7F25 /* UIImageView+Rx.swift in Sources */,
-				ABC98F1CCECBED8E49CCFF948FD7388D /* UILabel+Rx.swift in Sources */,
-				A8E23ABFB1A2E9DB7F2734158B4CA185 /* UINavigationController+Rx.swift in Sources */,
-				E183D751F386FC1644B5AB631304A398 /* UINavigationItem+Rx.swift in Sources */,
-				D53987FB870A290EA0DC56B4FC685928 /* UIPageControl+Rx.swift in Sources */,
-				91F3A444AD5D152A0267A48131004885 /* UIPickerView+Rx.swift in Sources */,
-				3EE2FD2409E09A967F2D211C61D46879 /* UIProgressView+Rx.swift in Sources */,
-				65608864EBF570840751AA1402CF0451 /* UIRefreshControl+Rx.swift in Sources */,
-				6F8C620818A8462E6A9EDEB0EF5EA340 /* UIScrollView+Rx.swift in Sources */,
-				0AD898C05154AFA89A6D7AEA77973058 /* UISearchBar+Rx.swift in Sources */,
-				68BBDAAFA3098DA0B3A31B3044084D42 /* UISearchController+Rx.swift in Sources */,
-				8280B69F6A19861DB5D98DE7898F4179 /* UISegmentedControl+Rx.swift in Sources */,
-				A57D6FBE38FF37984FC9F5F2217B08C0 /* UISlider+Rx.swift in Sources */,
-				25D21C0C4340BCF67C97B271C9464FE8 /* UIStepper+Rx.swift in Sources */,
-				E6C0A5EFBA9FA17D9C1D72A8DE0FF33A /* UISwitch+Rx.swift in Sources */,
-				37559A70EFC6432C449C858B66A6E61F /* UITabBar+Rx.swift in Sources */,
-				634AFBAB3F5C81FD9E9D83EA2FA51C79 /* UITabBarController+Rx.swift in Sources */,
-				656C3A9B622BEFF4650BD9B08571A000 /* UITabBarItem+Rx.swift in Sources */,
-				664A7FACB785138749E45C4C24D1BBBF /* UITableView+Rx.swift in Sources */,
-				4BECCDA97FEC6C7EA563D3D2AAA14D11 /* UITextField+Rx.swift in Sources */,
-				D830FF256ADE307C5506A80BE4D5E3D7 /* UITextView+Rx.swift in Sources */,
-				5745896CEB388E806D256AA2435F761A /* UIView+Rx.swift in Sources */,
-				14ECC7F28C928F1C26832C2C77871D46 /* UIViewController+Rx.swift in Sources */,
-				9F0E80E5341F19F3DE12A9DBAAEE2F9E /* UIWebView+Rx.swift in Sources */,
-				D83845706D3867B26B468C456B4AC3B1 /* URLSession+Rx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

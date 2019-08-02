@@ -26,7 +26,7 @@ class PaintDisplay: UIViewController
         
         let appDel = UIApplication.shared.delegate as! AppDelegate          //Access App Delegate Global Variable
         appDel.curCardController?.receiveDataFromModal(theImg: testImage!)  //Call CardPartPagedVC.swift function
-        print("saved! please help")
+        //print("saved! please help")
         
         if((self.presentingViewController) != nil){
             self.dismiss(animated: true, completion: nil)
