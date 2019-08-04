@@ -203,7 +203,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qks-du-ssP">
                                         <rect key="frame" x="106" y="377" width="126" height="32"/>
@@ -212,7 +212,7 @@
                                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
                                         <state key="normal" title="Log In"/>
                                         <connections>
-                                            <segue destination="14S-p8-bI0" kind="showDetail" id="Hsm-2u-KZi"/>
+                                            <segue destination="14S-p8-bI0" kind="show" id="mYb-ce-2UA"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVm-SD-fgL">
@@ -890,7 +890,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="R5u-C1-Z8M"/>
-        <segue reference="rmZ-Qc-iKa"/>
+        <segue reference="mYb-ce-2UA"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>
