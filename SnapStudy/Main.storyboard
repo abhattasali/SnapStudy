@@ -336,6 +336,7 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="addTitleButton" destination="BN5-OR-moo" id="5jc-ak-RKK"/>
                         <outlet property="createButton" destination="zVv-Qo-QcI" id="zBa-1n-Xjd"/>
                         <outlet property="tableView" destination="Hsn-Kc-6GT" id="Zlx-w7-14N"/>
                     </connections>
@@ -890,7 +891,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="R5u-C1-Z8M"/>
-        <segue reference="mYb-ce-2UA"/>
+        <segue reference="rmZ-Qc-iKa"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

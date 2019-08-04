@@ -17,6 +17,7 @@ class WordToggleTest: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var createButton: UIButton!
+    @IBOutlet weak var addTitleButton: UIBarButtonItem!
     
     var wt_flashset: FlashSet!
     var terms = [String]()
@@ -69,11 +70,14 @@ class WordToggleTest: UIViewController {
             termTitleF.placeholder = "Enter Title"
         }
         let Titleaction = UIAlertAction(title: "Add Title", style: .default) { (_) in
-            guard let term = Titlealert.textFields?.first?.text else { return }
+            guard let flashsetName = Titlealert.textFields?.first?.text else { return }
             //print(term)
-            if(term != "") {
-                self.add(term)
-                self.addedTerms.append(term)
+            if(flashsetName != "") {
+                //self.add(term)
+                //self.addedTerms.append(term)
+                self.wt_flashset.setName = flashsetName
+                self.addTitleButton.title = flashsetName
+                
             }
         }
         Titlealert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: {
