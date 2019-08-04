@@ -32,6 +32,8 @@ class WordToggleTest: UIViewController {
         }
     }
     
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let cardWrapperVC = segue.destination as? LottieViewController else { return }
         cardWrapperVC.wt_flashset = wt_flashset
@@ -59,7 +61,29 @@ class WordToggleTest: UIViewController {
         
     }
     
-    
+    //Add Title button
+    //TODO edit to add to flash name instead of add to term
+    @IBAction func titleBtn() {
+        let Titlealert = UIAlertController(title: "Add a title for your flash set!", message: nil, preferredStyle: .alert)
+        Titlealert.addTextField { (termTitleF) in
+            termTitleF.placeholder = "Enter Title"
+        }
+        let Titleaction = UIAlertAction(title: "Add Title", style: .default) { (_) in
+            guard let term = Titlealert.textFields?.first?.text else { return }
+            //print(term)
+            if(term != "") {
+                self.add(term)
+                self.addedTerms.append(term)
+            }
+        }
+        Titlealert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: {
+            action in
+            // Called when user taps outside
+        }))
+        Titlealert.addAction(Titleaction)
+        present(Titlealert, animated: true)
+
+    }
     
     @IBAction func onAddTapped() {
         let alert = UIAlertController(title: "Add a term", message: nil, preferredStyle: .alert)

@@ -40,7 +40,7 @@ class OnboardingViewController: UIPageViewController, UIPageViewControllerDataSo
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         guard let viewControllerIndex = orderedViewController.firstIndex(of: viewController) else { return nil }
         let nextIndex = viewControllerIndex + 1
-        guard nextIndex < orderedViewController.count else { return orderedViewController.first }
+        //guard nextIndex < orderedViewController.count else { return orderedViewController.first }
         guard orderedViewController.count > nextIndex else { return nil }
         return orderedViewController[nextIndex]
     }
