@@ -15,7 +15,7 @@ class FlashSet
     public var myWordCards: [String: Flashcard]    //Dictionary Keyword, Definition pair
     public var myDate: String                      //Date in Format: "October 8, 2016"
     
-    init(setName: String = "Bio", myWordCards: [String: Flashcard] = [String: Flashcard]())
+    init(setName: String = "", myWordCards: [String: Flashcard] = [String: Flashcard]())
     {
         self.setName = setName
         self.myWordCards = myWordCards

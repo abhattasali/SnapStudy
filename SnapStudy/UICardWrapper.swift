@@ -11,9 +11,15 @@ import UIKit
 class UICardWrapper: UIViewController {
 
     
+    @IBOutlet weak var setName: UILabel!
+    
     var flashset: FlashSet!
     override func viewDidLoad() {
         //print("test on UICardWrapper: \(flashset.getSetName())")
+        if(flashset.setName != "")
+        {
+            setName.text = self.flashset.setName
+        }
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
