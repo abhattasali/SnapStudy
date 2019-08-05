@@ -1,5 +1,5 @@
 # SnapStudy
-NOTE: This app is currently built for iPhone Xs (v. 10.0+) templates, future constraint modifications for other iPhone models will be updated on the original repo.
+NOTE: This app is currently built for iPhone Xs (v. 10.0+) templates, future constraint modifications for other iPhone models will be updated on this repo.
 
 ## Description & Features
 
